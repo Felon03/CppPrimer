@@ -3,6 +3,12 @@
 *.lo
 *.o
 *.obj
+*.tlog
+*.idb
+*.pdb
+*.log
+*.vcxproj
+*.filters
 
 # Precompiled Headers
 *.gch
