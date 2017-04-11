@@ -14,7 +14,7 @@ int main()
 	cout << endl;
 
 	cnt = ivec.size();
-	for (vector<int>::size_type ix = 0; ix != ivec.size(); ix++, --cnt)
+	for (vector<int>::size_type ix = 0; ix != ivec.size(); ix++, cnt--)
 		ivec[ix] = cnt;
 	for (auto x : ivec)
 		cout << x << " ";
