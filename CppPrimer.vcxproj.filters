@@ -29,10 +29,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fact.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="factMain.cc">
+    <ClCompile Include="6.12.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
