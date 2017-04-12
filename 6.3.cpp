@@ -1,4 +1,4 @@
-/*编写你自己的fact函数，上机检查是否正确*/
+/* 编写你自己的fact函数，上机检查是否正确*/
 #include<iostream>
 
 using namespace std;

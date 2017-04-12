@@ -1,4 +1,4 @@
-/*调用6.4h中的函数求阶乘*/
+/* 调用6.4h中的函数求阶乘*/
 #include<iostream>
 #include"6.4.h"
 
