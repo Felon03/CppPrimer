@@ -27,6 +27,12 @@
     <ClInclude Include="Chapter6.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="7.4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7.5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="7.1.cpp">

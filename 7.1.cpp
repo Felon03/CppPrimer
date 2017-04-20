@@ -14,10 +14,14 @@ int main()
 		while (cin >> trans.bookNo >> trans.revenue >> trans.units_sold)
 		{
 			// 如果处理相同的书
-			if (total.bookNo == trans.bookNo)
+			// 使用isbn() 7.3
+			//if (total.bookNo == trans.bookNo)
+			if(total.isbn() == trans.isbn())
 			{
-				total.revenue += trans.revenue;
-				total.units_sold += trans.units_sold;
+				//total.revenue += trans.revenue;
+				//total.units_sold += trans.units_sold;
+				// 使用combine函数 7.3
+				total.combine(trans);
 			}
 			else
 			{
