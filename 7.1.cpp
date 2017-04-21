@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	Sales_data total;		// 保存吓一跳交易记录的变量
+	Sales_data total;		// 保存下一交易记录的变量
 	if (cin >> total.bookNo >> total.revenue >> total.units_sold)
 	{
 		Sales_data trans;		// 保存和的变量
@@ -26,11 +26,11 @@ int main()
 			else
 			{
 				// 打印前一本书的结果
-				cout << "ISBN: " << total.bookNo << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;
+				cout << "ISBN: " << total.isbn() << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;
 				total = trans;
 			}
 		}
-		cout << "ISBN: " << total.bookNo << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;	// 打印最后一本书的结果
+		cout << "ISBN: " << total.isbn() << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;	// 打印最后一本书的结果
 	} 
 	else
 	{

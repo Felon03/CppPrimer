@@ -21,7 +21,6 @@ Sales_data& Sales_data::combine(const Sales_data &rhs)
 	return *this;			// 返回调用改函数的对象
 }
 
-// 7.6 定义add、read和print函数
 std::istream &read(std::istream &is, Sales_data &item)
 {
 	double price = 0;
@@ -37,7 +36,7 @@ std::ostream &print(std::ostream &os, const Sales_data &item)
 	return os;
 }
 
-Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
+Sales_data add(const Sales_data &lhs, const Sales_data & rhs)
 {
 	Sales_data sum = lhs;
 	sum.combine(rhs);
