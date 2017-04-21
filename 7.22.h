@@ -1,4 +1,4 @@
-/*为Person类添加正确的构造函数*/
+/*修改Person类使其隐藏实现的细节*/
 #pragma once
 #include<string>
 
@@ -21,7 +21,7 @@ public:
 
 	//构造函数
 	Person() = default;
-	Person(const std::string &sname, const std::string &saddress) : name(sname), address(saddress){}
+	Person(const std::string &sname, const std::string &saddress) : name(sname), address(saddress) {}
 	Person(std::istream &is) { read(is, *this); }
 };
 
@@ -37,3 +37,4 @@ std::ostream &print(std::ostream &os, const Person &person)
 	os << person.name << " " << person.address;
 	return os;
 }
+

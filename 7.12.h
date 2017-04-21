@@ -1,24 +1,32 @@
 /*把只接受一个istream作为参数的构造函数定义移到类内部*/
 #pragma once
 #include<string>
-struct Sales_data;
+class Sales_data;
 std::istream &read(std::istream &, Sales_data &);
+std::ostream &print(std::ostream &, const Sales_data &);
+Sales_data add(const Sales_data &, const Sales_data &);
 
-struct Sales_data
+class Sales_data
 {
+	friend std::istream &read(std::istream &, Sales_data &);
+	friend std::ostream &print(std::ostream &, const Sales_data &);
+	friend Sales_data add(const Sales_data &, const Sales_data &);
+public:
 	// 构造函数
-	Sales_data() = default;
+	Sales_data() = default;	// 默认构造函数
 	Sales_data(const std::string &s) : bookNo(s) {}
 	Sales_data(const std::string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(n*p) {}
 	Sales_data(std::istream &is) { read(is, *this); }
 	// 编写一个构造函数，令其用我们提供的雷内初始值显式地初始化成员 7.14
-	Sales_data() : units_sold(0), revenue(0) {}
+	//Sales_data() : units_sold(0), revenue(0) {}
 
+private:
 	// 成员变量
 	std::string bookNo;
 	unsigned units_sold = 0;
 	double revenue = 0.0;
 
+public:
 	// 成员函数
 	std::string isbn() const { return bookNo; }
 	Sales_data& combine(const Sales_data &);

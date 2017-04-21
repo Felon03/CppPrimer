@@ -148,10 +148,7 @@
   <ItemGroup>
     <ClInclude Include="7.11.h" />
     <ClInclude Include="7.12.h" />
-    <ClInclude Include="7.4.h" />
-    <ClInclude Include="7.5.h" />
-    <ClInclude Include="7.6.h" />
-    <ClInclude Include="7.9.h" />
+    <ClInclude Include="7.15.h" />
     <ClInclude Include="F:\迅雷下载\VisualStudio2012\1\Sales_item.h" />
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
