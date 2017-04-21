@@ -1,18 +1,13 @@
 #pragma once
-/*头文件不应该包含using声明*/
+/*在Sales_data类中添加构造函数，然后编写一段程序令其用到每个构造函数*/
 #include<string>
-
-struct Sales_data;
-std::istream &read(std::istream &, Sales_data &);
-
 struct Sales_data
 {
 	// 构造函数
 	Sales_data() = default;
 	Sales_data(const std::string &s) :bookNo(s) {}
 	Sales_data(const std::string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(n*p) {}
-	Sales_data(std::istream &is) { read(is, *this); }
-	Sales_data() : units_sold(0), revenue(0){}
+	Sales_data(std::istream &is);
 	// 7.2
 	// 添加新成员combine和isbn
 	std::string isbn() const { return bookNo; }
@@ -54,7 +49,7 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
 	return sum;
 }
 
-//Sales_data::Sales_data(std::istream & is)
-//{
-//	read(is, *this);		// read函数的作用是从is中读取一条交易信息然后存入this中
-//}
+Sales_data::Sales_data(std::istream & is)
+{
+	read(is, *this);		// read函数的作用是从is中读取一条交易信息然后存入this中
+}

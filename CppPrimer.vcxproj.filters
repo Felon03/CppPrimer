@@ -21,12 +21,6 @@
     <ClInclude Include="Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="6.4.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter6.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="7.4.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -36,9 +30,18 @@
     <ClInclude Include="7.6.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="7.9.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7.11.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7.12.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7.7.cpp">
+    <ClCompile Include="7.13.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
