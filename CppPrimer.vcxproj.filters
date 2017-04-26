@@ -21,18 +21,18 @@
     <ClInclude Include="Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7.11.h">
+    <ClInclude Include="7.26.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7.12.h">
+    <ClInclude Include="7.27.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7.15.h">
+    <ClInclude Include="7.24.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7.13.cpp">
+    <ClCompile Include="7.27.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
