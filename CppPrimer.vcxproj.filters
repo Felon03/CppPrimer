@@ -21,16 +21,10 @@
     <ClInclude Include="Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7.27.h">
+    <ClInclude Include="7.50.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7.31.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="7.32.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="7.41.h">
+    <ClInclude Include="7.22.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
