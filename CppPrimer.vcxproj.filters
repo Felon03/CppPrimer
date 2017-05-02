@@ -27,9 +27,15 @@
     <ClInclude Include="7.22.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="7.53.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7.57.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7.43.cpp">
+    <ClCompile Include="8.6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

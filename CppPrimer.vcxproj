@@ -148,11 +148,13 @@
   <ItemGroup>
     <ClInclude Include="7.22.h" />
     <ClInclude Include="7.50.h" />
+    <ClInclude Include="7.53.h" />
+    <ClInclude Include="7.57.h" />
     <ClInclude Include="F:\迅雷下载\VisualStudio2012\1\Sales_item.h" />
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7.43.cpp" />
+    <ClCompile Include="8.6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
