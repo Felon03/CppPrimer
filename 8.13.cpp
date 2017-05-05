@@ -32,7 +32,7 @@ bool valid(const string &str)
 
 string format(const string &str)
 {
-	cout << str << endl;
+	//cout << str << endl;
 	return str.substr(0, 3) + "-" + str.substr(3, 3) + "-" + str.substr(6);
 }
 
