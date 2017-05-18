@@ -15,7 +15,8 @@ int main()
 	vector<string> name;
 	while (cin>>last_name>>first_name)
 	{
-		family[last_name].push_back(first_name);
+		family[last_name].push_back(first_name);		// 怎么来的？？
+																								// family[]就表示值，这时family[]是一个vector，可以用push_back
 	}
 	
 	for (const auto &member : family)
