@@ -17,6 +17,13 @@ int main()
 	std::cout << b1.back() << " " << b2.back() << std::endl;
 	std::cout << b1.size() << " " << std::endl;
 
+	const StrBlob cb = { "a", "an", "the" };
+
+	//cb.push_back("test");
+	//std::cout << cb.back() << std::endl;
+	//cb.pop_back();
+	//std::cout << cb.back() << std::endl;
+
 	return 0;
 	
 }

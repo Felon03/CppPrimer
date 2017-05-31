@@ -24,6 +24,16 @@ public:
 		check(0, "pop_back on empty StrBlob");
 		data->pop_back();
 	}
+	//// 添加const类型的push_back()和pop_back()
+	//void push_back(const string &t) const
+	//{
+	//	data->push_back(t);
+	//}
+	//void pop_back() const
+	//{
+	//	check(0, "pop_back on empty StrBlob");
+	//	data->pop_back();
+	//}
 	// 元素访问
 	string &front()
 	{
