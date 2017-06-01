@@ -5,7 +5,6 @@
 #include<memory>
 #include<exception>
 #include<initializer_list>
-#include"12.2.h"
 
 using std::vector;
 using std::string;
@@ -17,7 +16,6 @@ public:
 	using size_type = vector<string>::size_type;
 	friend class StrBlobPtr;
 
-	//StrBlobPtr begin() { return StrBlobPtr(*this); }
 	StrBlobPtr begin();
 	StrBlobPtr end();
 
@@ -82,6 +80,7 @@ public:
 	StrBlobPtr() : curr(0) {}
 	StrBlobPtr(StrBlob &a, std::size_t sz = 0) :
 		wptr(a.data), curr(sz) {}
+	bool operator != (const StrBlobPtr &p) { return p.curr != curr; }
 	string& deref() const
 	{
 		auto p = check(curr, "dereference past end.");

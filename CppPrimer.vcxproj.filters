@@ -36,9 +36,15 @@
     <ClInclude Include="12.2.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="12.19.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12.17_18.cpp">
+    <ClCompile Include="12.19.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="19.20.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
