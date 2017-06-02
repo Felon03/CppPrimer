@@ -1,5 +1,5 @@
-/*  Èç¹ûÄãÊÔÍ¼¿½±´»ò¸³Öµunique_ptr£¬±àÒëÆ÷²¢²»×ÜÊÇÄÜ¸ø³öÒ×ÓÚÀí½âµÄ´íÎóÐÅÏ¢¡£
-	±àÐ´°üº¬ÕâÖÖ´íÎóµÄ³ÌÐò£¬¹Û²ì±àÒëÆ÷ÈçºÎÕï¶ÏÕâÖÖ´íÎó¡£	
+/*  å¦‚æžœä½ è¯•å›¾æ‹·è´æˆ–èµ‹å€¼unique_ptrï¼Œç¼–è¯‘å™¨å¹¶ä¸æ€»æ˜¯èƒ½ç»™å‡ºæ˜“äºŽç†è§£çš„é”™è¯¯ä¿¡æ¯ã€‚
+	ç¼–å†™åŒ…å«è¿™ç§é”™è¯¯çš„ç¨‹åºï¼Œè§‚å¯Ÿç¼–è¯‘å™¨å¦‚ä½•è¯Šæ–­è¿™ç§é”™è¯¯ã€‚	
 */
 #include<iostream>
 #include<memory>
@@ -7,11 +7,11 @@
 int main()
 {
 	std::unique_ptr<int> p1(new int(42));
-	// ¿½±´
-	//std::unique_ptr<int> p2(p1);	// ³¢ÊÔÒýÓÃÒÑÉ¾³ýµÄº¯Êý
+	// æ‹·è´
+	//std::unique_ptr<int> p2(p1);	// å°è¯•å¼•ç”¨å·²åˆ é™¤çš„å‡½æ•°
 	std::unique_ptr<int> p3;
-	// ¸³Öµ
-	//p3 = p1;		// ³¢ÊÔÒýÓÃÒÑÉ¾³ýµÄº¯Êý
+	// èµ‹å€¼
+	//p3 = p1;		// å°è¯•å¼•ç”¨å·²åˆ é™¤çš„å‡½æ•°
 	std::cout << *p1 << std::endl;
 	p1.reset();
 	return 0;

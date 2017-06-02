@@ -1,4 +1,4 @@
-/* ¶¨ÒåÄã×Ô¼º°æ±¾µÄStrBlobPtr£¬¸üĞÂStrBlobÀà£¬¼ÓÈëÇ¡µ±µÄfriendÉùÃ÷¼°beginºÍend³ÉÔ±*/
+/* å®šä¹‰ä½ è‡ªå·±ç‰ˆæœ¬çš„StrBlobPtrï¼Œæ›´æ–°StrBlobç±»ï¼ŒåŠ å…¥æ°å½“çš„friendå£°æ˜åŠbeginå’Œendæˆå‘˜*/
 #pragma once
 #include<vector>
 #include<string>
@@ -24,14 +24,14 @@ public:
 		: data(std::make_shared<vector<string>>(il)) {}
 	size_type size() const { return data->size(); }
 	bool empty() const { return data->empty(); }
-	// Ìí¼ÓºÍÉ¾³ıÔªËØ
+	// æ·»åŠ å’Œåˆ é™¤å…ƒç´ 
 	void push_back(const string &t) { data->push_back(t); }
 	void pop_back()
 	{
 		check(0, "pop_back on empty StrBlob");
 		data->pop_back();
 	}
-	//// Ìí¼ÓconstÀàĞÍµÄpush_back()ºÍpop_back()
+	//// æ·»åŠ constç±»å‹çš„push_back()å’Œpop_back()
 	//void push_back(const string &t) const
 	//{
 	//	data->push_back(t);
@@ -41,10 +41,10 @@ public:
 	//	check(0, "pop_back on empty StrBlob");
 	//	data->pop_back();
 	//}
-	// ÔªËØ·ÃÎÊ
+	// å…ƒç´ è®¿é—®
 	string &front()
 	{
-		// Èç¹ûvectorÎª¿Õ£¬check»áÅ×³öÒ»¸öÒì³£
+		// å¦‚æœvectorä¸ºç©ºï¼Œcheckä¼šæŠ›å‡ºä¸€ä¸ªå¼‚å¸¸
 		check(0, "front on empty StrBlob");
 		return data->front();
 	}
@@ -53,7 +53,7 @@ public:
 		check(0, "back on empty StrBlob");
 		return data->back();
 	}
-	// const °æ±¾µÄfrontºÍback
+	// const ç‰ˆæœ¬çš„frontå’Œback
 	const string &front() const
 	{
 		check(0, "front on empty StrBlob");
@@ -87,27 +87,27 @@ public:
 		auto p = check(curr, "dereference past end.");
 		return (*p)[curr];
 	}
-	// Ç°×ºµİÔö
+	// å‰ç¼€é€’å¢
 	StrBlobPtr& incr()
 	{
-		// Èç¹ûcurrÒÑ¾­Ö¸ÏòÈİÆ÷µÄÎ²ºóÖ¸Õë£¬¾Í²»ÄÜµİÔöËü
+		// å¦‚æœcurrå·²ç»æŒ‡å‘å®¹å™¨çš„å°¾åæŒ‡é’ˆï¼Œå°±ä¸èƒ½é€’å¢å®ƒ
 		check(curr, "increment past end of StrBlobPtr");
-		++curr;		// ÍÆ½øµ±Ç°Î»ÖÃ
+		++curr;		// æ¨è¿›å½“å‰ä½ç½®
 		return *this;
 	}
 private:
 	std::shared_ptr<vector<string>>
 		check(std::size_t i, const std::string &msg) const
 	{
-		auto ret = wptr.lock();		// ÅĞ¶ÏvectorÊÇ·ñ»¹´æÔÚ
+		auto ret = wptr.lock();		// åˆ¤æ–­vectoræ˜¯å¦è¿˜å­˜åœ¨
 		if (!ret)
 			throw std::runtime_error("unbound StrBlobPtr");
 		if (i >= ret->size())
 			throw std::out_of_range("msg");
-		return ret;		// ·ñÔò·µ»ØÖ¸ÏòvectorµÄshared_ptr
+		return ret;		// å¦åˆ™è¿”å›æŒ‡å‘vectorçš„shared_ptr
 	}
 
 private:
 	std::weak_ptr<vector<string>> wptr;
-	std::size_t curr;		// ÔÚÊı×éÖĞµÄµ±Ç°Î»ÖÃ
+	std::size_t curr;		// åœ¨æ•°ç»„ä¸­çš„å½“å‰ä½ç½®
 };
