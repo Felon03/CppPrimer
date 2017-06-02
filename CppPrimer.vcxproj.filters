@@ -44,10 +44,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12.22.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="12.22_test.cpp">
+    <ClCompile Include="12.24.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

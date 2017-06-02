@@ -157,8 +157,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12.22.cpp" />
-    <ClCompile Include="12.22_test.cpp" />
+    <ClCompile Include="12.24.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

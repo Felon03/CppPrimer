@@ -1,4 +1,4 @@
-﻿cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
-  12.22_test.cpp
+﻿  12.24.cpp
+c:\users\freed\documents\visual studio 2015\projects\cppprimer\cppprimer\12.24.cpp(10): warning C4101: “ch”: 未引用的局部变量
   CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.exe
   CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.pdb (Full PDB)
