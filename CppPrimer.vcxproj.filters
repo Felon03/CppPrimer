@@ -42,9 +42,15 @@
     <ClInclude Include="12.22.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="12.27.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12.26.cpp">
+    <ClCompile Include="12.27.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12.27_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
