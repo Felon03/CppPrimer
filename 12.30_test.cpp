@@ -1,5 +1,6 @@
 /* Ö´ÐÐrunQueriesº¯Êý*/
-#include"12.30.h"
+//#include"12.30.h"
+#include"12.32.h"
 
 using namespace std;
 

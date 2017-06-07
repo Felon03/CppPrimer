@@ -48,9 +48,12 @@
     <ClInclude Include="12.30.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="12.32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12.30.cpp">
+    <ClCompile Include="12.32.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="12.30_test.cpp">
