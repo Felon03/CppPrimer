@@ -12,15 +12,17 @@ using std::shared_ptr;
 #include<map>
 #include<set>
 
-class QueryResult;
+class QueryResult;																		// 为了定义函数query的返回类型，这个定义是必须的
 class TextQuery {
 public:
 	TextQuery(std::ifstream&);
 	QueryResult query(const string&) const;
 
 private:
-	shared_ptr<StrBlob> file;
-	std::map<std::string, shared_ptr<std::set<StrBlob::size_type>>> wordmap;
+	shared_ptr<StrBlob> file;																	// 输入文件
+	// 每个单词到它所在行号的映射
+	std::map<std::string, 
+		shared_ptr<std::set<StrBlob::size_type>>> wordmap;
 };
 
 class QueryResult {
@@ -37,9 +39,9 @@ public:
 	shared_ptr<StrBlob> get_file() const { return file; }
 
 private:
-	string word;
-	shared_ptr<std::set<StrBlob::size_type>> lines;
-	shared_ptr<StrBlob> file;
+	string word;																				// 查询单词
+	shared_ptr<std::set<StrBlob::size_type>> lines;		// 出现的行号
+	shared_ptr<StrBlob> file;													// 输入文件
 };
 
 std::ostream &print(std::ostream &os, QueryResult &query_result);
