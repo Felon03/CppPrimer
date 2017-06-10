@@ -12,7 +12,7 @@ public:
 	HasPtr(const HasPtr &hp) :
 		ps(new std::string(*hp.ps)), i(hp.i) {}
 
-	HasPtr& operator=(const HasPtr &hp)
+	HasPtr &operator=(const HasPtr &hp)
 	{
 		ps = new std::string(*hp.ps);
 		i = hp.i;

@@ -21,7 +21,7 @@ void f(numbered s)
 
 int main()
 {
-	numbered a, b = a, c = b;
+	numbered a, b = a, c = b;			// a.mysn = 1, b.mysn = 1, c.mysn = 1
 	f(a);			// Êä³ö1
 	f(b);		// Êä³ö1
 	f(c);			// Êä³ö1

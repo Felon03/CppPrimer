@@ -13,7 +13,7 @@ public:
 		ps(new std::string(*hp.ps)), i(hp.i) {}
 
 	// ¿½±´¸³ÖµÔËËã·û
-	HasPtr& operator=(const HasPtr &hp)
+	HasPtr &operator=(const HasPtr &hp)
 	{
 		//delete ps;
 		ps = new std::string(*hp.ps);
