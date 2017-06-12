@@ -63,9 +63,27 @@
     <ClInclude Include="13.11.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="13.18.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.19.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.22.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="13.17_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.17_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.17_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.18.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
