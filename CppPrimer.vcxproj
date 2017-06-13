@@ -157,6 +157,7 @@
     <ClInclude Include="13.18.h" />
     <ClInclude Include="13.19.h" />
     <ClInclude Include="13.22.h" />
+    <ClInclude Include="13.26.h" />
     <ClInclude Include="13.5.h" />
     <ClInclude Include="13.8.h" />
     <ClInclude Include="7.22.h" />
@@ -171,6 +172,7 @@
     <ClCompile Include="13.17_2.cpp" />
     <ClCompile Include="13.17_3.cpp" />
     <ClCompile Include="13.18.cpp" />
+    <ClCompile Include="13.26.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
