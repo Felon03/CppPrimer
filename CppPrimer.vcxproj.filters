@@ -75,21 +75,18 @@
     <ClInclude Include="13.26.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="13.27.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.28.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.30.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.17_3.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="13.17_1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="13.17_2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="13.18.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="13.26.cpp">
+    <ClCompile Include="13.30_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

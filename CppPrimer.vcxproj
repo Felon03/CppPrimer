@@ -158,6 +158,9 @@
     <ClInclude Include="13.19.h" />
     <ClInclude Include="13.22.h" />
     <ClInclude Include="13.26.h" />
+    <ClInclude Include="13.27.h" />
+    <ClInclude Include="13.28.h" />
+    <ClInclude Include="13.30.h" />
     <ClInclude Include="13.5.h" />
     <ClInclude Include="13.8.h" />
     <ClInclude Include="7.22.h" />
@@ -168,11 +171,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.17_1.cpp" />
-    <ClCompile Include="13.17_2.cpp" />
-    <ClCompile Include="13.17_3.cpp" />
-    <ClCompile Include="13.18.cpp" />
-    <ClCompile Include="13.26.cpp" />
+    <ClCompile Include="13.30_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
