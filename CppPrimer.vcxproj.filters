@@ -87,9 +87,15 @@
     <ClInclude Include="13.31.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="13.34_36_37.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.31_test.cpp">
+    <ClCompile Include="13.34_36_37.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.34_36_37_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
