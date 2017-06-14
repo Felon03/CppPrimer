@@ -23,7 +23,7 @@ public:
 		return *this;
 	}
 
-	void show() { std::cout << *ps << std::endl; }
+	void show() const { std::cout << *ps << std::endl; }
 
 	~HasPtr()
 	{
