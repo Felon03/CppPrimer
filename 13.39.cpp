@@ -1,6 +1,9 @@
 #include "13.39.h"
 #include<utility>
 
+// 类外定义静态数据成员alloc
+std::allocator<std::string> StrVec::alloc;
+
 StrVec::StrVec(const StrVec &s)
 {
 	// 调用alloc_n_copy分配空间以容纳与s中一样多的元素

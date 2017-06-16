@@ -1,7 +1,9 @@
-#include "13.40.h"
+#include"13.42_StrVec.h"
 #include<utility>
 
-// 类外定义静态数据成员alloc
+// 静态成员变量需进行初始化，在类中声明静态成员，但没有定义
+// 因此需要在类外进行定义操作（没有定义就会出现LINK 200的错误 [VS2015]）
+// 错误信息： 无法解析的外部符号
 std::allocator<std::string> StrVec::alloc;
 
 StrVec::StrVec(std::initializer_list<std::string> il)
@@ -11,9 +13,7 @@ StrVec::StrVec(std::initializer_list<std::string> il)
 
 StrVec::StrVec(const StrVec &s)
 {
-	auto newdata = alloc_n_copy(s.begin(), s.end());
-	elements = newdata.first;
-	first_free = cap = newdata.second;
+	range_initialize(s.begin(), s.end());
 }
 
 StrVec & StrVec::operator=(const StrVec &rhs)
@@ -39,7 +39,7 @@ void StrVec::push_back(const std::string &s)
 
 void StrVec::reserve(size_t new_cap)
 {
-	if (new_cap < size()) return;
+	if (new_cap < capacity()) return;
 	alloc_n_move(new_cap);
 }
 
@@ -105,4 +105,3 @@ void StrVec::range_initialize(const std::string *b, const std::string *e)
 	elements = newdata.first;
 	first_free = cap = newdata.second;
 }
-

@@ -87,7 +87,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -163,6 +163,10 @@
     <ClInclude Include="13.30.h" />
     <ClInclude Include="13.31.h" />
     <ClInclude Include="13.34_36_37.h" />
+    <ClInclude Include="13.39.h" />
+    <ClInclude Include="13.40.h" />
+    <ClInclude Include="13.42_Query.h" />
+    <ClInclude Include="13.42_StrVec.h" />
     <ClInclude Include="13.5.h" />
     <ClInclude Include="13.8.h" />
     <ClInclude Include="7.22.h" />
@@ -173,8 +177,10 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.34_36_37.cpp" />
-    <ClCompile Include="13.34_36_37_test.cpp" />
+    <ClCompile Include="13.18.cpp" />
+    <ClCompile Include="13.42_Query.cpp" />
+    <ClCompile Include="13.42_StrVec.cpp" />
+    <ClCompile Include="13.42_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
