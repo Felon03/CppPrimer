@@ -177,7 +177,6 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.18.cpp" />
     <ClCompile Include="13.42_Query.cpp" />
     <ClCompile Include="13.42_StrVec.cpp" />
     <ClCompile Include="13.42_test.cpp" />

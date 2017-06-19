@@ -1,5 +1,6 @@
 #include"13.42_StrVec.h"
 #include<utility>
+#include<algorithm>
 
 // 静态成员变量需进行初始化，在类中声明静态成员，但没有定义
 // 因此需要在类外进行定义操作（没有定义就会出现LINK 200的错误 [VS2015]）
@@ -70,15 +71,27 @@ std::pair<std::string*, std::string*> StrVec::alloc_n_copy(const std::string *b,
 	return{ data, std::uninitialized_copy(b,e,data) };
 }
 
+//void StrVec::free()
+//{
+//	if (elements)
+//	{
+//		for (auto p = first_free; p != elements;)
+//			alloc.destroy(--p);
+//		alloc.deallocate(elements, cap - elements);
+//	}
+//}
+
+// 使用for_each 和 lambda表达式重写free函数(13.43)
 void StrVec::free()
 {
-	if (elements)
-	{
-		for (auto p = first_free; p != elements;)
-			alloc.destroy(--p);
-		alloc.deallocate(elements, cap - elements);
-	}
+	// for_each包含在algorithm头文件中，要使用for_each需要把改头文件include进去
+	// 使用for_each和lambda表达式更好，因为他不涉及到递减的问题，也不会有超出边界的问题了
+	std::for_each(elements, first_free, [](std::string &rhs) {alloc.destroy(&rhs); });
+	alloc.deallocate(elements, cap - elements);
 }
+
+
+
 
 void StrVec::reallocate()
 {
