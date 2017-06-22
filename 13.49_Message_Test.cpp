@@ -6,6 +6,8 @@ int main()
 	Message signInMail("Welcome to cppprimer");
 	Folder mailBox;
 
+	//swap(firstMail, signInMail);
+
 	firstMail.save(mailBox);
 	signInMail.save(mailBox);
 	mailBox.print();
