@@ -108,12 +108,27 @@
     <ClInclude Include="13.47.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="13.49_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.49_String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="13.49_Message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.47.cpp">
+    <ClCompile Include="13.49_StrVec.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="13.48.cpp">
+    <ClCompile Include="13.49_String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.49_Message.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13.49_Message_Test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
