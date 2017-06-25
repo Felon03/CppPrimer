@@ -1,4 +1,4 @@
-#include"13.50.h"
+ï»¿#include"13.50.h"
 #include<vector>
 #include<iostream>
 
@@ -35,7 +35,7 @@ int main()
 	bar(s1);
 	foo("temporary");
 	bar("temporary");
-	String s5 = baz();		// String(String&&) ±ÜÃâ¿½±´
+	String s5 = baz();		// String(String&&) é¿å…æ‹·è´
 
 	vector<String> S_vec;
 	S_vec.reserve(8);
@@ -45,8 +45,8 @@ int main()
 	S_vec.push_back(s3);
 	S_vec.push_back(s4);
 	S_vec.push_back(s5);
-	S_vec.push_back(baz());			// String(String&&) ±ÜÃâ¿½±´
-	S_vec.push_back("good job");		// String(String&&) ±ÜÃâ¿½±´
+	S_vec.push_back(baz());			// String(String&&) é¿å…æ‹·è´
+	S_vec.push_back("good job");		// String(String&&) é¿å…æ‹·è´
 
 	for (const auto &s : S_vec)
 		cout << s.c_str() << endl;
