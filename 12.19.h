@@ -103,7 +103,7 @@ private:
 		if (!ret)
 			throw std::runtime_error("unbound StrBlobPtr");
 		if (i >= ret->size())
-			throw std::out_of_range("msg");
+			throw std::out_of_range(msg);
 		return ret;		// 否则返回指向vector的shared_ptr
 	}
 

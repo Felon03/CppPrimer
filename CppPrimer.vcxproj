@@ -177,6 +177,7 @@
     <ClInclude Include="13.53.h" />
     <ClInclude Include="13.8.h" />
     <ClInclude Include="14.15.h" />
+    <ClInclude Include="14.16_StrBlob.h" />
     <ClInclude Include="14.2.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
@@ -188,8 +189,8 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.15.cpp" />
-    <ClCompile Include="14.15_test.cpp" />
+    <ClCompile Include="14.16_StrBlob.cpp" />
+    <ClCompile Include="14.16_StrBlob_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
