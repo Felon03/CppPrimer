@@ -9,7 +9,7 @@ std::istream & operator >> (std::istream &is, Book &rhs)
 	return is;
 }
 
-std::ostream & operator<<(std::ostream &os, Book &rhs)
+std::ostream & operator<<(std::ostream &os, const Book &rhs)
 {
 	// TODO: 在此处插入 return 语句
 	os << rhs.book_no << " " << rhs.book_name << " " << rhs.book_author

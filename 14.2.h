@@ -5,8 +5,8 @@
 
 class Sales_data {
 	// 运算符重载
-	friend std::istream& operator >> (std::istream&,Sales_data&);		// >>
-	friend std::ostream& operator<<(std::ostream&, Sales_data&);	// <<
+	friend std::istream& operator >> (std::istream&,Sales_data&);		// >> Sales_data not const
+	friend std::ostream& operator<<(std::ostream&, const Sales_data&);	// << const Sales_data
 	friend Sales_data operator+(const Sales_data&, const Sales_data&);	// +
 public:
 	Sales_data(const std::string &s, unsigned n, double p)
@@ -17,7 +17,7 @@ public:
 
 	// 重载+=运算符
 	Sales_data& operator+=(const Sales_data&);
-	std::string isbn() { return bookNo; }
+	std::string isbn() const { return bookNo; }
 private:
 	inline double avg_price() const;
 
@@ -27,7 +27,7 @@ private:
 	double revenue = 0.0;
 };
 
-std::istream& operator >> (std::istream &is, const Sales_data &rhs);
+std::istream& operator >> (std::istream &is, Sales_data &rhs);
 std::ostream& operator<<(std::ostream &os, const Sales_data &rhs);
 Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs);
 

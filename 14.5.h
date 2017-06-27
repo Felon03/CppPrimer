@@ -4,8 +4,8 @@
 #include<iostream>
 
 class Book {
-	friend std::istream& operator>>(std::istream&, Book&);
-	friend std::ostream& operator<<(std::ostream&, Book&);
+	friend std::istream& operator>>(std::istream&, Book&);                  // not const Book
+	friend std::ostream& operator<<(std::ostream&, const Book&);  // const Book
 	friend bool operator==(const Book&, const Book&);
 	friend bool operator!=(const Book&, const Book&);
 public:
@@ -21,6 +21,6 @@ private:
 };
 
 std::istream& operator >> (std::istream&, Book&);
-std::ostream& operator<<(std::ostream&, Book&);
+std::ostream& operator<<(std::ostream&, const Book&);
 bool operator==(const Book&, const Book&);
 bool operator!=(const Book&, const Book&);

@@ -12,7 +12,7 @@ std::istream & operator >> (std::istream &is, Sales_data &rhs)
 	return is;
 }
 
-std::ostream & operator<<(std::ostream &os, Sales_data &rhs)
+std::ostream & operator<<(std::ostream &os, const Sales_data &rhs)
 {
 	// TODO: 在此处插入 return 语句
 	os << rhs.isbn() << " " << rhs.units_sold << " " << rhs.revenue << " "
