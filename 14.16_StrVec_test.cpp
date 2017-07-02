@@ -33,7 +33,7 @@ int main()
 	const StrVec csvec{ "Hello", "World", "C++" };
 	if (vec1 == csvec)
 		for (const auto &str : csvec) std::cout << str << " ";
-	std::cout<<std::endl;
+	std::cout << std::endl;
 
 
 }
