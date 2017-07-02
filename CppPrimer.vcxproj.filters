@@ -138,12 +138,15 @@
     <ClInclude Include="14.16_StrBlob.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="14.16_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.16_StrBlob.cpp">
+    <ClCompile Include="14.16_StrVec.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="14.16_StrBlob_test.cpp">
+    <ClCompile Include="14.16_StrVec_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
