@@ -1,11 +1,16 @@
 #pragma once
+/* 为StrVec添加关系运算符*/
 #include<memory>
 #include<string>
 #include<initializer_list>
 
 class StrVec {
-	friend bool operator==(const StrVec& , const StrVec&);
+	friend bool operator==(const StrVec&, const StrVec&);
 	friend bool operator!=(const StrVec&, const StrVec&);
+	friend bool operator<(const StrVec&, const StrVec&);
+	friend bool operator>(const StrVec&, const StrVec&);
+	friend bool operator<=(const StrVec&, const StrVec&);
+	friend bool operator>=(const StrVec&, const StrVec&);
 
 public:
 	StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
@@ -43,10 +48,14 @@ private:
 
 private:
 	std::string *elements;
-	std::string *first_free;	
+	std::string *first_free;
 	std::string *cap;
 	std::allocator<std::string> alloc;
 };
 
 bool operator==(const StrVec&, const StrVec&);
 bool operator!=(const StrVec&, const StrVec&);
+bool operator<(const StrVec&, const StrVec&);
+bool operator>(const StrVec&, const StrVec&);
+bool operator<=(const StrVec&, const StrVec&);
+bool operator>=(const StrVec&, const StrVec&);
