@@ -184,6 +184,7 @@
     <ClInclude Include="14.18_String.h" />
     <ClInclude Include="14.18_StrVec.h" />
     <ClInclude Include="14.2.h" />
+    <ClInclude Include="14.22_Sales_data.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
     <ClInclude Include="7.22.h" />
@@ -194,8 +195,8 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.18_String.cpp" />
-    <ClCompile Include="14.18_String_test.cpp" />
+    <ClCompile Include="14.22_Sales_data.cpp" />
+    <ClCompile Include="14.22_Sales_data_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
