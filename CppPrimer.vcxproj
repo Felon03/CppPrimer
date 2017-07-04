@@ -190,6 +190,7 @@
     <ClInclude Include="14.26_StrBlob.h" />
     <ClInclude Include="14.26_String.h" />
     <ClInclude Include="14.26_StrVec.h" />
+    <ClInclude Include="14.27_28_StrBlob.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
     <ClInclude Include="7.22.h" />
@@ -200,8 +201,8 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.26_String.cpp" />
-    <ClCompile Include="14.26_String_test.cpp" />
+    <ClCompile Include="14.27_28_StrBlob.cpp" />
+    <ClCompile Include="14.27_28_StrBlob_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
