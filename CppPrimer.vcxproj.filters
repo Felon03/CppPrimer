@@ -162,12 +162,21 @@
     <ClInclude Include="14.24_Book.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="14.26_StrBlob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="14.26_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="14.26_String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.24_Book.cpp">
+    <ClCompile Include="14.26_String.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="14.24_Book_test.cpp">
+    <ClCompile Include="14.26_String_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
