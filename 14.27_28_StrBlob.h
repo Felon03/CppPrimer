@@ -290,7 +290,7 @@ public:
 
 	// 重载下标运算符
 	// ConstStrBlobPtr只有const版本的下标运算符
-	const string& operator[](size_t n);
+	const string& operator[](size_t n) const;
 	ConstStrBlobPtr& operator++();
 	ConstStrBlobPtr& operator--();
 	ConstStrBlobPtr& operator++(int);
@@ -336,7 +336,7 @@ inline shared_ptr<vector<string>> ConstStrBlobPtr::check(size_t i, const string 
 	return ret;
 }
 
-inline const string & ConstStrBlobPtr::operator[](size_t n)
+inline const string & ConstStrBlobPtr::operator[](size_t n) const
 {
 	// TODO: 在此处插入 return 语句
 	auto p = check(n, "dereference out of range");
