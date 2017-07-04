@@ -156,12 +156,18 @@
     <ClInclude Include="14.22_Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="14.23_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="14.24_Book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.22_Sales_data.cpp">
+    <ClCompile Include="14.24_Book.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="14.22_Sales_data_test.cpp">
+    <ClCompile Include="14.24_Book_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
