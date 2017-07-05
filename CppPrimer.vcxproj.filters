@@ -177,12 +177,15 @@
     <ClInclude Include="14.30_StrBlob.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="14.32_StrBlobPtrPointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="14.30_StrBlob.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="14.30_StrBlob_test.cpp">
+    <ClCompile Include="14.32_StrBlobPtrPointer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

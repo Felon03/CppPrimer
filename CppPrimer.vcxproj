@@ -192,6 +192,7 @@
     <ClInclude Include="14.26_StrVec.h" />
     <ClInclude Include="14.27_28_StrBlob.h" />
     <ClInclude Include="14.30_StrBlob.h" />
+    <ClInclude Include="14.32_StrBlobPtrPointer.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
     <ClInclude Include="7.22.h" />
@@ -203,7 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="14.30_StrBlob.cpp" />
-    <ClCompile Include="14.30_StrBlob_test.cpp" />
+    <ClCompile Include="14.32_StrBlobPtrPointer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -147,8 +147,8 @@ public:
 	string& operator*() const;
 	string* operator->() const;
 
-	//string &deref() const;
-	//StrBlobPtr &incr();
+	string &deref() const;
+	StrBlobPtr &incr();
 
 	// 重载下标运算符
 	string& operator[](size_t n);
@@ -179,18 +179,18 @@ bool operator>(const StrBlobPtr&, const StrBlobPtr&);
 bool operator<=(const StrBlobPtr&, const StrBlobPtr&);
 bool operator>=(const StrBlobPtr&, const StrBlobPtr&);
 
-//inline string &StrBlobPtr::deref() const
-//{
-//	auto p = check(curr, "dereferenece past end");
-//	return (*p)[curr];
-//}
-//
-//inline StrBlobPtr &StrBlobPtr::incr()
-//{
-//	check(curr, "increment past end of StrBlobPtr");
-//	++curr;
-//	return *this;
-//}
+inline string &StrBlobPtr::deref() const
+{
+	auto p = check(curr, "dereferenece past end");
+	return (*p)[curr];
+}
+
+inline StrBlobPtr &StrBlobPtr::incr()
+{
+	check(curr, "increment past end of StrBlobPtr");
+	++curr;
+	return *this;
+}
 inline string & StrBlobPtr::operator*() const
 {
 	auto p = check(curr, "dereference past end");
@@ -300,8 +300,8 @@ public:
 	const string& operator*() const;
 	const string* operator->() const;
 
-	//const string &deref() const;
-	//ConstStrBlobPtr &incr();
+	const string &deref() const;
+	ConstStrBlobPtr &incr();
 
 	// 重载下标运算符
 	// ConstStrBlobPtr只有const版本的下标运算符
@@ -330,18 +330,18 @@ bool operator>(const ConstStrBlobPtr&, const ConstStrBlobPtr&);
 bool operator <= (const ConstStrBlobPtr&, const ConstStrBlobPtr&);
 bool operator>=(const ConstStrBlobPtr&, const ConstStrBlobPtr&);
 
-//inline const string &ConstStrBlobPtr::deref() const
-//{
-//	auto p = check(curr, "dereference past end");
-//	return (*p)[curr];
-//}
-//
-//inline ConstStrBlobPtr &ConstStrBlobPtr::incr()
-//{
-//	check(curr, "increment past end of StrBlobPtr");
-//	++curr;
-//	return *this;
-//}
+inline const string &ConstStrBlobPtr::deref() const
+{
+	auto p = check(curr, "dereference past end");
+	return (*p)[curr];
+}
+
+inline ConstStrBlobPtr &ConstStrBlobPtr::incr()
+{
+	check(curr, "increment past end of StrBlobPtr");
+	++curr;
+	return *this;
+}
 
 inline const string& ConstStrBlobPtr::operator*() const
 {
