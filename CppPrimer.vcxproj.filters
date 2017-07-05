@@ -182,10 +182,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.30_StrBlob.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="14.32_StrBlobPtrPointer.cpp">
+    <ClCompile Include="14.37.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
