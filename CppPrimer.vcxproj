@@ -193,6 +193,8 @@
     <ClInclude Include="14.27_28_StrBlob.h" />
     <ClInclude Include="14.30_StrBlob.h" />
     <ClInclude Include="14.32_StrBlobPtrPointer.h" />
+    <ClInclude Include="14.46_Sales_data.h" />
+    <ClInclude Include="14.49_Book.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
     <ClInclude Include="7.22.h" />
@@ -203,7 +205,8 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.43.cpp" />
+    <ClCompile Include="14.49_Book.cpp" />
+    <ClCompile Include="14.49_Book_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

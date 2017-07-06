@@ -180,9 +180,18 @@
     <ClInclude Include="14.32_StrBlobPtrPointer.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="14.46_Sales_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="14.49_Book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.43.cpp">
+    <ClCompile Include="14.49_Book.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14.49_Book_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
