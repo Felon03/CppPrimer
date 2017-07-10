@@ -186,12 +186,18 @@
     <ClInclude Include="14.49_Book.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="15.3_Quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.5_Bulk_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.7_Limit_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.49_Book.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="14.49_Book_test.cpp">
+    <ClCompile Include="15.7_Limit_quote_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

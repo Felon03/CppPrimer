@@ -197,6 +197,9 @@
     <ClInclude Include="14.49_Book.h" />
     <ClInclude Include="14.5.h" />
     <ClInclude Include="14.7.h" />
+    <ClInclude Include="15.3_Quote.h" />
+    <ClInclude Include="15.5_Bulk_quote.h" />
+    <ClInclude Include="15.7_Limit_quote.h" />
     <ClInclude Include="7.22.h" />
     <ClInclude Include="7.50.h" />
     <ClInclude Include="7.53.h" />
@@ -205,8 +208,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.49_Book.cpp" />
-    <ClCompile Include="14.49_Book_test.cpp" />
+    <ClCompile Include="15.7_Limit_quote_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
