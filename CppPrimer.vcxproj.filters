@@ -195,9 +195,27 @@
     <ClInclude Include="15.7_Limit_quote.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="15.11_Quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.11_Bulk_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.11_Limit_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.15_Disc_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.15_Bulk_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.16_Limit_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15.7_Limit_quote_test.cpp">
+    <ClCompile Include="15.16_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
