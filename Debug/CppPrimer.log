@@ -1,2 +1,4 @@
-﻿  CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.exe
+﻿  15.21_22_GraphicsPrimitives_test.cpp
+c:\users\freed\documents\visual studio 2015\projects\cppprimer\cppprimer\15.21_graphicsprimitives.h(13): warning C4305: “初始化”: 从“double”到“float”截断
+  CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.exe
   CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.pdb (Full PDB)

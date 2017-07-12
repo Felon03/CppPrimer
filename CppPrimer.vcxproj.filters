@@ -213,9 +213,15 @@
     <ClInclude Include="15.16_Limit_quote.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="15.20_Base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="15.21_GraphicsPrimitives.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15.16_test.cpp">
+    <ClCompile Include="15.21_22_GraphicsPrimitives_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
