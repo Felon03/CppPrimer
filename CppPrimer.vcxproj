@@ -205,6 +205,8 @@
     <ClInclude Include="15.16_Limit_quote.h" />
     <ClInclude Include="15.20_Base.h" />
     <ClInclude Include="15.21_GraphicsPrimitives.h" />
+    <ClInclude Include="15.26_Bulk__quote.h" />
+    <ClInclude Include="15.26_Quote.h" />
     <ClInclude Include="15.3_Quote.h" />
     <ClInclude Include="15.5_Bulk_quote.h" />
     <ClInclude Include="15.7_Limit_quote.h" />
@@ -216,7 +218,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15.23.cpp" />
+    <ClCompile Include="15.26_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
