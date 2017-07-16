@@ -225,9 +225,12 @@
     <ClInclude Include="15.26_Bulk__quote.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="15.27_Bulk_quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15.26_test.cpp">
+    <ClCompile Include="15.27_Bulk_quote_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
