@@ -1,3 +1,8 @@
-﻿  15.30_Basket_test.cpp
-  CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.exe
-  CppPrimer.vcxproj -> C:\Users\Freed\documents\visual studio 2015\Projects\CppPrimer\Debug\CppPrimer.pdb (Full PDB)
+﻿  main.cpp
+  正在生成代码...
+c:\users\freed\documents\visual studio 2015\projects\cppprimer\cppprimer\andquery.h(34): error C4716: “AndQuery::eval”: 必须返回一个值
+c:\users\freed\documents\visual studio 2015\projects\cppprimer\cppprimer\orquery.h(32): error C4716: “OrQuery::eval”: 必须返回一个值
+  正在编译...
+  orquery.cpp
+  andquery.cpp
+  正在生成代码...
