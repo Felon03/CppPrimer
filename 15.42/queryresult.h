@@ -15,6 +15,7 @@
 //
 class QueryResult {
 	friend std::ostream& print(std::ostream&, const QueryResult&);
+	// 15.42(c)
 	friend std::ostream& print(std::ostream&, const QueryResult&, size_t, size_t);
 	friend std::ostream& operator<<(std::ostream&, const QueryResult&);
 
