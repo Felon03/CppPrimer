@@ -237,72 +237,24 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="15.42\andquery.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.2_compare.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="15.42\binaryquery.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.4_find.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="15.42\notquery.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.5_print.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="15.42\orquery.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.6_begin_end.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="15.42\query.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\query_base.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\queryresult.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\StrBlob.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\textquery.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\wordquery.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="15.42\queryhistory.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.7_array_size.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15.42\andquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\binaryquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\notquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\orquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\query.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\query_base.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\queryresult.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\textquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\wordquery.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="15.42\queryhistory.cpp">
+    <ClCompile Include="16.7.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
