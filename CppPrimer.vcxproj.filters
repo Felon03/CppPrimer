@@ -252,9 +252,12 @@
     <ClInclude Include="16.7_array_size.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="16.12_Blob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.7.cpp">
+    <ClCompile Include="16.12_Blob_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
