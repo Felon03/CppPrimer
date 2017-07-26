@@ -194,6 +194,7 @@ template<typename T> void Vec<T>::free()
 template<typename T> void Vec<T>::reallocate()
 {
 	auto newcapacity = size() ? 2 * size() : 1;
+	alloc_n_move(newcapacity);
 }
 
 template<typename T> void Vec<T>::alloc_n_move(size_t new_cap)

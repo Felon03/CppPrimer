@@ -21,10 +21,19 @@ int main()
 	std::cout << "----------EOF-----------" << std::endl;
 
 	vec.resize(1);
+	std::cout << vec.size() << std::endl;
+	vec.push_back("test");
+	vec.push_back("test");
+	vec.push_back("test");
+	vec.push_back("test");
+	vec.push_back("test");
+	vec.push_back("test");
+	std::cout << vec.size() << std::endl;
 
 	for (auto i = vec.begin(); i != vec.end(); ++i)
 		std::cout << *i << std::endl;
 	std::cout << "-----------EOF-----------" << std::endl;
+	
 
 	Vec<std::string> vec_list{ "hello", "world", "cpp" };
 	for (const auto &x : vec_list)
