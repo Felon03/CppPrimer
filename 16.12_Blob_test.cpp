@@ -19,6 +19,8 @@ int main()
 
 	std::cout << std::boolalpha << (sb1 == sb2) << std::endl;
 
+	std::cout << std::boolalpha << (sb1 < sb2) << std::endl;
+
 	Blob<std::string> sb3 = sb1;
 	std::cout << sb3[0] << " " << sb3[1] << " " << sb3[2] << std::endl;
 	//for (ConstBlobPtr<std::string> iter = sb3.cbegin(); iter != sb3.cend(); ++iter)

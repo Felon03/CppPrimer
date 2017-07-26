@@ -214,6 +214,8 @@
     <ClInclude Include="15.5_Bulk_quote.h" />
     <ClInclude Include="15.7_Limit_quote.h" />
     <ClInclude Include="16.12_Blob.h" />
+    <ClInclude Include="16.14_15_Screen.h" />
+    <ClInclude Include="16.16_Vec.h" />
     <ClInclude Include="16.2_compare.h" />
     <ClInclude Include="16.4_find.h" />
     <ClInclude Include="16.5_print.h" />
@@ -228,7 +230,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.12_Blob_test.cpp" />
+    <ClCompile Include="16.16_Vec_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
