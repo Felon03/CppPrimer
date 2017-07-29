@@ -216,9 +216,8 @@
     <ClInclude Include="16.12_Blob.h" />
     <ClInclude Include="16.14_15_Screen.h" />
     <ClInclude Include="16.16_Vec.h" />
-    <ClInclude Include="16.21_22\DebugDelete.h" />
-    <ClInclude Include="16.21_22\queryresult.h" />
-    <ClInclude Include="16.21_22\textquery.h" />
+    <ClInclude Include="16.24_Blob.h" />
+    <ClInclude Include="16.24_BlobPtr.h" />
     <ClInclude Include="16.2_compare.h" />
     <ClInclude Include="16.4_find.h" />
     <ClInclude Include="16.5_print.h" />
@@ -233,9 +232,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.21_22\queryMain.cpp" />
-    <ClCompile Include="16.21_22\queryresult.cpp" />
-    <ClCompile Include="16.21_22\textquery.cpp" />
+    <ClCompile Include="16.24_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

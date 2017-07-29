@@ -261,24 +261,15 @@
     <ClInclude Include="16.16_Vec.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="16.21_22\DebugDelete.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.24_Blob.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="16.21_22\queryresult.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="16.21_22\textquery.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="16.24_BlobPtr.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.21_22\queryMain.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="16.21_22\queryresult.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="16.21_22\textquery.cpp">
+    <ClCompile Include="16.24_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
