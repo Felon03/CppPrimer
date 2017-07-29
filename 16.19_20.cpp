@@ -32,6 +32,7 @@ template<typename T>
 void print_elements(const T & t)
 {
 	using  size_type = typename T::size_type ;
+	 //typedef typename T::size_type size_type;
 	auto iter = t.begin();
 	for (size_type i = 0; i != t.size(); ++i)
 	{
