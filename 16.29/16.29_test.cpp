@@ -18,5 +18,11 @@ int main()
 
 	b[0] = "world";
 	std::cout << b[0] << std::endl;
+
+	std::vector<int> vi{ 1,2,3,4,5,6,7 };
+	Blob<int> blob(vi.begin(), vi.end());
+	for (Blob<int>::size_type i = 0; i != blob.size(); ++i)
+		std::cout << blob[i] << " ";
+	std::cout << std::endl;
 	return 0;
 }
