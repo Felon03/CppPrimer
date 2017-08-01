@@ -227,12 +227,15 @@
     <ClInclude Include="7.50.h" />
     <ClInclude Include="7.53.h" />
     <ClInclude Include="7.57.h" />
+    <ClInclude Include="DebugDelete.h" />
     <ClInclude Include="F:\迅雷下载\VisualStudio2012\1\Sales_item.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sales_data.h" />
+    <ClInclude Include="shared_pointer.h" />
+    <ClInclude Include="unique_pointer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.24_test.cpp" />
+    <ClCompile Include="16.28\16.28_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
