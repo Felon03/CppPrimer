@@ -1,6 +1,6 @@
 #pragma once
 /*
-    16.28 编写自己的shared_ptr和unique_ptr
+    16.28  编写自己的shared_ptr和unique_ptr
 */
 
 #include "DebugDelete.h"
