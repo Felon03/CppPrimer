@@ -267,18 +267,21 @@
     <ClInclude Include="16.24_BlobPtr.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DebugDelete.h">
+    <ClInclude Include="16.29\Blob.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shared_pointer.h">
+    <ClInclude Include="16.29\DebugDelete.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="unique_pointer.h">
+    <ClInclude Include="16.29\shared_pointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="16.29\unique_pointer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.28\16.28_test.cpp">
+    <ClCompile Include="16.29\16.29_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
