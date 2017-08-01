@@ -1,5 +1,5 @@
-/*
-    16.28  ±àÐ´Äã×Ô¼ºµÄshared_ptrºÍunique_ptr
+ï»¿/*
+    16.28 ç¼–å†™ä½ è‡ªå·±çš„shared_ptrå’Œunique_ptr
 */
 #include <iostream>
 #include <vector>
