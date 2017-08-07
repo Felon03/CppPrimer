@@ -224,6 +224,8 @@
     <ClInclude Include="16.29\unique_pointer.h" />
     <ClInclude Include="16.2_compare.h" />
     <ClInclude Include="16.4_find.h" />
+    <ClInclude Include="16.58_59\16.58_StrVec.h" />
+    <ClInclude Include="16.58_59\16.58_Vec.h" />
     <ClInclude Include="16.5_print.h" />
     <ClInclude Include="16.6_begin_end.h" />
     <ClInclude Include="16.7_array_size.h" />
@@ -236,7 +238,8 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.56.cpp" />
+    <ClCompile Include="16.58_59\16.58_StrVec.cpp" />
+    <ClCompile Include="16.58_59\16.58_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

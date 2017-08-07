@@ -1,4 +1,4 @@
-#include"14.26_StrVec.h"
+#include"16.58_StrVec.h"
 #include<algorithm>
 
 StrVec::StrVec(std::initializer_list<std::string> il)
@@ -11,9 +11,8 @@ StrVec::StrVec(const StrVec &rhs)
 	range_initialize(rhs.begin(), rhs.end());
 }
 
-StrVec & StrVec::operator=(const StrVec &rhs)
+StrVec& StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: 在此处插入 return 语句
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;
@@ -22,15 +21,14 @@ StrVec & StrVec::operator=(const StrVec &rhs)
 }
 
 StrVec::StrVec(StrVec &&rhs) noexcept
-	:elements(rhs.elements), first_free(rhs.first_free), cap(rhs.cap)
+	: elements(rhs.elements), first_free(rhs.first_free), cap(rhs.cap)
 {
 	rhs.elements = rhs.first_free = rhs.cap = nullptr;
 }
 
-StrVec & StrVec::operator=(StrVec &&rhs) noexcept
+StrVec& StrVec::operator=(StrVec &&rhs) noexcept
 {
-	// TODO: 在此处插入 return 语句
-	if (this != &rhs)
+	if (&rhs != this)
 	{
 		free();
 		elements = rhs.elements;
@@ -46,9 +44,8 @@ StrVec::~StrVec()
 	free();
 }
 
-StrVec & StrVec::operator=(std::initializer_list<std::string> il)
+StrVec& StrVec::operator=(std::initializer_list<std::string> il)
 {
-	// TODO: 在此处插入 return 语句
 	auto data = alloc_n_copy(il.begin(), il.end());
 	free();
 	elements = data.first;
@@ -86,13 +83,21 @@ void StrVec::resize(size_t count, const std::string &s)
 		while (first_free != elements + count)
 			alloc.destroy(--first_free);
 	}
-
 }
 
 std::pair<std::string*, std::string*> StrVec::alloc_n_copy(const std::string *b, const std::string *e)
 {
+	// std::uninitialized_copy(first, last, result);
+	// reference: http://www.cplusplus.com/reference/memory/uninitialized_copy/?kw=uninitialized_copy
+	// Parameters
+	// first: Input iterator to the initial position in a sequence to be copied
+	// last: Input iterator to the final position in a sequence to be copied
+	// result:  Output iterator to the initial position in the uninitialized destination sequence.
+	// 
+	// Reutrn value
+	// An iterator to the last element of the destination sequence where elements have been copied
 	auto data = alloc.allocate(e - b);
-	return{ data,std::uninitialized_copy(b,e,data) };
+	return{ data, std::uninitialized_copy(b,e,data) };
 }
 
 void StrVec::free()
@@ -107,7 +112,7 @@ void StrVec::free()
 
 void StrVec::reallocate()
 {
-	auto newcapacity = size() ? 2 * size() : 1;
+	auto newcapacity = size() ? size() * 2 : 1;
 	alloc_n_move(newcapacity);
 }
 
@@ -129,36 +134,4 @@ void StrVec::range_initialize(const std::string *b, const std::string *e)
 	auto newdata = alloc_n_copy(b, e);
 	elements = newdata.first;
 	first_free = cap = newdata.second;
-}
-
-bool operator==(const StrVec &lhs, const StrVec &rhs)
-{
-	return (lhs.size() == rhs.size() &&
-		std::equal(lhs.begin(), lhs.end(), rhs.begin()));
-}
-
-bool operator!=(const StrVec &lhs, const StrVec &rhs)
-{
-	return !(lhs == rhs);
-}
-
-bool operator<(const StrVec &lhs, const StrVec &rhs)
-{
-	return std::lexicographical_compare(lhs.begin(), lhs.end(),
-		rhs.begin(), rhs.end());
-}
-
-bool operator>(const StrVec &lhs, const StrVec &rhs)
-{
-	return rhs<lhs;
-}
-
-bool operator<=(const StrVec &lhs, const StrVec &rhs)
-{
-	return !(lhs > rhs);
-}
-
-bool operator>=(const StrVec &lhs, const StrVec &rhs)
-{
-	return !(rhs > lhs);
 }

@@ -279,9 +279,18 @@
     <ClInclude Include="16.29\unique_pointer.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="16.58_59\16.58_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="16.58_59\16.58_Vec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.56.cpp">
+    <ClCompile Include="16.58_59\16.58_StrVec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16.58_59\16.58_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

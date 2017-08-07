@@ -113,8 +113,8 @@ template<typename T> Vec<T>& Vec<T>::operator=(const Vec<T> &rhs)
 {
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
-	elements = data.first();
-	first_free = cap = data.second();
+	elements = data.first;
+	first_free = cap = data.second;
 	return *this;
 }
 
