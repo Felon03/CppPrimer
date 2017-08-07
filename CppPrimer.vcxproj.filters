@@ -287,10 +287,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.58_59\16.58_StrVec.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="16.58_59\16.58_test.cpp">
+    <ClCompile Include="16.60_61.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
