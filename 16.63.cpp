@@ -20,9 +20,10 @@ int main()
 	std::vector<double> dvec{ 2.5,2.6,2.7,2.8,2.9,3.0,3.0,3.0,3.1,3.1,3.2,3.2 };
 	std::vector<const char*> cvec{ "abc", "bc", "c","abc","c","bc" };
 
-	//std::string elem = "cpp";
+	std::string elem = "cpp";
 	std::cout << count_elem(ivec, 0) << "\n";
 	std::cout << count_elem(svec, std::string("cpp")) << "\n";
+	std::cout << count_elem(svec, elem) << "\n";
 	std::cout << count_elem(dvec, 3.0) << "\n";
 	std::cout << count_elem(cvec, "abc") << "\n";
 
