@@ -239,8 +239,7 @@
     <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.62\16.62_Sales_data.cpp" />
-    <ClCompile Include="16.62\16.62_Sales_data_test.cpp" />
+    <ClCompile Include="16.63.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
