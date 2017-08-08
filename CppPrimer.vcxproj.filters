@@ -285,9 +285,15 @@
     <ClInclude Include="16.58_59\16.58_Vec.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="16.62\16.62_Sales_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16.60_61.cpp">
+    <ClCompile Include="16.62\16.62_Sales_data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16.62\16.62_Sales_data_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
