@@ -2,6 +2,7 @@
     16.63 定义一个模板，统计一个给定值在一个vector中出现的次数。
 	测试函数，分别传递给他一个double的vector，一个int的vector
 	以及一个string的vector
+	16.64 为改模板编写特例化版本来处理vector<const char*>。
 */
 #include<iostream>
 #include<vector>
