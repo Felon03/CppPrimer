@@ -1,15 +1,15 @@
-/*�޸�ͳ��Ԫ����ĸ����ʹ����ͳ�����º��������ַ����ַ����е������� ff��fl��fi*/
+/*修改统计元音字母程序，使其能统计以下含有两个字符的字符序列的数量： ff、fl和fi*/
 #include<iostream>
 
 using namespace std;
 
 int main()
 {
-	char ch, prech = '\0';	// ��prech��¼ǰһ���ַ�����ʼΪ��
+	char ch, prech = '\0';	// 用prech记录前一个字符，初始为空
 	unsigned int aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0,
 		spaceCnt = 0, tabCnt = 0, newLineCnt = 0,
 		ffCnt = 0, flCnt = 0, fiCnt = 0;
-	while (cin >> std::noskipws >> ch)		// std::noskipws �����Կո� 
+	while (cin >> std::noskipws >> ch)		// std::noskipws 不忽略空格 
 	{
 		switch (ch)
 		{
