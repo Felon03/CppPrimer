@@ -1,4 +1,4 @@
-/*重写11.1节练习的单词技术程序，使用insert代替下标操作*/
+/*閲嶅啓11.1鑺傜粌涔犵殑鍗曡瘝鎶�鏈▼搴忥紝浣跨敤insert浠ｆ浛涓嬫爣鎿嶄綔*/
 #include<iostream>
 #include<string>
 #include<map>

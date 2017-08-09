@@ -1,4 +1,4 @@
-/*编写一段程序，用整型数组初始化一个vector对象*/
+/*缂栧啓涓�娈电▼搴忥紝鐢ㄦ暣鍨嬫暟缁勫垵濮嬪寲涓�涓獀ector瀵硅薄*/
 #include<iostream>
 #include<vector>
 

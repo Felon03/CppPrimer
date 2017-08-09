@@ -1,6 +1,6 @@
-/* ±àÐ´Ò»¸ö³ÌÐò£¬´Ó±ê×¼ÊäÈë¶ÁÈ¡Ò»¸ö×Ö·û´®£¬´æÈëÒ»¸ö¶¯Ì¬·ÖÅäµÄ×Ö·ûÊý×éÖÐ¡£
-	ÃèÊöÄãµÄ³ÌÐòÈçºÎ´¦Àí±ä³¤ÊäÈë¡£²âÊÔÄãµÄ³ÌÐò£¬ÊäÈëÒ»¸ö³¬³öÄã·ÖÅäµÄÊý×é³¤¶È
-	µÄ×Ö·û´®
+/* ç¼–å†™ä¸€ä¸ªç¨‹åºï¼Œä»Žæ ‡å‡†è¾“å…¥è¯»å–ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œå­˜å…¥ä¸€ä¸ªåŠ¨æ€åˆ†é…çš„å­—ç¬¦æ•°ç»„ä¸­ã€‚
+	æè¿°ä½ çš„ç¨‹åºå¦‚ä½•å¤„ç†å˜é•¿è¾“å…¥ã€‚æµ‹è¯•ä½ çš„ç¨‹åºï¼Œè¾“å…¥ä¸€ä¸ªè¶…å‡ºä½ åˆ†é…çš„æ•°ç»„é•¿åº¦
+	çš„å­—ç¬¦ä¸²
 */
 #include<iostream>
 
@@ -11,8 +11,8 @@ int main()
 	std::cout << "Please enter the length of the string you want enter:" << std::endl;
 	std::cin >> size;
 	char *input = new char[size + 1]();
-	// Èç¹û²»ÓÃcin.ignore()»òcin.get(),»º³åÇø±£ÁôÁËÉÏ´ÎÊäÈëµÄ»»ÐÐ·û
-	// ¾ÍÎÞ·¨ÔÚÊäÈëÐÂµÄ×Ö·û´®ÁË
+	// å¦‚æžœä¸ç”¨cin.ignore()æˆ–cin.get(),ç¼“å†²åŒºä¿ç•™äº†ä¸Šæ¬¡è¾“å…¥çš„æ¢è¡Œç¬¦
+	// å°±æ— æ³•åœ¨è¾“å…¥æ–°çš„å­—ç¬¦ä¸²äº†
 	//std::cin.ignore();
 	std::cin.get();
 	//std::cin.get(ch);

@@ -1,4 +1,4 @@
-/*用accumulate求一个vector<int>中的元素之和*/
+/*鐢╝ccumulate姹備竴涓獀ector<int>涓殑鍏冪礌涔嬪拰*/
 #include<iostream>
 #include<vector>
 #include<numeric>

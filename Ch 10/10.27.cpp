@@ -1,5 +1,5 @@
-/*ʹ��unique_copy��һ��vector�в��ظ���Ԫ�ؿ�����һ����ʼΪ�յ�list��
-	unique_copy���unique���ܵ���������������ʾ�������ظ���Ԫ�ص�Ŀ�ĵ�λ�á�
+/*使用unique_copy将一个vector中不重复的元素拷贝到一个初始为空的list中
+	unique_copy相比unique接受第三个迭代器，表示拷贝不重复的元素到目的的位置。
 */
 #include<iostream>
 #include<algorithm>

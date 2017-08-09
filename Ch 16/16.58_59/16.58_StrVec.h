@@ -1,6 +1,6 @@
 #pragma once
 /*
-    16.58 为你的StrVec类及Vec类添加emplace_back函数
+    16.58 涓轰綘鐨凷trVec绫诲強Vec绫绘坊鍔爀mplace_back鍑芥暟
 */
 
 #include<string>

@@ -1,6 +1,6 @@
-/*��дһ��lambda������һ���ֲ�int���������ݼ�����ֵ��ֱ������Ϊ0
-	һ��������Ϊ0���ٵ���lambdaӦ�ò��ٵݼ�������labmdaӦ�÷���һ��boolֵ��
-	ָ������ı����Ƿ�Ϊ0
+/*编写一个lambda，不惑一个局部int变量，并递减变量值，直至它变为0
+	一旦变量变为0，再调用lambda应该不再递减变量。labmda应该返回一个bool值，
+	指出捕获的变量是否为0
 */
 #include<iostream>
 

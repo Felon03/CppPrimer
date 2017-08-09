@@ -33,7 +33,7 @@ Message::Message(const Message &m) : contents(m.contents), folders(m.folders)
 
 Message & Message::operator=(const Message &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	remove_from_Folders();
 	contents = rhs.contents;
 	folders = rhs.folders;
@@ -48,7 +48,7 @@ Message::Message(Message &&m) : contents(std::move(m.contents))
 
 Message & Message::operator=(Message &&rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		remove_from_Folders();
@@ -108,7 +108,7 @@ Folder::Folder(const Folder &f) : msgs(f.msgs)
 
 Folder & Folder::operator=(const Folder &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	remove_from_Message();
 	msgs = rhs.msgs;
 	add_to_Message(rhs);
@@ -122,7 +122,7 @@ Folder::Folder(Folder &&f)
 
 Folder & Folder::operator=(Folder &&f)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &f)
 	{
 		remove_from_Message();

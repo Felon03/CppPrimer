@@ -1,17 +1,17 @@
-/*Ğ´³öÒ»Ìõ±í´ïÊ½ÓÃÓÚÈ·¶¨Ò»¸öÕûÊıÊÇÆæÊı»¹ÊÇÅ¼Êı*/
+/*å†™å‡ºä¸€æ¡è¡¨è¾¾å¼ç”¨äºç¡®å®šä¸€ä¸ªæ•´æ•°æ˜¯å¥‡æ•°è¿˜æ˜¯å¶æ•°*/
 #include<iostream>
 
 using namespace std;
 
 int main()
 {
-	cout << "ÇëÊäÈëÒ»¸öÊı" << endl;
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°" << endl;
 	int num;
 	cin >> num;
 	if (num % 2 == 0)
-		cout << num << "ÊÇÅ¼Êı" << endl;
+		cout << num << "æ˜¯å¶æ•°" << endl;
 	else
-		cout << num << "ÊÇÆæÊı" << endl;
+		cout << num << "æ˜¯å¥‡æ•°" << endl;
 
 	return 0;
 }

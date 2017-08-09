@@ -1,7 +1,7 @@
 /*
-    16.65 ÔÚ16.63½ÚÖĞÎÒÃÇ¶¨ÒåÁËÁ½¸öÖØÔØµÄdebug_rep°æ±¾£¬
-	Ò»¸ö½ÓÊÜconst char*²ÎÊı£¬ÁíÒ»¸ö½ÓÊÜchar*²ÎÊı¡£
-	½«ÕâÁ½¸öº¯ÊıÖØĞ´ÎªÌØÀı»¯°æ±¾¡£	
+    16.65 åœ¨16.63èŠ‚ä¸­æˆ‘ä»¬å®šä¹‰äº†ä¸¤ä¸ªé‡è½½çš„debug_repç‰ˆæœ¬ï¼Œ
+	ä¸€ä¸ªæ¥å—const char*å‚æ•°ï¼Œå¦ä¸€ä¸ªæ¥å—char*å‚æ•°ã€‚
+	å°†è¿™ä¸¤ä¸ªå‡½æ•°é‡å†™ä¸ºç‰¹ä¾‹åŒ–ç‰ˆæœ¬ã€‚	
 */
 
 #include<iostream>
@@ -10,9 +10,9 @@
 #include<string>
 
 //template<typename T> std::string debug_rep(const T &t);
-// ÉùÃ÷
+// å£°æ˜
 template<typename T> std::string debug_rep(T *p);
-// ÌØÀı»¯
+// ç‰¹ä¾‹åŒ–
 template<> std::string debug_rep(const char *p);
 template<> std::string debug_rep(char *p);
 
@@ -36,7 +36,7 @@ template<typename T> std::string debug_rep(T *p)
 	return ret.str();
 }
 
-// ¶¨Òå
+// å®šä¹‰
 template<> std::string debug_rep(const char *p)
 {
 	std::cout << "debug_rep(const char*)" << std::endl;

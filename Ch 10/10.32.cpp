@@ -1,5 +1,5 @@
-/*��д1.6���е�������ʹ��һ��vector���潻�׼�¼��ʹ�ò�ͬ�㷨��ɴ�����
-	ʹ��sort��conpareIsbn�����������׼�¼��Ȼ��ʹ��find��accumulate��͡�
+/*重写1.6节中的书店程序，使用一个vector保存交易记录，使用不同算法完成处理。
+	使用sort和conpareIsbn函数来排序交易记录，然后使用find和accumulate求和。
 */
 #include<iostream>
 #include<iterator>

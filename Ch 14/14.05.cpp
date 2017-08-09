@@ -1,8 +1,8 @@
-#include "14.5.h"
+#include "14.05.h"
 
 std::istream & operator >> (std::istream &is, Book &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	is >> rhs.book_no >> rhs.book_name >> rhs.book_author
 		>> rhs.publish_date;
 	if (!is) rhs = Book();
@@ -11,7 +11,7 @@ std::istream & operator >> (std::istream &is, Book &rhs)
 
 std::ostream & operator<<(std::ostream &os, const Book &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << rhs.book_no << " " << rhs.book_name << " " << rhs.book_author
 		<< " " << rhs.publish_date;
 	return os;

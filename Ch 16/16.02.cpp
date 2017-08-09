@@ -1,4 +1,4 @@
-#include "16.2_compare.h"
+#include "16.02_compare.h"
 #include "Sales_data.h"
 #include<iostream>
 
@@ -12,7 +12,7 @@ int main()
 	//std::cout << compare(data1, data2) << std::endl;
 	//
 	// Error
-    // ¶þ½øÖÆ¡°<¡±: Ã»ÓÐÕÒµ½½ÓÊÜ¡°const Sales_data¡±ÀàÐÍµÄ×ó²Ù×÷ÊýµÄÔËËã·û(»òÃ»ÓÐ¿É½ÓÊÜµÄ×ª»»)	
+    // äºŒè¿›åˆ¶â€œ<â€: æ²¡æœ‰æ‰¾åˆ°æŽ¥å—â€œconst Sales_dataâ€ç±»åž‹çš„å·¦æ“ä½œæ•°çš„è¿ç®—ç¬¦(æˆ–æ²¡æœ‰å¯æŽ¥å—çš„è½¬æ¢)	
 	//
 	return 0;
 }

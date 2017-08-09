@@ -1,6 +1,6 @@
 #pragma once
 /*
-	16.58 为Vec类添加emplace_back函数
+	16.58 涓篤ec绫绘坊鍔爀mplace_back鍑芥暟
 */
 #include<memory>
 #include<initializer_list>

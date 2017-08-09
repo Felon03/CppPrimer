@@ -1,6 +1,6 @@
-/* µ÷ÓÃ6.4hÖÐµÄº¯ÊýÇó½×³Ë*/
+/* è°ƒç”¨6.4hä¸­çš„å‡½æ•°æ±‚é˜¶ä¹˜*/
 #include<iostream>
-#include"6.4.h"
+#include"6.04.h"
 
 using namespace std;
 

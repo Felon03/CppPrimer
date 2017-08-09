@@ -1,5 +1,5 @@
-// 15.34 Õë¶ÔÍ¼15.3£¨pp565£©¹¹½¨µÄ±í´ïÊ½£º
-// (a) ÁĞ¾Ù³öÔÚ´¦Àí±í´ïÊ½µÄ¹ı³ÌÖĞÖ´ĞĞµÄËùÓĞ¹¹Ôìº¯Êı
+// 15.34 é’ˆå¯¹å›¾15.3ï¼ˆpp565ï¼‰æ„å»ºçš„è¡¨è¾¾å¼ï¼š
+// (a) åˆ—ä¸¾å‡ºåœ¨å¤„ç†è¡¨è¾¾å¼çš„è¿‡ç¨‹ä¸­æ‰§è¡Œçš„æ‰€æœ‰æ„é€ å‡½æ•°
 // Query q = Query("fiery") & Query("bird") | Query("wind");
 // 1: Query::Query(const std::string &s) where s = "fiery", "bird" and "wind"
 // 2: WordQuery::WordQuery(const std::string &s) where s = "fiery", "bird" and "wind"
@@ -10,7 +10,7 @@
 // 7: BinaryQuery::BinaryQuery(const Query &l, const Query &r, std::string s) where s = "|"
 // 8: Quer::Query(std::shared_ptr<Query_base> query) 2 times
 //
-// (b) ÁĞ¾Ù³öcout<<qËùµ÷ÓÃµÄrep
+// (b) åˆ—ä¸¾å‡ºcout<<qæ‰€è°ƒç”¨çš„rep
 //
 // Query::rep()
 // BinaryQuery::rep()
@@ -24,12 +24,12 @@
 // WordQuery::rep()
 // ((fiery & bird) | wind)
 //
-// (c) ÁĞ¾Ù³öq.eval()Ëùµ÷ÓÃµÄeval
+// (c) åˆ—ä¸¾å‡ºq.eval()æ‰€è°ƒç”¨çš„eval
 //
-// 15.35 ÊµÏÖQueryÀàºÍQuery_baseÀà£¬ÆäÖĞĞèÒª¶¨ÒårepÎŞĞè¶¨Òåeval
+// 15.35 å®ç°Queryç±»å’ŒQuery_baseç±»ï¼Œå…¶ä¸­éœ€è¦å®šä¹‰repæ— éœ€å®šä¹‰eval
 // 
-// 15.36 ÔÚ¹¹Ôìº¯ÊıºÍrep³ÉÔ±ÖĞÌí¼Ó´òÓ¡Óï¾ä£¬ÔËĞĞ´úÂëÒÔ¼ìÑé(a)(b)µÄ»Ø´ğÊÇ·ñÕıÈ·
-// ĞèÒª¶¨Òåeval
+// 15.36 åœ¨æ„é€ å‡½æ•°å’Œrepæˆå‘˜ä¸­æ·»åŠ æ‰“å°è¯­å¥ï¼Œè¿è¡Œä»£ç ä»¥æ£€éªŒ(a)(b)çš„å›ç­”æ˜¯å¦æ­£ç¡®
+// éœ€è¦å®šä¹‰eval
 /*
 (a)
 WordQuery::WordQuery(wind)

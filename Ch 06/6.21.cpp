@@ -1,11 +1,11 @@
-/*±àÐ´Ò»¸öº¯Êý£¬ÁîÆä½ÓÊÜÁ½¸ö²ÎÊý£ºÒ»¸öÊÇintÐÍÕûÊý£¬ÁíÒ»¸öÊÇintÖ¸Õë¡£
-º¯Êý±È½ÏintµÄÖµºÍÖ¸ÕëËùÖ¸µÄÖµ£¬·µ»Ø½Ï´óµÄÄÇ¸ö
+/*ç¼–å†™ä¸€ä¸ªå‡½æ•°ï¼Œä»¤å…¶æŽ¥å—ä¸¤ä¸ªå‚æ•°ï¼šä¸€ä¸ªæ˜¯intåž‹æ•´æ•°ï¼Œå¦ä¸€ä¸ªæ˜¯intæŒ‡é’ˆã€‚
+å‡½æ•°æ¯”è¾ƒintçš„å€¼å’ŒæŒ‡é’ˆæ‰€æŒ‡çš„å€¼ï¼Œè¿”å›žè¾ƒå¤§çš„é‚£ä¸ª
 */
 #include<iostream>
 
 using namespace std;
 
-// ±È½Ïº¯Êý
+// æ¯”è¾ƒå‡½æ•°
 int compare_int(const int &a, const int *b)
 {
 	return a > *b ? a : *b;

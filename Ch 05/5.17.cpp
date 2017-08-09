@@ -1,4 +1,4 @@
-/*¼ÙÉèÓĞÁ½¸ö°üº¬ÕûÊıµÄvector¶ÔÏó£¬±àĞ´Ò»¶Î³ÌĞò£¬¼ìÑéÆäÖĞÒ»¸övector¶ÔÏóÊÇ·ñÊÇÁíÒ»¸öµÄÇ°×º*/
+/*å‡è®¾æœ‰ä¸¤ä¸ªåŒ…å«æ•´æ•°çš„vectorå¯¹è±¡ï¼Œç¼–å†™ä¸€æ®µç¨‹åºï¼Œæ£€éªŒå…¶ä¸­ä¸€ä¸ªvectorå¯¹è±¡æ˜¯å¦æ˜¯å¦ä¸€ä¸ªçš„å‰ç¼€*/
 #include<iostream>
 #include<vector>
 
@@ -10,7 +10,7 @@ int main()
 	vector<int> arrMin;
 	vector<int> arrMax;
 
-	/*·½·¨Ò»£¬Í¨¹ıforÑ­»·À´ÅĞ¶Ï*/
+	/*æ–¹æ³•ä¸€ï¼Œé€šè¿‡forå¾ªç¯æ¥åˆ¤æ–­*/
 	if (arrA.size() > arrB.size())
 	{
 		arrMax = arrA;
@@ -40,7 +40,7 @@ int main()
 
 	}
 
-	/*·½·¨¶ş£¬½ØÈ¡³¤¶ÈÎª½Ï´óvectorÖĞ³¤¶ÈÎª½ÏĞ¡vectorµÄ²¿·Ö£¬Ö±½Ó±È½ÏÁ½¸övector*/
+	/*æ–¹æ³•äºŒï¼Œæˆªå–é•¿åº¦ä¸ºè¾ƒå¤§vectorä¸­é•¿åº¦ä¸ºè¾ƒå°vectorçš„éƒ¨åˆ†ï¼Œç›´æ¥æ¯”è¾ƒä¸¤ä¸ªvector*/
 	vector<int> arrCpy;
 	arrCpy.assign(arrMax.begin(), arrMax.begin() + arrMin.size());
 	if (arrMin == arrCpy)

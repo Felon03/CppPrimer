@@ -1,4 +1,4 @@
-/*编写程序，从一个vector<char>初始化一个string*/
+/*缂栧啓绋嬪簭锛屼粠涓�涓獀ector<char>鍒濆鍖栦竴涓猻tring*/
 #include<iostream>
 #include<vector>
 #include<string>

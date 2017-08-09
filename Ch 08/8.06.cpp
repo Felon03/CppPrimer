@@ -1,4 +1,4 @@
-/*ÖØĞ´7.1.1½ÚµÄÊéµê³ÌĞò£¬´ÓÒ»¸öÎÄ¼şÖĞ¶ÁÈ¡½»Ò×¼ÇÂ¼¡£½«ÎÄ¼şÃû×÷ÎªÒ»¸ö²ÎÊı´«µİ¸ømain*/
+/*é‡å†™7.1.1èŠ‚çš„ä¹¦åº—ç¨‹åºï¼Œä»ä¸€ä¸ªæ–‡ä»¶ä¸­è¯»å–äº¤æ˜“è®°å½•ã€‚å°†æ–‡ä»¶åä½œä¸ºä¸€ä¸ªå‚æ•°ä¼ é€’ç»™main*/
 #include"Sales_data.h"
 #include<fstream>
 #include<iostream>
@@ -7,22 +7,22 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	ifstream input(argv[1]);		// ´ò¿ªÏúÊÛ¼ÇÂ¼ÎÄ¼ş
+	ifstream input(argv[1]);		// æ‰“å¼€é”€å”®è®°å½•æ–‡ä»¶
 	Sales_data total;
-	if (read(input, total))			// ¶ÁÈ¡µÚÒ»ÌõÏúÊÛ¼ÇÂ¼
+	if (read(input, total))			// è¯»å–ç¬¬ä¸€æ¡é”€å”®è®°å½•
 	{
 		Sales_data trans;
 		while (read(input, trans))
 		{
 			if (total.isbn() == trans.isbn())
-				total.combine(trans);			// Èç¹û¶ÁÈëµÄisbnÓëÖ®Ç°ÏàÍ¬£¬¸üĞÂÏúÊÛ×Ü¶î
+				total.combine(trans);			// å¦‚æœè¯»å…¥çš„isbnä¸ä¹‹å‰ç›¸åŒï¼Œæ›´æ–°é”€å”®æ€»é¢
 			else
 			{
-				print(cout, total) << endl;		// ´òÓ¡½á¹û
-				total = trans;				// ´¦ÀíÏÂÒ»±¾Êé
+				print(cout, total) << endl;		// æ‰“å°ç»“æœ
+				total = trans;				// å¤„ç†ä¸‹ä¸€æœ¬ä¹¦
 			}
 		}
-		print(cout, total) << endl;		// ´òÓ¡×îºóÒ»±¾ÊéµÄÏúÊÛ¶î
+		print(cout, total) << endl;		// æ‰“å°æœ€åä¸€æœ¬ä¹¦çš„é”€å”®é¢
 	}
 	else
 		cerr << "No data?!" << endl;

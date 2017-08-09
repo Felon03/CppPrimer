@@ -1,4 +1,4 @@
-/*±àĞ´Ò»¶Î³ÌĞò£¬´Ó±ê×¼ÊäÈëÖĞ¶ÁÈ¡string¶ÔÏóµÄĞòÁĞÖ¸µ¼Á¬Ğø³öÏÖÁ½¸öÏàÍ¬µÄµ¥´Ê»òÕßËùÓĞµ¥´Ê¶¼¶ÁÍêÎªÖ¹*/
+/*ç¼–å†™ä¸€æ®µç¨‹åºï¼Œä»æ ‡å‡†è¾“å…¥ä¸­è¯»å–stringå¯¹è±¡çš„åºåˆ—æŒ‡å¯¼è¿ç»­å‡ºç°ä¸¤ä¸ªç›¸åŒçš„å•è¯æˆ–è€…æ‰€æœ‰å•è¯éƒ½è¯»å®Œä¸ºæ­¢*/
 #include<iostream>
 #include<string>
 
@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	string str, preStr;	// preStr¼ÇÂ¼Ç°Ò»¸öµ¥´Ê
+	string str, preStr;	// preStrè®°å½•å‰ä¸€ä¸ªå•è¯
 	cout << "Please enter some words:	" << endl;
 	bool flag = false;
 	while (cin >> str && !str.empty())
@@ -20,7 +20,7 @@ int main()
 		else
 			preStr = str;
 	}
-	// ÊäÈë½áÊøÊ±ÈÔÎ´ÓĞÁ¬Ğø³öÏÖµÄµ¥´Ê
+	// è¾“å…¥ç»“æŸæ—¶ä»æœªæœ‰è¿ç»­å‡ºç°çš„å•è¯
 	if (!flag)
 		cout << "No word occurs continuously." << endl;
 

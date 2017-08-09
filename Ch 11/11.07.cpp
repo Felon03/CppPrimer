@@ -1,5 +1,5 @@
-/*¶¨ÒåÒ»¸ömap£¬¹Ø¼ü×ÖÊÇ¼ÒÍ¥µÄĞÕ£¬Ö»ÊÇÒ»¸övector£¬±£´æ¼ÒÖĞº¢×Ó£¨ÃÇ£©µÄÃû¡£
-	±àĞ´´úÂë£¬ÊµÏÖÌí¼ÓĞÂµÄ¼ÒÍ¥ÒÔ¼°ÏëÒÑÓĞ¼ÒÍ¥ÖĞÌí¼ÓĞÂµÄº¢×Ó¡£
+/*å®šä¹‰ä¸€ä¸ªmapï¼Œå…³é”®å­—æ˜¯å®¶åº­çš„å§“ï¼Œåªæ˜¯ä¸€ä¸ªvectorï¼Œä¿å­˜å®¶ä¸­å­©å­ï¼ˆä»¬ï¼‰çš„åã€‚
+	ç¼–å†™ä»£ç ï¼Œå®ç°æ·»åŠ æ–°çš„å®¶åº­ä»¥åŠæƒ³å·²æœ‰å®¶åº­ä¸­æ·»åŠ æ–°çš„å­©å­ã€‚
 */
 #include<iostream>
 #include<vector>
@@ -15,8 +15,8 @@ int main()
 	vector<string> name;
 	while (cin>>last_name>>first_name)
 	{
-		family[last_name].push_back(first_name);		// ÔõÃ´À´µÄ£¿£¿
-																								// family[]¾Í±íÊ¾Öµ£¬ÕâÊ±family[]ÊÇÒ»¸övector£¬¿ÉÒÔÓÃpush_back
+		family[last_name].push_back(first_name);		// æ€ä¹ˆæ¥çš„ï¼Ÿï¼Ÿ
+																								// family[]å°±è¡¨ç¤ºå€¼ï¼Œè¿™æ—¶family[]æ˜¯ä¸€ä¸ªvectorï¼Œå¯ä»¥ç”¨push_back
 	}
 	
 	for (const auto &member : family)

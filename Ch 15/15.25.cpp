@@ -1,5 +1,5 @@
-/* ÎªÊ²Ã´ÒªÎªDisc_qoute¶¨ÒåÒ»¸öÄ¬ÈÏµÄ¹¹Ôìº¯Êı£¿
-	Èç¹ûÈ¥µô¸Ä¹¹Ôìº¯ÊıµÄ»°»á¶ÔBulk_qouteµÄĞĞÎª²úÉúÊ²Ã´Ó°Ïì
+/* ä¸ºä»€ä¹ˆè¦ä¸ºDisc_qouteå®šä¹‰ä¸€ä¸ªé»˜è®¤çš„æ„é€ å‡½æ•°ï¼Ÿ
+	å¦‚æœå»æ‰æ”¹æ„é€ å‡½æ•°çš„è¯ä¼šå¯¹Bulk_qouteçš„è¡Œä¸ºäº§ç”Ÿä»€ä¹ˆå½±å“
 */
 #include<iostream>
 #include<string>
@@ -25,11 +25,11 @@ protected:
 
 class Disc_quote : public Quote {
 public:
-	//Disc_quote() = default;    È¥µôDisc_quoteµÄÄ¬ÈÏ¹¹Ôìº¯Êı
+	//Disc_quote() = default;    å»æ‰Disc_quoteçš„é»˜è®¤æ„é€ å‡½æ•°
 	Disc_quote(const string &book, double p, size_t qty, double disc)
 		: Quote(book, p), quantity(qty), discount(disc) {}
 
-	virtual double net_price(size_t) const = 0;    // ´¿Ğéº¯Êı
+	virtual double net_price(size_t) const = 0;    // çº¯è™šå‡½æ•°
 
 protected:
 	size_t quantity = 0;
@@ -53,5 +53,5 @@ int main()
 {
 	Bulk_quote bulk("123", 100.5, 20, 0.5);
 	//Bulk_quote bulk1;
-	// Error ÎŞ·¨ÒıÓÃ"Bulk_quote"µÄÄ¬ÈÏ¹¹Ôìº¯Êı -- ËüÊÇÒÑÉ¾³ıµÄº¯Êı
+	// Error æ— æ³•å¼•ç”¨"Bulk_quote"çš„é»˜è®¤æ„é€ å‡½æ•° -- å®ƒæ˜¯å·²åˆ é™¤çš„å‡½æ•°
 }

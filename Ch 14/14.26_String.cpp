@@ -1,10 +1,10 @@
 #include"14.26_String.h"
 #include<algorithm>
 
-// ÖØÔØÔËËã·û
+// é‡è½½è¿ç®—ç¬¦
 std::istream & operator >> (std::istream &is, String &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	for (char c; (c = is.get()) != '\n';)
 	{
 		rhs.push_back(c);
@@ -14,7 +14,7 @@ std::istream & operator >> (std::istream &is, String &rhs)
 
 std::ostream & operator<<(std::ostream &os, const String &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << rhs.c_str();
 	return os;
 }
@@ -51,7 +51,7 @@ bool operator>=(const String &lhs, const String &rhs)
 	return !(rhs > lhs);
 }
 
-// ¹¹Ôìº¯Êı
+// æ„é€ å‡½æ•°
 String::String(const char *s)
 {
 	char *sl = const_cast<char*>(s);
@@ -59,7 +59,7 @@ String::String(const char *s)
 	range_initialize(s, ++sl);
 }
 
-// ¿½±´¹¹Ôì£¬¸³ÖµÔËËã·ûÒÔ¼°Îö¹¹º¯Êı
+// æ‹·è´æ„é€ ï¼Œèµ‹å€¼è¿ç®—ç¬¦ä»¥åŠææ„å‡½æ•°
 String::String(const String &rhs)
 {
 	range_initialize(rhs.elements, rhs.first_free);
@@ -103,7 +103,7 @@ String::~String()
 	free();
 }
 
-// ³ÉÔ±º¯Êı
+// æˆå‘˜å‡½æ•°
 void String::push_back(const char c)
 {
 	chk_n_alloc();

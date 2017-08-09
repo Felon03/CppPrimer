@@ -1,4 +1,4 @@
-/*�޸�8.7�ĳ��򣬽����׷�ӵ��������ļ�ĩβ����ͬһ������ļ������г����������Σ���֤�����Ƿ���Ա���*/
+/*修改8.7的程序，将结果追加到给定的文件末尾。对同一个输出文件，运行程序至少两次，验证数据是否得以保留*/
 #include"Sales_data.h"
 #include<iostream>
 #include<fstream>

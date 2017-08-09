@@ -1,6 +1,6 @@
 #pragma once
-/* Ϊ�����ֵ�汾��HasPtr��дswap��������������
-	Ϊ���swap��������һ����ӡ��䣬ָ������ʲôʱ��ִ��
+/* 为你的类值版本的HasPtr编写swap函数，并测试它
+	为你的swap函数添加一个打印语句，指出函数什么时候执行
 */
 #include<string>
 #include<iostream>

@@ -1,6 +1,6 @@
 #pragma once
-/* ��д��׼��string��ļ򻯰汾������ΪString�������Ӧ��������һ��Ĭ�Ϲ��캯��
-	��һ������C����ַ���ָ�뺯�������Ĺ��캯����ʹ��allocatorΪString����������ڴ�
+/* 编写标准库string类的简化版本，命名为String。你的类应该至少有一个默认构造函数
+	和一个接受C风格字符串指针函数参数的构造函数。使用allocator为String类分配所需内存
 */
 
 #include<memory>

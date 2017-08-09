@@ -2,9 +2,9 @@
 #include<utility>
 #include<algorithm>
 
-// ¾²Ì¬³ÉÔ±±äÁ¿Ğè½øĞĞ³õÊ¼»¯£¬ÔÚÀàÖĞÉùÃ÷¾²Ì¬³ÉÔ±£¬µ«Ã»ÓĞ¶¨Òå
-// Òò´ËĞèÒªÔÚÀàÍâ½øĞĞ¶¨Òå²Ù×÷£¨Ã»ÓĞ¶¨Òå¾Í»á³öÏÖLINK 200µÄ´íÎó [VS2015]£©
-// ´íÎóĞÅÏ¢£º ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ
+// é™æ€æˆå‘˜å˜é‡éœ€è¿›è¡Œåˆå§‹åŒ–ï¼Œåœ¨ç±»ä¸­å£°æ˜é™æ€æˆå‘˜ï¼Œä½†æ²¡æœ‰å®šä¹‰
+// å› æ­¤éœ€è¦åœ¨ç±»å¤–è¿›è¡Œå®šä¹‰æ“ä½œï¼ˆæ²¡æœ‰å®šä¹‰å°±ä¼šå‡ºç°LINK 200çš„é”™è¯¯ [VS2015]ï¼‰
+// é”™è¯¯ä¿¡æ¯ï¼š æ— æ³•è§£æçš„å¤–éƒ¨ç¬¦å·
 std::allocator<std::string> StrVec::alloc;
 
 StrVec::StrVec(std::initializer_list<std::string> il)
@@ -19,7 +19,7 @@ StrVec::StrVec(const StrVec &s)
 
 StrVec & StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;
@@ -81,11 +81,11 @@ std::pair<std::string*, std::string*> StrVec::alloc_n_copy(const std::string *b,
 //	}
 //}
 
-// Ê¹ÓÃfor_each ºÍ lambda±í´ïÊ½ÖØĞ´freeº¯Êı(13.43)
+// ä½¿ç”¨for_each å’Œ lambdaè¡¨è¾¾å¼é‡å†™freeå‡½æ•°(13.43)
 void StrVec::free()
 {
-	// for_each°üº¬ÔÚalgorithmÍ·ÎÄ¼şÖĞ£¬ÒªÊ¹ÓÃfor_eachĞèÒª°Ñ¸ÄÍ·ÎÄ¼şinclude½øÈ¥
-	// Ê¹ÓÃfor_eachºÍlambda±í´ïÊ½¸üºÃ£¬ÒòÎªËû²»Éæ¼°µ½µİ¼õµÄÎÊÌâ£¬Ò²²»»áÓĞ³¬³ö±ß½çµÄÎÊÌâÁË
+	// for_eachåŒ…å«åœ¨algorithmå¤´æ–‡ä»¶ä¸­ï¼Œè¦ä½¿ç”¨for_eachéœ€è¦æŠŠæ”¹å¤´æ–‡ä»¶includeè¿›å»
+	// ä½¿ç”¨for_eachå’Œlambdaè¡¨è¾¾å¼æ›´å¥½ï¼Œå› ä¸ºä»–ä¸æ¶‰åŠåˆ°é€’å‡çš„é—®é¢˜ï¼Œä¹Ÿä¸ä¼šæœ‰è¶…å‡ºè¾¹ç•Œçš„é—®é¢˜äº†
 	std::for_each(elements, first_free, [](std::string &rhs) {alloc.destroy(&rhs); });
 	alloc.deallocate(elements, cap - elements);
 }

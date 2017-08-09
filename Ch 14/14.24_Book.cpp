@@ -2,7 +2,7 @@
 
 std::istream & operator >> (std::istream &is, Book &book)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	is >> book.no_ >> book.name_ >> book.author_ >> book.pubdate_ >> book.number_;
 	if (!is)
 		book = Book();
@@ -12,7 +12,7 @@ std::istream & operator >> (std::istream &is, Book &book)
 
 std::ostream & operator<<(std::ostream &os, const Book &book)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << book.no_ << " " << book.name_ << " " << book.author_ << " "
 		<< book.pubdate_ << " " << book.number_;
 	return os;
@@ -47,7 +47,7 @@ Book operator+(const Book &lhs, const Book &rhs)
 
 Book & Book::operator+=(const Book &lhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (lhs == *this)
 		this->number_ += lhs.number_;
 	return *this;
@@ -67,7 +67,7 @@ Book::Book(Book &&rhs) noexcept
 
 Book & Book::operator=(const Book &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	no_ = rhs.no_;
 	name_ = rhs.name_;
 	author_ = rhs.author_;
@@ -79,7 +79,7 @@ Book & Book::operator=(const Book &rhs)
 
 Book & Book::operator=(Book &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		no_ = rhs.no_;

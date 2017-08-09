@@ -13,7 +13,7 @@ StrVec::StrVec(const StrVec &rhs)
 
 StrVec & StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;
@@ -29,7 +29,7 @@ StrVec::StrVec(StrVec &&rhs) noexcept
 
 StrVec & StrVec::operator=(StrVec &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		free();

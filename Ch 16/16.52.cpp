@@ -1,6 +1,6 @@
 /*
-	16.51 µ÷ÓÃ±¾½ÚµÄÃ¿¸öfoo£¬È·¶¨sizeof...(Args)ºÍsizeof...(rest)·Ö±ð·µ»ØÊ²Ã´
-	16.52 ±àÐ´Ò»¸ö³ÌÐòÑéÖ¤16.51µÄ´ð°¸
+	16.51 è°ƒç”¨æœ¬èŠ‚çš„æ¯ä¸ªfooï¼Œç¡®å®šsizeof...(Args)å’Œsizeof...(rest)åˆ†åˆ«è¿”å›žä»€ä¹ˆ
+	16.52 ç¼–å†™ä¸€ä¸ªç¨‹åºéªŒè¯16.51çš„ç­”æ¡ˆ
 */
 
 #include<iostream>
@@ -21,10 +21,10 @@ int main()
 	int i = 0;
 	double d = 3.14;
 	std::string s = "how now brown cow";
-	foo(i, s, 42, d);    // °üÖÐÓÐÈý¸ö²ÎÊý
-	foo(s, 42, "hi");    // °üÖÐÓÐÁ½¸ö²ÎÊý
-	foo(d, s);    // ±£ÖØÓÐÒ»¸ö²ÎÊý
-	foo("hi");    // ¿Õ°ü
+	foo(i, s, 42, d);    // åŒ…ä¸­æœ‰ä¸‰ä¸ªå‚æ•°
+	foo(s, 42, "hi");    // åŒ…ä¸­æœ‰ä¸¤ä¸ªå‚æ•°
+	foo(d, s);    // ä¿é‡æœ‰ä¸€ä¸ªå‚æ•°
+	foo("hi");    // ç©ºåŒ…
 
 	return 0;
 }

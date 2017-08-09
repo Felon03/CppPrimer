@@ -3,7 +3,7 @@
 // copy constructor
 // inline member function should be defined in *.h files
 // c++ primer 5th edition(ch) pp 245 
-// "inline³ÉÔ±º¯ÊıÒ²Ó¦¸ÃÓëÏàÓ¦µÄÀà¶¨ÒåÔÚÍ¬Ò»¸öÍ·ÎÄ¼şÖĞ"
+// "inlineæˆå‘˜å‡½æ•°ä¹Ÿåº”è¯¥ä¸ç›¸åº”çš„ç±»å®šä¹‰åœ¨åŒä¸€ä¸ªå¤´æ–‡ä»¶ä¸­"
 //inline QueryResult::QueryResult(const QueryResult &qr)
 //	: counter(qr.getCounter()), queryWord(qr.getQueryWord()),
 //	sp_file(qr.getSp_file()), sp_map(qr.getSp_map())

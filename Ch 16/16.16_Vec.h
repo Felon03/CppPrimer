@@ -1,6 +1,6 @@
 #pragma once
 /*
-	½«StrVecÀà(²Î¼û13.5½Ú£¬µÚ465Ò³)ÖØĞ´ÎªÄ£°å£¬ÃüÃûÎªVec
+	å°†StrVecç±»(å‚è§13.5èŠ‚ï¼Œç¬¬465é¡µ)é‡å†™ä¸ºæ¨¡æ¿ï¼Œå‘½åä¸ºVec
 */
 #include <memory>
 #include <initializer_list>
@@ -65,7 +65,7 @@ private:
 	std::allocator<T> alloc;
 };
 
-// ÖØÔØÔËËã·û
+// é‡è½½è¿ç®—ç¬¦
 template<typename T> bool operator==(const Vec<T> &lhs, const Vec<T> &rhs)
 {
 	return (lhs.size() == rhs.size() &&
@@ -98,7 +98,7 @@ template<typename T> bool operator>=(const Vec<T> &lhs, const Vec<T> &rhs)
 	return !(rhs > lhs);
 }
 
-// ³ÉÔ±º¯Êı
+// æˆå‘˜å‡½æ•°
 template<typename T> Vec<T>::Vec(std::initializer_list<T> il)
 {
 	range_initialize(il.begin(), il.end());

@@ -1,7 +1,7 @@
 #include "13.40.h"
 #include<utility>
 
-// ÀàÍâ¶¨Òå¾²Ì¬Êı¾İ³ÉÔ±alloc
+// ç±»å¤–å®šä¹‰é™æ€æ•°æ®æˆå‘˜alloc
 std::allocator<std::string> StrVec::alloc;
 
 StrVec::StrVec(std::initializer_list<std::string> il)
@@ -18,7 +18,7 @@ StrVec::StrVec(const StrVec &s)
 
 StrVec & StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;

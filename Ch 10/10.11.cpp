@@ -1,5 +1,5 @@
-/*±àĞ´³ÌĞò£¬Ê¹ÓÃstable_sortºÍisShorter½«´«µİ¸øÄãµÄelimDups°æ±¾µÄvectorÅÅĞò¡£
-´òÓ¡vectorµÄÄÚÈİ£¬ÑéÖ¤³ÌĞòµÄÕıÈ·ĞÔ
+/*ç¼–å†™ç¨‹åºï¼Œä½¿ç”¨stable_sortå’ŒisShorterå°†ä¼ é€’ç»™ä½ çš„elimDupsç‰ˆæœ¬çš„vectoræ’åºã€‚
+æ‰“å°vectorçš„å†…å®¹ï¼ŒéªŒè¯ç¨‹åºçš„æ­£ç¡®æ€§
 */
 #include<iostream>
 #include<vector>
@@ -15,11 +15,11 @@ bool isShorter(const string &s1, const string &s2)
 
 void elimDups(vector<string> &words)
 {
-	// °´×ÖµäĞìÅÅĞòwords£¬Ò»±ß²éÕÒÖØ¸´µ¥´Ê
+	// æŒ‰å­—å…¸å¾æ’åºwordsï¼Œä¸€è¾¹æŸ¥æ‰¾é‡å¤å•è¯
 	sort(words.begin(), words.end());
-	// uniqueÖØÅÄÊäÈë·¶Î§
+	// uniqueé‡æ‹è¾“å…¥èŒƒå›´
 	auto end_unique = unique(words.begin(), words.end());
-	// Ê¹ÓÃÏòÁ¿²Ù×÷eraseÉ¾³ıÖØ¸´µ¥´Ê
+	// ä½¿ç”¨å‘é‡æ“ä½œeraseåˆ é™¤é‡å¤å•è¯
 	words.erase(end_unique, words.end());
 }
 
@@ -30,7 +30,7 @@ int main()
 	for (const auto &s : svec)
 		cout << s << " ";
 	cout << endl;
-	/*stable_sort ºÍ sortµÄÇø±ğ¾ÍÔÚÓÚ Ç°Õß×÷ÅÅĞò¿ÉÒÔÊ¹Ô­À´¡°ÏàÍ¬¡±µÄÖµÔÚĞòÁĞÖĞµÄÏà¶ÔÎ»ÖÃ²»±ä*/
+	/*stable_sort å’Œ sortçš„åŒºåˆ«å°±åœ¨äº å‰è€…ä½œæ’åºå¯ä»¥ä½¿åŸæ¥â€œç›¸åŒâ€çš„å€¼åœ¨åºåˆ—ä¸­çš„ç›¸å¯¹ä½ç½®ä¸å˜*/
 	stable_sort(svec.begin(), svec.end(), isShorter);
 	for (const auto &x : svec)
 		cout << x << " ";

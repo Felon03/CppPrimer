@@ -1,4 +1,4 @@
-/*±àĞ´³ÌĞò£¬½«º¬ÓĞÕûÊıÔªËØµÄvector¶ÔÏó¿½±´¸øÒ»¸öÕûĞÍÊı×é*/
+/*ç¼–å†™ç¨‹åºï¼Œå°†å«æœ‰æ•´æ•°å…ƒç´ çš„vectorå¯¹è±¡æ‹·è´ç»™ä¸€ä¸ªæ•´å‹æ•°ç»„*/
 #include<iostream>
 #include<vector>
 
@@ -9,7 +9,7 @@ int main()
 	vector<int> arr{ 1, 2, 3, 4, 5, 6 };
 	constexpr size_t size = 6;
 	int int_arr[size] = {};
-	int * beg = begin(int_arr);		// Ö¸ÏòÊı×éÊ×ÔªËØµÄÖ¸Õë
+	int * beg = begin(int_arr);		// æŒ‡å‘æ•°ç»„é¦–å…ƒç´ çš„æŒ‡é’ˆ
 
 	for (auto x : int_arr)
 		cout << x << " ";
@@ -17,7 +17,7 @@ int main()
 
 	for (auto x : arr)
 	{
-		*beg++ = x;		// ½«vectorµÄÖµ¸³¸øÊı×é
+		*beg++ = x;		// å°†vectorçš„å€¼èµ‹ç»™æ•°ç»„
 	}
 
 	for (auto x : int_arr)

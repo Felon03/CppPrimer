@@ -1,4 +1,4 @@
-/*重写10.12的程序，在对sort的调用中使用lambda来代替函数compareIsbn*/
+/*閲嶅啓10.12鐨勭▼搴忥紝鍦ㄥsort鐨勮皟鐢ㄤ腑浣跨敤lambda鏉ヤ唬鏇垮嚱鏁癱ompareIsbn*/
 #include"Sales_data.h"
 #include<iostream>
 #include<vector>

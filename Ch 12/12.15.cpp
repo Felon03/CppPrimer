@@ -1,4 +1,4 @@
-/* 重写第一题的程序，用lambda代替end_connection函数*/
+/* 閲嶅啓绗竴棰樼殑绋嬪簭锛岀敤lambda浠ｆ浛end_connection鍑芥暟*/
 #include<iostream>
 #include<memory>
 #include<string>

@@ -1,4 +1,4 @@
-/*重写9.34，这次使用下标和replace*/
+/*閲嶅啓9.34锛岃繖娆′娇鐢ㄤ笅鏍囧拰replace*/
 #include<iostream>
 #include<string>
 

@@ -1,4 +1,4 @@
-/*Ğ´³öµÚ382Ò³Ñ­»·ÖĞmap_itµÄÀàĞÍ£¬²»ÒªÊ¹ÓÃauto»òdecltype*/
+/*å†™å‡ºç¬¬382é¡µå¾ªç¯ä¸­map_itçš„ç±»å‹ï¼Œä¸è¦ä½¿ç”¨autoæˆ–decltype*/
 #include<iostream>
 #include<string>
 #include<map>
@@ -9,10 +9,10 @@ int main()
 {
 	map<string, size_t> word_count;
 	
-	// Ô­À´µÄ´úÂë
+	// åŸæ¥çš„ä»£ç 
 	//auto map_it = word_count.cbegin();
 
-	// ²»Ê¹ÓÃauto»òdecltypeĞ´³ömap_itµÄÀàĞÍ
+	// ä¸ä½¿ç”¨autoæˆ–decltypeå†™å‡ºmap_itçš„ç±»å‹
 	map<string, size_t>::const_iterator map_it = word_count.cbegin();
 	while (map_it != word_count.cend())
 	{

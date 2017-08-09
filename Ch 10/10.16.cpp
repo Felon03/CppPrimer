@@ -1,4 +1,4 @@
-/*Ê¹ÓÃlambda±àĞ´Äã×Ô¼º°æ±¾µÄbiggies*/
+/*ä½¿ç”¨lambdaç¼–å†™ä½ è‡ªå·±ç‰ˆæœ¬çš„biggies*/
 #include<iostream>
 #include<vector>
 #include<string>
@@ -19,17 +19,17 @@ void elim_Dups(vector<string> &words)
 
 void biggies(vector<string> &words, vector<string>::size_type sz)
 {
-	elim_Dups(words);		// ½«words°´×ÖµäĞò½øĞĞÅÅĞò£¬²¢É¾³ıÖØ¸´µ¥´Ê
-	// °´³¤¶ÈÅÅĞò£¬³¤¶ÈÏàÍ¬µÄµ¥´ÊÎ¬³Ö×ÖµäĞò
+	elim_Dups(words);		// å°†wordsæŒ‰å­—å…¸åºè¿›è¡Œæ’åºï¼Œå¹¶åˆ é™¤é‡å¤å•è¯
+	// æŒ‰é•¿åº¦æ’åºï¼Œé•¿åº¦ç›¸åŒçš„å•è¯ç»´æŒå­—å…¸åº
 	stable_sort(words.begin(), words.end(),
 		[](const string &s1, const string &s2) {return s1.size() < s2.size(); });
 	auto wc = find_if(words.begin(), words.end(),
 		[sz](const string &s) {return s.size() >= sz; });
-	// ¼ÆËãÂú×ãsize >= szµÄÔªËØÊıÄ¿
+	// è®¡ç®—æ»¡è¶³size >= szçš„å…ƒç´ æ•°ç›®
 	auto cnt = words.end() - wc;
 	cout << cnt << " " << make_plural(cnt, "word", "s") << " of length "
 		<< sz << " or longer" << endl;
-	// ´òÓ¡³¤¶È´óÓÚµÈÓÚ¸ø¶¨ÖµµÄµ¥´Ê£¬Ã¿¸öµ¥´ÊºóÃæ½ÓÒ»¸ö¿Õ¸ñ
+	// æ‰“å°é•¿åº¦å¤§äºç­‰äºç»™å®šå€¼çš„å•è¯ï¼Œæ¯ä¸ªå•è¯åé¢æ¥ä¸€ä¸ªç©ºæ ¼
 	for_each(wc, words.end(),
 		[](const string &s) {cout << s << " "; });
 	cout << endl;

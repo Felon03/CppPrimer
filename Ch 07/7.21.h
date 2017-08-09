@@ -1,4 +1,4 @@
-/*ĞŞ¸ÄSales_dataÀàÊ¹ÆäÒş²ØÊµÏÖµÄÏ¸½Ú*/
+/*ä¿®æ”¹Sales_dataç±»ä½¿å…¶éšè—å®ç°çš„ç»†èŠ‚*/
 #pragma once
 #include<string>
 class Sales_data;
@@ -12,22 +12,22 @@ class Sales_data
 	friend std::ostream &print(std::ostream &, const Sales_data &);
 	friend Sales_data add(const Sales_data &, const Sales_data &);
 public:
-	// ¹¹Ôìº¯Êı
-	Sales_data() = default;	// Ä¬ÈÏ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
+	Sales_data() = default;	// é»˜è®¤æ„é€ å‡½æ•°
 	Sales_data(const std::string &s) : bookNo(s) {}
 	Sales_data(const std::string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(n*p) {}
 	Sales_data(std::istream &is) { read(is, *this); }
-	// ±àĞ´Ò»¸ö¹¹Ôìº¯Êı£¬ÁîÆäÓÃÎÒÃÇÌá¹©µÄÀ×ÄÚ³õÊ¼ÖµÏÔÊ½µØ³õÊ¼»¯³ÉÔ± 7.14
+	// ç¼–å†™ä¸€ä¸ªæ„é€ å‡½æ•°ï¼Œä»¤å…¶ç”¨æˆ‘ä»¬æä¾›çš„é›·å†…åˆå§‹å€¼æ˜¾å¼åœ°åˆå§‹åŒ–æˆå‘˜ 7.14
 	//Sales_data() : units_sold(0), revenue(0) {}
 
 private:
-	// ³ÉÔ±±äÁ¿
+	// æˆå‘˜å˜é‡
 	std::string bookNo;
 	unsigned units_sold = 0;
 	double revenue = 0.0;
 
 public:
-	// ³ÉÔ±º¯Êı
+	// æˆå‘˜å‡½æ•°
 	std::string isbn() const { return bookNo; }
 	Sales_data& combine(const Sales_data &);
 };

@@ -1,4 +1,4 @@
-/*编写13.15中所描述的numbered和f*/
+/*缂栧啓13.15涓墍鎻忚堪鐨刵umbered鍜宖*/
 #include<iostream>
 
 class numbered {
@@ -17,8 +17,8 @@ public:
 	int mysn;
 };
 
-/*当实参传入f中时，会调用拷贝构造函数生成新的序号，
-故输出三个不同的序号，且比传入的实参的序号大1*/
+/*褰撳疄鍙備紶鍏涓椂锛屼細璋冪敤鎷疯礉鏋勯�犲嚱鏁扮敓鎴愭柊鐨勫簭鍙凤紝
+鏁呰緭鍑轰笁涓笉鍚岀殑搴忓彿锛屼笖姣斾紶鍏ョ殑瀹炲弬鐨勫簭鍙峰ぇ1*/
 void f(numbered s)
 {
 	std::cout << s.mysn << std::endl;
@@ -27,9 +27,9 @@ void f(numbered s)
 int main()
 {
 	numbered a, b = a, c = b;			// a.mysn = 1, b.mysn = 2, c.mysn = 3
-	f(a);			// 输出2
-	f(b);		// 输出3
-	f(c);			// 输出4
+	f(a);			// 杈撳嚭2
+	f(b);		// 杈撳嚭3
+	f(c);			// 杈撳嚭4
 
 	return 0;
 }

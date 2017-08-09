@@ -1,5 +1,5 @@
 #pragma once
-/* ¶¨Òåvirtual debugº¯Êı£¬ÏÔÊ¾Ã¿¸öÊı¾İ³ÉÔ±*/
+/* å®šä¹‰virtual debugå‡½æ•°ï¼Œæ˜¾ç¤ºæ¯ä¸ªæ•°æ®æˆå‘˜*/
 #include"15.11_Quote.h"
 
 class Limit_quote : public Quote {

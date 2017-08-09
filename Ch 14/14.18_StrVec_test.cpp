@@ -31,14 +31,14 @@ int main()
 		std::cout << *i << " ";
 	std::cout << std::endl;
 
-	// ²âÊÔ ==
+	// operator ==
 	const StrVec cvec{ "Hello", "World", "C Plus Plus" };
 	if (cvec == svec1)
 		for (const auto &str : cvec)
 			std::cout << str << " ";
 	std::cout << std::endl;
 
-	// ²âÊÔ <
+	// operator <
 	const StrVec cvec1{ "Hello", "World", "B++" };
 	std::cout << std::boolalpha << (cvec < cvec1) << std::endl;
 

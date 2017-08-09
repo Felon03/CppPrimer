@@ -1,4 +1,4 @@
-/*��дһ�γ���ʹ�������������vector<int>���ҵ���ЩԪ�ص�ֵ��������Ȼ����Щ����ֵ����*/
+/*编写一段程序，使用条件运算符从vector<int>中找到哪些元素的值是奇数，然后将这些奇数值翻倍*/
 #include<iostream>
 #include<vector>
 

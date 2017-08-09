@@ -8,9 +8,9 @@ int main()
 	string result;
 	while (cin>>s)
 	{
-		// ½«ÊäÈëµÄ×Ö·û´®ºÏ²¢
+		// å°†è¾“å…¥çš„å­—ç¬¦ä¸²åˆå¹¶
 		//result += s;
-		// ½«ÊäÈëµÄ×Ö·û´®ºÏ²¢£¬Ã¿¸öÊäÈëÖ®¼äÓÉ¿Õ¸ñ·Ö¸ô
+		// å°†è¾“å…¥çš„å­—ç¬¦ä¸²åˆå¹¶ï¼Œæ¯ä¸ªè¾“å…¥ä¹‹é—´ç”±ç©ºæ ¼åˆ†éš”
 		result += s + " ";
 	}
 	cout << "The content of string: " << result << endl;

@@ -1,5 +1,5 @@
 #pragma once
-/* 为之前定义的String类定义一个输出运算符*/
+/* 涓轰箣鍓嶅畾涔夌殑String绫诲畾涔変竴涓緭鍑鸿繍绠楃*/
 #include<memory>
 #include<iostream>
 

@@ -1,4 +1,4 @@
-/*ÖØ×öÉÏÒ»Ìâ£¬µ«¶ÁÈ¡stringĞòÁĞ´æÈëlistÖĞ*/
+/*é‡åšä¸Šä¸€é¢˜ï¼Œä½†è¯»å–stringåºåˆ—å­˜å…¥listä¸­*/
 #include<iostream>
 #include<list>
 #include<string>

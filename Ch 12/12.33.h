@@ -1,7 +1,7 @@
 #pragma once
-/* ÔÚQueryResultÀàÖĞÌí¼ÓÃûÎªbeginºÍendµÄ³ÉÔ±£¬·µ»ØÒ»¸öµü´úÆ÷£¬
-	Ö¸ÏòÒ»¸ö¸ø¶¨²éÑ¯·µ»ØµÄĞĞºÅsetÖĞµÄÎ»ÖÃ¡£ÔÙÌí¼ÓÒ»¸öÃûÎªget_fileµÄ³ÉÔ±£¬
-	·µ»ØÒ»¸öshared_ptr£¬Ö¸ÏòQueryResult¶ÔÏóÖĞµÄÎÄ¼ş
+/* åœ¨QueryResultç±»ä¸­æ·»åŠ åä¸ºbeginå’Œendçš„æˆå‘˜ï¼Œè¿”å›ä¸€ä¸ªè¿­ä»£å™¨ï¼Œ
+	æŒ‡å‘ä¸€ä¸ªç»™å®šæŸ¥è¯¢è¿”å›çš„è¡Œå·setä¸­çš„ä½ç½®ã€‚å†æ·»åŠ ä¸€ä¸ªåä¸ºget_fileçš„æˆå‘˜ï¼Œ
+	è¿”å›ä¸€ä¸ªshared_ptrï¼ŒæŒ‡å‘QueryResultå¯¹è±¡ä¸­çš„æ–‡ä»¶
 */
 
 #include"12.22.h"
@@ -12,15 +12,15 @@ using std::shared_ptr;
 #include<map>
 #include<set>
 
-class QueryResult;																		// ÎªÁË¶¨Òåº¯ÊıqueryµÄ·µ»ØÀàĞÍ£¬Õâ¸ö¶¨ÒåÊÇ±ØĞëµÄ
+class QueryResult;																		// ä¸ºäº†å®šä¹‰å‡½æ•°queryçš„è¿”å›ç±»å‹ï¼Œè¿™ä¸ªå®šä¹‰æ˜¯å¿…é¡»çš„
 class TextQuery {
 public:
 	TextQuery(std::ifstream&);
 	QueryResult query(const string&) const;
 
 private:
-	shared_ptr<StrBlob> file;																	// ÊäÈëÎÄ¼ş
-	// Ã¿¸öµ¥´Êµ½ËüËùÔÚĞĞºÅµÄÓ³Éä
+	shared_ptr<StrBlob> file;																	// è¾“å…¥æ–‡ä»¶
+	// æ¯ä¸ªå•è¯åˆ°å®ƒæ‰€åœ¨è¡Œå·çš„æ˜ å°„
 	std::map<std::string, 
 		shared_ptr<std::set<StrBlob::size_type>>> wordmap;
 };
@@ -39,9 +39,9 @@ public:
 	shared_ptr<StrBlob> get_file() const { return file; }
 
 private:
-	string word;																				// ²éÑ¯µ¥´Ê
-	shared_ptr<std::set<StrBlob::size_type>> lines;		// ³öÏÖµÄĞĞºÅ
-	shared_ptr<StrBlob> file;													// ÊäÈëÎÄ¼ş
+	string word;																				// æŸ¥è¯¢å•è¯
+	shared_ptr<std::set<StrBlob::size_type>> lines;		// å‡ºç°çš„è¡Œå·
+	shared_ptr<StrBlob> file;													// è¾“å…¥æ–‡ä»¶
 };
 
 std::ostream &print(std::ostream &os, QueryResult &query_result);

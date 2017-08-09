@@ -1,37 +1,37 @@
 #pragma once
 /*
-15.21 ´ÓÏÂÃæÕâĞ©Ò»°ãĞÔ³éÏó¸ÅÄîÖĞÈÎÑ¡Ò»¸ö(»òÕßÑ¡Ò»¸öÄã×Ô¼ºµÄ)£¬½«Æä¶ÔÓ¦µÄÒ»×éÀàĞÍ×éÖ¯³ÉÒ»¸ö¼Ì³ĞÌåÏµ
-(a) Í¼ĞÎÎÄ¼ş¸ñÊ½(gif¡¢tiff¡¢jpeg¡¢bmp)
-(b) Í¼Ïñ»ùÔª(·½¸ñ¡¢Ô²¡¢Çò¡¢Ô²×¶)
-(c) C++ÓïÑÔÖĞµÄÀàĞÍ(Àà¡¢º¯Êı¡¢³ÉÔ±º¯Êı)
+15.21 ä»ä¸‹é¢è¿™äº›ä¸€èˆ¬æ€§æŠ½è±¡æ¦‚å¿µä¸­ä»»é€‰ä¸€ä¸ª(æˆ–è€…é€‰ä¸€ä¸ªä½ è‡ªå·±çš„)ï¼Œå°†å…¶å¯¹åº”çš„ä¸€ç»„ç±»å‹ç»„ç»‡æˆä¸€ä¸ªç»§æ‰¿ä½“ç³»
+(a) å›¾å½¢æ–‡ä»¶æ ¼å¼(gifã€tiffã€jpegã€bmp)
+(b) å›¾åƒåŸºå…ƒ(æ–¹æ ¼ã€åœ†ã€çƒã€åœ†é”¥)
+(c) C++è¯­è¨€ä¸­çš„ç±»å‹(ç±»ã€å‡½æ•°ã€æˆå‘˜å‡½æ•°)
 
-ÊµÏÖ(b) box, circle, sphere, cone
+å®ç°(b) box, circle, sphere, cone
 
 */
 
 //#define PI 3.14159;
 static const float PI = 3.14159;
 
-// »ùÀà
+// åŸºç±»
 class Shape {
 public:
-	// µ±Éæ¼°ÀàĞÍÏà¹ØµÄ²Ù×÷Ê±£¬ÅÉÉúÀà±ØĞë¶Ô³ÉÔ±½øĞĞÖØ¶¨ÒåÀ´¸²¸Ç¾Í¶¨Òå
-	// »»¾ä»°Ëµ£¬Èç¹û²»Éæ¼°ÀàĞÍÏà¹Ø²Ù×÷£¬ÔòÎŞĞè¸²¸Ç
-	// Òò´ËShape_2DºÍShape_3D¿ÉÒÔ²»¸²¸Ç shape_name ºÍ resize_by_perecentageÕâÁ½¸ö³ÉÔ±º¯Êı
+	// å½“æ¶‰åŠç±»å‹ç›¸å…³çš„æ“ä½œæ—¶ï¼Œæ´¾ç”Ÿç±»å¿…é¡»å¯¹æˆå‘˜è¿›è¡Œé‡å®šä¹‰æ¥è¦†ç›–å°±å®šä¹‰
+	// æ¢å¥è¯è¯´ï¼Œå¦‚æœä¸æ¶‰åŠç±»å‹ç›¸å…³æ“ä½œï¼Œåˆ™æ— éœ€è¦†ç›–
+	// å› æ­¤Shape_2Då’ŒShape_3Då¯ä»¥ä¸è¦†ç›– shape_name å’Œ resize_by_perecentageè¿™ä¸¤ä¸ªæˆå‘˜å‡½æ•°
 	virtual const char* shape_name() = 0;
 	virtual void resize_by_percentage(float pct) = 0;
 	virtual ~Shape() {}
 };
 
-// Shape µÄÅÉÉúÀàShape_2D, ¶şÎ¬Í¼ĞÎ
+// Shape çš„æ´¾ç”Ÿç±»Shape_2D, äºŒç»´å›¾å½¢
 class Shape_2D : public Shape {
 public:
 	Shape_2D() = default;
 	Shape_2D(float x, float y) : x_(x), y_(y) {}
 
-	virtual float area() const = 0;  // Ãæ»ı
-	virtual float diameter() const = 0; // Ö±¾¶
-	virtual float circumference() const = 0;  // ÖÜ³¤
+	virtual float area() const = 0;  // é¢ç§¯
+	virtual float diameter() const = 0; // ç›´å¾„
+	virtual float circumference() const = 0;  // å‘¨é•¿
 
 	virtual ~Shape_2D() override {}
 
@@ -40,13 +40,13 @@ protected:
 	float y_ = 0.f;
 };
 
-// ShapeµÄÅÉÉúÀàShape_3D,ÈıÎ¬Í¼ĞÎ
+// Shapeçš„æ´¾ç”Ÿç±»Shape_3D,ä¸‰ç»´å›¾å½¢
 class Shape_3D : public Shape {
 public:
 	Shape_3D() = default;
 	Shape_3D(float x, float y, float z) : x_(x), y_(y),z_(z) {}
 
-	virtual float volume() const = 0;    // Ìå»ı
+	virtual float volume() const = 0;    // ä½“ç§¯
 
 	virtual ~Shape_3D() override {}
 
@@ -56,7 +56,7 @@ protected:
 	float z_ = 0.f;
 };
 
-// Box ÀàÅÉÉú×ÔShape_3D
+// Box ç±»æ´¾ç”Ÿè‡ªShape_3D
 class Box : public Shape_3D {
 public:
 	Box() = default;
@@ -78,7 +78,7 @@ protected:
 	float half_len_z_ = 0.5f;
 };
 
-// CircleÀàÅÉÉú×ÔShape_2D
+// Circleç±»æ´¾ç”Ÿè‡ªShape_2D
 class Circle : public Shape_2D {
 public:
 	Circle() = default;
@@ -100,7 +100,7 @@ protected:
 	float radius_ = 1.f;
 };
 
-// SphereÀàÅÉÉú×ÔShape_3D
+// Sphereç±»æ´¾ç”Ÿè‡ªShape_3D
 class Sphere : public Shape_3D {
 public:
 	Sphere() = default;
@@ -120,7 +120,7 @@ protected:
 	float radius_ = 1.f;
 };
 
-// ConeÀàÅÉÉú×ÔShape_3D
+// Coneç±»æ´¾ç”Ÿè‡ªShape_3D
 class Cone : public Shape_3D {
 public:
 	Cone() = default;

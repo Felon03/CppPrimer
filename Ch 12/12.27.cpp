@@ -12,7 +12,7 @@ TextQuery::TextQuery(std::ifstream &ifs) : input(new vector<string>)
 		std::istringstream line_stream(line);
 		for (string text, word; line_stream >> text; word.clear())
 		{
-			// È¥µô±êµã·ûºÅ
+			// å»æ‰æ ‡ç‚¹ç¬¦å·
 			std::remove_copy_if(text.begin(), text.end(), std::back_inserter(word), ispunct);
 			auto &lno = result[word];
 			if (!lno) lno.reset(new std::set<LineNo>);
@@ -23,7 +23,7 @@ TextQuery::TextQuery(std::ifstream &ifs) : input(new vector<string>)
 
 QueryResult TextQuery::query(const string &str) const
 {
-	// Ê¹ÓÃstatic£¬·ÖÅäÒ»´ÎÄÚÄÚ´æ
+	// ä½¿ç”¨staticï¼Œåˆ†é…ä¸€æ¬¡å†…å†…å­˜
 	static shared_ptr<std::set<LineNo>> no_date(new std::set<LineNo>);
 	auto found = result.find(str);
 	if (found == result.end())
@@ -35,7 +35,7 @@ QueryResult TextQuery::query(const string &str) const
 
 std::ostream & print(std::ostream &out, const QueryResult &query_result)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	out << query_result.word << " occurs " << query_result.line_no->size()
 		<< (query_result.line_no->size() > 1 ? " times." : " time") << std::endl;
 	for (auto &i : *query_result.line_no)

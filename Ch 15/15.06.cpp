@@ -1,5 +1,5 @@
-/* ½«QuoteºÍBulk_quoteµÄ¶ÔÏó´«¸øprint_totalº¯Êı£¬¼ì²éº¯ÊıÊÇ·ñÕıÈ·*/
-#include"15.5_Bulk_quote.h"
+/* å°†Quoteå’ŒBulk_quoteçš„å¯¹è±¡ä¼ ç»™print_totalå‡½æ•°ï¼Œæ£€æŸ¥å‡½æ•°æ˜¯å¦æ­£ç¡®*/
+#include"15.05_Bulk_quote.h"
 #include<iostream>
 
 int main()

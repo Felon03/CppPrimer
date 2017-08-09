@@ -1,4 +1,4 @@
-/*Ϊwhileѭ��дһ��������ʹ��ӱ�׼�����ж�ȡ����������42ʱֹͣ*/
+/*为while循环写一个条件，使其从标准输入中读取整数，遇到42时停止*/
 #include<iostream>
 
 using namespace std;

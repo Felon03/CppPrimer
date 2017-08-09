@@ -1,4 +1,4 @@
-/* ��дһ�����������ʵ�εľ���ֵ*/
+/* 编写一个函数输出其实参的绝对值*/
 #include<iostream>
 
 using namespace std;

@@ -1,5 +1,5 @@
-/* 编写一个类似与PrintString的类，令其充istream中读取一行输入，
-	然后返回一个表示我们所读内容的string。如果读取失败，返回空string
+/* 缂栧啓涓�涓被浼间笌PrintString鐨勭被锛屼护鍏跺厖istream涓鍙栦竴琛岃緭鍏ワ紝
+	鐒跺悗杩斿洖涓�涓〃绀烘垜浠墍璇诲唴瀹圭殑string銆傚鏋滆鍙栧け璐ワ紝杩斿洖绌簊tring
 */
 #include<string>
 #include<iostream>
@@ -15,7 +15,7 @@ public:
 	}
 
 private:
-	std::istream &is;    // 用于读取的流
+	std::istream &is;    // 鐢ㄤ簬璇诲彇鐨勬祦
 };
 
 int main()

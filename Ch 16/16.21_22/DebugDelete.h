@@ -1,5 +1,5 @@
 #pragma once
-/* ±àĞ´DebugDelete*/
+/* ç¼–å†™DebugDelete*/
 #ifndef DEBUGDELETE_H
 #define DEBUGDELETE_H
 
@@ -8,7 +8,7 @@
 class DebugDelete {
 public:
 	DebugDelete(std::ostream &s = std::cerr) : os(s) {}
-	// ÓëÈÎºÎº¯ÊıÄ£°åÏàÍ¬£¬TµÄÀàĞÍÓÉ±àÒëÆ÷ÍÆ¶Ï
+	// ä¸ä»»ä½•å‡½æ•°æ¨¡æ¿ç›¸åŒï¼ŒTçš„ç±»å‹ç”±ç¼–è¯‘å™¨æ¨æ–­
 	template<typename T> void operator() (T *p) const
 	{
 		os << "deleting unique_ptr" << std::endl;

@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªStrVecÀàÌí¼ÓÒ»¸ö¹¹Ôìº¯Êı£¬Ëü½ÓÊÜÒ»¸öinitializer_list<string>²ÎÊı*/
+/* ä¸ºStrVecç±»æ·»åŠ ä¸€ä¸ªæ„é€ å‡½æ•°ï¼Œå®ƒæ¥å—ä¸€ä¸ªinitializer_list<string>å‚æ•°*/
 #include<memory>
 #include<string>
 #include<initializer_list>
@@ -7,7 +7,7 @@
 class StrVec {
 public:
 	StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
-	// Ìí¼Ó½ÓÊÜ²ÎÊıÎªinitializer_list<string>µÄ¹¹Ôìº¯Êı
+	// æ·»åŠ æ¥å—å‚æ•°ä¸ºinitializer_list<string>çš„æ„é€ å‡½æ•°
 	StrVec(std::initializer_list<std::string>);
 	StrVec(const StrVec&);
 	StrVec& operator=(const StrVec&);
@@ -36,8 +36,8 @@ private:
 	void range_initialize(const std::string*, const std::string*);
 		
 private:
-	std::string *elements;               // Ö¸ÏòÊı×éÊ×ÔªËØ²¢ÊÍ·ÅÄÚ´æ
-	std::string *first_free;               // Ö¸ÏòÊı×éµÚÒ»¸ö¿ÕÏĞÔªËØµÄÖ¸Õë
-	std::string *cap;                           // Ö¸ÏòÊı×éÎ²ºóÎ»ÖÃµÄÖ¸Õë
-	static std::allocator<std::string> alloc;       // ·ÖÅäÔªËØ
+	std::string *elements;               // æŒ‡å‘æ•°ç»„é¦–å…ƒç´ å¹¶é‡Šæ”¾å†…å­˜
+	std::string *first_free;               // æŒ‡å‘æ•°ç»„ç¬¬ä¸€ä¸ªç©ºé—²å…ƒç´ çš„æŒ‡é’ˆ
+	std::string *cap;                           // æŒ‡å‘æ•°ç»„å°¾åä½ç½®çš„æŒ‡é’ˆ
+	static std::allocator<std::string> alloc;       // åˆ†é…å…ƒç´ 
 };

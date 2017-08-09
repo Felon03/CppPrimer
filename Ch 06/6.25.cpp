@@ -1,4 +1,4 @@
-/*±àÐ´Ò»¸ömainº¯Êý£¬ÁîÆä½ÓÊÜÁ½¸öÊµ²Î¡£°ÑÊµ²ÎµÄÄÚÈÝÁ¬½Ó³ÉÒ»¸östring¶ÔÏó²¢Êä³ö*/
+/*ç¼–å†™ä¸€ä¸ªmainå‡½æ•°ï¼Œä»¤å…¶æŽ¥å—ä¸¤ä¸ªå®žå‚ã€‚æŠŠå®žå‚çš„å†…å®¹è¿žæŽ¥æˆä¸€ä¸ªstringå¯¹è±¡å¹¶è¾“å‡º*/
 #include<iostream>
 #include<string>
 

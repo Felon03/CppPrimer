@@ -1,7 +1,7 @@
-/*Ê¹ÓÃstack´¦ÀíÀ¨ºÅ»¯µÄ±í´ïÊ½¡£µ±Äã¿´µ½Ò»¸ö×óÀ¨ºÅ£¬½«Æä¼ÇÂ¼ÏÂÀ´¡£
-µ±ÄãÔÚÒ»¸ö×óÀ¨ºÅÖ®ºó¿´µ½Ò»¸öÓÒÀ¨ºÅ£¬´ÓstackÖÐpop¶ÔÏó£¬Ö±µ½Óöµ½×óÀ¨ºÅ
-½«×óÀ¨ºÅÒ²Ò»Æðµ¯³öÕ»¡£È»ºó½«Ò»¸öÖµ£¨À¨ºÅÄÚµÄÔËËã½á¹û£©pushµ½Õ»ÖÐ£¬±íÊ¾À¨ºÅ»¯
-µÄ£¨×Ó£©±í´ïÊ½ÒÑ¾­´¦ÀíÍê±Ï£¬±»ÆäÔËËã½á¹ûËùÌæ´ú*/
+/*ä½¿ç”¨stackå¤„ç†æ‹¬å·åŒ–çš„è¡¨è¾¾å¼ã€‚å½“ä½ çœ‹åˆ°ä¸€ä¸ªå·¦æ‹¬å·ï¼Œå°†å…¶è®°å½•ä¸‹æ¥ã€‚
+å½“ä½ åœ¨ä¸€ä¸ªå·¦æ‹¬å·ä¹‹åŽçœ‹åˆ°ä¸€ä¸ªå³æ‹¬å·ï¼Œä»Žstackä¸­popå¯¹è±¡ï¼Œç›´åˆ°é‡åˆ°å·¦æ‹¬å·
+å°†å·¦æ‹¬å·ä¹Ÿä¸€èµ·å¼¹å‡ºæ ˆã€‚ç„¶åŽå°†ä¸€ä¸ªå€¼ï¼ˆæ‹¬å·å†…çš„è¿ç®—ç»“æžœï¼‰pushåˆ°æ ˆä¸­ï¼Œè¡¨ç¤ºæ‹¬å·åŒ–
+çš„ï¼ˆå­ï¼‰è¡¨è¾¾å¼å·²ç»å¤„ç†å®Œæ¯•ï¼Œè¢«å…¶è¿ç®—ç»“æžœæ‰€æ›¿ä»£*/
 #include<iostream>
 #include<stack>
 #include<string>
@@ -18,14 +18,14 @@ int main()
 	for (const auto &c : expr)
 	{
 		stk.push(c);
-		if (stk.top() == '(') ++count;			// Óöµ½×óÀ¨ºÅ ¼ÆÊýÆ÷¼ÓÒ»
-		if (count&&stk.top() == ')')				// ¼ÆÊýÆ÷²»ÎªÁãÇÒÓöµ½ÁËÓÒÀ¨ºÅ
+		if (stk.top() == '(') ++count;			// é‡åˆ°å·¦æ‹¬å· è®¡æ•°å™¨åŠ ä¸€
+		if (count&&stk.top() == ')')				// è®¡æ•°å™¨ä¸ä¸ºé›¶ä¸”é‡åˆ°äº†å³æ‹¬å·
 		{
-			while (stk.top() != '(')					// ³öÕ»Ö±µ½Õ»¶¥ÔªËØÎª×óÀ¨ºÅ
+			while (stk.top() != '(')					// å‡ºæ ˆç›´åˆ°æ ˆé¡¶å…ƒç´ ä¸ºå·¦æ‹¬å·
 				stk.pop();
-			stk.pop();											// ½«×óÀ¨ºÅ³öÕ»
-			stk.push(repl);								// ½«replÑ¹ÈëÕ»ÄÚ£¬±íÊ¾Ò»¸öÀ¨ºÅ±í´ïÊ½´¦ÀíÍê±Ï
-			--count;											// ´¦ÀíÍê±Ï£¬¼ÆÊýÆ÷¼õÒ»
+			stk.pop();											// å°†å·¦æ‹¬å·å‡ºæ ˆ
+			stk.push(repl);								// å°†replåŽ‹å…¥æ ˆå†…ï¼Œè¡¨ç¤ºä¸€ä¸ªæ‹¬å·è¡¨è¾¾å¼å¤„ç†å®Œæ¯•
+			--count;											// å¤„ç†å®Œæ¯•ï¼Œè®¡æ•°å™¨å‡ä¸€
 		}
 	}
 

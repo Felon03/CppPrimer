@@ -1,5 +1,5 @@
-/*如何从一个list<int>初始化一个vector<double>?
-从一个vector<int>又该如何创建?编写代码验证答案
+/*濡備綍浠庝竴涓猯ist<int>鍒濆鍖栦竴涓獀ector<double>?
+浠庝竴涓獀ector<int>鍙堣濡備綍鍒涘缓?缂栧啓浠ｇ爜楠岃瘉绛旀
 */
 #include<iostream>
 #include<list>
@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	// list<int> 初始化vector<double>
+	// list<int> 鍒濆鍖杤ector<double>
 	list<int> ilst{ 1,2,3,4,5,6,7,8 };
 	for (auto x : ilst)
 		cout << x << " ";
@@ -20,7 +20,7 @@ int main()
 		cout << x << " ";
 	cout << endl;
 
-	// vector<int> 初始化vector<double>
+	// vector<int> 鍒濆鍖杤ector<double>
 	vector<int> ivc{ 1,2,3,4,5 };
 	for (auto x : ivc)
 		cout << x << " ";

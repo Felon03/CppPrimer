@@ -1,4 +1,4 @@
-/*±àĞ´Ò»¶Î³ÌĞò£¬¶¨ÒåÒ»¸öº¬ÓĞ10¸öintµÄÊı×é£¬ÁîÃ¿¸öÔªËØµÄÖµ¾ÍÊÇÆäÏÂ±êÖµ*/
+/*ç¼–å†™ä¸€æ®µç¨‹åºï¼Œå®šä¹‰ä¸€ä¸ªå«æœ‰10ä¸ªintçš„æ•°ç»„ï¼Œä»¤æ¯ä¸ªå…ƒç´ çš„å€¼å°±æ˜¯å…¶ä¸‹æ ‡å€¼*/
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -15,7 +15,7 @@ int main()
 		cout << x << " ";
 	cout << endl;
 	int a1[10] = {};
-	// ¿½±´¸øÁíÒ»¸öÊı×é
+	// æ‹·è´ç»™å¦ä¸€ä¸ªæ•°ç»„
 	for (auto x : a)
 		a1[x] = x;
 	cout << "copy array:" << endl;
@@ -23,7 +23,7 @@ int main()
 		cout << a1[x] << " ";
 	cout << endl;
 
-	// ÀûÓÃvectorÖØĞ´³ÌĞò
+	// åˆ©ç”¨vectoré‡å†™ç¨‹åº
 	vector<int>	 a3;
 	for (size_t i = 0; i < 10; i++)
 	{

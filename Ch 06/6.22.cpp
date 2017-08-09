@@ -1,4 +1,4 @@
-/*编写两个函数，令其交换两个int指针*/
+/*缂栧啓涓や釜鍑芥暟锛屼护鍏朵氦鎹袱涓猧nt鎸囬拡*/
 #include<iostream>
 
 using namespace std;

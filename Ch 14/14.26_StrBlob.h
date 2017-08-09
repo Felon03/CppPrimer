@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªStrBlobÀà¶¨ÒåÏÂ±êÔËËã·û*/
+/* ä¸ºStrBlobç±»å®šä¹‰ä¸‹æ ‡è¿ç®—ç¬¦*/
 #include<vector>
 #include<string>
 #include<memory>
@@ -25,10 +25,10 @@ class StrBlob {
 	using size_type = vector<string>::size_type;
 	friend class StrBlobPtr;
 	friend class ConstStrBlobPtr;
-	// ÏàµÈºÍ²»ÏàµÈÔËËã·û
+	// ç›¸ç­‰å’Œä¸ç›¸ç­‰è¿ç®—ç¬¦
 	friend bool operator==(const StrBlob&, const StrBlob&);
 	friend bool operator!=(const StrBlob&, const StrBlob&);
-	// ¹ØÏµÔËËã·û
+	// å…³ç³»è¿ç®—ç¬¦
 	friend bool operator<(const StrBlob&, const StrBlob&);
 	friend bool operator>(const StrBlob&, const StrBlob&);
 	friend bool operator <= (const StrBlob&, const StrBlob&);
@@ -39,7 +39,7 @@ public:
 	StrBlob(initializer_list<string> il)
 		: data(make_shared<vector<string>>(il)) {}
 
-	// ÖØÔØÏÂ±êÔËËã·û
+	// é‡è½½ä¸‹æ ‡è¿ç®—ç¬¦
 	string& operator[](size_t n);
 	const string& operator[](size_t n) const;
 
@@ -147,7 +147,7 @@ public:
 	string &deref() const;
 	StrBlobPtr &incr();
 
-	// ÖØÔØÏÂ±êÔËËã·û
+	// é‡è½½ä¸‹æ ‡è¿ç®—ç¬¦
 	string& operator[](size_t n);
 	const string& operator[](size_t n) const;
 
@@ -221,8 +221,8 @@ public:
 	const string &deref() const;
 	ConstStrBlobPtr &incr();
 
-	// ÖØÔØÏÂ±êÔËËã·û
-	// ConstStrBlobPtrÖ»ÓĞconst°æ±¾µÄÏÂ±êÔËËã·û
+	// é‡è½½ä¸‹æ ‡è¿ç®—ç¬¦
+	// ConstStrBlobPtråªæœ‰constç‰ˆæœ¬çš„ä¸‹æ ‡è¿ç®—ç¬¦
 	const string& operator[](size_t n) const;
 
 private:
@@ -263,7 +263,7 @@ inline shared_ptr<vector<string>> ConstStrBlobPtr::check(size_t i, const string 
 
 inline const string & ConstStrBlobPtr::operator[](size_t n) const
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto p = check(n, "dereference out of range");
 	return (*p)[n];
 }

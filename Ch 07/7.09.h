@@ -1,12 +1,12 @@
 #pragma once
-/*¶ÔÓÚPersonÀà£¬ÎªÆäÌí¼Ó¶ÁÈ¡ºÍ´òÓ¡Person¶ÔÏóµÄº¯Êı*/
+/*å¯¹äºPersonç±»ï¼Œä¸ºå…¶æ·»åŠ è¯»å–å’Œæ‰“å°Personå¯¹è±¡çš„å‡½æ•°*/
 #include<string>
 
 class Person
 {
 public:
-	std::string name;			// ĞÕÃû
-	std::string address;		// µØÖ·
+	std::string name;			// å§“å
+	std::string address;		// åœ°å€
 
 public:
 	const std::string& getName() const { return name; }

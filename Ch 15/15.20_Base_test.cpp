@@ -14,9 +14,9 @@ int main()
 	Derived_from_Protected dd3;
 
 	Base *p = &d1;
-	p = &d2;   // Error 不可访问
-	p = &d3;   // Error 不可访问
+	p = &d2;   // Error 涓嶅彲璁块棶
+	p = &d3;   // Error 涓嶅彲璁块棶
 	p = &dd1;
-	p = &dd2;  // Error 不可访问
-	p = &dd3;  // Error 不可访问
+	p = &dd2;  // Error 涓嶅彲璁块棶
+	p = &dd3;  // Error 涓嶅彲璁块棶
 }

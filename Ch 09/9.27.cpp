@@ -1,4 +1,4 @@
-/*±àĞ´³ÌĞò£¬²éÕÒ²¢É¾³ıforward_list<int>ÖĞµÄÆæÊıÔªËØ*/
+/*ç¼–å†™ç¨‹åºï¼ŒæŸ¥æ‰¾å¹¶åˆ é™¤forward_list<int>ä¸­çš„å¥‡æ•°å…ƒç´ */
 #include<iostream>
 #include<forward_list>
 
@@ -7,15 +7,15 @@ using namespace std;
 int main()
 {
 	forward_list<int> flist{ 0,1,2,3,4,5,6,7,8,9,10 };
-	auto prev = flist.before_begin();		// »ñÈ¡µÚÒ»¸öÔªËØÖ®Ç°µÄµü´úÆ÷
-	auto curr = flist.begin();							// »ñÈ¡µÚÒ»¸öÔªËØµÄµü´úÆ÷
+	auto prev = flist.before_begin();		// è·å–ç¬¬ä¸€ä¸ªå…ƒç´ ä¹‹å‰çš„è¿­ä»£å™¨
+	auto curr = flist.begin();							// è·å–ç¬¬ä¸€ä¸ªå…ƒç´ çš„è¿­ä»£å™¨
 	while (curr != flist.end())
 	{
-		if (*curr % 2 != 0)			// Èç¹ûÊÇÆæÊı
+		if (*curr % 2 != 0)			// å¦‚æœæ˜¯å¥‡æ•°
 			curr = flist.erase_after(prev);
 		else
 		{
-			prev = curr;		// prevÖ¸ÏòÏÂÒ»¸öcurr£¬currÖ¸ÏòÏÂÒ»¸öÔªËØ
+			prev = curr;		// prevæŒ‡å‘ä¸‹ä¸€ä¸ªcurrï¼ŒcurræŒ‡å‘ä¸‹ä¸€ä¸ªå…ƒç´ 
 			++curr;
 		}
 	}

@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªBlobÄ£°åÌí¼ÓÒ»¸ö¹¹Ôìº¯Êý£¬½ÓÊÜÁ½¸öµü´úÆ÷*/
+/* ä¸ºBlobæ¨¡æ¿æ·»åŠ ä¸€ä¸ªæž„é€ å‡½æ•°ï¼ŒæŽ¥å—ä¸¤ä¸ªè¿­ä»£å™¨*/
 
 #include<memory>
 #include<vector>

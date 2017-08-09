@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªMessageÀàÌí¼ÓÒ»¸öÒÆ¶¯¹¹Ôìº¯ÊıºÍÒ»¸öÒÆ¶¯¸³ÖµÔËËã·û*/
+/* ä¸ºMessageç±»æ·»åŠ ä¸€ä¸ªç§»åŠ¨æ„é€ å‡½æ•°å’Œä¸€ä¸ªç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦*/
 #include<set>
 #include<string>
 
@@ -13,9 +13,9 @@ public:
 	explicit Message(const std::string &str="") :contents(str) {}
 	Message(const Message&);
 	Message& operator=(const Message&);
-	// ÒÆ¶¯¹¹Ôìº¯Êı
+	// ç§»åŠ¨æ„é€ å‡½æ•°
 	Message(Message&&);
-	// ÒÆ¶¯¸³ÖµÔËËã·û
+	// ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 	Message& operator=(Message&&);
 	~Message();
 	
@@ -46,9 +46,9 @@ public:
 	Folder() = default;
 	Folder(const Folder&);
 	Folder& operator=(const Folder&);
-	// ÒÆ¶¯¹¹Ôìº¯Êı
+	// ç§»åŠ¨æ„é€ å‡½æ•°
 	Folder(Folder&&);
-	// ÒÆ¶¯¸³ÖµÔËËã·û
+	// ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 	Folder& operator=(Folder&&);
 	~Folder();
 

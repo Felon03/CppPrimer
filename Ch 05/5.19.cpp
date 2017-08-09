@@ -1,4 +1,4 @@
-/*±àÐ´Ò»¶Î³ÌÐò£¬Ê¹ÓÃdo whileÑ­»·ÖØ¸´µØÖ´ÐÐÏÂÊöÈÎÎñ£ºÊ×ÏÈÌáÊ¾ÓÃ»§ÊäÈëÁ½¸östring¶ÔÏó£¬È»ºóÌô³ö½Ï¶ÌµÄÄÇ¸ö²¢Êä³öËü*/
+/*ç¼–å†™ä¸€æ®µç¨‹åºï¼Œä½¿ç”¨do whileå¾ªçŽ¯é‡å¤åœ°æ‰§è¡Œä¸‹è¿°ä»»åŠ¡ï¼šé¦–å…ˆæç¤ºç”¨æˆ·è¾“å…¥ä¸¤ä¸ªstringå¯¹è±¡ï¼Œç„¶åŽæŒ‘å‡ºè¾ƒçŸ­çš„é‚£ä¸ªå¹¶è¾“å‡ºå®ƒ*/
 #include<iostream>
 #include<string>
 
@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-	/*²»¶ÏÌáÊ¾ÓÃ»§ÊäÈëÒ»¶Ô×Ö·û´®£¬È»ºóÊä³ö½Ï¶ÌµÄ*/
-	string rsp;	// rspÓÃÓÚÅÐ¶ÏÊÇ·ñ¼ÌÐøÒ»ÂÖÐÂµÄÊäÈë
+	/*ä¸æ–­æç¤ºç”¨æˆ·è¾“å…¥ä¸€å¯¹å­—ç¬¦ä¸²ï¼Œç„¶åŽè¾“å‡ºè¾ƒçŸ­çš„*/
+	string rsp;	// rspç”¨äºŽåˆ¤æ–­æ˜¯å¦ç»§ç»­ä¸€è½®æ–°çš„è¾“å…¥
 	do
 	{
 		cout << "Please enter two strings:" << endl;

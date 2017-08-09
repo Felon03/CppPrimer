@@ -1,4 +1,4 @@
-/*ʹ����һ�ⶨ���multimap��дһ�����򣬰��Ӵ�������ӡ�����б������ǵ���Ʒ*/
+/*使用上一题定义的multimap编写一个程序，案子带你许打印作者列表和他们的作品*/
 #include<iostream>
 #include<string>
 #include<map>

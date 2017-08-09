@@ -1,4 +1,4 @@
-/*编写一段程序，输出每一种内置类型所占空间的大小*/
+/*缂栧啓涓�娈电▼搴忥紝杈撳嚭姣忎竴绉嶅唴缃被鍨嬫墍鍗犵┖闂寸殑澶у皬*/
 #include<iostream>
 
 using namespace std;

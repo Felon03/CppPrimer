@@ -1,5 +1,5 @@
 #pragma once
-/* ±àĞ´MessageºÍFolderÀà*/
+/* ç¼–å†™Messageå’ŒFolderç±»*/
 #include<string>
 #include<set>
 
@@ -12,23 +12,23 @@ class Message {
 public:
 	explicit Message(const std::string &str = "") : contents(str) {}
 
-	Message(const Message&);	                 // ¿½±´¹¹Ôìº¯Êı
-	Message& operator=(const Message&);    // ¿½±´¸³ÖµÔËËã·û
-	~Message();                                                // Îö¹¹º¯Êı
+	Message(const Message&);	                 // æ‹·è´æ„é€ å‡½æ•°
+	Message& operator=(const Message&);    // æ‹·è´èµ‹å€¼è¿ç®—ç¬¦
+	~Message();                                                // ææ„å‡½æ•°
 
-	// ´Ó¸ø¶¨Folder¼¯ºÏÖĞÌí¼Ó/É¾³ı±¾Message
+	// ä»ç»™å®šFolderé›†åˆä¸­æ·»åŠ /åˆ é™¤æœ¬Message
 	void save(Folder&);
 	void remove(Folder&);
 
-	// Êä³öMessageÄÚÈİ
+	// è¾“å‡ºMessageå†…å®¹
 	void print();
 
 private:
-	std::string contents;				// Êµ¼ÊÏûÏ¢ÎÄ±¾
-	std::set<Folder*> folders;	// °üº¬±¾MessageµÄFolder
+	std::string contents;				// å®é™…æ¶ˆæ¯æ–‡æœ¬
+	std::set<Folder*> folders;	// åŒ…å«æœ¬Messageçš„Folder
 
-	// ¿½±´¹¹Ôìº¯Êı¡¢¿½±´¸³ÖµÔËËã·ûºÍÎö¹¹º¯ÊıËùÊ¹ÓÃµÄ¹¤¾ßº¯Êı
-	// ½«±¾MessageÌí¼Óµ½Ö¸Ïò²ÎÊıµÄFolderÖĞ
+	// æ‹·è´æ„é€ å‡½æ•°ã€æ‹·è´èµ‹å€¼è¿ç®—ç¬¦å’Œææ„å‡½æ•°æ‰€ä½¿ç”¨çš„å·¥å…·å‡½æ•°
+	// å°†æœ¬Messageæ·»åŠ åˆ°æŒ‡å‘å‚æ•°çš„Folderä¸­
 	void add_to_Folders(const Message&);
 	void remove_from_Folders();
 
@@ -51,7 +51,7 @@ public:
 	void print();
 
 private:
-	std::set<Message*> msgs;       // °üº¬MessageµÄ¼¯ºÏ
+	std::set<Message*> msgs;       // åŒ…å«Messageçš„é›†åˆ
 
 	void add_to_Messages(const Folder&);
 	void remove_from_Messages();

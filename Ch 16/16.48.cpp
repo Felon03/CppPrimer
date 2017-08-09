@@ -1,12 +1,12 @@
 /*
-    16.48 ±àĞ´Äã×Ô¼º°æ±¾µÄdebug_repº¯Êı
+    16.48 ç¼–å†™ä½ è‡ªå·±ç‰ˆæœ¬çš„debug_repå‡½æ•°
 */
 
 #include <iostream>
 #include <sstream>
 #include <string>
 
-// ÉùÃ÷
+// å£°æ˜
 template<typename T> 
 std::string debug_rep(const T &t);
 
@@ -19,14 +19,14 @@ std::string debug_rep(char *p);
 
 std::string debug_rep(const char *p);
 
-// ¶¨Òå
+// å®šä¹‰
 template<typename T>
 std::string debug_rep(const T &t)
 {
 	std::cout << "debug_rep(const T&)" << std::endl;
 	std::ostringstream ret;
-	ret << t;    // Ê¹ÓÃTµÄÊä³öÔËËã·û´òÓ¡tµÄÒ»¸ö±íÊ¾ĞÎÊ½
-	return ret.str();    // ·µ»Øret°ó¶¨µÄstringµÄÒ»¸ö¸±±¾
+	ret << t;    // ä½¿ç”¨Tçš„è¾“å‡ºè¿ç®—ç¬¦æ‰“å°tçš„ä¸€ä¸ªè¡¨ç¤ºå½¢å¼
+	return ret.str();    // è¿”å›retç»‘å®šçš„stringçš„ä¸€ä¸ªå‰¯æœ¬
 }
 
 template<typename T>
@@ -36,10 +36,10 @@ std::string debug_rep(T * p)
 	std::ostringstream ret;
 	ret << "pointer: " << p;
 	if (p)
-		ret << " " << debug_rep(*p);    // ´òÓ¡pÖ¸ÏòµÄÖµ
+		ret << " " << debug_rep(*p);    // æ‰“å°pæŒ‡å‘çš„å€¼
 	else
-		ret << " null pointer";    // »òÖ¸³öpÎª¿Õ
-	return ret.str();    // ·µ»Øret°ó¶¨µÄstringµÄÒ»¸ö¸±±¾
+		ret << " null pointer";    // æˆ–æŒ‡å‡ºpä¸ºç©º
+	return ret.str();    // è¿”å›retç»‘å®šçš„stringçš„ä¸€ä¸ªå‰¯æœ¬
 }
 
 std::string debug_rep(const std::string &s)

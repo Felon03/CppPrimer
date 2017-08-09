@@ -1,4 +1,4 @@
-/*±àĞ´Äã×Ô¼ºµÄSrtBlobÀà£¬°üº¬const°æ±¾µÄfrontºÍback*/
+/*ç¼–å†™ä½ è‡ªå·±çš„SrtBlobç±»ï¼ŒåŒ…å«constç‰ˆæœ¬çš„frontå’Œback*/
 #pragma once
 #include<vector>
 #include<string>
@@ -17,14 +17,14 @@ public:
 		: data(std::make_shared<vector<string>>(il)) {}
 	size_type size() const { return data->size(); }
 	bool empty() const { return data->empty(); }
-	// Ìí¼ÓºÍÉ¾³ıÔªËØ
+	// æ·»åŠ å’Œåˆ é™¤å…ƒç´ 
 	void push_back(const string &t) { data->push_back(t); }
 	void pop_back()
 	{
 		check(0, "pop_back on empty StrBlob");
 		data->pop_back();
 	}
-	//// Ìí¼ÓconstÀàĞÍµÄpush_back()ºÍpop_back()
+	//// æ·»åŠ constç±»å‹çš„push_back()å’Œpop_back()
 	//void push_back(const string &t) const
 	//{
 	//	data->push_back(t);
@@ -34,10 +34,10 @@ public:
 	//	check(0, "pop_back on empty StrBlob");
 	//	data->pop_back();
 	//}
-	// ÔªËØ·ÃÎÊ
+	// å…ƒç´ è®¿é—®
 	string &front()
 	{
-		// Èç¹ûvectorÎª¿Õ£¬check»áÅ×³öÒ»¸öÒì³£
+		// å¦‚æœvectorä¸ºç©ºï¼Œcheckä¼šæŠ›å‡ºä¸€ä¸ªå¼‚å¸¸
 		check(0, "front on empty StrBlob");
 		return data->front();
 	}
@@ -46,7 +46,7 @@ public:
 		check(0, "back on empty StrBlob");
 		return data->back();
 	}
-	// const °æ±¾µÄfrontºÍback
+	// const ç‰ˆæœ¬çš„frontå’Œback
 	const string &front() const
 	{
 		check(0, "front on empty StrBlob");

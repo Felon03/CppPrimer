@@ -1,4 +1,4 @@
-/*Ö´ĞĞ´úÂëÑéÖ¤ScreenÀàÊÇ·ñÕıÈ·*/
+/*æ‰§è¡Œä»£ç éªŒè¯Screenç±»æ˜¯å¦æ­£ç¡®*/
 #include"7.27.h"
 #include<iostream>
 #include<string>

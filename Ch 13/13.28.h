@@ -1,18 +1,18 @@
 #pragma once
-/* ¸ø¶¨ÏÂÃæµÄÀà£¬ÎªÆäÊµÏÖÒ»¸öÄ¬ÈÏ¹¹Ôìº¯ÊıºÍ±ØÒªµÄ¿½±´¿ØÖÆ³ÉÔ±*/
+/* ç»™å®šä¸‹é¢çš„ç±»ï¼Œä¸ºå…¶å®ç°ä¸€ä¸ªé»˜è®¤æ„é€ å‡½æ•°å’Œå¿…è¦çš„æ‹·è´æ§åˆ¶æˆå‘˜*/
 #include<string>
 
 class TreeNode {
 public:
 	TreeNode()
 		: value(std::string()), count(new int(1)), left(nullptr), right(nullptr) {}
-	// ¿½±´¹¹Ôìº¯Êı
+	// æ‹·è´æ„é€ å‡½æ•°
 	TreeNode(const TreeNode &rhs)
 		: value(rhs.value), count(rhs.count), left(rhs.left), right(rhs.right)
 	{
 		++*count;
 	}
-	// ¿½±´¸³Öµº¯Êı
+	// æ‹·è´èµ‹å€¼å‡½æ•°
 	TreeNode& operator=(const TreeNode &rhs);
 
 	~TreeNode()
@@ -44,10 +44,10 @@ private:
 class BinStrTree {
 public:
 	BinStrTree() : root(new TreeNode()) {}
-	// ¿½±´¹¹Ôìº¯Êı
+	// æ‹·è´æ„é€ å‡½æ•°
 	BinStrTree(const BinStrTree &rhs)
 		: root(new TreeNode(*rhs.root)) {}
-	// ¿½±´¸³Öµº¯Êı
+	// æ‹·è´èµ‹å€¼å‡½æ•°
 	BinStrTree& operator=(const BinStrTree &rhs);
 
 	~BinStrTree()

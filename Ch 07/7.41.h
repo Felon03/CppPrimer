@@ -1,4 +1,4 @@
-/*ʹ��ί�й��캯�����±�дSales_data�࣬��ÿ�����캯��������һ����䣬����һ��ִ�оʹ�ӡһ����Ϣ*/
+/*使用委托构造函数重新编写Sales_data类，给每个构造函数体添加一条语句，令其一旦执行就打印一条信息*/
 #pragma once
 
 #include<string>

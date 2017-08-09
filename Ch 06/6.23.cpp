@@ -1,9 +1,9 @@
-/*²Î¿¼±¾½Ú½éÉÜµÄ¼¸¸öprintº¯Êı£¬¸ù¾İÀë¼ä±àĞ´×Ô¼ºµÄ°æ±¾*/
+/*å‚è€ƒæœ¬èŠ‚ä»‹ç»çš„å‡ ä¸ªprintå‡½æ•°ï¼Œæ ¹æ®ç¦»é—´ç¼–å†™è‡ªå·±çš„ç‰ˆæœ¬*/
 #include<iostream>
 
 using namespace std;
 
-// Êä³öÕûĞÍÊı
+// è¾“å‡ºæ•´å‹æ•°
 void print(const int a)
 {
 	cout << a << endl;
@@ -11,11 +11,11 @@ void print(const int a)
 	return;
 }
 
-// Êä³öÕûĞÍÊı×é
+// è¾“å‡ºæ•´å‹æ•°ç»„
 void print(const int *beg, const int *end)
 {
 	while (beg != end)	
-		cout << *beg++ << endl;	// *beg, ·ñÔòÊä³öµÄÊÇµØÖ·
+		cout << *beg++ << endl;	// *beg, å¦åˆ™è¾“å‡ºçš„æ˜¯åœ°å€
 
 	return;
 }

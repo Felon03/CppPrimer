@@ -1,4 +1,4 @@
-/*定义自己的Debug*/
+/*瀹氫箟鑷繁鐨凞ebug*/
 #pragma once
 class Debug
 {

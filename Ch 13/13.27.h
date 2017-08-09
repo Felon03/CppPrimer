@@ -1,14 +1,14 @@
 #pragma once
-/* ¶¨ÒåÊ¹ÓÃÒıÓÃ¼ÆÊı°æ±¾µÄHasPtr*/
+/* å®šä¹‰ä½¿ç”¨å¼•ç”¨è®¡æ•°ç‰ˆæœ¬çš„HasPtr*/
 #include<string>
 
 class HasPtr {
 public:
-	// ¹¹Ôìº¯Êı·ÖÅäĞÂµÄstringºÍĞÂµÄ¼ÆÊıÆ÷£¬½«¼ÆÊıÆ÷ÖÃÎª1
+	// æ„é€ å‡½æ•°åˆ†é…æ–°çš„stringå’Œæ–°çš„è®¡æ•°å™¨ï¼Œå°†è®¡æ•°å™¨ç½®ä¸º1
 	HasPtr(const std::string &s = std::string())
 		: ps(new std::string(s)), i(0), use(new std::size_t(1)) {}
 
-	// ¿½±´¹¹Ôìº¯Êı¿½±´ËùÓĞÈı¸öÊı¾İ³ÉÔ±£¬²¢µİÔö¼ÆÊıÆ÷
+	// æ‹·è´æ„é€ å‡½æ•°æ‹·è´æ‰€æœ‰ä¸‰ä¸ªæ•°æ®æˆå‘˜ï¼Œå¹¶é€’å¢è®¡æ•°å™¨
 	HasPtr(const HasPtr &rhs) : ps(rhs.ps), i(rhs.i), use(rhs.use)
 	{
 		++*use;
@@ -16,16 +16,16 @@ public:
 
 	HasPtr& operator=(const HasPtr &rhs)
 	{
-		++*rhs.use;				// µİÔöÓÒ²àÔËËã·û¶ÔÏóµÄÒıÓÃ¼ÆÊı
-		if (--*use == 0)			// È»ºóµİ¼õ±¾¶ÔÏóµÄÒıÓÃ¼ÆÊı
+		++*rhs.use;				// é€’å¢å³ä¾§è¿ç®—ç¬¦å¯¹è±¡çš„å¼•ç”¨è®¡æ•°
+		if (--*use == 0)			// ç„¶åé€’å‡æœ¬å¯¹è±¡çš„å¼•ç”¨è®¡æ•°
 		{			
-			delete ps;			// Èç¹ûÃ»ÓĞÆäËûÓÃ»§
-			delete use;			// ÊÍ·Å±¾¶ÔÏó·ÖÅäµÄ³ÉÔ±
+			delete ps;			// å¦‚æœæ²¡æœ‰å…¶ä»–ç”¨æˆ·
+			delete use;			// é‡Šæ”¾æœ¬å¯¹è±¡åˆ†é…çš„æˆå‘˜
 		}
-		ps = rhs.ps;				// ½«Êı¾İ´Órhs¿½±´µ½±¾¶ÔÏó
+		ps = rhs.ps;				// å°†æ•°æ®ä»rhsæ‹·è´åˆ°æœ¬å¯¹è±¡
 		i = rhs.i;
 		use = rhs.use;
-		return *this;			// ·µ»Ø±¾¶ÔÏó
+		return *this;			// è¿”å›æœ¬å¯¹è±¡
 	}
 	~HasPtr()
 	{
@@ -39,5 +39,5 @@ public:
 private:
 	std::string *ps;
 	int i;
-	std::size_t *use;			// ÓÃÀ´¼ÇÂ¼ÓĞ¶àÉÙ¸ö¶ÔÏó¹²Ïí*ps³ÉÔ±
+	std::size_t *use;			// ç”¨æ¥è®°å½•æœ‰å¤šå°‘ä¸ªå¯¹è±¡å…±äº«*psæˆå‘˜
 };

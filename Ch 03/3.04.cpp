@@ -1,7 +1,7 @@
 /*
-	¶ÁÈëÁ½¸ö×Ö·û´®£¬±È½ÏÆäÊÇ·ñÏàµÈ£¬²¢Êä³ö½á¹û¡£
-	Èç¹û²»ÏàµÈ£¬Êä³ö½Ï´óµÄ×Ö·û´®¡£
-	¸ÄÐ´³ÌÐò£¬±È½ÏÁ½¸ö×Ö·û´®ÊÇ·ñµÈ³¤£¬Èç¹û²»µÈ£¬Êä³ö½Ï³¤µÄ×Ö·û´®¡£
+	è¯»å…¥ä¸¤ä¸ªå­—ç¬¦ä¸²ï¼Œæ¯”è¾ƒå…¶æ˜¯å¦ç›¸ç­‰ï¼Œå¹¶è¾“å‡ºç»“æžœã€‚
+	å¦‚æžœä¸ç›¸ç­‰ï¼Œè¾“å‡ºè¾ƒå¤§çš„å­—ç¬¦ä¸²ã€‚
+	æ”¹å†™ç¨‹åºï¼Œæ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç­‰é•¿ï¼Œå¦‚æžœä¸ç­‰ï¼Œè¾“å‡ºè¾ƒé•¿çš„å­—ç¬¦ä¸²ã€‚
 */
 #include<iostream>
 #include<string>
@@ -12,7 +12,7 @@ int main()
 {
 	string s1, s2;
 	cin >> s1 >> s2;
-	/*±È½ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£¬*/
+	/*æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œ*/
 	cout << "Compare if s1 equals s2, output the bigger one." << endl;
 	if (s1 == s2)
 		cout << "string1 equals to string2!" << endl << endl;

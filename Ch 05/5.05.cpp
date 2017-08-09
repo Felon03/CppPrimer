@@ -1,4 +1,4 @@
-/*дһ���Լ��ĳ���ʹ��if else���ʵ�ְ����ֳɼ�ת������ĸ�ɼ���Ҫ��*/
+/*写一段自己的程序，使用if else语句实现吧数字成绩转换成字母成绩的要求*/
 #include<iostream>
 #include<string>
 #include<vector>
@@ -21,7 +21,7 @@ int main()
 		cout << grade[(score - 50) / 10];
 	}
 
-	/*��һ��д��*/
+	/*另一种写法*/
 	if (score == 100)
 		cout << grade[5];
 	else if (score >= 90)

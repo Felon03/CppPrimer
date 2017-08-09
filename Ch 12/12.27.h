@@ -1,5 +1,5 @@
 #pragma once
-/* 只用已经学到的知识对这两个类编写你自己的版本*/
+/* 鍙敤宸茬粡瀛﹀埌鐨勭煡璇嗗杩欎袱涓被缂栧啓浣犺嚜宸辩殑鐗堟湰*/
 // ref: https://github.com/pezy/CppPrimer/blob/master/ch12/ex12_27_30.h
 #include<vector>
 using std::vector;

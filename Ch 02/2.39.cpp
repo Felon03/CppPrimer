@@ -2,13 +2,13 @@
 
 using namespace std;
 
-struct Foo {/*´Ë´¦Îª¿Õ*/ };
+struct Foo {/*æ­¤å¤„ä¸ºç©º*/ };
 /*
-Èç¹ûÃ»ÓÐÔÚ»¨À¨ºÅºóÃæ¼ÓÉÏ';',»á³öÏÖÒÔÏÂ´íÎó:
-´íÎó(»î¶¯)		Ó¦ÊäÈë¡°;¡±
-´íÎó	C2628	¡°Foo¡±ºóÃæ½Ó¡°int¡±ÊÇ·Ç·¨µÄ(ÊÇ·ñÍü¼ÇÁË¡°;¡±?)
-´íÎó	C3874	¡°main¡±µÄ·µ»ØÀàÐÍÓ¦Îª¡°int¡±¶ø·Ç¡°Foo¡±	CppPrimer
-´íÎó	C2440	¡°return¡±: ÎÞ·¨´Ó¡°int¡±×ª»»Îª¡°Foo¡±	CppPrimer
+å¦‚æžœæ²¡æœ‰åœ¨èŠ±æ‹¬å·åŽé¢åŠ ä¸Š';',ä¼šå‡ºçŽ°ä»¥ä¸‹é”™è¯¯:
+é”™è¯¯(æ´»åŠ¨)		åº”è¾“å…¥â€œ;â€
+é”™è¯¯	C2628	â€œFooâ€åŽé¢æŽ¥â€œintâ€æ˜¯éžæ³•çš„(æ˜¯å¦å¿˜è®°äº†â€œ;â€?)
+é”™è¯¯	C3874	â€œmainâ€çš„è¿”å›žç±»åž‹åº”ä¸ºâ€œintâ€è€Œéžâ€œFooâ€	CppPrimer
+é”™è¯¯	C2440	â€œreturnâ€: æ— æ³•ä»Žâ€œintâ€è½¬æ¢ä¸ºâ€œFooâ€	CppPrimer
 */
 int main()
 {

@@ -3,15 +3,15 @@
 
 void runQueries(std::ifstream &infile)
 {
-	// infileÊÇÒ»¸öifstream£¬Ö¸ÏòÒª´¦ÀíµÄÎÄ¼ş
-	TextQuery tq(infile);		// ±£´æÎÄ¼ş²¢¼òÀú²éÑ¯map
+	// infileæ˜¯ä¸€ä¸ªifstreamï¼ŒæŒ‡å‘è¦å¤„ç†çš„æ–‡ä»¶
+	TextQuery tq(infile);		// ä¿å­˜æ–‡ä»¶å¹¶ç®€å†æŸ¥è¯¢map
 	while (true)
 	{
 		std::cout << "Enter word to look for, or q to quit: ";
 		string s;
-		// ÈôÓöµ½ÎÄ¼şÎ²»òÕßÓÃ»§ÊäÈëÁËqÊÇÑ­»·ÖÕÖ¹
+		// è‹¥é‡åˆ°æ–‡ä»¶å°¾æˆ–è€…ç”¨æˆ·è¾“å…¥äº†qæ˜¯å¾ªç¯ç»ˆæ­¢
 		if (!(std::cin >> s) || s == "q") break;
-		// Ö¸Ïò²éÑ¯²¢´òÓ¡½á¹û
+		// æŒ‡å‘æŸ¥è¯¢å¹¶æ‰“å°ç»“æœ
 		print(std::cout, tq.query(s)) << std::endl;
 	}
 }

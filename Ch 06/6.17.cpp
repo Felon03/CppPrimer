@@ -1,4 +1,4 @@
-/*±àĞ´Ò»¸öº¯Êı£¬ÅĞ¶Ïstring¶ÔÏóÖĞÊÇ·ñº¬ÓĞ´óĞ´×ÖÄ¸¡£±àĞ´ÁíÒ»¸öº¯Êı£¬°Ñstring¶ÔÏóÈ«²¿¸Ä³ÉĞ¡Ğ´ĞÎÊ½*/
+/*ç¼–å†™ä¸€ä¸ªå‡½æ•°ï¼Œåˆ¤æ–­stringå¯¹è±¡ä¸­æ˜¯å¦å«æœ‰å¤§å†™å­—æ¯ã€‚ç¼–å†™å¦ä¸€ä¸ªå‡½æ•°ï¼ŒæŠŠstringå¯¹è±¡å…¨éƒ¨æ”¹æˆå°å†™å½¢å¼*/
 #include<iostream>
 #include<string>
 
@@ -17,7 +17,7 @@ string lower_string(string &s)
 	for (auto &x : s)
 		if (isupper(x))
 		{
-			x = tolower(x);		// Èç¹ûÊÇ´óĞ´×ÖÄ¸£¬¸ÄÎªĞ¡Ğ´
+			x = tolower(x);		// å¦‚æœæ˜¯å¤§å†™å­—æ¯ï¼Œæ”¹ä¸ºå°å†™
 		}
 
 	return s;
@@ -26,7 +26,7 @@ string lower_string(string &s)
 int main()
 {
 	string str("Hello World!");
-	cout << boolalpha << has_Capital(str) << endl;		// std::boolalpha ÒÔtrue falseµÄĞÎÊ½Êä³ö
+	cout << boolalpha << has_Capital(str) << endl;		// std::boolalpha ä»¥true falseçš„å½¢å¼è¾“å‡º
 	cout << lower_string(str) << endl;
 
 	return 0;

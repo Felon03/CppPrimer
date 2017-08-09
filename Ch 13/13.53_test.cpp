@@ -21,9 +21,9 @@ int main()
 	return 0;
 }
 
-// ½á¹û·ÖÎö
+// ç»“æœåˆ†æ
 
-// µ±Ê¹ÓÃ¿½±´½»»»Ê±
+// å½“ä½¿ç”¨æ‹·è´äº¤æ¢æ—¶
 // call constructor
 // call constructor
 // call constructor
@@ -35,9 +35,9 @@ int main()
 // call destructor									3
 // call destructor
 // call destructor
-// Æ½¾ùÓÃÊ±£º 10ms
+// å¹³å‡ç”¨æ—¶ï¼š 10ms
 
-// µ±Ê¹ÓÃÒÆ¶¯¸³ÖµÔËËã·û
+// å½“ä½¿ç”¨ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 // call constructor
 // call constructor
 // call constructor
@@ -45,4 +45,4 @@ int main()
 // call move assignment					1
 // call destructor
 // call destructor
-// Æ½¾ùÓÃÊ±£º 3ms
+// å¹³å‡ç”¨æ—¶ï¼š 3ms

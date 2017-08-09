@@ -1,4 +1,4 @@
-/*改写上一题程序，使用条件运算符代替if else语句*/
+/*鏀瑰啓涓婁竴棰樼▼搴忥紝浣跨敤鏉′欢杩愮畻绗︿唬鏇縤f else璇彞*/
 #include<iostream>
 #include<vector>
 #include<string>

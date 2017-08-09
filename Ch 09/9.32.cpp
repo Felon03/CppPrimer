@@ -1,8 +1,8 @@
-/*ÔÚµÚ316Ò³ÖĞµÄ³ÌĞòÖĞ£¬Èç¹ûµ÷ÓÃ
+/*åœ¨ç¬¬316é¡µä¸­çš„ç¨‹åºä¸­ï¼Œå¦‚æœè°ƒç”¨
  iter = vi.insert(iter, *iter++);
- ÊÇ·ñºÏ·¨
+ æ˜¯å¦åˆæ³•
  */
-/*²»ºÏ·¨
+/*ä¸åˆæ³•
 //  @Answer the statement is illegal, cause as said in Standard [5.2.2] :
 //          "The order of evaluation of arguments is unspecified."
 //          As a result, after entering function insert,
@@ -19,7 +19,7 @@ using namespace std;
 int main()
 {
 	vector<int> vi = { 0,1,2,3,4,5,6,7,8,9 };
-	auto iter = vi.begin();		// µ÷ÓÃ begin¶ø²»ÊÇcbegin£¬ÒòÎªÒª¸Ä±ävi
+	auto iter = vi.begin();		// è°ƒç”¨ beginè€Œä¸æ˜¯cbeginï¼Œå› ä¸ºè¦æ”¹å˜vi
 	while (iter != vi.end())
 	{
 		if (*iter % 2)
@@ -29,7 +29,7 @@ int main()
 			iter += 2;
 		}
 		else
-			iter = vi.erase(iter);		// iterÖ¸ÏòÉ¾³ıÔªËØÖ®ºóµÄÔªËØ
+			iter = vi.erase(iter);		// iteræŒ‡å‘åˆ é™¤å…ƒç´ ä¹‹åçš„å…ƒç´ 
 	}
 
 	for (auto x : vi) cout << x << " ";

@@ -1,6 +1,6 @@
-/*±àĞ´º¯Êı£¬½ÓÊÜÒ»¸öforward_list<string>ºÍÁ½¸östring¹²Èı¸ö²ÎÊı¡£
-º¯ÊıÓ¦ÔÚÁ´±íÖĞ²éÕÒµÚÒ»¸östring,²¢½«µÚ¶ş¸östring²åÈëµ½½ô½Ó×ÅµÚÒ»¸östringÖ®ºóµÄÎ»ÖÃ
-ÈôµÚÒ»¸östringÎ´ÔÚÁ´±íÖĞ£¬Ôò½«µÚ¶ş¸östring²åµ½Á´±íÄ©Î²
+/*ç¼–å†™å‡½æ•°ï¼Œæ¥å—ä¸€ä¸ªforward_list<string>å’Œä¸¤ä¸ªstringå…±ä¸‰ä¸ªå‚æ•°ã€‚
+å‡½æ•°åº”åœ¨é“¾è¡¨ä¸­æŸ¥æ‰¾ç¬¬ä¸€ä¸ªstring,å¹¶å°†ç¬¬äºŒä¸ªstringæ’å…¥åˆ°ç´§æ¥ç€ç¬¬ä¸€ä¸ªstringä¹‹åçš„ä½ç½®
+è‹¥ç¬¬ä¸€ä¸ªstringæœªåœ¨é“¾è¡¨ä¸­ï¼Œåˆ™å°†ç¬¬äºŒä¸ªstringæ’åˆ°é“¾è¡¨æœ«å°¾
 */
 #include<iostream>
 #include<forward_list>
@@ -11,13 +11,13 @@ using namespace std;
 void insert_str(forward_list<string> &flist, const string &s1, const string &s2)
 {
 	auto prev = flist.before_begin(), curr = flist.begin();
-	bool flag = false;			// ±ê¼ÇflistÖĞÊÇ·ñ°üº¬s1
+	bool flag = false;			// æ ‡è®°flistä¸­æ˜¯å¦åŒ…å«s1
 	while (curr != flist.end())
 	{
 		if (*curr == s1)
 		{
-			prev = curr;		// prev±£´æµ±Ç°µÄÔªËØ
-			curr = flist.insert_after(curr, s2);		// currÖ¸ÏòĞÂ²åÈëµÄÔªËØ
+			prev = curr;		// prevä¿å­˜å½“å‰çš„å…ƒç´ 
+			curr = flist.insert_after(curr, s2);		// curræŒ‡å‘æ–°æ’å…¥çš„å…ƒç´ 
 			flag = true;
 		}
 		else
@@ -27,7 +27,7 @@ void insert_str(forward_list<string> &flist, const string &s1, const string &s2)
 		}
 	}
 	if (!flag)
-		curr = flist.insert_after(prev, s2);		// Èç¹ûflistÖĞ²»º¬s1, Ôò´ËÊ±currÖ¸Ïòflist.end(), ¶øÖ¸Ïò×îºóÒ»¸öÔªËØµÄÊÇprev
+		curr = flist.insert_after(prev, s2);		// å¦‚æœflistä¸­ä¸å«s1, åˆ™æ­¤æ—¶curræŒ‡å‘flist.end(), è€ŒæŒ‡å‘æœ€åä¸€ä¸ªå…ƒç´ çš„æ˜¯prev
 }
 
 int main()

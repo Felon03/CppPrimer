@@ -1,4 +1,4 @@
-/*修改前一题程序，使其只打印不重复的元素，应使用unique_copy*/
+/*淇敼鍓嶄竴棰樼▼搴忥紝浣垮叾鍙墦鍗颁笉閲嶅鐨勫厓绱狅紝搴斾娇鐢╱nique_copy*/
 #include<iostream>
 #include<vector>
 #include<algorithm>

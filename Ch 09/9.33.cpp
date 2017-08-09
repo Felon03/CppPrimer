@@ -1,4 +1,4 @@
-/*±¾½Ú×îºóÒ»¸öÀı×ÓÖĞ£¬Èç¹û²»½²insertµÄ½á¹û¸³Óèbegin£¬½«»á·¢ÉúÊ²Ã´*/
+/*æœ¬èŠ‚æœ€åä¸€ä¸ªä¾‹å­ä¸­ï¼Œå¦‚æœä¸è®²insertçš„ç»“æœèµ‹äºˆbeginï¼Œå°†ä¼šå‘ç”Ÿä»€ä¹ˆ*/
 //  @Answer crash, cause the iterator is invalid after insert. Because
 //  Iterators, pointers, and references to a
 //          vector or string are invalid if the container was reallocated.

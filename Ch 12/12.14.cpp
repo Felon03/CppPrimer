@@ -1,4 +1,4 @@
-/* ¶¨ÒåÄã×Ô¼º°æ±¾µÄÓÃshared_ptr¹ÜÀíconnectionµÄº¯Êı*/
+/* å®šä¹‰ä½ è‡ªå·±ç‰ˆæœ¬çš„ç”¨shared_ptrç®¡ç†connectionçš„å‡½æ•°*/
 #include<iostream>
 #include<memory>
 #include<string>
@@ -20,7 +20,7 @@ struct destination
 connection connect(destination* p_dest)
 {
 	std::shared_ptr<connection> p_conn(new connection(p_dest->ip, p_dest->port));
-	// µÈ¼ÛÉùÃ÷
+	// ç­‰ä»·å£°æ˜
 	//std::shared_ptr<connection> p_c(std::make_shared<connection>(p_dest->ip, p_dest->port));
 	std::cout << "creating connection(" << p_conn.use_count() << ")" << std::endl;
 	return *p_conn;
@@ -32,7 +32,7 @@ void disconnect(connection p_conn)
 		<< std::endl;
 }
 
-// É¾³ıÆ÷(deleter)º¯Êı±ØĞë½ÓÊÜµ¥¸öÀàĞÍÎªconnection*µÄ²ÎÊı
+// åˆ é™¤å™¨(deleter)å‡½æ•°å¿…é¡»æ¥å—å•ä¸ªç±»å‹ä¸ºconnection*çš„å‚æ•°
 void end_connection(connection* p_conn)
 {
 	disconnect(*p_conn);

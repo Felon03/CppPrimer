@@ -1,5 +1,5 @@
 #pragma once
-/* 编写Blob和BlobPtr模板，包含书中未定义的多个const成员*/
+/* 缂栧啓Blob鍜孊lobPtr妯℃澘锛屽寘鍚功涓湭瀹氫箟鐨勫涓猚onst鎴愬憳*/
 #include<string>
 using std::string;
 #include <vector>
@@ -284,7 +284,7 @@ template<typename T> inline BlobPtr<T>& BlobPtr<T>::operator--()
 	return *this;
 }
 
-// 后置++
+// 鍚庣疆++
 template<typename T> inline BlobPtr<T> BlobPtr<T>::operator++(int)
 {
 	BlobPtr<T> ret = *this;
@@ -292,7 +292,7 @@ template<typename T> inline BlobPtr<T> BlobPtr<T>::operator++(int)
 	return ret;
 }
 
-// 后置--
+// 鍚庣疆--
 template<typename T> inline BlobPtr<T> BlobPtr<T>::operator--(int)
 {
 	BlobPtr<T> ret = *this;

@@ -1,6 +1,6 @@
-/*��д���򣬽�������������һ�������ļ�����������ļ����ļ����������ļ������Ӧ����������
-	ʹ��istream_iterator��ȡ�����ļ���ʹ��ostream_iterator������д���һ������ļ���ÿ��
-	֮�󶼸�һ���ո񡣽�ż��д��ڶ�������ļ���ÿ��ֵ����ռһ�С�
+/*编写程序，接受三个参数：一个输入文件和两个输出文件的文件名。输入文件保存的应该是整数。
+	使用istream_iterator读取输入文件。使用ostream_iterator将奇数写入第一个输出文件，每个
+	之后都跟一个空格。将偶数写入第二个输出文件，每个值都独占一行。
 */
 #include<fstream>
 #include<iostream>

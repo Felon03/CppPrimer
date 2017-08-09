@@ -1,6 +1,6 @@
 #pragma once
-/* 16.2
-     ±àÐ´²¢²âÊÔcompareº¯Êý
+/* 
+    16.2 ç¼–å†™å¹¶æµ‹è¯•compareå‡½æ•°
 */
 
 #include<string>

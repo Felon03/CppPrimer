@@ -1,4 +1,4 @@
-/*��дһ�����������Ĳ�����initializer_list<int>���͵Ķ��󣬺����Ĺ����Ǽ����б�������Ԫ�صĺ�*/
+/*编写一个函数，它的参数是initializer_list<int>类型的对象，函数的功能是计算列表中所有元素的和*/
 #include<iostream>
 #include<initializer_list>
 

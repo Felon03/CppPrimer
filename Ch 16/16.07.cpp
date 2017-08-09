@@ -1,4 +1,4 @@
-#include "16.7_array_size.h"
+#include "16.07_array_size.h"
 #include<iostream>
 
 int main()

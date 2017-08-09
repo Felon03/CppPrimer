@@ -1,4 +1,4 @@
-/* ʹ��ǰһ����ϰ��������ȡ��׼���룬��ÿһ�б���Ϊһvector��һ��Ԫ��*/
+/* 使用前一个练习定义的类读取标准输入，将每一行保存为一vector的一个元素*/
 #include<iostream>
 #include<string>
 #include<vector>

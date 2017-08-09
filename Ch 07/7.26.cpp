@@ -1,6 +1,6 @@
 #include "7.26.h"
 
-// 成员函数
+// 鎴愬憳鍑芥暟
 Sales_data& Sales_data::combine(const Sales_data &rhs)
 {
 	units_sold += rhs.units_sold;
@@ -8,7 +8,7 @@ Sales_data& Sales_data::combine(const Sales_data &rhs)
 	return *this;
 }
 
-// 友元函数
+// 鍙嬪厓鍑芥暟
 std::istream &read(std::istream &is, Sales_data &item)
 {
 	double price = 0.0;

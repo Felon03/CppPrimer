@@ -1,4 +1,4 @@
-/*11.2.1节联系中的map以孩子的姓为关键字，保存他们的名的vector，用multimap重写此map*/
+/*11.2.1鑺傝仈绯讳腑鐨刴ap浠ュ瀛愮殑濮撲负鍏抽敭瀛楋紝淇濆瓨浠栦滑鐨勫悕鐨剉ector锛岀敤multimap閲嶅啓姝ap*/
 #include<iostream>
 #include<string>
 #include<vector>

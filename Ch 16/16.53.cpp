@@ -1,6 +1,6 @@
 /*
-    16.53 ±àĞ´Äã×Ô¼º°æ±¾µÄprintº¯Êı£¬²¢´òÓ¡Ò»¸ö¡¢Á½¸ö¡¢¼°5¸öÊµ²ÎÀ´²âÊÔËü£¬
-	Òª´òÓ¡µÄÊµ²Î¶¼Ó¦ÓĞ²»Í¬µÄÀàĞÍ¡£
+    16.53 ç¼–å†™ä½ è‡ªå·±ç‰ˆæœ¬çš„printå‡½æ•°ï¼Œå¹¶æ‰“å°ä¸€ä¸ªã€ä¸¤ä¸ªã€åŠ5ä¸ªå®å‚æ¥æµ‹è¯•å®ƒï¼Œ
+	è¦æ‰“å°çš„å®å‚éƒ½åº”æœ‰ä¸åŒçš„ç±»å‹ã€‚
 */
 #include<iostream>
 #include<string>
@@ -36,14 +36,14 @@ int main()
 //template<typename T>
 //std::ostream & print(std::ostream & os, const T & t)
 //{
-//	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+//	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 //	return os << t;
 //}
 
 template<typename T, typename ...Args>
 std::ostream & print(std::ostream & os, const T & t, const Args & ...rest)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << t << " ";
 	return print(os, rest...);
 }
@@ -51,6 +51,6 @@ std::ostream & print(std::ostream & os, const T & t, const Args & ...rest)
 template<typename T>
 std::ostream & print(std::ostream & os, const T & t)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	return os << t;
 }

@@ -1,9 +1,9 @@
-/*±àĞ´Ò»¸öº¯Êı£¬Í¬Ê±ÓÃµ½ĞÎ²Î¡¢¾Ö²¿±äÁ¿ºÍ¾²Ì¬¾Ö²¿±äÁ¿*/
+/*ç¼–å†™ä¸€ä¸ªå‡½æ•°ï¼ŒåŒæ—¶ç”¨åˆ°å½¢å‚ã€å±€éƒ¨å˜é‡å’Œé™æ€å±€éƒ¨å˜é‡*/
 #include<iostream>
 
 using namespace std;
 
-// ¶¨Òåº¯Êıfunc£¬Í¬Ê±ÓÃµ½ÉÏÊöÈıÖÖ²ÎÊı
+// å®šä¹‰å‡½æ•°funcï¼ŒåŒæ—¶ç”¨åˆ°ä¸Šè¿°ä¸‰ç§å‚æ•°
 void func(int n);	
 
 int main()
@@ -14,10 +14,10 @@ int main()
 	return 0;
 }
 
-void func(int n)		// nÎªĞÎ²Î
+void func(int n)		// nä¸ºå½¢å‚
 {
-	int ret = 1;	// retÎª¾Ö²¿±äÁ¿
-	static int cnt = 0;	// cntÎª¾²Ì¬¾Ö²¿±äÁ¿
+	int ret = 1;	// retä¸ºå±€éƒ¨å˜é‡
+	static int cnt = 0;	// cntä¸ºé™æ€å±€éƒ¨å˜é‡
 
 	ret += n;
 	++cnt;

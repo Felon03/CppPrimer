@@ -1,4 +1,4 @@
-/*±àÐ´³ÌÐò£¬Ê¹ÓÃÁ÷µü´úÆ÷¶ÁÈ¡Ò»¸öÎÄ±¾ÎÄ¼þ£¬´æÈëÒ»¸övectorÖÐµÄstringÀï*/
+/*ç¼–å†™ç¨‹åºï¼Œä½¿ç”¨æµè¿­ä»£å™¨è¯»å–ä¸€ä¸ªæ–‡æœ¬æ–‡ä»¶ï¼Œå­˜å…¥ä¸€ä¸ªvectorä¸­çš„stringé‡Œ*/
 #include<iostream>
 #include<fstream>
 #include<vector>

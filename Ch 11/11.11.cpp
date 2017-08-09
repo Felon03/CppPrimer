@@ -1,4 +1,4 @@
-/*不适用decltype重新定义bookstore*/
+/*涓嶉�傜敤decltype閲嶆柊瀹氫箟bookstore*/
 #include<iostream>
 #include<set>
 #include"Sales_data.h"
@@ -12,16 +12,16 @@ bool compareIsbn(const Sales_data &lhs, const Sales_data &rhs)
 
 int main()
 {
-	// 使用decltype
+	// 浣跨敤decltype
 	multiset<Sales_data, decltype(compareIsbn)*> bookstore(compareIsbn);
 	// class std::multiset<Sales_data, bool (*)(const Sales_data &, const Sales_data &)>
 
-	// 方法1: 使用typedef
+	// 鏂规硶1: 浣跨敤typedef
 	typedef bool(*compareType)(const Sales_data &, const Sales_data &);
 	multiset<Sales_data, compareType> bookstore(compareIsbn);
 	// class std::multiset<Sales_data, bool (*)(const Sales_data &, const Sales_data &)>
 
-	// 方法2: 使用using
+	// 鏂规硶2: 浣跨敤using
 	using cmp_t = bool (*)(const Sales_data &, const Sales_data &);
 	multiset<Sales_data, cmp_t>bookstore(compareIsbn);
 	// class std::multiseet<Sales_data, bool (*)(const Sales_data &, const Sales_data &)>

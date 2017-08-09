@@ -1,4 +1,4 @@
-/*Ê¹ÓÃlist´úÌævectorÖØĞÂÊµÏÖÈ¥³ıÖØ¸´µ¥´ÊµÄ³ÌĞò*/
+/*ä½¿ç”¨listä»£æ›¿vectoré‡æ–°å®ç°å»é™¤é‡å¤å•è¯çš„ç¨‹åº*/
 #include<iostream>
 #include<list>
 #include<string>
@@ -7,9 +7,9 @@ using namespace std;
 
 void elimDups(list<string> &words)
 {
-	// ¸øwordsÅÅĞò
+	// ç»™wordsæ’åº
 	words.sort();
-	// É¾³ıÖØ¸´ÔªËØ
+	// åˆ é™¤é‡å¤å…ƒç´ 
 	words.unique();
 }
 

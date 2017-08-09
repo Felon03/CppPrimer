@@ -1,5 +1,5 @@
-/*±àÐ´º¯Êý£¬½ÓÊÜÒ»¸ö±íÊ¾Ãû×ÖµÄstring²ÎÊýºÍÁ½¸ö·Ö±ð±íÊ¾Ç°×º(ÈçMr.»òMs.)ºÍºó×º(ÈçJr.»òIII)µÄ×Ö·û´®
-Ê¹ÓÃµü´úÆ÷¼°insertºÍappendº¯Êý½«Ç°×ººÍºó×ºÌí¼Óµ½¸ø¶¨µÄÃû×ÖÖÐ£¬½«Éú³ÉµÄÐÂstring·µ»Ø
+/*ç¼–å†™å‡½æ•°ï¼ŒæŽ¥å—ä¸€ä¸ªè¡¨ç¤ºåå­—çš„stringå‚æ•°å’Œä¸¤ä¸ªåˆ†åˆ«è¡¨ç¤ºå‰ç¼€(å¦‚Mr.æˆ–Ms.)å’ŒåŽç¼€(å¦‚Jr.æˆ–III)çš„å­—ç¬¦ä¸²
+ä½¿ç”¨è¿­ä»£å™¨åŠinsertå’Œappendå‡½æ•°å°†å‰ç¼€å’ŒåŽç¼€æ·»åŠ åˆ°ç»™å®šçš„åå­—ä¸­ï¼Œå°†ç”Ÿæˆçš„æ–°stringè¿”å›ž
 */
 #include<iostream>
 #include<string>	

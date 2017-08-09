@@ -16,7 +16,7 @@ String::String(const String &rhs)
 
 String & String::operator=(const String &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto newstr = alloc_n_copy(rhs.elements, rhs.end);
 	free();
 	elements = newstr.first;
@@ -33,7 +33,7 @@ String::String(String &&s) noexcept
 
 String & String::operator=(String &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		free();

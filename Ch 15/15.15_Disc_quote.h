@@ -1,6 +1,6 @@
 #pragma once
-/* ¶¨ÒåDisc_quoteÀà*/
-#include"15.3_Quote.h"
+/* å®šä¹‰Disc_quoteç±»*/
+#include"15.03_Quote.h"
 #include<string>
 
 using std::string;
@@ -14,6 +14,6 @@ public:
 	}
 	virtual double net_price(size_t) const = 0;
 protected:
-	size_t quantity = 0;    // ÕÛ¿ÛÊÊÓÃµÄ¹ºÂòÊıÁ¿
-	double discount = 0.0;    // ±íÊ¾ÕÛ¿ÛµÄĞ¡ÊıÖµ
+	size_t quantity = 0;    // æŠ˜æ‰£é€‚ç”¨çš„è´­ä¹°æ•°é‡
+	double discount = 0.0;    // è¡¨ç¤ºæŠ˜æ‰£çš„å°æ•°å€¼
 };

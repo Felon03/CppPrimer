@@ -1,6 +1,6 @@
 #pragma once
-/* ÎªÄãµÄHasPtrÀà¶¨ÒåÒ»¸ö<ÔËËã·û£¬²¢¶¨ÒåÒ»¸öHasPtrµÄvector
-	ÎªÕâ¸övectorÌí¼ÓÒ»Ğ©ÔªËØ£¬²¢¶ÔËüÖ´ĞĞsort¡£×¢ÒâºÎÊ±»áµ÷ÓÃswap
+/* ä¸ºä½ çš„HasPtrç±»å®šä¹‰ä¸€ä¸ª<è¿ç®—ç¬¦ï¼Œå¹¶å®šä¹‰ä¸€ä¸ªHasPtrçš„vector
+	ä¸ºè¿™ä¸ªvectoræ·»åŠ ä¸€äº›å…ƒç´ ï¼Œå¹¶å¯¹å®ƒæ‰§è¡Œsortã€‚æ³¨æ„ä½•æ—¶ä¼šè°ƒç”¨swap
 */
 #include<string>
 #include<iostream>

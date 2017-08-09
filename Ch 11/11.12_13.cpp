@@ -1,4 +1,4 @@
-/*±àĞ´³ÌĞò£¬¶ÁÈëstringºÍintĞòÁĞ£¬½«Ã¿¸östringºÍint´æÈëÒ»¸öpair'ÖĞ£¬pair±£´æÔÚÒ»¸övectorÖĞ*/
+/*ç¼–å†™ç¨‹åºï¼Œè¯»å…¥stringå’Œintåºåˆ—ï¼Œå°†æ¯ä¸ªstringå’Œintå­˜å…¥ä¸€ä¸ªpair'ä¸­ï¼Œpairä¿å­˜åœ¨ä¸€ä¸ªvectorä¸­*/
 #include<utility>
 #include<iostream>
 #include<string>
@@ -16,9 +16,9 @@ int main()
 		vp.push_back(make_pair(word, num));
 	}
 
-	// 11.13 ²ÉÓÃ²»Í¬µÄ·½·¨´´½¨pair
+	// 11.13 é‡‡ç”¨ä¸åŒçš„æ–¹æ³•åˆ›å»ºpair
 	vp.push_back(pair<string, int>(word, num));
-	vp.push_back(pair<string, int>{word, num});	// µÈ¼ÛÓÚÉÏÒ»¸ö
+	vp.push_back(pair<string, int>{word, num});	// ç­‰ä»·äºä¸Šä¸€ä¸ª
 	vp.push_back({ word, num });
 
 	for (const auto &x : vp)

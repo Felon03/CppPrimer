@@ -1,5 +1,5 @@
 #pragma once
-/* 为HasPtr实现一个拷贝赋值运算符和移动赋值运算符*/
+/* 涓篐asPtr瀹炵幇涓�涓嫹璐濊祴鍊艰繍绠楃鍜岀Щ鍔ㄨ祴鍊艰繍绠楃*/
 #include<string>
 #include<iostream>
 

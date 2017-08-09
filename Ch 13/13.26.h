@@ -1,5 +1,5 @@
 #pragma once
-/* ±àĞ´ÀàÖµ°æ±¾µÄStrBlob*/
+/* ç¼–å†™ç±»å€¼ç‰ˆæœ¬çš„StrBlob*/
 #include<vector>
 #include<string>
 #include<memory>
@@ -23,11 +23,11 @@ public:
 	StrBlob(std::initializer_list<string> il) 
 		: data(std::make_shared<vector<string>>(il)) {}
 
-	// ¿½±´¹¹Ôìº¯Êı
+	// æ‹·è´æ„é€ å‡½æ•°
 	StrBlob(const StrBlob &rhs) 
 		: data(std::make_shared<vector<string>>(*rhs.data)) {}
 
-	// ¿½±´¸³ÖµÔËËã·û
+	// æ‹·è´èµ‹å€¼è¿ç®—ç¬¦
 	StrBlob& operator=(const StrBlob &rhs);
 
 	size_type size() const { return data->size(); }
@@ -102,8 +102,8 @@ private:
 	std::shared_ptr<vector<string>>
 		check(std::size_t i, const string &msg) const
 	{
-		auto ret = wptr.lock();		// ¼ì²évectorÊÇ·ñ»¹´æÔÚ
-		// Èç¹û²»´æÔÚ£¬·µ»Øruntime_error
+		auto ret = wptr.lock();		// æ£€æŸ¥vectoræ˜¯å¦è¿˜å­˜åœ¨
+		// å¦‚æœä¸å­˜åœ¨ï¼Œè¿”å›runtime_error
 		if (!ret) throw std::runtime_error("unbound ConstStrBlobPtr");
 		if (i >= ret->size()) throw std::out_of_range(msg);
 		return ret;

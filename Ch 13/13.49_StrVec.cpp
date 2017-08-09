@@ -14,7 +14,7 @@ StrVec::StrVec(const StrVec &rhs)
 
 StrVec & StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;
@@ -25,21 +25,21 @@ StrVec & StrVec::operator=(const StrVec &rhs)
 StrVec::StrVec(StrVec &&s) noexcept
 	:elements(s.elements), first_free(s.first_free), cap(s.cap)
 {
-	// Áîs½øÈëÕâÑùµÄ×´Ì¬¡ª¡ª¶ÔÆäÔËĞĞÎö¹¹º¯ÊıÊÇ°²È«µÄ
+	// ä»¤sè¿›å…¥è¿™æ ·çš„çŠ¶æ€â€”â€”å¯¹å…¶è¿è¡Œææ„å‡½æ•°æ˜¯å®‰å…¨çš„
 	s.elements = s.first_free = s.cap = nullptr;
 }
 
 StrVec & StrVec::operator=(StrVec &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
-	// ¼ì²â×Ô¸³Öµ
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
+	// æ£€æµ‹è‡ªèµ‹å€¼
 	if (this != &rhs)
 	{
-		free();               // ÊÍ·ÅÒÑÓĞÔªËØ
-		elements = rhs.elements;    // ´Órhs½Ó¹Ü×ÊÔ´
+		free();               // é‡Šæ”¾å·²æœ‰å…ƒç´ 
+		elements = rhs.elements;    // ä»rhsæ¥ç®¡èµ„æº
 		first_free = rhs.first_free;
 		cap = rhs.cap;
-		// ½«rhsÖÃÓÚ¿ÉÎö¹¹×´Ì¬
+		// å°†rhsç½®äºå¯ææ„çŠ¶æ€
 		rhs.elements = rhs.first_free = rhs.cap = nullptr;
 	}
 	return *this;

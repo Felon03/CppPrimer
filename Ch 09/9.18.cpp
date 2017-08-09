@@ -1,5 +1,5 @@
-/*��д���򣬴ӱ�׼�����ȡstring���У�����һ��deque�С�
-��дһ��ѭ�����õ�������ӡdeque�е�Ԫ��
+/*编写程序，从标准输入读取string序列，存入一个deque中。
+编写一个循环，用迭代器打印deque中的元素
 */
 #include<iostream>
 #include<string>

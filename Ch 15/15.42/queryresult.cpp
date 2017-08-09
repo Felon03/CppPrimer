@@ -2,7 +2,7 @@
 
 std::ostream &print(std::ostream &os, const QueryResult &qr)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << qr.sought << " occurs " << qr.sp_lines->size() << " "
 		<< "times" << "\n";
 
@@ -18,7 +18,7 @@ std::ostream &print(std::ostream &os, const QueryResult &qr)
 
 std::ostream & print(std::ostream &os, const QueryResult &qr, size_t begin, size_t end)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (begin > end)
 	{
 		os << "Illegal query range!";
@@ -44,10 +44,10 @@ std::ostream & print(std::ostream &os, const QueryResult &qr, size_t begin, size
 
 std::ostream & operator<<(std::ostream &os, const QueryResult &qr)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << qr.sought << " occurs " << qr.sp_lines->size() << " "
 		<< "times" << "\n";
-	// ´òÓ¡ËùÓĞµ¥´Ê³öÏÖµÄĞĞ
+	// æ‰“å°æ‰€æœ‰å•è¯å‡ºç°çš„è¡Œ
 	for (auto &index : *qr.sp_lines)
 	{
 		os << "\t(line " << index + 1 << ")";

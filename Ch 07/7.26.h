@@ -1,5 +1,5 @@
 #pragma once
-/*½«Sales_Data::avg_price¶¨Òå³ÉÄÚÁªº¯Êı*/
+/*å°†Sales_Data::avg_priceå®šä¹‰æˆå†…è”å‡½æ•°*/
 #include<string>
 
 class Sales_data

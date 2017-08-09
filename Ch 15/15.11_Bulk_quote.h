@@ -1,5 +1,5 @@
 #pragma once
-/* ¶¨ÒåĞéº¯Êıdebug£¬Êä³öÀàµÄÊı¾İ³ÉÔ±*/
+/* å®šä¹‰è™šå‡½æ•°debugï¼Œè¾“å‡ºç±»çš„æ•°æ®æˆå‘˜*/
 #include"15.11_Quote.h"
 
 class Bulk_quote : public Quote {

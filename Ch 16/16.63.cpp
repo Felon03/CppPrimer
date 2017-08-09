@@ -1,8 +1,8 @@
 /*
-    16.63 ¶¨ÒåÒ»¸öÄ£°å£¬Í³¼ÆÒ»¸ö¸ø¶¨ÖµÔÚÒ»¸övectorÖĞ³öÏÖµÄ´ÎÊı¡£
-	²âÊÔº¯Êı£¬·Ö±ğ´«µİ¸øËûÒ»¸ödoubleµÄvector£¬Ò»¸öintµÄvector
-	ÒÔ¼°Ò»¸östringµÄvector
-	16.64 Îª¸ÄÄ£°å±àĞ´ÌØÀı»¯°æ±¾À´´¦Àívector<const char*>¡£
+    16.63 å®šä¹‰ä¸€ä¸ªæ¨¡æ¿ï¼Œç»Ÿè®¡ä¸€ä¸ªç»™å®šå€¼åœ¨ä¸€ä¸ªvectorä¸­å‡ºç°çš„æ¬¡æ•°ã€‚
+	æµ‹è¯•å‡½æ•°ï¼Œåˆ†åˆ«ä¼ é€’ç»™ä»–ä¸€ä¸ªdoubleçš„vectorï¼Œä¸€ä¸ªintçš„vector
+	ä»¥åŠä¸€ä¸ªstringçš„vector
+	16.64 ä¸ºæ”¹æ¨¡æ¿ç¼–å†™ç‰¹ä¾‹åŒ–ç‰ˆæœ¬æ¥å¤„ç†vector<const char*>ã€‚
 */
 #include<iostream>
 #include<vector>
@@ -10,7 +10,7 @@
 
 template<typename T> int count_elem(const std::vector<T> &vec, const T t);
 
-// ÌØÀı»¯char*
+// ç‰¹ä¾‹åŒ–char*
 template<> int count_elem(const std::vector<const char*> &vec,  const char *elem);
 
 

@@ -1,4 +1,4 @@
-/*改写交换数值程序，改为使用引用交换而非指针交换*/
+/*鏀瑰啓浜ゆ崲鏁板�肩▼搴忥紝鏀逛负浣跨敤寮曠敤浜ゆ崲鑰岄潪鎸囬拡浜ゆ崲*/
 #include<iostream>
 
 using namespace std;

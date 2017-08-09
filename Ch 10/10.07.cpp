@@ -1,4 +1,4 @@
-/*ÅĞ¶Ï³ÌĞòÊÇ·ñÓĞÎó£¬Èç¹ûÓĞ Çë¸ÄÕı*/
+/*åˆ¤æ–­ç¨‹åºæ˜¯å¦æœ‰è¯¯ï¼Œå¦‚æœæœ‰ è¯·æ”¹æ­£*/
 #include<iostream>
 #include<iterator>
 #include<vector>
@@ -22,19 +22,19 @@ int main()
 	int i;
 	while (cin >> i)
 		lst.push_back(i);
-	// vecµÄ´óĞ¡Óëlst²»ÏàµÈ£¬ÎŞ·¨copy
-	// resolution 1: ½«vecµÄ´óĞ¡±ä³ÉÓëlstÏàµÈµÄ´óĞ¡
+	// vecçš„å¤§å°ä¸lstä¸ç›¸ç­‰ï¼Œæ— æ³•copy
+	// resolution 1: å°†vecçš„å¤§å°å˜æˆä¸lstç›¸ç­‰çš„å¤§å°
 	vec.resize(lst.size());
 	//copy(lst.cbegin(), lst.cend(), vec.begin());
 
-	// resolution 2: vec.begin() ¸ÄÎª back_insert(vec)
+	// resolution 2: vec.begin() æ”¹ä¸º back_insert(vec)
 	// copy(lst.cbegin(), lst.cend(), back_insertr(vec));
 
 	// (b)
 	vector<int> v;
 	v.reserve(10);
-	//fill_n(v.begin(), 10, 0);		// ´íÎó
-	// ĞŞ¸ÄÈçÏÂ
+	//fill_n(v.begin(), 10, 0);		// é”™è¯¯
+	// ä¿®æ”¹å¦‚ä¸‹
 	fill_n(back_inserter(v), 10, 0);
 
 	print(vec);

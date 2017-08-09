@@ -5,7 +5,7 @@
 
 String::String(const char *s)
 {
-	char *str = const_cast<char*>(s);  //const_castÓÃÀ´ÒÆ³ıconstÏŞ¶¨·û 
+	char *str = const_cast<char*>(s);  //const_castç”¨æ¥ç§»é™¤consté™å®šç¬¦ 
     // ref: http://www.cnblogs.com/ider/archive/2011/07/22/cpp_cast_operator_part2.html
 	while (*str) ++str;
 	range_initialize(s, ++str);
@@ -18,7 +18,7 @@ String::String(const String &rhs)
 
 String & String::operator=(const String &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto new_str = alloc_n_copy(rhs.elements, rhs.end);
 	free();
 	elements = new_str.first;
@@ -47,8 +47,8 @@ void String::range_initialize(const char *b, const char *e)
 
 void String::free()
 {
-	// ²¶»ñÁĞ±íÎªÊ²Ã´Òª¼Óthis£º·â±Õº¯Êı¾Ö²¿±äÁ¿²»ÄÜÔÚlambdaÌåÖĞÒıÓÃ£¬³ı·ÇÆäÎ»ÓÚ²¶»ñÁĞ±íÖĞ
-	// Èç¹û°Ñalloc¶¨Òå³ÉstaticµÄ£¬¾Í¿ÉÒÔ²»ÓÃ²¶»ñthis
+	// æ•è·åˆ—è¡¨ä¸ºä»€ä¹ˆè¦åŠ thisï¼šå°é—­å‡½æ•°å±€éƒ¨å˜é‡ä¸èƒ½åœ¨lambdaä½“ä¸­å¼•ç”¨ï¼Œé™¤éå…¶ä½äºæ•è·åˆ—è¡¨ä¸­
+	// å¦‚æœæŠŠallocå®šä¹‰æˆstaticçš„ï¼Œå°±å¯ä»¥ä¸ç”¨æ•è·this
 	std::for_each(elements, end, [this](char &c) {alloc.destroy(&c); });
 	alloc.deallocate(elements, end - elements);
 }

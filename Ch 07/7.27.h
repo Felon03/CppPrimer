@@ -1,5 +1,5 @@
 #pragma once
-/*¸øScreenÀàÌí¼Ómove¡¢setºÍdisplayº¯Êı£¬²¢ÑéÖ¤ÊÇ·ñÕıÈ·*/
+/*ç»™Screenç±»æ·»åŠ moveã€setå’Œdisplayå‡½æ•°ï¼Œå¹¶éªŒè¯æ˜¯å¦æ­£ç¡®*/
 #include<string>
 
 class Screen
@@ -15,7 +15,7 @@ public:
 	Screen &move(pos r, pos c);
 	Screen &set(char);
 	Screen &set(pos, pos, char);
-	// ¸ù¾İ¶ÔÏóÊÇ·ñÊÇconstÖØÔØÁËdisplayº¯Êı
+	// æ ¹æ®å¯¹è±¡æ˜¯å¦æ˜¯consté‡è½½äº†displayå‡½æ•°
 	Screen &display(std::ostream &os) { do_display(os); return *this; }
 	const Screen &display(std::ostream &os) const { do_display(os); return*this; }
 
@@ -25,27 +25,27 @@ private:
 	pos height = 0, width = 0;
 	std::string contents;
 
-	// do_display()º¯Êı¸ºÔğÏÔÊ¾ScreenµÄÄÚÈİ
+	// do_display()å‡½æ•°è´Ÿè´£æ˜¾ç¤ºScreençš„å†…å®¹
 	void do_display(std::ostream &os) const { os << contents; }
 
 };
 
 inline Screen &Screen::move(pos r, pos c)
 {
-	pos row = r * width;			// ¼ÆËãĞĞµÄÎ»ÖÃ
-	cursor = row + c;				// ÔÚĞĞÄÚ½«¹â±êÒÆ¶¯ÖÁÖ¸¶¨ÁĞ
-	return *this;						// ÒÔ×óÖµµÄĞÎÊ½·µ»Ø¶ÔÏó
+	pos row = r * width;			// è®¡ç®—è¡Œçš„ä½ç½®
+	cursor = row + c;				// åœ¨è¡Œå†…å°†å…‰æ ‡ç§»åŠ¨è‡³æŒ‡å®šåˆ—
+	return *this;						// ä»¥å·¦å€¼çš„å½¢å¼è¿”å›å¯¹è±¡
 }
 
 inline Screen &Screen::set(char c)
 {
-	contents[cursor] = c;		// ÉèÖÃµ±Ç°¹â±êËùÔÚÎ»ÖÃµÄĞÂÖµ
+	contents[cursor] = c;		// è®¾ç½®å½“å‰å…‰æ ‡æ‰€åœ¨ä½ç½®çš„æ–°å€¼
 	return *this;
 }
 
 inline Screen &Screen::set(pos row, pos col, char c)
 {
-	contents[row*width + col] = c;		// ¸øÉè¶¨Î»ÖÃµÄĞÂÖµ
-	return *this;											// ½«this¶ÔÏó×÷Îª×óÖµ·µ»Ø
+	contents[row*width + col] = c;		// ç»™è®¾å®šä½ç½®çš„æ–°å€¼
+	return *this;											// å°†thiså¯¹è±¡ä½œä¸ºå·¦å€¼è¿”å›
 }
 

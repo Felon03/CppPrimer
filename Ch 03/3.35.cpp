@@ -1,4 +1,4 @@
-/*��дһ�γ�������ָ�뽲�����е�Ԫ����Ϊ0*/
+/*编写一段程序，利用指针将数组中的元素置为0*/
 #include<iostream>
 
 using namespace std;

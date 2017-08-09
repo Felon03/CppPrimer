@@ -12,7 +12,7 @@ ConstStrBlobPtr StrBlob::end() const
 
 StrBlob & StrBlob::operator=(const StrBlob & rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	data = std::make_shared<vector<string>>(*rhs.data);
 	return *this;
 }

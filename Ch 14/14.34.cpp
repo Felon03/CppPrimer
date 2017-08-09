@@ -1,4 +1,4 @@
-/* ¶¨ÒåÒ»¸öº¯Êı¶ÔÏóÀà£¬ÁîÆäÖ´ĞĞif-then-elseµÄ²Ù×÷*/
+/* å®šä¹‰ä¸€ä¸ªå‡½æ•°å¯¹è±¡ç±»ï¼Œä»¤å…¶æ‰§è¡Œif-then-elseçš„æ“ä½œ*/
 #include<iostream>
 
 struct PrintMax

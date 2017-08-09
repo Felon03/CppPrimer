@@ -2,10 +2,10 @@
 
 TreeNode & TreeNode::operator=(const TreeNode & rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
-	++*rhs.count;										// µİÔöÓÒ²àÔËËã¶ÔÏóµÄÒıÓÃ¼ÆÊı
-	if (--*count == 0)								// µİ¼õ±¾¶ÔÏóµÄÒıÓÃ¼ÆÊı
-	{																// ÊÍ·Å±¾¶ÔÏó·ÖÅäµÄ³ÉÔ±
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
+	++*rhs.count;										// é€’å¢å³ä¾§è¿ç®—å¯¹è±¡çš„å¼•ç”¨è®¡æ•°
+	if (--*count == 0)								// é€’å‡æœ¬å¯¹è±¡çš„å¼•ç”¨è®¡æ•°
+	{																// é‡Šæ”¾æœ¬å¯¹è±¡åˆ†é…çš„æˆå‘˜
 		if (left)
 		{
 			delete left;
@@ -19,16 +19,16 @@ TreeNode & TreeNode::operator=(const TreeNode & rhs)
 		delete count;
 		count = nullptr;
 	}
-	value = rhs.value;								// ½«Êı¾İ´Órhs¿½±´µ½±¾¶ÔÏó
+	value = rhs.value;								// å°†æ•°æ®ä»rhsæ‹·è´åˆ°æœ¬å¯¹è±¡
 	count = rhs.count;
 	left = rhs.left;
 	right = rhs.right;
-	return *this;										// ·µ»Ø±¾¶ÔÏó
+	return *this;										// è¿”å›æœ¬å¯¹è±¡
 }
 
 BinStrTree & BinStrTree::operator=(const BinStrTree & rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	TreeNode *new_root = new TreeNode(*rhs.root);
 	delete root;
 	root = new_root;

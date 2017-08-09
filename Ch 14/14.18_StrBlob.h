@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªStrBlobÀà¡¢StrBlobPtrÀàºÍConstStrBlobÀà¶¨Òå¹ØÏµÔËËã·û*/
+/* ä¸ºStrBlobç±»ã€StrBlobPtrç±»å’ŒConstStrBlobç±»å®šä¹‰å…³ç³»è¿ç®—ç¬¦*/
 #include<vector>
 #include<string>
 #include<memory>
@@ -25,10 +25,10 @@ class StrBlob {
 	using size_type = vector<string>::size_type;
 	friend class StrBlobPtr;
 	friend class ConstStrBlobPtr;
-	// ÏàµÈºÍ²»ÏàµÈÔËËã·û
+	// ç›¸ç­‰å’Œä¸ç›¸ç­‰è¿ç®—ç¬¦
 	friend bool operator==(const StrBlob&, const StrBlob&);
 	friend bool operator!=(const StrBlob&, const StrBlob&);
-	// ¹ØÏµÔËËã·û
+	// å…³ç³»è¿ç®—ç¬¦
 	friend bool operator<(const StrBlob&, const StrBlob&);
 	friend bool operator>(const StrBlob&, const StrBlob&);
 	friend bool operator <= (const StrBlob&, const StrBlob&);

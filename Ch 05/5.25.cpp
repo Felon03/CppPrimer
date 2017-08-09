@@ -1,4 +1,4 @@
-/*修改程序，使用try语句块去捕获异常。catch子句应该为用户输出一条提示信息，询问其是否输入新数并重新执行try语句块的内容*/
+/*淇敼绋嬪簭锛屼娇鐢╰ry璇彞鍧楀幓鎹曡幏寮傚父銆俢atch瀛愬彞搴旇涓虹敤鎴疯緭鍑轰竴鏉℃彁绀轰俊鎭紝璇㈤棶鍏舵槸鍚﹁緭鍏ユ柊鏁板苟閲嶆柊鎵цtry璇彞鍧楃殑鍐呭*/
 #include<iostream>
 #include<stdexcept>
 

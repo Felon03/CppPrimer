@@ -1,42 +1,42 @@
 #pragma once
-/* ±àĞ´Äã×Ô¼º°æ±¾µÄStrVec£¬°üÀ¨×Ô¼º°æ±¾µÄreserve¡¢capacityºÍresize*/
+/* ç¼–å†™ä½ è‡ªå·±ç‰ˆæœ¬çš„StrVecï¼ŒåŒ…æ‹¬è‡ªå·±ç‰ˆæœ¬çš„reserveã€capacityå’Œresize*/
 #include<string>
 #include<memory>
 
-// ÀàvectorÀàÄÚ´æ·ÖÅä²ßÂÔµÄ¼ò»¯ÊµÏÖ
+// ç±»vectorç±»å†…å­˜åˆ†é…ç­–ç•¥çš„ç®€åŒ–å®ç°
 class StrVec {
 public:
 	StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
 
-	StrVec(const StrVec&);                                   // ¿½±´¹¹Ôìº¯Êı
-	StrVec& operator=(const StrVec&);          // ¿½±´¸³ÖµÔËËã·û
-	~StrVec();                                                             // Îö¹¹º¯Êı
+	StrVec(const StrVec&);                                   // æ‹·è´æ„é€ å‡½æ•°
+	StrVec& operator=(const StrVec&);          // æ‹·è´èµ‹å€¼è¿ç®—ç¬¦
+	~StrVec();                                                             // ææ„å‡½æ•°
 
-	void push_back(const std::string&);           // ¿½±´ÔªËØ
+	void push_back(const std::string&);           // æ‹·è´å…ƒç´ 
 	size_t size() const { return first_free - elements; }
 	size_t capacity() const { return cap - elements; }
 	std::string *begin() const { return elements; }
 	std::string *end() const { return first_free; }
-	//todo: reverse¡¢resize
+	//todo: reverseã€resize
 	void reverse(size_t newcap);
 	void resize(size_t count);
 	void resize(size_t count, const std::string&);
 
 private:
-	// ±»Ìí¼ÓÔªËØµÄº¯ÊıÊ¹ÓÃ
+	// è¢«æ·»åŠ å…ƒç´ çš„å‡½æ•°ä½¿ç”¨
 	void chk_n_alloc()
 	{
 		if (size() == capacity())
 			reallocate();
 	}
-	// ¹¤¾ßº¯Êı£¬±³¿¿±³¹¹Ôìº¯Êı¡¢¸³ÖµÔËËã·ûºÍÎö¹¹º¯ÊıÊ¹ÓÃ
+	// å·¥å…·å‡½æ•°ï¼ŒèƒŒé èƒŒæ„é€ å‡½æ•°ã€èµ‹å€¼è¿ç®—ç¬¦å’Œææ„å‡½æ•°ä½¿ç”¨
 	std::pair<std::string*, std::string*> alloc_n_copy
 	(const std::string*, const std::string*);
-	void free();                                           // Ïú»ÙÔªËØ²¢ÊÍ·ÅÄÚ´æ
-	void reallocate();                              // »ñµÃ¸ü¶àÄÚ´æ²¢¿½±´ÒÑÓĞÔªËØ
-	void alloc_n_move(size_t newcap); // ÒÆ¶¯¶ø²»ÊÇ¿½±´Ô­À´µÄÔªËØ
-	std::string *elements;                     // Ö¸ÏòÊı×éÊ×ÔªËØµÄÖ¸Õë
-	std::string *first_free;                     // Ö¸ÏòÊı×éµÚÒ»¸ö¿ÕÏĞÔªËØµÄÖ¸Õë
-	std::string *cap;                                 // Ö¸ÏòÊı×éÎ²ºóÎ»ÖÃµÄÖ¸Õë
-	static std::allocator<std::string> alloc;           // ·ÖÅäÔªËØ
+	void free();                                           // é”€æ¯å…ƒç´ å¹¶é‡Šæ”¾å†…å­˜
+	void reallocate();                              // è·å¾—æ›´å¤šå†…å­˜å¹¶æ‹·è´å·²æœ‰å…ƒç´ 
+	void alloc_n_move(size_t newcap); // ç§»åŠ¨è€Œä¸æ˜¯æ‹·è´åŸæ¥çš„å…ƒç´ 
+	std::string *elements;                     // æŒ‡å‘æ•°ç»„é¦–å…ƒç´ çš„æŒ‡é’ˆ
+	std::string *first_free;                     // æŒ‡å‘æ•°ç»„ç¬¬ä¸€ä¸ªç©ºé—²å…ƒç´ çš„æŒ‡é’ˆ
+	std::string *cap;                                 // æŒ‡å‘æ•°ç»„å°¾åä½ç½®çš„æŒ‡é’ˆ
+	static std::allocator<std::string> alloc;           // åˆ†é…å…ƒç´ 
 };

@@ -1,5 +1,5 @@
 #pragma once
-/* ¶¨Òå×Ô¼ºµÄScreenºÍWindow_mgr£¬ ÆäÖĞclearÊÇWindow_mgrµÄ³ÉÔ±¡£ÊÇScreenµÄÓÑÔª*/
+/* å®šä¹‰è‡ªå·±çš„Screenå’ŒWindow_mgrï¼Œ å…¶ä¸­clearæ˜¯Window_mgrçš„æˆå‘˜ã€‚æ˜¯Screençš„å‹å…ƒ*/
 #include<string>
 #include<vector>
 
@@ -8,9 +8,9 @@ class Screen;
 class Window_mgr
 {
 public:
-	// ´°¿ÚÖĞÃ¿¸öÆÁÄ»µÄ±àºÅ
+	// çª—å£ä¸­æ¯ä¸ªå±å¹•çš„ç¼–å·
 	using ScreenIndex = std::vector<Screen>::size_type;
-	// °´ÕÕ±àºÅ½«Ö¸¶¨µÄScreenÖØÖÃÎª¿Õ°×
+	// æŒ‰ç…§ç¼–å·å°†æŒ‡å®šçš„Screené‡ç½®ä¸ºç©ºç™½
 	void clear(ScreenIndex);
 
 private:
@@ -32,7 +32,7 @@ public:
 	Screen &move(pos r, pos c);
 	Screen &set(char);
 	Screen &set(pos, pos, char);
-	// ¸ù¾İ¶ÔÏóÊÇ·ñÊÇconstÖØÔØÁËdisplayº¯Êı
+	// æ ¹æ®å¯¹è±¡æ˜¯å¦æ˜¯consté‡è½½äº†displayå‡½æ•°
 	Screen &display(std::ostream &os) { do_display(os); return *this; }
 	const Screen &display(std::ostream &os) const { do_display(os); return*this; }
 
@@ -42,36 +42,36 @@ private:
 	pos height = 0, width = 0;
 	std::string contents;
 
-	// do_display()º¯Êı¸ºÔğÏÔÊ¾ScreenµÄÄÚÈİ
+	// do_display()å‡½æ•°è´Ÿè´£æ˜¾ç¤ºScreençš„å†…å®¹
 	void do_display(std::ostream &os) const { os << contents; }
 
 };
 
 inline void Window_mgr::clear(ScreenIndex index)
 {
-	// Èç¹û³¬³ö·¶Î§ÔòÍË³ö
+	// å¦‚æœè¶…å‡ºèŒƒå›´åˆ™é€€å‡º
 	if (index >= screens.size()) return;
-	// sÊÇÒ»¸öScreenµÄÒıÓÃ£¬Ö¸ÏòÎÒÃÇÏëÇå¿ÕµÄÄÇ¸öÆÁÄ»
+	// sæ˜¯ä¸€ä¸ªScreençš„å¼•ç”¨ï¼ŒæŒ‡å‘æˆ‘ä»¬æƒ³æ¸…ç©ºçš„é‚£ä¸ªå±å¹•
 	Screen &s = screens[index];
-	// ½«Ñ¡ÖĞµÄÄÇ¸öScreenÖØÖÃÎª¿Õ°×
+	// å°†é€‰ä¸­çš„é‚£ä¸ªScreené‡ç½®ä¸ºç©ºç™½
 	s.contents = std::string(s.height*s.width, ' ');
 }
 
 inline Screen &Screen::move(pos r, pos c)
 {
-	pos row = r * width;			// ¼ÆËãĞĞµÄÎ»ÖÃ
-	cursor = row + c;				// ÔÚĞĞÄÚ½«¹â±êÒÆ¶¯ÖÁÖ¸¶¨ÁĞ
-	return *this;						// ÒÔ×óÖµµÄĞÎÊ½·µ»Ø¶ÔÏó
+	pos row = r * width;			// è®¡ç®—è¡Œçš„ä½ç½®
+	cursor = row + c;				// åœ¨è¡Œå†…å°†å…‰æ ‡ç§»åŠ¨è‡³æŒ‡å®šåˆ—
+	return *this;						// ä»¥å·¦å€¼çš„å½¢å¼è¿”å›å¯¹è±¡
 }
 
 inline Screen &Screen::set(char c)
 {
-	contents[cursor] = c;		// ÉèÖÃµ±Ç°¹â±êËùÔÚÎ»ÖÃµÄĞÂÖµ
+	contents[cursor] = c;		// è®¾ç½®å½“å‰å…‰æ ‡æ‰€åœ¨ä½ç½®çš„æ–°å€¼
 	return *this;
 }
 
 inline Screen &Screen::set(pos row, pos col, char c)
 {
-	contents[row*width + col] = c;		// ¸øÉè¶¨Î»ÖÃµÄĞÂÖµ
-	return *this;											// ½«this¶ÔÏó×÷Îª×óÖµ·µ»Ø
+	contents[row*width + col] = c;		// ç»™è®¾å®šä½ç½®çš„æ–°å€¼
+	return *this;											// å°†thiså¯¹è±¡ä½œä¸ºå·¦å€¼è¿”å›
 }

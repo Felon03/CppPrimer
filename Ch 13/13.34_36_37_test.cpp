@@ -10,27 +10,27 @@ int main()
 	Folder mailBox, mailBox1;
 
 	firstMail.print();                             // hello
-	firstMail.save(mailBox);             // ±£´æµ½folderÖĞ
+	firstMail.save(mailBox);             // ä¿å­˜åˆ°folderä¸­
 	mailBox.print();                             // hello
 
 	signInMail.print();                        // Welcome to cppprimer
-	signInMail.save(mailBox);         // ±£´æµ½folderÖĞ
+	signInMail.save(mailBox);         // ä¿å­˜åˆ°folderä¸­
 	mailBox.print();                            // Welcome to cppprimer hello
 
-	firstMail.save(mailBox1);          // ±£´æµ½ĞÂµÄfolder
-	signInMail.save(mailBox1);       // ±£´æµ½ĞÂµÄfolder
+	firstMail.save(mailBox1);          // ä¿å­˜åˆ°æ–°çš„folder
+	signInMail.save(mailBox1);       // ä¿å­˜åˆ°æ–°çš„folder
 	mailBox1.print();                          // Welcome to cppprimer hello
 	
-	firstMail = firstMail;                    // ²âÊÔ×Ô¸³Öµ
+	firstMail = firstMail;                    // æµ‹è¯•è‡ªèµ‹å€¼
 	firstMail.print();                           // hello
 	mailBox.print();                            // Welcome to cppprimer hello
 
 	testMail.save(mailBox);
-	firstMail = testMail;                    // ½«testMailµÄÄÚÈİ¸³¸øfirstMail
+	firstMail = testMail;                    // å°†testMailçš„å†…å®¹èµ‹ç»™firstMail
 	firstMail.print();                            // Test
 	mailBox.print();                             // Welcome to cppprimer Test
 
-	firstMail.remove(mailBox);       // ´ÓmailBoxÖĞÉ¾³ıfirstMail
+	firstMail.remove(mailBox);       // ä»mailBoxä¸­åˆ é™¤firstMail
 	mailBox.print();                             // Welcome to cppprimer
 
 	return 0;

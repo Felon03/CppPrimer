@@ -33,7 +33,7 @@ QueryResult TextQuery::query(const string &sought) const
 
 std::ostream & print(std::ostream & os, QueryResult & query_result)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << query_result.word << " occurs " << query_result.lines->size() << " "
 		<< (query_result.lines->size() > 1 ? "times." : "time.") << std::endl;
 	for (const auto &x : *query_result.lines)

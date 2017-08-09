@@ -11,9 +11,9 @@ int main()
 	string word;
 	while (cin>>word)
 	{
-		// ºöÂÔ´óĞ¡Ğ´
+		// å¿½ç•¥å¤§å°å†™
 		for (auto &ch : word) ch = tolower(ch);
-		// Ê¹ÓÃerase ºÍremove_ifÉ¾µô¶ÁÈëµÄ±êµã·ûºÅ£¬ºöÂÔ±êµã
+		// ä½¿ç”¨erase å’Œremove_ifåˆ æ‰è¯»å…¥çš„æ ‡ç‚¹ç¬¦å·ï¼Œå¿½ç•¥æ ‡ç‚¹
 		word.erase(remove_if(word.begin(), word.end(), ispunct), word.end());
 		++m[word];
 	}

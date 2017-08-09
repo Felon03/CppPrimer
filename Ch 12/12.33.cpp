@@ -3,48 +3,48 @@
 #include<sstream>
 #include<algorithm>
 
-//¶ÁÈ¡ÊäÈëÎÄ¼ş²¢½¨Á¢µ¥´Êµ½ĞĞºÅµÄÓ³Éä
+//è¯»å–è¾“å…¥æ–‡ä»¶å¹¶å»ºç«‹å•è¯åˆ°è¡Œå·çš„æ˜ å°„
 TextQuery::TextQuery(std::ifstream &ifs) : file(new StrBlob)
 {
-	StrBlob::size_type line_no{ 0 };															// ±£´æĞĞºÅ
-	for (string line; std::getline(ifs, line); ++line_no)							// ¶ÔÎÄ¼şÖĞµÄÃ¿Ò»ĞĞ
+	StrBlob::size_type line_no{ 0 };															// ä¿å­˜è¡Œå·
+	for (string line; std::getline(ifs, line); ++line_no)							// å¯¹æ–‡ä»¶ä¸­çš„æ¯ä¸€è¡Œ
 	{
-		file->push_back(line);																			// ±£´æ´ËĞĞÎÄ±¾
-		std::istringstream stream(line);														// ½«ÎÄ±¾·Ö½âÎªµ¥´Ê
-		for (string text, word; stream >> text; word.clear())				// ¶ÔĞĞÖĞÃ¿¸öµ¥´Ê
+		file->push_back(line);																			// ä¿å­˜æ­¤è¡Œæ–‡æœ¬
+		std::istringstream stream(line);														// å°†æ–‡æœ¬åˆ†è§£ä¸ºå•è¯
+		for (string text, word; stream >> text; word.clear())				// å¯¹è¡Œä¸­æ¯ä¸ªå•è¯
 		{
-			std::remove_copy_if(text.begin(), text.end(),						// È¥³ıµ¥´ÊÖĞµÄ±êµã·ûºÅ
+			std::remove_copy_if(text.begin(), text.end(),						// å»é™¤å•è¯ä¸­çš„æ ‡ç‚¹ç¬¦å·
 				std::back_inserter(word), ispunct);
-			// Èç¹ûµ¥´Ê²»ÔÚwordmapÖĞ£¬ÒÔÖ®ÎªÏÂ±êÔÚwordmapÖĞÌí¼ÓÒ»Ïî
+			// å¦‚æœå•è¯ä¸åœ¨wordmapä¸­ï¼Œä»¥ä¹‹ä¸ºä¸‹æ ‡åœ¨wordmapä¸­æ·»åŠ ä¸€é¡¹
 			auto &lines = wordmap[word];
-			// µÚÒ»´ÎÓöµ½Õâ¸öµ¥´ÊÊ±£¬linesµÄÖ¸ÕëÎª¿Õ
-			if (!lines) lines.reset(new std::set<StrBlob::size_type>);	// ·ÖÅäÒ»¸öĞÂµÄset
-			lines->insert(line_no);																		// ½«´ËĞĞºÅ²åÈësetÖĞ
+			// ç¬¬ä¸€æ¬¡é‡åˆ°è¿™ä¸ªå•è¯æ—¶ï¼Œlinesçš„æŒ‡é’ˆä¸ºç©º
+			if (!lines) lines.reset(new std::set<StrBlob::size_type>);	// åˆ†é…ä¸€ä¸ªæ–°çš„set
+			lines->insert(line_no);																		// å°†æ­¤è¡Œå·æ’å…¥setä¸­
 		}
 	}
 }
 
 QueryResult TextQuery::query(const string &sought) const
 {
-	// Èç¹ûÎ´ÕÒµ½sought£¬½«·µ»ØÒ»¸öÖ¸Ïò´ËsetµÄÖ¸Õë
+	// å¦‚æœæœªæ‰¾åˆ°soughtï¼Œå°†è¿”å›ä¸€ä¸ªæŒ‡å‘æ­¤setçš„æŒ‡é’ˆ
 	static shared_ptr<std::set<StrBlob::size_type>>
 		nodata(new std::set< StrBlob::size_type>);
-	// Ê¹ÓÃfind¶ø²»ÊÇÏÂ±êÔËËã·ûÀ´²éÕÒµ¥´Ê£¬±ÜÃâ½«µ¥´ÊÌí¼Óµ½wordmapÖĞ
+	// ä½¿ç”¨findè€Œä¸æ˜¯ä¸‹æ ‡è¿ç®—ç¬¦æ¥æŸ¥æ‰¾å•è¯ï¼Œé¿å…å°†å•è¯æ·»åŠ åˆ°wordmapä¸­
 	auto found = wordmap.find(sought);
 	if (found != wordmap.end())
-		return QueryResult(sought, found->second, file);			// ÕÒµ½µ¥´Ê
+		return QueryResult(sought, found->second, file);			// æ‰¾åˆ°å•è¯
 	else
-		return QueryResult(sought, nodata, file);							// Î´ÕÒµ½
+		return QueryResult(sought, nodata, file);							// æœªæ‰¾åˆ°
 }
 
 std::ostream & print(std::ostream &os, QueryResult &query_result)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
-	// Èç¹ûÕÒµ½ÁËµ¥´Ê£¬´òÓ¡³öÏÖ´ÎÊıºÍËùÓĞ³öÏÖµÄÎ»ÖÃ
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
+	// å¦‚æœæ‰¾åˆ°äº†å•è¯ï¼Œæ‰“å°å‡ºç°æ¬¡æ•°å’Œæ‰€æœ‰å‡ºç°çš„ä½ç½®
 	os << query_result.word << " occurs " << query_result.lines->size() << " "
 		<< (query_result.lines->size() > 1 ? "times." : "time.") << std::endl;
 
-	// ´òÓ¡µ¥´Ê³öÏÖµÄÃ¿Ò»ĞĞ
+	// æ‰“å°å•è¯å‡ºç°çš„æ¯ä¸€è¡Œ
 	for (auto it = query_result.begin(); it != query_result.end(); ++it)
 	{
 		ConstStrBlobPtr p(*query_result.file, *it);

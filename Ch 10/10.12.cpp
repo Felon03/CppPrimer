@@ -1,5 +1,5 @@
-/*±àĞ´ÃûÎªcompareIsbnµÄº¯Êı£¬±È½ÏÁ½¸öSales_data¶ÔÏóµÄisbn()³ÉÔ±¡£
-	Ê¹ÓÃÕâ¸öº¯ÊıÅÅĞòÒ»¸ö±£´æSales_data¶ÔÏóµÄvector
+/*ç¼–å†™åä¸ºcompareIsbnçš„å‡½æ•°ï¼Œæ¯”è¾ƒä¸¤ä¸ªSales_dataå¯¹è±¡çš„isbn()æˆå‘˜ã€‚
+	ä½¿ç”¨è¿™ä¸ªå‡½æ•°æ’åºä¸€ä¸ªä¿å­˜Sales_dataå¯¹è±¡çš„vector
 */
 #include<iostream>
 #include<vector>

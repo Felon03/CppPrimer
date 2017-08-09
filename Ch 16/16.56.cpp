@@ -1,11 +1,11 @@
 /*
-    16.56 编写并测试可变参数版本的errorMsg
+    16.56 缂栧啓骞舵祴璇曞彲鍙樺弬鏁扮増鏈殑errorMsg
 */
 #include<iostream>
 #include<sstream>
 #include<memory>
 
-// 声明
+// 澹版槑
 template<typename T> std::string debug_rep(const T &t);
 
 template<typename T> std::string debug_rep(T *p);
@@ -32,7 +32,7 @@ int main()
 	return 0;
 }
 
-// 定义
+// 瀹氫箟
 template<typename T>
 std::string debug_rep(const T & t)
 {

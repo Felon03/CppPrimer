@@ -1,6 +1,6 @@
-/*±àĞ´Ò»¸öº¯Êı£¬½ÓÊÜÈı¸östring²ÎÊıs¡¢oldValºÍnewVal¡£Ê¹ÓÃµü´úÆ÷¼°insertºÍeraseº¯Êı
-½«sÖĞËùÓĞµÄoldValÌæ»»ÎªnewVal¡£
-²âÊÔ³ÌĞò£¬ÓÃËüÌæ»»tongueµÄ¼òĞ´ĞÎÊ½
+/*ç¼–å†™ä¸€ä¸ªå‡½æ•°ï¼Œæ¥å—ä¸‰ä¸ªstringå‚æ•°sã€oldValå’ŒnewValã€‚ä½¿ç”¨è¿­ä»£å™¨åŠinsertå’Œeraseå‡½æ•°
+å°†sä¸­æ‰€æœ‰çš„oldValæ›¿æ¢ä¸ºnewValã€‚
+æµ‹è¯•ç¨‹åºï¼Œç”¨å®ƒæ›¿æ¢tongueçš„ç®€å†™å½¢å¼
 */
 #include<iostream>
 #include<string>
@@ -9,16 +9,16 @@ using namespace std;
 
 void replace_str(string &s, const string &oldVal, const string &newVal)
 {
-	for (auto beg = s.begin(); distance(beg, s.end()) > distance(oldVal.begin(), oldVal.end());)		// ±£Ö¤begµ½×îºóÔªËØµÄ³¤¶È´óÓÚµÈÓÚoldValµÄ³¤¶È
+	for (auto beg = s.begin(); distance(beg, s.end()) > distance(oldVal.begin(), oldVal.end());)		// ä¿è¯begåˆ°æœ€åå…ƒç´ çš„é•¿åº¦å¤§äºç­‰äºoldValçš„é•¿åº¦
 	{
-		if (string(beg, beg + oldVal.size()) == oldVal)		// Èç¹ûÕÒµ½ÁË
+		if (string(beg, beg + oldVal.size()) == oldVal)		// å¦‚æœæ‰¾åˆ°äº†
 		{
-			beg = s.erase(beg, beg + oldVal.size());		// ÏÈÉ¾³ıÔ­À´µÄoldVal
-			beg = s.insert(beg, newVal.cbegin(), newVal.cend());		// ÔÙ²åÈënewVal
-			advance(beg, newVal.size());		// begµü´úÆ÷Ö¸ÏòneValµÄºóÒ»¸öÔªËØ
+			beg = s.erase(beg, beg + oldVal.size());		// å…ˆåˆ é™¤åŸæ¥çš„oldVal
+			beg = s.insert(beg, newVal.cbegin(), newVal.cend());		// å†æ’å…¥newVal
+			advance(beg, newVal.size());		// begè¿­ä»£å™¨æŒ‡å‘neValçš„åä¸€ä¸ªå…ƒç´ 
 		}
 		else
-			++beg;		// Ã»ÕÒµ½±éÀúÏÂÒ»¸ö
+			++beg;		// æ²¡æ‰¾åˆ°éå†ä¸‹ä¸€ä¸ª
 	}
 
 	return;

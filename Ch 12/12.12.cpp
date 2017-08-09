@@ -1,5 +1,5 @@
-/* pºÍqµÄ¶¨ÒåÈçÏÂ£¬¶ÔÓÚ½ÓÏÂÀ´µÄ¶ÔprocessµÄÃ¿¸öµ÷ÓÃ£¬
-	Èç¹ûºÏ·¨£¬½âÊÍËû×öÁËÊ²Ã´£¬Èç¹û²»ºÏ·¨£¬½âÊÍ´íÎóÔ­Òò
+/* på’Œqçš„å®šä¹‰å¦‚ä¸‹ï¼Œå¯¹äºŽæŽ¥ä¸‹æ¥çš„å¯¹processçš„æ¯ä¸ªè°ƒç”¨ï¼Œ
+	å¦‚æžœåˆæ³•ï¼Œè§£é‡Šä»–åšäº†ä»€ä¹ˆï¼Œå¦‚æžœä¸åˆæ³•ï¼Œè§£é‡Šé”™è¯¯åŽŸå› 
 */
 #include<iostream>
 #include<memory>
@@ -16,19 +16,19 @@ int main()
 	auto p = new int();
 	auto sp = make_shared<int>();
 
-	// ºÏ·¨£¬¿½±´spµ½process()º¯ÊýÖÐ½øÐÐ´¦Àí£¬
-	// ÔÚprocessÔËÐÐµÄ¹ý³ÌÖÐspµÄÒýÓÃ¼ÆÊýÎª2
+	// åˆæ³•ï¼Œæ‹·è´spåˆ°process()å‡½æ•°ä¸­è¿›è¡Œå¤„ç†ï¼Œ
+	// åœ¨processè¿è¡Œçš„è¿‡ç¨‹ä¸­spçš„å¼•ç”¨è®¡æ•°ä¸º2
 	//process(sp);
 
-	// ·Ç·¨£¬²»ÄÜ½«Ò»¸öÄÚÖÃÖ¸ÕëÒþÊ½×ª»»ÎªÒ»¸öÖÇÄÜÖ¸Õë
+	// éžæ³•ï¼Œä¸èƒ½å°†ä¸€ä¸ªå†…ç½®æŒ‡é’ˆéšå¼è½¬æ¢ä¸ºä¸€ä¸ªæ™ºèƒ½æŒ‡é’ˆ
 	//process(new int());
 
-	// ·Ç·¨£¬²»ÄÜ½«Ò»¸öÄÚÖÃÖ¸ÕëÒþÊ½×ª»»ÎªÒ»¸öÖÇÄÜÖ¸Õë
+	// éžæ³•ï¼Œä¸èƒ½å°†ä¸€ä¸ªå†…ç½®æŒ‡é’ˆéšå¼è½¬æ¢ä¸ºä¸€ä¸ªæ™ºèƒ½æŒ‡é’ˆ
 	//process(p);
 
-	// ºÏ·¨£¬µ«²»ÍÆ¼öÕâÃ´×ö¡£
-	// process()½áÊøºó»áÊÍ·ÅpËùÖ¸ÏòµÄÄÚ´æ£¬
-	// ÔÚmainÖÐdelete p»á·¢Éú´íÎó£¬¼´¶þ´ÎÊÍ·Å
+	// åˆæ³•ï¼Œä½†ä¸æŽ¨èè¿™ä¹ˆåšã€‚
+	// process()ç»“æŸåŽä¼šé‡Šæ”¾pæ‰€æŒ‡å‘çš„å†…å­˜ï¼Œ
+	// åœ¨mainä¸­delete pä¼šå‘ç”Ÿé”™è¯¯ï¼Œå³äºŒæ¬¡é‡Šæ”¾
 	//process(shared_ptr<int>(p));
 
 	return 0;

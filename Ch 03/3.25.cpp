@@ -1,4 +1,4 @@
-/*ÀûÓÃµü´úÆ÷¸ÄĞ´3.3.3½Ú»®·Ö·ÖÊı¶ÎµÄ³ÌĞò*/
+/*åˆ©ç”¨è¿­ä»£å™¨æ”¹å†™3.3.3èŠ‚åˆ’åˆ†åˆ†æ•°æ®µçš„ç¨‹åº*/
 #include<iostream>
 #include<vector>
 
@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	vector<unsigned> scores(11, 0);	// 11¸ö·ÖÊı¶Î£¬È«²¿³õÊ¼»¯Îª0
+	vector<unsigned> scores(11, 0);	// 11ä¸ªåˆ†æ•°æ®µï¼Œå…¨éƒ¨åˆå§‹åŒ–ä¸º0
 	unsigned grade;
 	auto begin = scores.begin();
 	while (cin>>grade)

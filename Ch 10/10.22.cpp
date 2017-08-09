@@ -1,4 +1,4 @@
-/*重写统计长度小于等于6的单词数量的程序，使用函数代替lambda*/
+/*閲嶅啓缁熻闀垮害灏忎簬绛変簬6鐨勫崟璇嶆暟閲忕殑绋嬪簭锛屼娇鐢ㄥ嚱鏁颁唬鏇縧ambda*/
 #include<iostream>
 #include<vector>
 #include<string>

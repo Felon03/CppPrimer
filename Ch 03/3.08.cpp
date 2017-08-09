@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	/*while循环重写3.6*/
+	/*while寰幆閲嶅啓3.6*/
 	string s;
 	cout << "Please input a srting:" << endl;
 	cin >> s;
@@ -19,7 +19,7 @@ int main()
 	cout << "Replace character in s using 'X'(with while statement): " << endl;
 	cout << s << endl;
 	
-	/*for循环重写3.6*/
+	/*for寰幆閲嶅啓3.6*/
 	for (decltype(s.size()) index = 0; index < s.size(); index++)
 	{
 		auto &c = s[index];

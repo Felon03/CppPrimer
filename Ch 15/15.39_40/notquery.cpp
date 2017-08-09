@@ -2,22 +2,22 @@
 
 QueryResult NotQuery::eval(const TextQuery &text) const
 {
-	// Í¨¹ıQueryÔËËã¶ÔÏó¶Ôeval½øĞĞĞéµ÷ÓÃ
+	// é€šè¿‡Queryè¿ç®—å¯¹è±¡å¯¹evalè¿›è¡Œè™šè°ƒç”¨
 	auto result = query.eval(text);
-	// ¿ªÊ¼Ê±setÎª¿Õ
+	// å¼€å§‹æ—¶setä¸ºç©º
 	auto ret_lines = std::make_shared<std::set<line_no>>();
-	// ÔÚÔËËã¶ÔÏó³öÏÖµÄËùÓĞĞĞÖĞ½øĞĞµü´ú
+	// åœ¨è¿ç®—å¯¹è±¡å‡ºç°çš„æ‰€æœ‰è¡Œä¸­è¿›è¡Œè¿­ä»£
 	auto beg = result.begin(), end = result.end();
-	// ¶ÔÓÚÊäÈëÎÄ¼şµÄÃ¿Ò»ĞĞ£¬Èç¹û¸ÄĞĞ²»ÔÚresultÖĞ£¬Ôò½«ÆäÌí¼Óµ½ret_lines
+	// å¯¹äºè¾“å…¥æ–‡ä»¶çš„æ¯ä¸€è¡Œï¼Œå¦‚æœæ”¹è¡Œä¸åœ¨resultä¸­ï¼Œåˆ™å°†å…¶æ·»åŠ åˆ°ret_lines
 	auto sz = result.get_file().size();
 	for (size_t n = 0; n != sz; ++n)
 	{
-		// Èç¹û»¹Ã»ÓĞ´¦ÀíÍêresultµÄËùÓĞĞĞ
-		// ¼ì²éµ±Ç°ĞĞÊÇ·ñ´æÔÚ
+		// å¦‚æœè¿˜æ²¡æœ‰å¤„ç†å®Œresultçš„æ‰€æœ‰è¡Œ
+		// æ£€æŸ¥å½“å‰è¡Œæ˜¯å¦å­˜åœ¨
 		if (beg == end || *beg != n)
-			ret_lines->insert(n);    // Èç¹û²»´æÔÚresultµ±ÖĞ£¬Ìí¼ÓÕâÒ»ĞĞ
+			ret_lines->insert(n);    // å¦‚æœä¸å­˜åœ¨resultå½“ä¸­ï¼Œæ·»åŠ è¿™ä¸€è¡Œ
 		else if (beg != end)
-			++beg;    // ·ñÔò¼ÌĞø»ñÈ¡resultµÄÏÂÒ»ĞĞ(Èç¹ûÓĞµÄ»°)
+			++beg;    // å¦åˆ™ç»§ç»­è·å–resultçš„ä¸‹ä¸€è¡Œ(å¦‚æœæœ‰çš„è¯)
 	}
 	return QueryResult(rep(), ret_lines, result.get_file());
 }

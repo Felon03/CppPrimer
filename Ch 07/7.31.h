@@ -1,5 +1,5 @@
 #pragma once
-/*¶¨ÒåÒ»¶ÔÀàXºÍY£¬ÆäÖÐX°üº¬Ò»¸öÖ¸ÏòYµÄÖ¸Õë£¬¶øY°üº¬Ò»¸öÀàÐÍÎªXµÄ¶ÔÏó*/
+/*å®šä¹‰ä¸€å¯¹ç±»Xå’ŒYï¼Œå…¶ä¸­XåŒ…å«ä¸€ä¸ªæŒ‡å‘Yçš„æŒ‡é’ˆï¼Œè€ŒYåŒ…å«ä¸€ä¸ªç±»åž‹ä¸ºXçš„å¯¹è±¡*/
 
 class Y;
 

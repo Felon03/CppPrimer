@@ -1,4 +1,4 @@
-/*编写程序，使其能同时统计大小写的元音字母*/
+/*缂栧啓绋嬪簭锛屼娇鍏惰兘鍚屾椂缁熻澶у皬鍐欑殑鍏冮煶瀛楁瘝*/
 #include<iostream>
 
 using namespace std;
@@ -8,7 +8,7 @@ int main()
 	char ch;
 	int aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0, sCnt = 0, nCnt = 0, tCnt = 0;
 	int otherCnt = 0;
-	while ((ch = getchar()) != EOF)		// 统计字符用getchar
+	while ((ch = getchar()) != EOF)		// 缁熻瀛楃鐢╣etchar
 	{
 		if (ch == 'a' || ch == 'A')
 			++aCnt;

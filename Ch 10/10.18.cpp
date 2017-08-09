@@ -1,4 +1,4 @@
-/*ÖØĞ´biggies£¬ÓÃpartition´úÌæfind_if.*/
+/*é‡å†™biggiesï¼Œç”¨partitionä»£æ›¿find_if.*/
 #include<iostream>
 #include<vector>
 #include<string>

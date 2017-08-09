@@ -1,6 +1,6 @@
 /*test of class StrBlob*/
 #include<iostream>
-#include"12.2.h"
+#include"12.02.h"
 
 
 int main()

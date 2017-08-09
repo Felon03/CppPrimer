@@ -1,5 +1,5 @@
-/*±àĞ´³ÌĞò£¬´ÓÒ»¸ölist<int>¿½±´ÔªËØµ½Á½¸ödequeÖĞ¡£
-ÖµÎªÅ¼ÊıµÄËùÓĞÔªËØ¶¼¿½±´µ½Ò»¸ödequeÖĞ£¬¶øÆæÊıÖµÔªËØ¶¼¿½±´µ½ÁíÒ»¸ödequeÖĞ
+/*ç¼–å†™ç¨‹åºï¼Œä»ä¸€ä¸ªlist<int>æ‹·è´å…ƒç´ åˆ°ä¸¤ä¸ªdequeä¸­ã€‚
+å€¼ä¸ºå¶æ•°çš„æ‰€æœ‰å…ƒç´ éƒ½æ‹·è´åˆ°ä¸€ä¸ªdequeä¸­ï¼Œè€Œå¥‡æ•°å€¼å…ƒç´ éƒ½æ‹·è´åˆ°å¦ä¸€ä¸ªdequeä¸­
 */
 #include<iostream>
 #include<list>
@@ -15,9 +15,9 @@ int main()
 	for (auto const &x : myList)
 	{
 		//x % 2 == 0 ? evenDeq.push_back(x) : oddDeq.push_back(x);
-		(x % 2 == 0 ? evenDeq : oddDeq).push_back(x);		// ¸ß·Â :D
+		(x % 2 == 0 ? evenDeq : oddDeq).push_back(x);		// é«˜ä»¿ :D
 	}
-	// githubÉÏµÄÒ»¸ö·½·¨
+	// githubä¸Šçš„ä¸€ä¸ªæ–¹æ³•
 	//for (auto i : myList)(i & 0x1 ? oddDeq : evenDeq).push_back(i);
 
 	for (auto const &x : oddDeq)

@@ -1,4 +1,4 @@
-/*±¾½Ú³ÌÐòÔÚÍâ²ãwhileÑ­»·ÖÐ¶¨ÒåÁËistringstream¶ÔÏó£¬Èç¹ûrecord¶ÔÏó¶¨ÒåÔÚÑ­»·Ö®Íâ£¬³ÌÐòÈçºÎÐÞ¸Ä£¿*/
+/*æœ¬èŠ‚ç¨‹åºåœ¨å¤–å±‚whileå¾ªçŽ¯ä¸­å®šä¹‰äº†istringstreamå¯¹è±¡ï¼Œå¦‚æžœrecordå¯¹è±¡å®šä¹‰åœ¨å¾ªçŽ¯ä¹‹å¤–ï¼Œç¨‹åºå¦‚ä½•ä¿®æ”¹ï¼Ÿ*/
 #include<iostream>
 #include<iomanip>
 #include<sstream>

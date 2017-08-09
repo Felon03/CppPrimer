@@ -1,4 +1,4 @@
-/* Ö´ĞĞrunQueriesº¯Êı*/
+/* æ‰§è¡ŒrunQuerieså‡½æ•°*/
 //#include"12.30.h"
 #include"12.32.h"
 
@@ -6,16 +6,16 @@ using namespace std;
 
 void runQueries(ifstream &infile)
 {
-	// infileÊÇÒ»¸öifstream,Ö¸Ïò½«Òª´¦ÀíµÄÎÄ¼ş
-	TextQuery text_query(infile);									// ±£´æÎÄ¼ş²¢½¨Á¢²éÑ¯map
-	// ÓëÓÃ»§½»»¥£º ÌáÊ¾ÓÃ»§ÊäÈëÒª²éÑ¯µÄµ¥´Ê£¬Íê³É²éÑ¯²¢´òÓ¡½á¹û
+	// infileæ˜¯ä¸€ä¸ªifstream,æŒ‡å‘å°†è¦å¤„ç†çš„æ–‡ä»¶
+	TextQuery text_query(infile);									// ä¿å­˜æ–‡ä»¶å¹¶å»ºç«‹æŸ¥è¯¢map
+	// ä¸ç”¨æˆ·äº¤äº’ï¼š æç¤ºç”¨æˆ·è¾“å…¥è¦æŸ¥è¯¢çš„å•è¯ï¼Œå®ŒæˆæŸ¥è¯¢å¹¶æ‰“å°ç»“æœ
 	do
 	{
 		cout << "Enter word to look for or q to quit: ";
 		string word;
-		// ÈôÓöµ½ÎÄ¼şÎ²»òÕßÓÃ»§ÊäÈëÁË¡®q¡¯Ê±Ñ­»·ÖÕÖ¹
+		// è‹¥é‡åˆ°æ–‡ä»¶å°¾æˆ–è€…ç”¨æˆ·è¾“å…¥äº†â€˜qâ€™æ—¶å¾ªç¯ç»ˆæ­¢
 		if (!(cin >> word) || word == "q") break;
-		// Ö¸Ïò²éÑ¯²¢´òÓ¡½á¹û
+		// æŒ‡å‘æŸ¥è¯¢å¹¶æ‰“å°ç»“æœ
 		print(cout, text_query.query(word)) << endl;
 	} while (true);
 }

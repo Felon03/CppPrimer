@@ -1,4 +1,4 @@
-﻿/*
+/*
     16.28 编写你自己的shared_ptr和unique_ptr
 */
 #include <iostream>

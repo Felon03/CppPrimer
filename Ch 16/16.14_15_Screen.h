@@ -1,8 +1,8 @@
 #pragma once
 /* 
-16.14 ±àĞ´ScreenÀàÄ£°å£¬ÓÃ·ÇÀàĞÍ²ÎÊı¶¨ÒåScreenµÄ¸ßºÍ¿í
-16.15 ÎªScreenÄ£°åÊµÏÖÊäÈëºÍÊä³öÔËËã·û¡£ScreenÀàĞèÒªÄÄĞ©ÓÑÔª£¨Èç¹ûĞèÒªµÄ»°£©
-À´ÁîÊäÈëºÍÊä³öÔËËã·ûÕıÈ·¹¤×÷£¿
+16.14 ç¼–å†™Screenç±»æ¨¡æ¿ï¼Œç”¨éç±»å‹å‚æ•°å®šä¹‰Screençš„é«˜å’Œå®½
+16.15 ä¸ºScreenæ¨¡æ¿å®ç°è¾“å…¥å’Œè¾“å‡ºè¿ç®—ç¬¦ã€‚Screenç±»éœ€è¦å“ªäº›å‹å…ƒï¼ˆå¦‚æœéœ€è¦çš„è¯ï¼‰
+æ¥ä»¤è¾“å…¥å’Œè¾“å‡ºè¿ç®—ç¬¦æ­£ç¡®å·¥ä½œï¼Ÿ
 */
 #include<iostream>
 #include<string>
@@ -61,7 +61,7 @@ template<pos H, pos W> inline Screen<H, W>& Screen<H, W>::move(pos r, pos c)
 template<pos H, pos W> inline Screen<H, W>& Screen<H, W>::set(char ch)
 {
 	contents[cursor++] = ch;
-	cursor = std::min(cursor, H*W);    // ·ÀÖ¹cursor³¬³öH*WµÄ·¶Î§
+	cursor = std::min(cursor, H*W);    // é˜²æ­¢cursorè¶…å‡ºH*Wçš„èŒƒå›´
 	return *this;
 }
 

@@ -10,8 +10,8 @@ using std::getline;
 int main()
 {
 	string s1;
-	//getline(cin, s1);		// һ�ζ���һ����
-	cin >> s1;		// һ�ζ���һ������
+	//getline(cin, s1);		// 一次读入一整行
+	cin >> s1;		// 一次读入一个单词
 	cout << s1 << endl;
 
 	return 0;

@@ -1,5 +1,5 @@
 #pragma once
-/* ÔÚStringÀàµÄÒÆ¶¯²Ù×÷ÖĞÌí¼Ó´òÓ¡Óï¾ä£¬²¢ÖØĞÂÔËĞĞ13.48ÖĞµÄ³ÌĞò£¬¹Û²ìÊ²Ã´Ê±ºò±ÜÃâ¿½±´*/
+/* åœ¨Stringç±»çš„ç§»åŠ¨æ“ä½œä¸­æ·»åŠ æ‰“å°è¯­å¥ï¼Œå¹¶é‡æ–°è¿è¡Œ13.48ä¸­çš„ç¨‹åºï¼Œè§‚å¯Ÿä»€ä¹ˆæ—¶å€™é¿å…æ‹·è´*/
 #include<memory>
 
 class String {
@@ -8,9 +8,9 @@ public:
 	String(const char*);
 	String(const String&);
 	String& operator=(const String&);
-	// ÒÆ¶¯¹¹Ôìº¯Êı
+	// ç§»åŠ¨æ„é€ å‡½æ•°
 	String(String&&) noexcept;
-	// ÒÆ¶¯¸³ÖµÔËËã·û
+	// ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 	String& operator=(String&&) noexcept;
 	~String();
 

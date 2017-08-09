@@ -1,5 +1,5 @@
 #pragma once
-/* ΪBulk_quote�ඨ�忽�����Ƴ�Ա��ʹ����ϳɰ汾����Ϊһ��*/
+/* 为Bulk_quote类定义拷贝控制成员，使其与合成版本的行为一致*/
 #include"15.26_Quote.h"
 #include<string>
 #include<iostream>

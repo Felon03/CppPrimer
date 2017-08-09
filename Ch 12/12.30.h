@@ -1,5 +1,5 @@
 #pragma once
-/*¶¨ÒåÄã×Ô¼º°æ±¾µÄTextQueryºÍQueryResultÀà£¬²¢Ö´ĞĞrunQueriesº¯Êı*/
+/*å®šä¹‰ä½ è‡ªå·±ç‰ˆæœ¬çš„TextQueryå’ŒQueryResultç±»ï¼Œå¹¶æ‰§è¡ŒrunQuerieså‡½æ•°*/
 #include<iostream>
 #include<fstream>
 #include<vector>
@@ -16,7 +16,7 @@ public:
 	QueryResult query(const std::string &) const;
 
 private:
-	std::shared_ptr<std::vector<std::string>> file;		// ÊäÈëÎÄ¼ş
+	std::shared_ptr<std::vector<std::string>> file;		// è¾“å…¥æ–‡ä»¶
 	std::map < std::string,
 		std::shared_ptr<std::set<line_no>>>  wordmap;
 };
@@ -30,9 +30,9 @@ public:
 		word(s), lines(l), file(f) {}
 
 private:
-	std::string word;																				// ²éÑ¯µÄµ¥´Ê
-	std::shared_ptr<std::set<TextQuery::line_no>> lines;		// Êä³öĞĞºÅ
-	std::shared_ptr<std::vector<std::string>> file;						// ÊäÈëÎÄ¼ş
+	std::string word;																				// æŸ¥è¯¢çš„å•è¯
+	std::shared_ptr<std::set<TextQuery::line_no>> lines;		// è¾“å‡ºè¡Œå·
+	std::shared_ptr<std::vector<std::string>> file;						// è¾“å…¥æ–‡ä»¶
 };
 
 std::ostream &print(std::ostream&, QueryResult&);

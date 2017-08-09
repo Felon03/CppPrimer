@@ -1,4 +1,4 @@
-/* ʹ�ñ�׼�⺯�������жϸ�����intֵ�Ƿ��ܱ�int�����е�����Ԫ������*/
+/* 使用标准库函数对象判断给定的int值是否能被int容器中的所有元素整除*/
 #include<iostream>
 #include<vector>
 #include<functional>

@@ -1,4 +1,4 @@
-/*编写单词计数程序*/
+/*缂栧啓鍗曡瘝璁℃暟绋嬪簭*/
 #include<map>
 #include<iostream>
 #include<string>

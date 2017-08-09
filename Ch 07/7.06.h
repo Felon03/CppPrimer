@@ -1,5 +1,5 @@
 #pragma once
-/*头文件不应该包含using声明*/
+/*澶存枃浠朵笉搴旇鍖呭惈using澹版槑*/
 #include<string>
 struct Sales_data
 {
@@ -8,17 +8,17 @@ struct Sales_data
 	double revenue = 0.0;
 
 	// 7.2
-	// 添加新成员combine和isbn
+	// 娣诲姞鏂版垚鍛榗ombine鍜宨sbn
 	std::string isbn() const { return bookNo; }
 	Sales_data& combine(const Sales_data&);
 };
 
-// combine具体函数
+// combine鍏蜂綋鍑芥暟
 Sales_data& Sales_data::combine(const Sales_data &rhs)
 {
 	units_sold += rhs.units_sold;
 	revenue += rhs.revenue;
-	return *this;			// 返回调用改函数的对象
+	return *this;			// 杩斿洖璋冪敤鏀瑰嚱鏁扮殑瀵硅薄
 }
 
 std::istream &read(std::istream &is, Sales_data &item)

@@ -1,5 +1,5 @@
 #pragma once
-/* ÔÚ7.5.1½ÚµÄÁ·Ï°7.40ÖÐ£¬¶¨ÒåÁËBookÀà£¬Ìí¼ÓÕâ¸öÀàÖÐÓ¦¸Ã¶¨ÒåÖØÔØµÄÔËËã·û*/
+/* åœ¨7.5.1èŠ‚çš„ç»ƒä¹ 7.40ä¸­ï¼Œå®šä¹‰äº†Bookç±»ï¼Œæ·»åŠ è¿™ä¸ªç±»ä¸­åº”è¯¥å®šä¹‰é‡è½½çš„è¿ç®—ç¬¦*/
 #include<string>
 #include<iostream>
 

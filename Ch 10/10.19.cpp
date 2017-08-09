@@ -1,4 +1,4 @@
-/*用stable_partiton重写10.18，与stable_sort类似，在划分后的序列中维持原有元素的顺序*/
+/*鐢╯table_partiton閲嶅啓10.18锛屼笌stable_sort绫讳技锛屽湪鍒掑垎鍚庣殑搴忓垪涓淮鎸佸師鏈夊厓绱犵殑椤哄簭*/
 #include<iostream>
 #include<vector>
 #include<string>

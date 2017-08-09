@@ -1,4 +1,4 @@
-/*ÊµÏÖÄã×Ô¼ºµÄelimDups¡£²âÊÔÄãµÄ³ÌĞò£¬·Ö±ğÔÚ¶ÁÈ¡ÊäÈëºó¡¢µ÷ÓÃuniqueºóÒÔ¼°eraseºó´òÓ¡vectorµÄÄÚÈİ*/
+/*å®ç°ä½ è‡ªå·±çš„elimDupsã€‚æµ‹è¯•ä½ çš„ç¨‹åºï¼Œåˆ†åˆ«åœ¨è¯»å–è¾“å…¥åã€è°ƒç”¨uniqueåä»¥åŠeraseåæ‰“å°vectorçš„å†…å®¹*/
 #include<iostream>
 #include<vector>
 #include<string>
@@ -15,18 +15,18 @@ using namespace std;
 
 void elimDup(vector<string> &words)
 {
-	// °´×ÖµäÅÅĞòwords£¬ÒÔ±ã²éÕÒÖØ¸´µ¥´Ê
+	// æŒ‰å­—å…¸æ’åºwordsï¼Œä»¥ä¾¿æŸ¥æ‰¾é‡å¤å•è¯
 	sort(words.begin(), words.end());
 	for (auto const &x : words)
 		cout << x << " ";
 	cout << endl;
-	// uniqueÖØÅÅÊäÈë·¶Î§£¬ÊÇµÄÃ¿¸öµ¥´ÊÖ»³öÏÖÒ»´Î
-	// ÅÅÁĞÔÚ·¶Î§µÄÇ°²¿£¬·µ»ØÖ¸Ïò²»ÖØ¸´ÇøÓòÖ®ºóÒ»¸öÎ»ÖÃµÄµü´úÆ÷
+	// uniqueé‡æ’è¾“å…¥èŒƒå›´ï¼Œæ˜¯çš„æ¯ä¸ªå•è¯åªå‡ºç°ä¸€æ¬¡
+	// æ’åˆ—åœ¨èŒƒå›´çš„å‰éƒ¨ï¼Œè¿”å›æŒ‡å‘ä¸é‡å¤åŒºåŸŸä¹‹åä¸€ä¸ªä½ç½®çš„è¿­ä»£å™¨
 	auto end_unique = unique(words.begin(), words.end());
 	for(auto const &x : words)
 		cout << x << " ";
 	cout << endl;
-	// Ê¹ÓÃÏòÁ¿²Ù×÷eraseÉ¾³ıÖØ¸´µ¥´Ê
+	// ä½¿ç”¨å‘é‡æ“ä½œeraseåˆ é™¤é‡å¤å•è¯
 	words.erase(end_unique, words.end());
 	for (auto const &x : words)
 		cout << x << " ";

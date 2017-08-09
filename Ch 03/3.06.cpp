@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/*使用范围for语句将字符串内的所有字符用X代替*/
+/*浣跨敤鑼冨洿for璇彞灏嗗瓧绗︿覆鍐呯殑鎵�鏈夊瓧绗︾敤X浠ｆ浛*/
 int main()
 {
 	string s;

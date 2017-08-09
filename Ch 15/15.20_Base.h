@@ -1,5 +1,5 @@
 #pragma once
-/* ÑéÖ¤15.18£¬15.19*/
+/* éªŒè¯15.18ï¼Œ15.19*/
 
 class Base {
 public:
@@ -32,7 +32,7 @@ struct Derived_from_Public : public Pub_Derv {
 
 struct Derived_from_Private : private Priv_Derv {
 	//int use_base() { return prot_mem; }    // ERROR
-	//void memfcn(Base &b) { b = *this; }   // ERROR Base²»¿É·ÃÎÊ
+	//void memfcn(Base &b) { b = *this; }   // ERROR Baseä¸å¯è®¿é—®
 };
 
 struct Derived_from_Protected : protected Prot_Derv {

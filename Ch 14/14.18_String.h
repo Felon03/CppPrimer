@@ -1,5 +1,5 @@
 #pragma once
-/* 为String类定义关系运算符*/
+/* 涓篠tring绫诲畾涔夊叧绯昏繍绠楃*/
 #include<memory>
 #include<iostream>
 

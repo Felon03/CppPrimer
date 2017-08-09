@@ -1,5 +1,5 @@
-/*Ò»¸övectorÖĞ±£´æ1-9£¬½«Æä¿½±´µ½Èı¸öÆäËûÈİÆ÷ÖĞ¡£
-	·Ö±ğÊ¹ÓÃinserter¡¢back_inserterºÍfront_inserter½«ÔªËØÌí¼Óµ½Èı¸öÈİÆ÷ÖĞ¡£
+/*ä¸€ä¸ªvectorä¸­ä¿å­˜1-9ï¼Œå°†å…¶æ‹·è´åˆ°ä¸‰ä¸ªå…¶ä»–å®¹å™¨ä¸­ã€‚
+	åˆ†åˆ«ä½¿ç”¨inserterã€back_inserterå’Œfront_inserterå°†å…ƒç´ æ·»åŠ åˆ°ä¸‰ä¸ªå®¹å™¨ä¸­ã€‚
 */
 #include<iostream>
 #include<vector>
@@ -20,11 +20,11 @@ int main()
 	vector<int> v{ 1,2,3,4,5,6,7,8,9 };
 	list<int> l1, l2, l3;
 
-	// Ê¹ÓÃfront_inserter
+	// ä½¿ç”¨front_inserter
 	copy(v.cbegin(), v.cend(), front_inserter(l1));
-	// Ê¹ÓÃback_inserter
+	// ä½¿ç”¨back_inserter
 	copy(v.cbegin(), v.cend(), back_inserter(l2));
-	// Ê¹ÓÃinserter
+	// ä½¿ç”¨inserter
 	copy(v.cbegin(), v.cend(), inserter(l3, l3.begin()));
 
 	print(l1);

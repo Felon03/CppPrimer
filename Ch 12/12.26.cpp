@@ -1,4 +1,4 @@
-/* ��allocator��д��427ҳ�еĳ���*/
+/* 用allocator重写第427页中的程序*/
 #include<iostream>
 #include<string>
 #include<memory>

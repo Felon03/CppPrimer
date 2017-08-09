@@ -1,4 +1,4 @@
-/*Ê¹ÔÚµÚ316Ò³ÖĞÉ¾³ıÅ¼ÊıÔªËØ²¢¸´ÖÆÆæÊıÔªËØµÄ³ÌĞòÓÃÓÚlist»òforward_list*/
+/*ä½¿åœ¨ç¬¬316é¡µä¸­åˆ é™¤å¶æ•°å…ƒç´ å¹¶å¤åˆ¶å¥‡æ•°å…ƒç´ çš„ç¨‹åºç”¨äºlistæˆ–forward_list*/
 #include<iostream>
 #include<list>
 #include<forward_list>

@@ -1,12 +1,12 @@
 #include "13.39.h"
 #include<utility>
 
-// ÀàÍâ¶¨Òå¾²Ì¬Êı¾İ³ÉÔ±alloc
+// ç±»å¤–å®šä¹‰é™æ€æ•°æ®æˆå‘˜alloc
 std::allocator<std::string> StrVec::alloc;
 
 StrVec::StrVec(const StrVec &s)
 {
-	// µ÷ÓÃalloc_n_copy·ÖÅä¿Õ¼äÒÔÈİÄÉÓësÖĞÒ»Ñù¶àµÄÔªËØ
+	// è°ƒç”¨alloc_n_copyåˆ†é…ç©ºé—´ä»¥å®¹çº³ä¸sä¸­ä¸€æ ·å¤šçš„å…ƒç´ 
 	auto newdata = alloc_n_copy(s.begin(), s.end());
 	elements = newdata.first;
 	first_free = cap = newdata.second;
@@ -14,8 +14,8 @@ StrVec::StrVec(const StrVec &s)
 
 StrVec & StrVec::operator=(const StrVec &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
-	// µ÷ÓÃalloc_n_copy·ÖÅäÄÚ´æ£¬´óĞ¡ÓërhsÖĞµÄÔªËØÕ¼ÓÃ¿Õ¼äÒ»Ñù¶à
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
+	// è°ƒç”¨alloc_n_copyåˆ†é…å†…å­˜ï¼Œå¤§å°ä¸rhsä¸­çš„å…ƒç´ å ç”¨ç©ºé—´ä¸€æ ·å¤š
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());
 	free();
 	elements = data.first;
@@ -30,8 +30,8 @@ StrVec::~StrVec()
 
 void StrVec::push_back(const std::string &s)
 {
-	chk_n_alloc();          // È·±£ÓĞ¿Õ¼äÈİÄÉĞÂÔªËØ
-	// ÔÚfirst_freeÖ¸ÏòµÄÔªËØÖĞ¹¹ÔìsµÄ¸±±¾
+	chk_n_alloc();          // ç¡®ä¿æœ‰ç©ºé—´å®¹çº³æ–°å…ƒç´ 
+	// åœ¨first_freeæŒ‡å‘çš„å…ƒç´ ä¸­æ„é€ sçš„å‰¯æœ¬
 	alloc.construct(first_free++, s);
 }
 
@@ -63,18 +63,18 @@ void StrVec::resize(size_t count, const std::string &s)
 
 std::pair<std::string*, std::string*> StrVec::alloc_n_copy(const std::string *b, const std::string *e)
 {
-	// ·ÖÅä¿Õ¼ä±£´æ¸ø¶¨·¶Î§ÖĞµÄÔªËØ
+	// åˆ†é…ç©ºé—´ä¿å­˜ç»™å®šèŒƒå›´ä¸­çš„å…ƒç´ 
 	auto data = alloc.allocate(e - b);
-	// ³õÊ¼»¯²¢·µ»ØÒ»¸öpair£¬¸ÄpairÓÉdataºÍuninitialized_copyµÄ·µ»ØÖµ¹¹³É
+	// åˆå§‹åŒ–å¹¶è¿”å›ä¸€ä¸ªpairï¼Œæ”¹pairç”±dataå’Œuninitialized_copyçš„è¿”å›å€¼æ„æˆ
 	return{ data, std::uninitialized_copy(b, e, data) };
 }
 
 void StrVec::free()
 {
-	// ²»ÄÜ´«µİ¸ødeallocateÒ»¸ö¿ÕÖ¸Õë£¬Èç¹ûelementsÎª0£¬º¯ÊıÊ²Ã´Ò²²»×ö
+	// ä¸èƒ½ä¼ é€’ç»™deallocateä¸€ä¸ªç©ºæŒ‡é’ˆï¼Œå¦‚æœelementsä¸º0ï¼Œå‡½æ•°ä»€ä¹ˆä¹Ÿä¸åš
 	if (elements)
 	{
-		// ÄæĞòÏú»ÙÔªËØ
+		// é€†åºé”€æ¯å…ƒç´ 
 		for (auto p = first_free; p != elements;/*nothing*/)
 			alloc.destroy(--p);
 		alloc.deallocate(elements, cap - elements);
@@ -83,22 +83,22 @@ void StrVec::free()
 
 void StrVec::reallocate()
 {
-	// ÎÒÃÇ½«·ÖÅäµ±Ç°´óĞ¡Á½±¶µÄÄÚ´æ¿Õ¼ä
+	// æˆ‘ä»¬å°†åˆ†é…å½“å‰å¤§å°ä¸¤å€çš„å†…å­˜ç©ºé—´
 	auto newcapacity = size() ? 2 * size() : 1;
 	alloc_n_move(newcapacity);
 }
 
 void StrVec::alloc_n_move(size_t newcap)
 {
-	// ·ÖÅäĞÂÄÚ´æ
+	// åˆ†é…æ–°å†…å­˜
 	auto newdata = alloc.allocate(newcap);
-	// ½«Êı¾İ´Ó¾ÉÄÚ´æÒÆ¶¯µ½ĞÂÄÚ´æ
-	auto dest = newdata;                 // Ö¸ÏòĞÂÊı×éÖĞÏÂÒ»¸ö¿ÕÏĞÎ»ÖÃ
-	auto elem = elements;              // Ö¸Ïò¾ÉÊı×éÖĞÏÂÒ»¸öÔªËØµÄÎ»ÖÃ
+	// å°†æ•°æ®ä»æ—§å†…å­˜ç§»åŠ¨åˆ°æ–°å†…å­˜
+	auto dest = newdata;                 // æŒ‡å‘æ–°æ•°ç»„ä¸­ä¸‹ä¸€ä¸ªç©ºé—²ä½ç½®
+	auto elem = elements;              // æŒ‡å‘æ—§æ•°ç»„ä¸­ä¸‹ä¸€ä¸ªå…ƒç´ çš„ä½ç½®
 	for (size_t i = 0; i != size(); ++i)
 		alloc.construct(dest++, std::move(*elem++));
-	free();                                               // Ò»µ©ÒÆ¶¯Íê¾ÍÊÍ·Å¾ÉÄÚ´æ¿Õ¼ä
-	// ¸üĞÂÊı¾İ½á¹¹£¬Ö´ĞĞĞÂÔªËØ
+	free();                                               // ä¸€æ—¦ç§»åŠ¨å®Œå°±é‡Šæ”¾æ—§å†…å­˜ç©ºé—´
+	// æ›´æ–°æ•°æ®ç»“æ„ï¼Œæ‰§è¡Œæ–°å…ƒç´ 
 	elements = newdata;
 	first_free = dest;
 	cap = elements + newcap;

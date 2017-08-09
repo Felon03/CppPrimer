@@ -1,5 +1,5 @@
 #pragma once
-/*Í·ÎÄ¼ş²»Ó¦¸Ã°üº¬usingÉùÃ÷*/
+/*å¤´æ–‡ä»¶ä¸åº”è¯¥åŒ…å«usingå£°æ˜*/
 #include<string>
 
 class Sales_data;
@@ -11,14 +11,14 @@ class Sales_data
 	friend std::istream &read(std::istream &, Sales_data &);
 	friend std::ostream &print(std::ostream &, const Sales_data &);
 public:
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	Sales_data() = default;
 	Sales_data(const std::string &s) :bookNo(s) {}
 	Sales_data(const std::string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(n*p) {}
 	Sales_data(std::istream &is) { read(is, *this); }
 	//Sales_data() : units_sold(0), revenue(0){}
 	// 7.2
-	// Ìí¼ÓĞÂ³ÉÔ±combineºÍisbn
+	// æ·»åŠ æ–°æˆå‘˜combineå’Œisbn
 	std::string isbn() const { return bookNo; }
 	Sales_data& combine(const Sales_data&);
 
@@ -28,15 +28,15 @@ private:
 	double revenue = 0.0;
 };
 
-// combine¾ßÌåº¯Êı
+// combineå…·ä½“å‡½æ•°
 Sales_data& Sales_data::combine(const Sales_data &rhs)
 {
 	units_sold += rhs.units_sold;
 	revenue += rhs.revenue;
-	return *this;			// ·µ»Øµ÷ÓÃ¸Äº¯ÊıµÄ¶ÔÏó
+	return *this;			// è¿”å›è°ƒç”¨æ”¹å‡½æ•°çš„å¯¹è±¡
 }
 
-// 7.6 ¶¨Òåadd¡¢readºÍprintº¯Êı
+// 7.6 å®šä¹‰addã€readå’Œprintå‡½æ•°
 std::istream &read(std::istream &is, Sales_data &item)
 {
 	double price = 0;
@@ -61,5 +61,5 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
 
 //Sales_data::Sales_data(std::istream & is)
 //{
-//	read(is, *this);		// readº¯ÊıµÄ×÷ÓÃÊÇ´ÓisÖĞ¶ÁÈ¡Ò»Ìõ½»Ò×ĞÅÏ¢È»ºó´æÈëthisÖĞ
+//	read(is, *this);		// readå‡½æ•°çš„ä½œç”¨æ˜¯ä»isä¸­è¯»å–ä¸€æ¡äº¤æ˜“ä¿¡æ¯ç„¶åå­˜å…¥thisä¸­
 //}

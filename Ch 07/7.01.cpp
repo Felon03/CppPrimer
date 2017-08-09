@@ -1,4 +1,4 @@
-/*Ê¹ÓÃ2.6.1½ÚÁ·Ï°¶¨ÒåµÄSales_dataÀàÎª1.6½ÚµÄ½»Ò×´¦Àí³ÌĞò±àĞ´Ò»¸öĞÂ°æ±¾*/
+/*ä½¿ç”¨2.6.1èŠ‚ç»ƒä¹ å®šä¹‰çš„Sales_dataç±»ä¸º1.6èŠ‚çš„äº¤æ˜“å¤„ç†ç¨‹åºç¼–å†™ä¸€ä¸ªæ–°ç‰ˆæœ¬*/
 #include"Sales_data.h"
 #include<iostream>
 
@@ -6,35 +6,35 @@ using namespace std;
 
 int main()
 {
-	Sales_data total;		// ±£´æÏÂÒ»½»Ò×¼ÇÂ¼µÄ±äÁ¿
+	Sales_data total;		// ä¿å­˜ä¸‹ä¸€äº¤æ˜“è®°å½•çš„å˜é‡
 	if (cin >> total.bookNo >> total.revenue >> total.units_sold)
 	{
-		Sales_data trans;		// ±£´æºÍµÄ±äÁ¿
-		// ¶ÁÈë²¢´¦ÀíÊ£Óà½»Ò×¼ÇÂ¼
+		Sales_data trans;		// ä¿å­˜å’Œçš„å˜é‡
+		// è¯»å…¥å¹¶å¤„ç†å‰©ä½™äº¤æ˜“è®°å½•
 		while (cin >> trans.bookNo >> trans.revenue >> trans.units_sold)
 		{
-			// Èç¹û´¦ÀíÏàÍ¬µÄÊé
-			// Ê¹ÓÃisbn() 7.3
+			// å¦‚æœå¤„ç†ç›¸åŒçš„ä¹¦
+			// ä½¿ç”¨isbn() 7.3
 			//if (total.bookNo == trans.bookNo)
 			if(total.isbn() == trans.isbn())
 			{
 				//total.revenue += trans.revenue;
 				//total.units_sold += trans.units_sold;
-				// Ê¹ÓÃcombineº¯Êı 7.3
+				// ä½¿ç”¨combineå‡½æ•° 7.3
 				total.combine(trans);
 			}
 			else
 			{
-				// ´òÓ¡Ç°Ò»±¾ÊéµÄ½á¹û
+				// æ‰“å°å‰ä¸€æœ¬ä¹¦çš„ç»“æœ
 				cout << "ISBN: " << total.isbn() << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;
 				total = trans;
 			}
 		}
-		cout << "ISBN: " << total.isbn() << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;	// ´òÓ¡×îºóÒ»±¾ÊéµÄ½á¹û
+		cout << "ISBN: " << total.isbn() << endl << "Revenue: " << total.revenue << endl << "Sold: " << total.units_sold << endl;	// æ‰“å°æœ€åä¸€æœ¬ä¹¦çš„ç»“æœ
 	} 
 	else
 	{
-		// Ã»ÓĞÊäÈë£¡
+		// æ²¡æœ‰è¾“å…¥ï¼
 		cerr << "No data?!" << endl;
 		return -1;
 	}

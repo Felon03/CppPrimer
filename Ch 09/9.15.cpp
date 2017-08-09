@@ -1,4 +1,4 @@
-/*编写程序，判断两个vector<int>是否相等*/
+/*缂栧啓绋嬪簭锛屽垽鏂袱涓獀ector<int>鏄惁鐩哥瓑*/
 #include<iostream>
 #include<vector>
 

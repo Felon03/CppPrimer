@@ -1,7 +1,7 @@
 #pragma once
 /*
-    16.62 ¶¨ÒåÄã×Ô¼º°æ±¾µÄhash<Sales_data>£¬²¢¶¨ÒåÒ»¸öSales_data¶ÔÏó
-	µÄunordered_multiset¡£½«¶àÌõ½»Ò×¼ÇÂ¼±£´æµ½ÈİÆ÷ÖĞ£¬²¢´òÓ¡ÆäÄÚÈİ¡£
+    16.62 å®šä¹‰ä½ è‡ªå·±ç‰ˆæœ¬çš„hash<Sales_data>ï¼Œå¹¶å®šä¹‰ä¸€ä¸ªSales_dataå¯¹è±¡
+	çš„unordered_multisetã€‚å°†å¤šæ¡äº¤æ˜“è®°å½•ä¿å­˜åˆ°å®¹å™¨ä¸­ï¼Œå¹¶æ‰“å°å…¶å†…å®¹ã€‚
 */
 
 #include<iostream>
@@ -64,7 +64,7 @@ std::ostream &operator<<(const std::ostream&, const Sales_data&);
 std::istream &operator>>(const std::istream&, Sales_data&);
 
 
-// ÌØÀı»¯ÄÜ´¦ÀíSales_dataµÄhash°æ±¾
+// ç‰¹ä¾‹åŒ–èƒ½å¤„ç†Sales_dataçš„hashç‰ˆæœ¬
 namespace std {
 	template<>
 	struct hash<Sales_data>

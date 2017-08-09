@@ -1,5 +1,5 @@
-/*��д�������Զ�ģʽ��һ���ļ����������ݶ��뵽һ��string��vector�У�
-��ÿ����Ϊһ��������Ԫ�ش���vector��*/
+/*编写函数，以读模式打开一个文件，将其内容读入到一个string的vector中，
+将每行作为一个独立的元素存于vector中*/
 #include<iostream>
 #include<fstream>
 #include<string>

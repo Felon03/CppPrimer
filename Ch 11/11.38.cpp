@@ -1,4 +1,4 @@
-/*Ê¹ÓÃunordered_mapÖØĞ´µ¥´Ê¼ÆÊı³ÌĞòºÍµ¥´Ê×ª»»³ÌĞò*/
+/*ä½¿ç”¨unordered_mapé‡å†™å•è¯è®¡æ•°ç¨‹åºå’Œå•è¯è½¬æ¢ç¨‹åº*/
 #include<iostream>
 #include<string>
 #include<unordered_map>

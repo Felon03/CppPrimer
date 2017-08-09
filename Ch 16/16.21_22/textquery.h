@@ -1,7 +1,7 @@
 #pragma once
 /* 
-    修改12.3节中的TextQuery程序，令shared_ptr
-    成员使用DebugDelete作为他们的删除器
+    淇敼12.3鑺備腑鐨凾extQuery绋嬪簭锛屼护shared_ptr
+    鎴愬憳浣跨敤DebugDelete浣滀负浠栦滑鐨勫垹闄ゅ櫒
 */
 #ifndef TEXTQUERY_H
 #define TEXTQUERY_H

@@ -1,4 +1,4 @@
-/*�޸�ͳ��Ԫ����ĸ����ʹ����ͳ�ƿո��Ʊ����ͻ��з�*/
+/*修改统计元音字母程序，使其能统计空格、制表符和换行符*/
 #include<iostream>
 
 using namespace std;
@@ -8,7 +8,7 @@ int main()
 	char ch;
 	unsigned int aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0,
 		spaceCnt = 0, tabCnt = 0, newLineCnt = 0;
-	while (cin >> std::noskipws >> ch)		// std::noskipws �����Կո� 
+	while (cin >> std::noskipws >> ch)		// std::noskipws 不忽略空格 
 	{
 		switch (ch)
 		{

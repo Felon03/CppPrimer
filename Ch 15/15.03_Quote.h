@@ -1,5 +1,5 @@
 #pragma once
-/* 定义Quote类和print_total函数*/
+/* 瀹氫箟Quote绫诲拰print_total鍑芥暟*/
 #include<string>
 #include<iostream>
 
@@ -14,9 +14,9 @@ public:
 
 	virtual ~Quote() = default;
 private:
-	std::string bookNo;    // 书籍的ISBN编号
+	std::string bookNo;    // 涔︾睄鐨処SBN缂栧彿
 protected:
-	double price = 0.0;    // 派生类有权访问，但禁止其他用户访问，表示价格
+	double price = 0.0;    // 娲剧敓绫绘湁鏉冭闂紝浣嗙姝㈠叾浠栫敤鎴疯闂紝琛ㄧず浠锋牸
 };
 
 double print_total(std::ostream &os, const Quote &item, size_t n)

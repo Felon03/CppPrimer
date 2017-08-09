@@ -1,4 +1,4 @@
-/*重写上一题，这次使用位置和长度来管理string，并只用insert*/
+/*閲嶅啓涓婁竴棰橈紝杩欐浣跨敤浣嶇疆鍜岄暱搴︽潵绠＄悊string锛屽苟鍙敤insert*/
 #include<iostream>
 #include<string>
 

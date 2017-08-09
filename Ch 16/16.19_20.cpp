@@ -1,10 +1,10 @@
 /* 
     16.19 
-	±àÐ´º¯Êý£¬½ÓÊÜÒ»¸öÈÝÆ÷µÄÒýÓÃ£¬´òÓ¡ÈÝÆ÷ÖÐµÄÔªËØ¡£
-    Ê¹ÓÃÈÝÆ÷µÄsize_typeºÍsize³ÉÔ±À´¿ØÖÆ´òÓ¡ÔªËØµÄÑ­»·¡£
+	ç¼–å†™å‡½æ•°ï¼ŒæŽ¥å—ä¸€ä¸ªå®¹å™¨çš„å¼•ç”¨ï¼Œæ‰“å°å®¹å™¨ä¸­çš„å…ƒç´ ã€‚
+    ä½¿ç”¨å®¹å™¨çš„size_typeå’Œsizeæˆå‘˜æ¥æŽ§åˆ¶æ‰“å°å…ƒç´ çš„å¾ªçŽ¯ã€‚
 
 	16.20
-	ÖØÐ´16.19£¬Ê¹ÓÃbeginºÍend·µ»Øµü´úÆ÷À´¿ØÖÆÑ­»·
+	é‡å†™16.19ï¼Œä½¿ç”¨beginå’Œendè¿”å›žè¿­ä»£å™¨æ¥æŽ§åˆ¶å¾ªçŽ¯
 */
 #include<iostream>
 #include<vector>

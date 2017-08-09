@@ -1,5 +1,5 @@
 #pragma once
-/* 定义一个类令其含有指向StrBlobPtr对象的指针，为这个类定义重载的箭头运算符*/
+/* 瀹氫箟涓�涓被浠ゅ叾鍚湁鎸囧悜StrBlobPtr瀵硅薄鐨勬寚閽堬紝涓鸿繖涓被瀹氫箟閲嶈浇鐨勭澶磋繍绠楃*/
 
 class StrBlobPtr;
 

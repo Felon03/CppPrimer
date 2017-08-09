@@ -1,5 +1,5 @@
 #pragma once
-/* ΪStrVec���ӹ�ϵ�����*/
+/* 为StrVec添加关系运算符*/
 #include<memory>
 #include<string>
 #include<initializer_list>

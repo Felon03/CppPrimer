@@ -3,35 +3,35 @@
 
 struct Sales_data
 {
-	std::string bookNo;		// ÊıµÄ±àºÅ
-	unsigned int units_sold = 0;		// ÊÛ³öµÄÊıÁ¿
-	double revenue = 0.0;		// ÏúÊÛ¶î
+	std::string bookNo;		// æ•°çš„ç¼–å·
+	unsigned int units_sold = 0;		// å”®å‡ºçš„æ•°é‡
+	double revenue = 0.0;		// é”€å”®é¢
 };
 int main()
 {
 	Sales_data data1, data2;
-	double price = 0.0;		//ÊéµÄµ¥¼Û£¬ÓÃÓÚ¼ÆËãÏúÊÛÊÕÈë
-	// ¶ÁÈëµÚÒ»±Ê½»Ò×: ISBN¡¢ÏúÊÛÊıÁ¿¡¢ÊÛ¼Û
+	double price = 0.0;		//ä¹¦çš„å•ä»·ï¼Œç”¨äºè®¡ç®—é”€å”®æ”¶å…¥
+	// è¯»å…¥ç¬¬ä¸€ç¬”äº¤æ˜“: ISBNã€é”€å”®æ•°é‡ã€å”®ä»·
 	std::cin >> data1.bookNo >> data1.units_sold >> price;
-	// ¼ÆËãÏúÊÛÊÕÈë
+	// è®¡ç®—é”€å”®æ”¶å…¥
 	data1.revenue = data1.units_sold*price;
-	// ¶ÁÈëµÚ¶ş±Ê½»Ò×
+	// è¯»å…¥ç¬¬äºŒç¬”äº¤æ˜“
 	std::cin >> data2.bookNo >> data2.units_sold >> price;
 	data2.revenue = data2.units_sold * price;
-	// Êä³öÁ½¸öSales_data¶ÔÏóµÄºÍ
-	// Èç¹ûISBNÏàÍ¬
+	// è¾“å‡ºä¸¤ä¸ªSales_dataå¯¹è±¡çš„å’Œ
+	// å¦‚æœISBNç›¸åŒ
 	if (data1.bookNo == data2.bookNo)
 	{
 		unsigned total_cnt = data1.units_sold + data2.units_sold;
 		double total_revenue = data1.revenue + data2.revenue;
-		// Êä³ö: ISBN¡¢×ÜÏúÊÛÁ¿¡¢ÏúÊÛ¶î¡¢Æ½¾ù¼Û¸ñ
+		// è¾“å‡º: ISBNã€æ€»é”€å”®é‡ã€é”€å”®é¢ã€å¹³å‡ä»·æ ¼
 		std::cout << data1.bookNo << " " << total_cnt << " "
 			<< total_revenue << " ";
 		if (total_cnt != 0)
 			std::cout << total_revenue / total_cnt << std::endl;
 		else
 			std::cout << "(no sales)" << std::endl;
-		return 0;		// ±íÊ¾³É¹¦
+		return 0;		// è¡¨ç¤ºæˆåŠŸ
 	}
 	else
 	{

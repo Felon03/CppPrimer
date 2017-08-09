@@ -13,7 +13,7 @@ bool operator!=(const StrBlob &lhs, const StrBlob &rhs)
 
 bool operator<(const StrBlob &lhs, const StrBlob &rhs)
 {
-	// std::lexicographical_compare()ÓÃÓÚ°´×ÖµäĞò±È½ÏÁ½¸öĞòÁĞ
+	// std::lexicographical_compare()ç”¨äºæŒ‰å­—å…¸åºæ¯”è¾ƒä¸¤ä¸ªåºåˆ—
 	return std::lexicographical_compare(lhs.data->begin(), lhs.data->end(),
 		rhs.data->begin(), rhs.data->end());
 }
@@ -95,14 +95,14 @@ bool operator>=(const ConstStrBlobPtr &lhs, const ConstStrBlobPtr &rhs)
 
 StrBlob & StrBlob::operator=(const StrBlob &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	data = make_shared<vector<string>>(*rhs.data);
 	return *this;
 }
 
 StrBlob & StrBlob::operator=(StrBlob &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		data = std::move(rhs.data);

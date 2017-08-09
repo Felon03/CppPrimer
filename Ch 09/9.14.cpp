@@ -1,4 +1,4 @@
-/*±àĞ´³ÌĞò£¬½²Ò»¸ölistÖĞµÄchar *Ö¸Õë(Ö¸ÏòC·ç¸ñ×Ö·û´®)ÔªËØ¸³Öµ¸øÒ»¸övectorÖĞµÄstring*/
+/*ç¼–å†™ç¨‹åºï¼Œè®²ä¸€ä¸ªlistä¸­çš„char *æŒ‡é’ˆ(æŒ‡å‘Cé£æ ¼å­—ç¬¦ä¸²)å…ƒç´ èµ‹å€¼ç»™ä¸€ä¸ªvectorä¸­çš„string*/
 #include<iostream>
 #include<string>
 #include<list>

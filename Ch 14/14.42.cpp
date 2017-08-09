@@ -1,7 +1,7 @@
-/* ʹ�ñ�׼�⺯����������������һ������ʽ������
-	(a) ͳ�ƴ���1024��ֵ�ж��ٸ�
-	(b) �ҵ���һ��������pooh���ַ���
-	(c) �����е�ֵ��2
+/* 使用标准库函数对象及适配器定义一条表达式，令其
+	(a) 统计大于1024的值有多少个
+	(b) 找到第一个不等于pooh的字符串
+	(c) 将所有的值乘2
 */
 #include<iostream>
 #include<functional>
@@ -21,12 +21,12 @@ int main()
 	}
 	std::cout << count << std::endl;
 
-	// ʹ��bind��placeholder  Cpp Primer 5th Edition@354(Chs Version)
+	// 使用bind和placeholder  Cpp Primer 5th Edition@354(Chs Version)
 	using std::placeholders::_1;
 	count = std::count_if(ivec.begin(), ivec.end(), std::bind(greater, _1, 1024));
 	std::cout << "using bind: ";
 	std::cout << count << std::endl;
-	// ʹ��lambda����ʽ
+	// 使用lambda表达式
 	count = std::count_if(ivec.begin(), ivec.end(), [greater](const int i) {return greater(i, 1024); });
 	std::cout << "using lambda expression: ";
 	std::cout << count << std::endl;

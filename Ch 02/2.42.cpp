@@ -10,13 +10,13 @@ int main()
 {
 	Sales_data data1, data2;
 	double price = 0;
-	// ÊäÈëdata1µÄĞÅÏ¢
+	// è¾“å…¥data1çš„ä¿¡æ¯
 	cin >> data1.bookNo >> data1.units_sold >> price;
-	// data1µÄÏúÊÛ¶î
+	// data1çš„é”€å”®é¢
 	data1.revenue = data1.units_sold*price;
-	// ÊäÈëdata2µÄĞÅÏ¢
+	// è¾“å…¥data2çš„ä¿¡æ¯
 	cin >> data2.bookNo >> data2.units_sold >> price;
-	// data2µÄÏúÊÛ¶î
+	// data2çš„é”€å”®é¢
 	data2.revenue = data2.units_sold*price;
 
 	if (data1.bookNo == data2.bookNo)
@@ -28,11 +28,11 @@ int main()
 			cout << total_revenue / total_cnt << endl;
 		else
 			cout << "(no sales)" << endl;
-		return 0;		// ±íÊ¾³É¹¦
+		return 0;		// è¡¨ç¤ºæˆåŠŸ
 	}
 	else
 	{
 		cerr << "Data must refer to the same ISBN" << endl;
-		return -1;		// ±íÊ¾Ê§°Ü
+		return -1;		// è¡¨ç¤ºå¤±è´¥
 	}
 }

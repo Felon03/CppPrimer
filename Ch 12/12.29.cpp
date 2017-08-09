@@ -1,7 +1,7 @@
-/*ÎÒÃÇÔøÓÃdo whileÑ­»·À´±àÐ´ÓÃ»§½»»»µÄÑ­»·¡£
-	ÓÃdo whileÖØÐ´±¾³ÌÐò£¬½âÊÍÄã¸üÇãÏòÓÚÄÄÒ»¸ö°æ±¾
+/*æˆ‘ä»¬æ›¾ç”¨do whileå¾ªçŽ¯æ¥ç¼–å†™ç”¨æˆ·äº¤æ¢çš„å¾ªçŽ¯ã€‚
+	ç”¨do whileé‡å†™æœ¬ç¨‹åºï¼Œè§£é‡Šä½ æ›´å€¾å‘äºŽå“ªä¸€ä¸ªç‰ˆæœ¬
 */
-// do while ¸üºÃ£¬ÒòÎª·ûºÏ´¦ÀíÂß¼­
+// do while æ›´å¥½ï¼Œå› ä¸ºç¬¦åˆå¤„ç†é€»è¾‘
 #include"12.27.h"
 #include<iostream>
 

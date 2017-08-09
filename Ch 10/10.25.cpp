@@ -1,4 +1,4 @@
-/*Ê¹ÓÃcheck_sizeºÍbindÖØĞ´10.3.2½ÚÊ¹ÓÃÁËpartitionµÄÁ·Ï°*/
+/*ä½¿ç”¨check_sizeå’Œbindé‡å†™10.3.2èŠ‚ä½¿ç”¨äº†partitionçš„ç»ƒä¹ */
 #include<iostream>
 #include<vector>
 #include<string>

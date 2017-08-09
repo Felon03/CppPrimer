@@ -1,4 +1,4 @@
-/*½«6.2.2½ÚµÄisShorterº¯Êı¸ÄĞ´³ÉÄÚÁªº¯Êı*/
+/*å°†6.2.2èŠ‚çš„isShorterå‡½æ•°æ”¹å†™æˆå†…è”å‡½æ•°*/
 #include<iostream>
 #include<string>
 

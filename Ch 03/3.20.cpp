@@ -1,6 +1,6 @@
 /*
-����һ�������������Ǵ���һ��vector���󣬽�ÿ�����������ĺ����������
-��д����Ҫ���������һ�������һ��Ԫ�صĺͣ���������ڶ����͵����ڶ���Ԫ�صĺͣ��Դ����ơ�
+读入一组整数并把它们存入一个vector对象，将每对相邻整数的和输出出来。
+改写程序，要求先输出第一个和最后一个元素的和，接着输出第二个和倒数第二个元素的和，以此类推。
 */
 #include<iostream>
 #include<vector>
@@ -15,11 +15,11 @@ int main()
 	while (cin >> num)
 		num_array.push_back(num);
 
-	// ��ÿ�����������ĺ����
+	// 将每对相邻整数的和输出
 	for (decltype(num_array.size()) i = 0; i < num_array.size() - 1; i++)
 		cout << num_array[i] + num_array[i + 1] << endl;
 
-	// �������һ�������һ��Ԫ�صĺͣ���������ڶ����͵����ڶ���Ԫ�صĺͣ��Դ�����
+	// 先输出第一个和最后一个元素的和，接着输出第二个和倒数第二个元素的和，以此类推
 	decltype(num_array.size()) k = num_array.size() - 1;
 	for (decltype(num_array.size()) i = 0; i < num_array.size(); i++)
 	{

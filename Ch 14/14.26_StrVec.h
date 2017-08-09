@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªStrVec¶¨ÒåÏÂ±êÔËËã·û*/
+/* ä¸ºStrVecå®šä¹‰ä¸‹æ ‡è¿ç®—ç¬¦*/
 #include<memory>
 #include<string>
 #include<initializer_list>
@@ -21,7 +21,7 @@ public:
 	StrVec& operator=(StrVec&&) noexcept;
 	~StrVec();
 
-	// Ìí¼ÓÒ»¸öinitializer_listµÄ¸³ÖµÔËËã·û
+	// æ·»åŠ ä¸€ä¸ªinitializer_listçš„èµ‹å€¼è¿ç®—ç¬¦
 	StrVec& operator=(std::initializer_list<std::string>);
 
 	void push_back(const std::string&);
@@ -30,7 +30,7 @@ public:
 	std::string *begin() const { return elements; }
 	std::string *end() const { return first_free; }
 
-	// ÖØÔØÏÂ±êÔËËã·û
+	// é‡è½½ä¸‹æ ‡è¿ç®—ç¬¦
 	std::string& operator[](size_t n) { return elements[n]; }
 	const std::string& operator[](size_t n) const { return elements[n]; }
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/*用cin读入一组整数并把它们存入一个vector对象*/
+/*鐢╟in璇诲叆涓�缁勬暣鏁板苟鎶婂畠浠瓨鍏ヤ竴涓獀ector瀵硅薄*/
 int main()
 {
 	vector<int> integer_array;

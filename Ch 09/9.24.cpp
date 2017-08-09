@@ -1,5 +1,5 @@
-/*±àĞ´³ÌĞò£¬·Ö±ğÊ¹ÓÃat¡¢ÏÂ±êÔËËã·û¡¢frontºÍbeginÌáÈ¡Ò»¸övectorÖĞµÄµÚÒ»¸öÔªËØ¡£
-ÔÚÒ»¸ö¿ÕvectorÉÏ²âÊÔ³ÌĞò
+/*ç¼–å†™ç¨‹åºï¼Œåˆ†åˆ«ä½¿ç”¨atã€ä¸‹æ ‡è¿ç®—ç¬¦ã€frontå’Œbeginæå–ä¸€ä¸ªvectorä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ ã€‚
+åœ¨ä¸€ä¸ªç©ºvectorä¸Šæµ‹è¯•ç¨‹åº
 */
 #include<iostream>
 #include<vector>
@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	vector<int> vec;		// ¶¨ÒåÒ»¸ö¿Õvector
+	vector<int> vec;		// å®šä¹‰ä¸€ä¸ªç©ºvector
 
 	cout << vec.at(0) << endl
 		<< vec[0] << endl

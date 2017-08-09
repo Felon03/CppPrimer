@@ -1,5 +1,5 @@
-/*编写程序，逐行读入一个输入文件，将内容存入一个StrBlob中，
-	用一个StrBlobPtr打印输出StrBlob中的每个元素
+/*缂栧啓绋嬪簭锛岄�愯璇诲叆涓�涓緭鍏ユ枃浠讹紝灏嗗唴瀹瑰瓨鍏ヤ竴涓猄trBlob涓紝
+	鐢ㄤ竴涓猄trBlobPtr鎵撳嵃杈撳嚭StrBlob涓殑姣忎釜鍏冪礌
 */
 #include"12.19.h"
 #include<iostream>

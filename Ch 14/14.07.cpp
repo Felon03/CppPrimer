@@ -1,4 +1,4 @@
-#include "14.7.h"
+#include "14.07.h"
 #include<algorithm>
 
 String::String(const char *s)
@@ -51,7 +51,7 @@ void String::free()
 
 std::ostream & operator<<(std::ostream &os, const String &s)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	auto c = s.c_str();
 	while (*c) os << *c++;
 	return os;

@@ -2,7 +2,7 @@
 
 std::ostream &print(std::ostream &os, const QueryResult &qr)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << qr.sought << " occurs " << qr.sp_lines->size() << " "
 		<< "times" << "\n";
 

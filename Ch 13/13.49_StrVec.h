@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªStrVecÀàÌí¼ÓÒ»¸öÒÆ¶¯¹¹Ôìº¯ÊıºÍÒ»¸öÒÆ¶¯¸³ÖµÔËËã·û*/
+/* ä¸ºStrVecç±»æ·»åŠ ä¸€ä¸ªç§»åŠ¨æ„é€ å‡½æ•°å’Œä¸€ä¸ªç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦*/
 #include<memory>
 #include<string>
 #include<initializer_list>
@@ -10,9 +10,9 @@ public:
 	StrVec(std::initializer_list<std::string>);
 	StrVec(const StrVec&);
 	StrVec& operator=(const StrVec&);
-	// ÒÆ¶¯¹¹Ôìº¯Êı
+	// ç§»åŠ¨æ„é€ å‡½æ•°
 	StrVec(StrVec&&) noexcept;
-	// ÒÆ¶¯¸³ÖµÔËËã·û
+	// ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 	StrVec& operator=(StrVec&&) noexcept;
 	~StrVec();
 

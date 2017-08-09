@@ -1,4 +1,4 @@
-/*修改8.6的书店程序，将结果保存到一个文件中。将输出文件名作为第二个参数传递给main函数*/
+/*淇敼8.6鐨勪功搴楃▼搴忥紝灏嗙粨鏋滀繚瀛樺埌涓�涓枃浠朵腑銆傚皢杈撳嚭鏂囦欢鍚嶄綔涓虹浜屼釜鍙傛暟浼犻�掔粰main鍑芥暟*/
 #include"Sales_data.h"
 #include<fstream>
 #include<iostream>

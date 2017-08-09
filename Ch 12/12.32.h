@@ -1,5 +1,5 @@
 #pragma once
-/*重写TextQuery和QueryResult类，用StrBlob代替vector<string>保存输入文件*/
+/*閲嶅啓TextQuery鍜孮ueryResult绫伙紝鐢⊿trBlob浠ｆ浛vector<string>淇濆瓨杈撳叆鏂囦欢*/
 #include"12.22.h"
 #include<iostream>
 #include<fstream>

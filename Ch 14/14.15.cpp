@@ -2,7 +2,7 @@
 
 std::istream & operator >> (std::istream &is, Book &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	is >> rhs.no_ >> rhs.name_ >> rhs.author_
 		>> rhs.pubdate_ >> rhs.number_;
 	if (!is) rhs = Book();
@@ -11,7 +11,7 @@ std::istream & operator >> (std::istream &is, Book &rhs)
 
 std::ostream & operator<<(std::ostream &os, const Book &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << rhs.no_ << " " << rhs.name_ << " " << rhs.author_ << " "
 		<< rhs.pubdate_ << " " << rhs.number_;
 	return os;

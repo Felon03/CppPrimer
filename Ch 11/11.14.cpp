@@ -1,4 +1,4 @@
-/*À©Õ¹11.2.1½ÚÁ·Ï°ÖĞ±àĞ´º¢×ÓĞÕµ½ÃûµÄmap£¬Ìí¼ÓÒ»¸öpairµÄvector£¬±£´æº¢×ÓµÄÃûºÍÉúÈÕ*/
+/*æ‰©å±•11.2.1èŠ‚ç»ƒä¹ ä¸­ç¼–å†™å­©å­å§“åˆ°åçš„mapï¼Œæ·»åŠ ä¸€ä¸ªpairçš„vectorï¼Œä¿å­˜å­©å­çš„åå’Œç”Ÿæ—¥*/
 #include<iostream>
 #include<string>
 #include<map>
@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// pezy@githubµÄ·½·¨
+// pezy@githubçš„æ–¹æ³•
 // reference: https://github.com/pezy/CppPrimer/blob/master/ch11/ex11_14.cpp
 class Families
 {
@@ -53,7 +53,7 @@ int main()
 			cout << child.first << " " << child.second << endl;
 	}
 
-	// pezy@githubµÄ·½·¨
+	// pezy@githubçš„æ–¹æ³•
 	//Families families;
 	//string message = "Please enter last name, first name and birthday";
 	//cout << message << endl;

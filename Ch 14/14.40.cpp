@@ -1,4 +1,4 @@
-/* ÖØĞ´10.3.2½ÚµÄbiggiesº¯Êı£¬Ê¹ÓÃº¯Êı¶ÔÏóÀàÌæ»»ÆäÖĞµÄlambda±í´ïÊ½*/
+/* é‡å†™10.3.2èŠ‚çš„biggieså‡½æ•°ï¼Œä½¿ç”¨å‡½æ•°å¯¹è±¡ç±»æ›¿æ¢å…¶ä¸­çš„lambdaè¡¨è¾¾å¼*/
 #include<vector>
 #include<string>
 #include<iostream>
@@ -42,10 +42,10 @@ public:
 
 void elimDups(vector<string> &words)
 {
-	// °´×ÖµäĞòÅÅĞòwords
+	// æŒ‰å­—å…¸åºæ’åºwords
 	sort(words.begin(), words.end());
 	auto end_unique = std::unique(words.begin(), words.end());
-	// Ê¹ÓÃÏòÁ¿²Ù×÷eraseÉ¾³ıÖØ¸´µ¥´Ê
+	// ä½¿ç”¨å‘é‡æ“ä½œeraseåˆ é™¤é‡å¤å•è¯
 	words.erase(end_unique, words.end());
 }
 

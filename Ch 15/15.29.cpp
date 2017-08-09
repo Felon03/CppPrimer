@@ -1,4 +1,4 @@
-/* ÔÚÔËĞĞ³ÌĞò£¬Õâ´Î´«ÈëQuote¶ÔÏóµÄshared_ptr¡£*/
+/* åœ¨è¿è¡Œç¨‹åºï¼Œè¿™æ¬¡ä¼ å…¥Quoteå¯¹è±¡çš„shared_ptrã€‚*/
 #include"15.27_Bulk_quote.h"
 #include<vector>
 #include<memory>

@@ -2,13 +2,13 @@
 
 QueryResult OrQuery::eval(const TextQuery &text) const
 {
-	// Í¨¹ıQuery³ÉÔ±lhsºÍrhs½øĞĞµÄĞéµ÷ÓÃ
-	// µ÷ÓÃeval·µ»ØÃ¿¸öÔËËã¶ÔÏóµÄQueryResult
+	// é€šè¿‡Queryæˆå‘˜lhså’Œrhsè¿›è¡Œçš„è™šè°ƒç”¨
+	// è°ƒç”¨evalè¿”å›æ¯ä¸ªè¿ç®—å¯¹è±¡çš„QueryResult
 	auto right = rhs.eval(text), left = lhs.eval(text);
-	// ½«×ó²àÔËËã¶ÔÏóµÄĞĞºÅ¿½±´µ½½á¹ûsetÖĞ
+	// å°†å·¦ä¾§è¿ç®—å¯¹è±¡çš„è¡Œå·æ‹·è´åˆ°ç»“æœsetä¸­
 	auto ret_lines = std::make_shared<std::set<line_no>>(left.begin(), left.end());
-	// ²åÈëÓÒ²àÔËËã¶ÔÏóËùµÃµÄĞĞºÅ
+	// æ’å…¥å³ä¾§è¿ç®—å¯¹è±¡æ‰€å¾—çš„è¡Œå·
 	ret_lines->insert(right.begin(), right.end());
-	// ·µ»ØÒ»¸öĞÂµÄQueryResult£¬Ëû±íÊ¾lhsºÍrhsµÄ²¢¼¯
+	// è¿”å›ä¸€ä¸ªæ–°çš„QueryResultï¼Œä»–è¡¨ç¤ºlhså’Œrhsçš„å¹¶é›†
 	return QueryResult(rep(), ret_lines, left.get_file());
 }

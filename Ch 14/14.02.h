@@ -1,10 +1,10 @@
 #pragma once
-/* ÎªSales_data±àĞ´ÖØÔØµÄÊäÈë¡¢Êä³ö¡¢¼Ó·¨ºÍ¸´ºÏ¸³ÖµÔËËã·û*/
+/* ä¸ºSales_dataç¼–å†™é‡è½½çš„è¾“å…¥ã€è¾“å‡ºã€åŠ æ³•å’Œå¤åˆèµ‹å€¼è¿ç®—ç¬¦*/
 #include<string>
 #include<iostream>
 
 class Sales_data {
-	// ÔËËã·ûÖØÔØ
+	// è¿ç®—ç¬¦é‡è½½
 	friend std::istream& operator >> (std::istream&,Sales_data&);		// >> Sales_data not const
 	friend std::ostream& operator<<(std::ostream&, const Sales_data&);	// << const Sales_data
 	friend Sales_data operator+(const Sales_data&, const Sales_data&);	// +
@@ -15,7 +15,7 @@ public:
 	Sales_data(const std::string &s) :Sales_data(s, 0, 0.0f) {}
 	Sales_data(std::istream &is);
 
-	// ÖØÔØ+=ÔËËã·û
+	// é‡è½½+=è¿ç®—ç¬¦
 	Sales_data& operator+=(const Sales_data&);
 	std::string isbn() const { return bookNo; }
 private:

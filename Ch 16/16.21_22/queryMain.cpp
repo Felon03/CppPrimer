@@ -8,9 +8,9 @@ void runQueries(std::ifstream &infile)
 	{
 		std::cout << "Enter word to look for or q to quit: ";
 		std::string word;
-		// ÈôÓöµ½ÎÄ¼şÎ²»òÕßÓÃ»§ÊäÈëÁË¡®q¡¯Ê±Ñ­»·ÖÕÖ¹
+		// è‹¥é‡åˆ°æ–‡ä»¶å°¾æˆ–è€…ç”¨æˆ·è¾“å…¥äº†â€˜qâ€™æ—¶å¾ªç¯ç»ˆæ­¢
 		if (!(std::cin >> word) || word == "q") break;
-		// Ö¸Ïò²éÑ¯²¢´òÓ¡½á¹û
+		// æŒ‡å‘æŸ¥è¯¢å¹¶æ‰“å°ç»“æœ
 		print(std::cout, text_query.query(word));
 	} while (true);
 }

@@ -1,4 +1,4 @@
-/*ÎªPersonÀàÌí¼ÓÕıÈ·µÄ¹¹Ôìº¯Êı*/
+/*ä¸ºPersonç±»æ·»åŠ æ­£ç¡®çš„æ„é€ å‡½æ•°*/
 #pragma once
 #include<string>
 
@@ -8,18 +8,18 @@ std::ostream &print(std::ostream &os, const Person &person);
 
 class Person
 {
-	// ÎªPersonµÄ·Ç³ÉÔ±º¯Êı×÷ÓÑÔªÉùÃ÷
+	// ä¸ºPersonçš„éæˆå‘˜å‡½æ•°ä½œå‹å…ƒå£°æ˜
 	friend std::istream &read(std::istream &is, Person &person);
 	friend std::ostream &print(std::ostream &os, const Person &person);
 private:
-	std::string name;			// ĞÕÃû
-	std::string address;		// µØÖ·
+	std::string name;			// å§“å
+	std::string address;		// åœ°å€
 
 public:
 	const std::string &getName() const { return name; }
 	const std::string &getAddress() const { return address; }
 
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	Person() = default;
 	Person(const std::string &sname, const std::string &saddress) : name(sname), address(saddress){}
 	Person(std::istream &is) { read(is, *this); }

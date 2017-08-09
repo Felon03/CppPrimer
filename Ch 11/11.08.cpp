@@ -1,4 +1,4 @@
-/*��дһ��������һ��vector������set�б��治�ظ��ĵ��ʡ�*/
+/*编写一个程序，在一个vector而不是set中保存不重复的单词。*/
 #include<iostream>
 #include<string>
 #include<vector>

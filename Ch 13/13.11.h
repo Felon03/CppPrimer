@@ -1,5 +1,5 @@
 #pragma once
-/*ÎªÇ°ÃæµÄHasPtrº¯ÊıÌí¼ÓÒ»¸öÎö¹¹º¯Êı*/
+/*ä¸ºå‰é¢çš„HasPtrå‡½æ•°æ·»åŠ ä¸€ä¸ªææ„å‡½æ•°*/
 #include<string>
 #include<iostream>
 
@@ -23,7 +23,7 @@ public:
 	{ 
 		std::cout << "destructor called." << std::endl;
 		delete ps;
-	}		// ÄÚÖÃÖ¸ÕëÒªÊÖ¶¯delete!!
+	}		// å†…ç½®æŒ‡é’ˆè¦æ‰‹åŠ¨delete!!
 
 private:
 	std::string *ps;

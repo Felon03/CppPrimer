@@ -1,10 +1,10 @@
-/*¸ømake_pluralº¯ÊıµÄµÚ¶ş¸öĞÎ²Î¸³ÓèÄ¬ÈÏÊµ²Î¡®s¡¯£¬ÀûÓÃĞÂ°æ±¾µÄº¯ÊıÊä³ösuccessºÍfailureµÄµ¥ÊıºÍ¸´ÊıĞÎÊ½*/
+/*ç»™make_pluralå‡½æ•°çš„ç¬¬äºŒä¸ªå½¢å‚èµ‹äºˆé»˜è®¤å®å‚â€˜sâ€™ï¼Œåˆ©ç”¨æ–°ç‰ˆæœ¬çš„å‡½æ•°è¾“å‡ºsuccesså’Œfailureçš„å•æ•°å’Œå¤æ•°å½¢å¼*/
 #include<iostream>
 #include<string>
 
 using namespace std;
 
-// Èç¹ûctrµÄÖµ´óÓÚ1£¬·µ»ØwordµÄ¸´ÊıĞÎÊ½
+// å¦‚æœctrçš„å€¼å¤§äº1ï¼Œè¿”å›wordçš„å¤æ•°å½¢å¼
 string make_plural(size_t ctr, const string &word, const string &ending = "s")
 {
 	return (ctr > 1) ? word + ending : word;

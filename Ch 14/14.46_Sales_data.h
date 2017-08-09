@@ -1,6 +1,6 @@
 #pragma once
-/* ±àĞ´ÀàĞÍ×ª»»ÔËËã·û½²Ò»¸öSales_data¶ÔÏó·Ö±ğ×ª»»³ÉstringºÍdouble
-	ÄãÈÏÎªÕâĞ©ÔËËã·ûµÄ·µ»ØÖµÓ¦¸ÃÊÇÊ²Ã´
+/* ç¼–å†™ç±»å‹è½¬æ¢è¿ç®—ç¬¦è®²ä¸€ä¸ªSales_dataå¯¹è±¡åˆ†åˆ«è½¬æ¢æˆstringå’Œdouble
+	ä½ è®¤ä¸ºè¿™äº›è¿ç®—ç¬¦çš„è¿”å›å€¼åº”è¯¥æ˜¯ä»€ä¹ˆ
 	operator std::string() const { return bookNo; }
 	operator double() const { return revenue; / return avg_price(); }
 */
@@ -21,7 +21,7 @@ public:
 
 	Sales_data& operator=(const std::string&);
 	Sales_data& operator+=(const Sales_data&);
-	// ÀàĞÍ×ª»»ÔËËã·û
+	// ç±»å‹è½¬æ¢è¿ç®—ç¬¦
 	explicit operator std::string() const { return bookNo; }
 	explicit operator double() const { return revenue; }
 

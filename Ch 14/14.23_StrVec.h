@@ -1,5 +1,5 @@
 #pragma once
-/* 为StrVec类定义一个initializer_list赋值运算符*/
+/* 涓篠trVec绫诲畾涔変竴涓猧nitializer_list璧嬪�艰繍绠楃*/
 #include<memory>
 #include<string>
 #include<initializer_list>
@@ -21,7 +21,7 @@ public:
 	StrVec& operator=(StrVec&&) noexcept;
 	~StrVec();
 
-	// 添加一个initializer_list的赋值运算符
+	// 娣诲姞涓�涓猧nitializer_list鐨勮祴鍊艰繍绠楃
 	StrVec& operator=(std::initializer_list<std::string>);
 
 	void push_back(const std::string&);

@@ -1,6 +1,6 @@
-/* ÏÂÃæ´úÂëµ÷ÓÃÁËµÚ413Ò³ÖÐ¶¨ÒåµÄprocessº¯Êý£¬½âÊÍ´Ëµ÷ÓÃÊÇ·ñÕýÈ·¡£*/
+/* ä¸‹é¢ä»£ç è°ƒç”¨äº†ç¬¬413é¡µä¸­å®šä¹‰çš„processå‡½æ•°ï¼Œè§£é‡Šæ­¤è°ƒç”¨æ˜¯å¦æ­£ç¡®ã€‚*/
 
-// ´Ëµ÷ÓÃÊÇÕýÈ·µÄ
+// æ­¤è°ƒç”¨æ˜¯æ­£ç¡®çš„
 
 #include<iostream>
 #include<memory>

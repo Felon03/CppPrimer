@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªString¶¨ÒåÏÂ±êÔËËã·û*/
+/* ä¸ºStringå®šä¹‰ä¸‹æ ‡è¿ç®—ç¬¦*/
 #include<memory>
 #include<iostream>
 
@@ -31,7 +31,7 @@ public:
 	char *begin() const { return elements; }
 	char *end() const { return last_elem; }
 
-	// ÖØÔØÏÂ±êÔËËã·û
+	// é‡è½½ä¸‹æ ‡è¿ç®—ç¬¦
 	char& operator[](size_t n) { return elements[n]; }
 	const char& operator[](size_t n) const { return elements[n]; }
 

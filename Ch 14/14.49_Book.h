@@ -1,5 +1,5 @@
 #pragma once
-/* ÎªBookÀà¶¨ÒåÒ»¸ö×ª»»Ä¿±êÊÇboolµÄÀàÐÍ×ª»¯ÔËËã·û*/
+/* ä¸ºBookç±»å®šä¹‰ä¸€ä¸ªè½¬æ¢ç›®æ ‡æ˜¯boolçš„ç±»åž‹è½¬åŒ–è¿ç®—ç¬¦*/
 #include<string>
 #include<iostream>
 
@@ -25,7 +25,7 @@ public:
 	Book(Book&&) noexcept;
 	Book& operator=(const Book&);
 	Book& operator=(Book&&) noexcept;
-	// boolÀàÐÍ×ª»»ÔËËã·û
+	// boolç±»åž‹è½¬æ¢è¿ç®—ç¬¦
 	explicit operator bool() const { return no_ > 0; }
 
 private:

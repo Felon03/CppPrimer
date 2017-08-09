@@ -1,4 +1,4 @@
-/*È·¶¨ÔÚÄãµÄPersonÀàÖĞÊÇ·ñÓĞÒ»Ğ©¹¹Ôìº¯ÊıÓ¦¸ÃÊÇexplicitµÄ*/
+/*ç¡®å®šåœ¨ä½ çš„Personç±»ä¸­æ˜¯å¦æœ‰ä¸€äº›æ„é€ å‡½æ•°åº”è¯¥æ˜¯explicitçš„*/
 #pragma once
 #include<string>
 
@@ -15,10 +15,10 @@ public:
 	const std::string getName() const { return name;}
 	const std::string getAddress() const { return address; }
 
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	Person() = default;
 	Person(const std::string &sname, const std::string &saddress) : name(sname), address(saddress) {}
-	explicit Person(std::istream &is) { read(is, *this); }		// ¿ÉÒÔ½«¹¹Ôìº¯Êı¶¨Òå³ÉexplicitµÄ
+	explicit Person(std::istream &is) { read(is, *this); }		// å¯ä»¥å°†æ„é€ å‡½æ•°å®šä¹‰æˆexplicitçš„
 
 };
 

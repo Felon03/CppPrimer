@@ -4,12 +4,12 @@
 
 QueryResult AndQuery::eval(const TextQuery &text) const
 {
-	// Í¨¹ıQueryÔËËã¶ÔÏó½øĞĞĞéµ÷ÓÃ£¬ÒÔ»ñµÃÔËËã¶ÔÏóµÄ²éÑ¯½á¹ûset
+	// é€šè¿‡Queryè¿ç®—å¯¹è±¡è¿›è¡Œè™šè°ƒç”¨ï¼Œä»¥è·å¾—è¿ç®—å¯¹è±¡çš„æŸ¥è¯¢ç»“æœset
 	auto left = lhs.eval(text), right = rhs.eval(text);
-	// ±£´æleftºÍright½»¼¯µÄset
+	// ä¿å­˜leftå’Œrightäº¤é›†çš„set
 	auto ret_lines = std::make_shared<std::set<line_no>>();
-	// ½«Á½¸ö·µ»ØµÄ½»¼¯Ğ´ÈëÒ»¸öÄ¿µÄµü´úÆ÷ÖĞ
-	// ±¾´Îµ÷ÓÃµÄÄ¿µÄµü´úÆ÷ÏëretÌí¼ÓÔªËØ
+	// å°†ä¸¤ä¸ªè¿”å›çš„äº¤é›†å†™å…¥ä¸€ä¸ªç›®çš„è¿­ä»£å™¨ä¸­
+	// æœ¬æ¬¡è°ƒç”¨çš„ç›®çš„è¿­ä»£å™¨æƒ³retæ·»åŠ å…ƒç´ 
 	// set_intersection #include <algorithm>
 	// inserter #include <iterator>
 	std::set_intersection(left.begin(), left.end(),

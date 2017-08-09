@@ -1,5 +1,5 @@
-/*Ê¹ÓÃ¸ø³öµÄia£¬½«Æä¿½±´µ½Ò»¸övectorºÍÒ»¸ölistÖĞ¡£
-Ê¹ÓÃµ«µü´úÆ÷°æ±¾µÄerase´ÓlistÖĞÉ¾³ıÆæÊıÔªËØ£¬´ÓvectorÖĞÉ¾³ıÅ¼ÊıÔªËØ
+/*ä½¿ç”¨ç»™å‡ºçš„iaï¼Œå°†å…¶æ‹·è´åˆ°ä¸€ä¸ªvectorå’Œä¸€ä¸ªlistä¸­ã€‚
+ä½¿ç”¨ä½†è¿­ä»£å™¨ç‰ˆæœ¬çš„eraseä»listä¸­åˆ é™¤å¥‡æ•°å…ƒç´ ï¼Œä»vectorä¸­åˆ é™¤å¶æ•°å…ƒç´ 
 */
 #include<iostream>
 #include<vector>
@@ -13,7 +13,7 @@ int main()
 	vector<int> vec;	// vector<int> vec(ia, end(ia));
 	list<int> lst;				// list<int> lst(vec.begin(), vec.end());
 
-	// ½«iaÖĞµÄÔªËØ´æÈëlistºÍvectorÖĞ
+	// å°†iaä¸­çš„å…ƒç´ å­˜å…¥listå’Œvectorä¸­
 	for (const auto &x : ia)
 	{
 		vec.push_back(x);
@@ -23,7 +23,7 @@ int main()
 	for (auto beg = lst.begin(); beg != lst.end(); )
 	{
 		if (*beg % 2 != 0)
-			beg = lst.erase(beg);		// ×¢Òâerase()·µ»ØµÄÊÇÒ»¸öµü´úÆ÷
+			beg = lst.erase(beg);		// æ³¨æ„erase()è¿”å›çš„æ˜¯ä¸€ä¸ªè¿­ä»£å™¨
 		else
 			++beg;
 	}

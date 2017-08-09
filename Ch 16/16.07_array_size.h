@@ -1,5 +1,5 @@
 #pragma once
-/* 编写一个constexpr模板，返回给定数组的大小*/
+/* 缂栧啓涓�涓猚onstexpr妯℃澘锛岃繑鍥炵粰瀹氭暟缁勭殑澶у皬*/
 
 template<typename _Ty, size_t _Size> constexpr
 size_t my_size(const _Ty(&_Array)[_Size])

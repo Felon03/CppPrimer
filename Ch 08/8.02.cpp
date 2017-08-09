@@ -1,4 +1,4 @@
-/*测试8.1定义函数，调用参数为cin*/
+/*娴嬭瘯8.1瀹氫箟鍑芥暟锛岃皟鐢ㄥ弬鏁颁负cin*/
 #include<iostream>
 #include<string>	
 

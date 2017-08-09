@@ -8,22 +8,22 @@ int main()
 {
 	vector<int> vi{ 0,1,2,3,4,5,6,7,8,9 };
 
-	// 10.34 Ê¹ÓÃreverse_iteratorÄæĞò´òÓ¡Ò»¸övector
+	// 10.34 ä½¿ç”¨reverse_iteratoré€†åºæ‰“å°ä¸€ä¸ªvector
 	for (auto r_iter = vi.crbegin(); r_iter != vi.crend(); ++r_iter)
 		cout << *r_iter << " ";
 	cout << endl;
 
-	// 10.35 Ê¹ÓÃÆÕÍ¨µü´úÆ÷ÄæĞò´òÓ¡Ò»¸övector
+	// 10.35 ä½¿ç”¨æ™®é€šè¿­ä»£å™¨é€†åºæ‰“å°ä¸€ä¸ªvector
 	for (auto iter = vi.end(); iter != vi.begin();)
 		cout << *--iter << " ";
 	cout << endl;
 
-	// 10.36 Ê¹ÓÃfindÔÚÒ»¸öintµÄlistÖĞ²éÕÒ×îºóÒ»¸öÖµÎª0µÄÔªËØ
+	// 10.36 ä½¿ç”¨findåœ¨ä¸€ä¸ªintçš„listä¸­æŸ¥æ‰¾æœ€åä¸€ä¸ªå€¼ä¸º0çš„å…ƒç´ 
 	list<int> lst{ 0,1,2,3,4,5,6,7,8,9,0,9,7,6,4,3,2,1,0,12,3,4 };
 	auto iter = find(lst.crbegin(), lst.crend(), 0);
 	cout << "Find "<<*iter << " in front of " << *iter.base() << endl;
 
-	// 10.37 ¸ø¶¨Ò»¸ö°üº¬10¸öÔªËØµÄvector£¬½«Î»ÖÃ3µ½7Ö®¼äµÄÔªËØ°´ÄæĞò¿½±´µ½Ò»¸ölistÖĞ
+	// 10.37 ç»™å®šä¸€ä¸ªåŒ…å«10ä¸ªå…ƒç´ çš„vectorï¼Œå°†ä½ç½®3åˆ°7ä¹‹é—´çš„å…ƒç´ æŒ‰é€†åºæ‹·è´åˆ°ä¸€ä¸ªlistä¸­
 	list<int> ls(7 - 3 + 1);
 	reverse_copy(vi.cbegin() + 3, vi.cbegin() + 8, ls.begin());
 	for (const auto &x : ls)

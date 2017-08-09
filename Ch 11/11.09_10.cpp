@@ -8,24 +8,24 @@ using namespace std;
 
 int main()
 {
-	// 11.9 ¶¨ÒåÒ»¸ömap£¬½«µ¥´ÊÓëÒ»¸öĞĞºÅµÄlsitÏà¹ØÁª£¬listÖĞ±£´æµÄÊÇµ¥´ÊËù³öÏÖµÄĞĞºÅ
+	// 11.9 å®šä¹‰ä¸€ä¸ªmapï¼Œå°†å•è¯ä¸ä¸€ä¸ªè¡Œå·çš„lsitç›¸å…³è”ï¼Œlistä¸­ä¿å­˜çš„æ˜¯å•è¯æ‰€å‡ºç°çš„è¡Œå·
 	map<string, list<size_t>> m;
 
-	// 11.10 ¿ÉÒÔ¶¨ÒåÒ»¸övector<int>::iteratorµ½intµÄmapÂğ£¿
-	// list<int>::iteratorµ½intµÄmapÄØ£¿¶ÔÓÚÁ½ÖÖÇé¿ö£¬Èç¹û²»ÄÜ£¬½âÊÍÎªÊ²Ã´
+	// 11.10 å¯ä»¥å®šä¹‰ä¸€ä¸ªvector<int>::iteratoråˆ°intçš„mapå—ï¼Ÿ
+	// list<int>::iteratoråˆ°intçš„mapå‘¢ï¼Ÿå¯¹äºä¸¤ç§æƒ…å†µï¼Œå¦‚æœä¸èƒ½ï¼Œè§£é‡Šä¸ºä»€ä¹ˆ
 
-	// ¿ÉÒÔ¶¨Òåvector<int>::iteratorµ½intµÄmap, vectorµÄµü´úÆ÷Ö§³Ö¡°<¡±²Ù×÷
+	// å¯ä»¥å®šä¹‰vector<int>::iteratoråˆ°intçš„map, vectorçš„è¿­ä»£å™¨æ”¯æŒâ€œ<â€æ“ä½œ
 	map<vector<int>::iterator, int> vm;
 
-	// ¿ÉÒÔ¶¨Òålist<int>::iteratorµ½intµÄmap
-	// ±àÒë¿ÉÒÔÍ¨¹ı
+	// å¯ä»¥å®šä¹‰list<int>::iteratoråˆ°intçš„map
+	// ç¼–è¯‘å¯ä»¥é€šè¿‡
 	map<list<int>::iterator, int> lm;
 
-	// µ«ÊÇ²»ÄÜÊ¹ÓÃ£¬ÒòÎªlistµÄÔªËØ²»ÊÇÁ¬Ğø´æ´¢µÄ£¬²»Ö§³Ö±È½Ï²Ù×÷
+	// ä½†æ˜¯ä¸èƒ½ä½¿ç”¨ï¼Œå› ä¸ºlistçš„å…ƒç´ ä¸æ˜¯è¿ç»­å­˜å‚¨çš„ï¼Œä¸æ”¯æŒæ¯”è¾ƒæ“ä½œ
 	std::list<int> li;
 	lm.insert(std::pair<std::list<int>::iterator, int>(li.begin(), 0));
 	/*
-	¶ş½øÖÆ¡°<¡±: Ã»ÓĞÕÒµ½½ÓÊÜ¡°const std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>¡±ÀàĞÍµÄ×ó²Ù×÷ÊıµÄÔËËã·û(»òÃ»ÓĞ¿É½ÓÊÜµÄ×ª»»)
+	äºŒè¿›åˆ¶â€œ<â€: æ²¡æœ‰æ‰¾åˆ°æ¥å—â€œconst std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>â€ç±»å‹çš„å·¦æ“ä½œæ•°çš„è¿ç®—ç¬¦(æˆ–æ²¡æœ‰å¯æ¥å—çš„è½¬æ¢)
 	CppPrimer	c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstddef	239	
 	*/
 	return 0;

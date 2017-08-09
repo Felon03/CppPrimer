@@ -1,5 +1,5 @@
-/* ¶¨ÒåÒ»¸ö´æ·ÅQuote¶ÔÏóµÄvector£¬½«Bulk_quote¶ÔÏó´«ÈëÆäÖÐ¡£
-¼ÆËãvectorÖÐËùÓÐÔªËØ×ÜµÄnet_price¡£
+/* å®šä¹‰ä¸€ä¸ªå­˜æ”¾Quoteå¯¹è±¡çš„vectorï¼Œå°†Bulk_quoteå¯¹è±¡ä¼ å…¥å…¶ä¸­ã€‚
+è®¡ç®—vectorä¸­æ‰€æœ‰å…ƒç´ æ€»çš„net_priceã€‚
 */
 #include"15.27_Bulk_quote.h"
 #include<iostream>

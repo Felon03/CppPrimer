@@ -1,6 +1,6 @@
 #pragma once
-/* ÄãÈÏÎª½ÓÊÜÒ»¸öÊı×éÊµ²ÎµÄ±ê×¼¿âº¯ÊıbeginºÍendÊÇÈçºÎ¹¤×÷µÄ£¿
-	 ¶¨ÒåÄã×Ô¼º°æ±¾µÄbeginºÍend
+/* ä½ è®¤ä¸ºæ¥å—ä¸€ä¸ªæ•°ç»„å®å‚çš„æ ‡å‡†åº“å‡½æ•°beginå’Œendæ˜¯å¦‚ä½•å·¥ä½œçš„ï¼Ÿ
+	 å®šä¹‰ä½ è‡ªå·±ç‰ˆæœ¬çš„beginå’Œend
 */
 template<typename _Ty, unsigned _Size>
 _Ty *begin(_Ty(&_Array)[_Size])

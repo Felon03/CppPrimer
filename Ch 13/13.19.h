@@ -1,10 +1,10 @@
 #pragma once
-/* EmployeeÀàĞèÒª¶¨ÒåËü×Ô¼ºµÄ¿½±´¿ØÖÆ³ÉÔ±Âğ£¿
-	Èç¹ûĞèÒª£¬ÎªÊ²Ã´£¿Èç¹û²»ĞèÒª£¬ÎªÊ²Ã´£¿
-	ÊµÏÖÄãÈÏÎªEmployeeĞèÒªµÄ¿½±´¿ØÖÆ³ÉÔ±
+/* Employeeç±»éœ€è¦å®šä¹‰å®ƒè‡ªå·±çš„æ‹·è´æ§åˆ¶æˆå‘˜å—ï¼Ÿ
+	å¦‚æœéœ€è¦ï¼Œä¸ºä»€ä¹ˆï¼Ÿå¦‚æœä¸éœ€è¦ï¼Œä¸ºä»€ä¹ˆï¼Ÿ
+	å®ç°ä½ è®¤ä¸ºEmployeeéœ€è¦çš„æ‹·è´æ§åˆ¶æˆå‘˜
 
-	²»ĞèÒª£¬ÔÚÊµ¼ÊÉú»îÖĞ£¬employee²¢²»ÄÜ¿½±´£¬
-	¿½±´¿ØÖÆÊÇÃ»ÓĞÒâÒåµÄ
+	ä¸éœ€è¦ï¼Œåœ¨å®é™…ç”Ÿæ´»ä¸­ï¼Œemployeeå¹¶ä¸èƒ½æ‹·è´ï¼Œ
+	æ‹·è´æ§åˆ¶æ˜¯æ²¡æœ‰æ„ä¹‰çš„
 */
 #include<string>
 
@@ -12,8 +12,8 @@ class Employee {
 public:
 	Employee();
 	Employee(const std::string &n);
-	Employee(const Employee&) = delete;				// ×èÖ¹¿½±´
-	Employee &operator=(const Employee&) = delete;		// ×èÖ¹¸³Öµ
+	Employee(const Employee&) = delete;				// é˜»æ­¢æ‹·è´
+	Employee &operator=(const Employee&) = delete;		// é˜»æ­¢èµ‹å€¼
 
 	const int id() const { return employee_id; }
 

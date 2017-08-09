@@ -1,5 +1,5 @@
-/*±àÐ´º¯Êý£¬½ÓÊÜÒ»¶ÔÖ¸Ïòvector<int>µÄµü´úÆ÷ºÍÒ»¸öintÖµ¡£
-ÔÚÁ½¸öµü´úÆ÷Ö¸¶¨µÄ·¶Î§ÖÐ²éÕÒ¸ø¶¨µÄÖµ£¬·µ»ØÒ»¸ö²¼¶ûÖµÀ´Ö¸³öÊÇ·ñÕÒµ½
+/*ç¼–å†™å‡½æ•°ï¼ŒæŽ¥å—ä¸€å¯¹æŒ‡å‘vector<int>çš„è¿­ä»£å™¨å’Œä¸€ä¸ªintå€¼ã€‚
+åœ¨ä¸¤ä¸ªè¿­ä»£å™¨æŒ‡å®šçš„èŒƒå›´ä¸­æŸ¥æ‰¾ç»™å®šçš„å€¼ï¼Œè¿”å›žä¸€ä¸ªå¸ƒå°”å€¼æ¥æŒ‡å‡ºæ˜¯å¦æ‰¾åˆ°
 */
 #include<vector>
 using std::vector;

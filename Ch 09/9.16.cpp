@@ -1,4 +1,4 @@
-/*重写上一题的程序，比较一个list<int>中的元素和一个vector<int>中的元素*/
+/*閲嶅啓涓婁竴棰樼殑绋嬪簭锛屾瘮杈冧竴涓猯ist<int>涓殑鍏冪礌鍜屼竴涓獀ector<int>涓殑鍏冪礌*/
 #include<iostream>
 #include<list>
 #include<vector>

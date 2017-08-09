@@ -1,5 +1,5 @@
 #pragma once
-/* ÁîLimit_quote¼Ì³Ð×ÔDisc_quote*/
+/* ä»¤Limit_quoteç»§æ‰¿è‡ªDisc_quote*/
 #include"15.15_Disc_quote.h"
 #include<string>
 

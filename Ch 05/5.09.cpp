@@ -1,4 +1,4 @@
-/*��дһ�γ���ʹ��һϵ��if���ͳ�ƴ�cin������ı����ж���Ԫ����ĸ*/
+/*编写一段程序，使用一系列if语句统计从cin读入的文本中有多少元音字母*/
 #include<iostream>
 
 using namespace std;

@@ -1,4 +1,4 @@
-/*重写8.4，将每个单词作为一个独立的元素进行存储*/
+/*閲嶅啓8.4锛屽皢姣忎釜鍗曡瘝浣滀负涓�涓嫭绔嬬殑鍏冪礌杩涜瀛樺偍*/
 #include<iostream>
 #include<fstream>
 #include<string>

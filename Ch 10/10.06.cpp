@@ -1,4 +1,4 @@
-/*��д����ʹ��fill_n��һ�������е�intֵ������Ϊ0*/
+/*编写程序，使用fill_n将一个序列中的int值都设置为0*/
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,4 +1,4 @@
-/*½«60·Öµ½75·ÖÖ®¼äµÄ³É¼¨Éè¶¨Îªlow pass*/
+/*å°†60åˆ†åˆ°75åˆ†ä¹‹é—´çš„æˆç»©è®¾å®šä¸ºlow pass*/
 #include<iostream>
 
 using namespace std;
@@ -8,10 +8,10 @@ int main()
 	int grade;
 	cout << "Please input the grade" << endl;
 	cin >> grade;
-	/*Ê¹ÓÃÌõ¼şÔËËã·û*/
+	/*ä½¿ç”¨æ¡ä»¶è¿ç®—ç¬¦*/
 	cout << ((grade > 90) ? "high pass" : (grade <= 75 && grade >= 60) ? "low pass" : (grade < 60) ? "fail" : "pass") << endl;
 
-	/*Ê¹ÓÃifÓï¾ä*/
+	/*ä½¿ç”¨ifè¯­å¥*/
 	if (grade > 90)
 		cout << "high pass" << endl;
 	else if (grade <= 75 && grade >= 60)

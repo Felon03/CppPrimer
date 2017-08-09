@@ -1,15 +1,15 @@
-/*±àĞ´Äã×Ô¼ºµÄScreenÀà*/
+/*ç¼–å†™ä½ è‡ªå·±çš„Screenç±»*/
 #pragma once
 #include<string>
 
 class Screen
 {
 public:
-	using pos = std::string::size_type;		// Ê¹ÓÃÀàĞÍ±ğÃûµÈ¼ÛµØÉùÃ÷Ò»¸öÀàĞÍÃû×Ö
+	using pos = std::string::size_type;		// ä½¿ç”¨ç±»å‹åˆ«åç­‰ä»·åœ°å£°æ˜ä¸€ä¸ªç±»å‹åå­—
 	Screen() = default;
-	// cursor±»ÆäÀàÄÚ³õÊ¼Öµ³õÊ¼»¯Îª0
+	// cursorè¢«å…¶ç±»å†…åˆå§‹å€¼åˆå§‹åŒ–ä¸º0
 	Screen(pos ht, pos wd, char c) : height(ht), width(wd), contents(ht*wd, c) {}
-	char get() const { return contents[cursor]; }		// ¶ÁÈ¡¹â±ê´¦µÄ×Ö·û
+	char get() const { return contents[cursor]; }		// è¯»å–å…‰æ ‡å¤„çš„å­—ç¬¦
 	char get(pos r, pos c) const { return contents[r*width + c]; }
 
 private:

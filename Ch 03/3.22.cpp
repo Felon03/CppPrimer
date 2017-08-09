@@ -1,4 +1,4 @@
-/*修改之前输出text第一段的程序，首先吧text的第一段全都改成大写形式，然后再输出它*/
+/*淇敼涔嬪墠杈撳嚭text绗竴娈电殑绋嬪簭锛岄鍏堝惂text鐨勭涓�娈靛叏閮芥敼鎴愬ぇ鍐欏舰寮忥紝鐒跺悗鍐嶈緭鍑哄畠*/
 #include<iostream>
 #include<string>
 #include<vector>

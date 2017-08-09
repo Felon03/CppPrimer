@@ -1,5 +1,5 @@
-/*±àĞ´³ÌĞò´¦ÀíÒ»¸övector<string>,ÆäÔªËØ¶¼±íÊ¾ÕûĞÍÖµ¡£¼ÆËãvectorÖĞËùÓĞÔªËØµÄºÍ¡£
-ĞŞ¸Ä³ÌĞò£¬Ê¹Ö®¼ÆËã±íÊ¾¸¡µãÖµµÄstringÖ®ºÍ¡£
+/*ç¼–å†™ç¨‹åºå¤„ç†ä¸€ä¸ªvector<string>,å…¶å…ƒç´ éƒ½è¡¨ç¤ºæ•´å‹å€¼ã€‚è®¡ç®—vectorä¸­æ‰€æœ‰å…ƒç´ çš„å’Œã€‚
+ä¿®æ”¹ç¨‹åºï¼Œä½¿ä¹‹è®¡ç®—è¡¨ç¤ºæµ®ç‚¹å€¼çš„stringä¹‹å’Œã€‚
 */
 #include<iostream>
 #include<vector>
@@ -11,7 +11,7 @@ int main()
 {
 	vector<string> ivec{ "0","1", "1", "2", "3", "4", "5", "100", "15", "-15" };
 	vector<string> dvec{ "0.5","1.7","3.6","4.9","10.68","7.23","6.59" };
-	// ¼ÆËãÕûĞÍÖµµÄstringÖ®ºÍ
+	// è®¡ç®—æ•´å‹å€¼çš„stringä¹‹å’Œ
 	int result = 0;
 	for (const auto &x : ivec)
 	{
@@ -19,7 +19,7 @@ int main()
 	}
 	cout << result << endl;
 
-	// ¼ÆËã¸¡µãÖµµÄstringÖ®ºÍ
+	// è®¡ç®—æµ®ç‚¹å€¼çš„stringä¹‹å’Œ
 	double dresult = 0.0;
 	for (const auto &x : dvec)
 		dresult += stod(x);

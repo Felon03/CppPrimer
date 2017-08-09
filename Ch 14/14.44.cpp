@@ -1,4 +1,4 @@
-/* 编写一个简单的桌面计算器使其能处理二元运算*/
+/* 缂栧啓涓�涓畝鍗曠殑妗岄潰璁＄畻鍣ㄤ娇鍏惰兘澶勭悊浜屽厓杩愮畻*/
 #include<iostream>
 #include<functional>
 #include<map>

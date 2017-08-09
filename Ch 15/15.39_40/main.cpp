@@ -1,13 +1,13 @@
 /*
-15.39 ʵ��Query���Query_base�࣬��565ҳ�еı���ʽ��ֵ����ӡ�����Ϣ��
-��֤��ĳ����Ƿ���ȷ
+15.39 实现Query类和Query_base类，求565页中的表达式的值并打印相关信息，
+验证你的程序是否正确
 
-15.40 ��OrQuery��eval�����У����rhs��Ա���ؿռ�������ʲô��
-���lhs�ǿռ��أ����lhs��rhs���ǿռ��ֽ�����ʲô
+15.40 在OrQuery的eval函数中，如果rhs成员返回空集将发生什么？
+如果lhs是空集呢？如果lhs和rhs都是空集又将发生什么
 
-ʲô�����ᷢ����ֻ�������ѯ���Ϊ��
-ret_lines�Ƕ�̬����ģ����lhs��rhs��Ϊ�յĻ�����ret_linesҲΪ�գ�
-��û�н��
+什么都不会发生，只是输出查询结果为空
+ret_lines是动态分配的，如果lhs和rhs都为空的话，则ret_lines也为空，
+即没有结果
 */
 #include <iostream>
 #include <string>

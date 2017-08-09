@@ -1,5 +1,5 @@
-/*±àĞ´³ÌĞò£¬¶¨ÒåÒ»¸ö×÷Õß¼°Æä×÷Æ·µÄmultimap¡£Ê¹ÓÃfindÔÚmultimapÖĞ²éÕÒÒ»¸öÔªËØ²¢ÓÃeraseÉ¾³ıËü¡£
-	È·±£ÄãµÄ³ÌĞòÔÚÔªËØ²»ÔÚmapÖĞÒ²ÄÜÕı³£ÔËĞĞ¡£
+/*ç¼–å†™ç¨‹åºï¼Œå®šä¹‰ä¸€ä¸ªä½œè€…åŠå…¶ä½œå“çš„multimapã€‚ä½¿ç”¨findåœ¨multimapä¸­æŸ¥æ‰¾ä¸€ä¸ªå…ƒç´ å¹¶ç”¨eraseåˆ é™¤å®ƒã€‚
+	ç¡®ä¿ä½ çš„ç¨‹åºåœ¨å…ƒç´ ä¸åœ¨mapä¸­ä¹Ÿèƒ½æ­£å¸¸è¿è¡Œã€‚
 */
 #include<iostream>
 #include<string>
@@ -12,7 +12,7 @@ int main()
 	multimap<string, string> authors;
 	authors.insert({ "Barth, John", "Sot-Weed Factor" });
 	authors.insert({ "Barth, John", "Lost in the Funhouse" });
-	authors.insert({ "°¢À´","³¾°£Âä¶¨" });
+	authors.insert({ "é˜¿æ¥","å°˜åŸƒè½å®š" });
 
 	string search_item("Barth, John");
 	auto it = authors.find(search_item);

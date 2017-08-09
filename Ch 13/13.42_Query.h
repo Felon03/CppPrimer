@@ -9,15 +9,15 @@
 
 using std::shared_ptr;
 
-class QueryResult;																		// ÎªÁË¶¨Òåº¯ÊıqueryµÄ·µ»ØÀàĞÍ£¬Õâ¸ö¶¨ÒåÊÇ±ØĞëµÄ
+class QueryResult;																		// ä¸ºäº†å®šä¹‰å‡½æ•°queryçš„è¿”å›ç±»å‹ï¼Œè¿™ä¸ªå®šä¹‰æ˜¯å¿…é¡»çš„
 class TextQuery {
 public:
 	TextQuery(std::ifstream&);
 	QueryResult query(const std::string&) const;
 
 private:
-	shared_ptr<StrVec> file;																	// ÊäÈëÎÄ¼ş
-	// Ã¿¸öµ¥´Êµ½ËüËùÔÚĞĞºÅµÄÓ³Éä
+	shared_ptr<StrVec> file;																	// è¾“å…¥æ–‡ä»¶
+	// æ¯ä¸ªå•è¯åˆ°å®ƒæ‰€åœ¨è¡Œå·çš„æ˜ å°„
 	std::map<std::string,
 		shared_ptr<std::set<size_t>>> wordmap;
 };
@@ -36,9 +36,9 @@ public:
 	shared_ptr<StrVec> get_file() const { return file; }
 
 private:
-	std::string word;																				// ²éÑ¯µ¥´Ê
-	shared_ptr<std::set<size_t>> lines;		// ³öÏÖµÄĞĞºÅ
-	shared_ptr<StrVec> file;													// ÊäÈëÎÄ¼ş
+	std::string word;																				// æŸ¥è¯¢å•è¯
+	shared_ptr<std::set<size_t>> lines;		// å‡ºç°çš„è¡Œå·
+	shared_ptr<StrVec> file;													// è¾“å…¥æ–‡ä»¶
 };
 
 std::ostream &print(std::ostream &os, const QueryResult &query_result);

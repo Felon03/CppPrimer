@@ -1,9 +1,9 @@
 #pragma once
-/* ¶¨ÒåÒ»¸öÀà£¬Ê¹ÆäÊµÏÖÒ»ÖÖÊýÁ¿ÊÜÏÞµÄÕÛ¿Û²ßÂÔ£¬Æä²ßÂÔÊÇ£ºµ±¹ºÂòÊé¼®µÄÊýÁ¿
-	²»³¬¹ýÒ»¸ö¸ø¶¨µÄÏÞÁ¿Ê±ÏíÊÜÕÛ¿Û£¬Èç¹û¹ºÂòÁ¿Ò»µ©³¬¹ýÁËÏÞÁ¿£¬Ôò³¬³ö²¿·Ö½«
-	ÒÔÔ­¼ÛÏúÊÛ
+/* å®šä¹‰ä¸€ä¸ªç±»ï¼Œä½¿å…¶å®žçŽ°ä¸€ç§æ•°é‡å—é™çš„æŠ˜æ‰£ç­–ç•¥ï¼Œå…¶ç­–ç•¥æ˜¯ï¼šå½“è´­ä¹°ä¹¦ç±çš„æ•°é‡
+	ä¸è¶…è¿‡ä¸€ä¸ªç»™å®šçš„é™é‡æ—¶äº«å—æŠ˜æ‰£ï¼Œå¦‚æžœè´­ä¹°é‡ä¸€æ—¦è¶…è¿‡äº†é™é‡ï¼Œåˆ™è¶…å‡ºéƒ¨åˆ†å°†
+	ä»¥åŽŸä»·é”€å”®
 */
-#include"15.3_Quote.h"
+#include"15.03_Quote.h"
 
 class Limit_quote : public Quote {
 public:
@@ -23,6 +23,6 @@ public:
 
 
 private:
-	std::size_t limit_qty = 0;    // ¹ºÂòÏÞÁ¿
-	double discount = 0.0;    // ÕÛ¿Û
+	std::size_t limit_qty = 0;    // è´­ä¹°é™é‡
+	double discount = 0.0;    // æŠ˜æ‰£
 };

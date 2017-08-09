@@ -6,7 +6,7 @@ int main()
 {
 	int a = 3, b = 4;
 	decltype(a) c = a;
-	decltype(a = b) d = a;		// ·µ»ØintĞÍ£¬¶ø¸³Öµ²Ù×÷²¢²»½øĞĞ
+	decltype(a = b) d = a;		// è¿”å›intå‹ï¼Œè€Œèµ‹å€¼æ“ä½œå¹¶ä¸è¿›è¡Œ
 	cout << a << endl
 		<< b << endl
 		<< c << endl

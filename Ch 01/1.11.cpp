@@ -1,4 +1,4 @@
-/*ÓÃ»§ÊäÈëÁ½¸öÕûÊı£¬´òÓ¡³öÕâÁ½¸öÕûÊıËùÖ¸¶¨·¶Î§ÄÚµÄËùÓĞÕûÊı*/
+/*ç”¨æˆ·è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼Œæ‰“å°å‡ºè¿™ä¸¤ä¸ªæ•´æ•°æ‰€æŒ‡å®šèŒƒå›´å†…çš„æ‰€æœ‰æ•´æ•°*/
 #include<iostream>
 
 int main6()
@@ -6,7 +6,7 @@ int main6()
 	int from = 0, to = 0;
 	std::cout << "Please input the start and end integer:" << std::endl;
 	std::cin >> from >> to;
-	// Èç¹ûfrom Ğ¡ÓÚtoÔò½»»»ÊıÖµ
+	// å¦‚æœfrom å°äºtoåˆ™äº¤æ¢æ•°å€¼
 	if (from > to)
 	{
 		int temp;

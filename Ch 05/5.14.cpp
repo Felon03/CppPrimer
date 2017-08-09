@@ -1,4 +1,4 @@
-/*��дһ�γ��򣬴ӱ�׼�����ж�ȡ����string���󲢲��������ظ����ֵĵ��ʡ�*/
+/*编写一段程序，从标准输入中读取若干string对象并查找连续重复出现的单词。*/
 #include<iostream>
 #include<string>
 #include<vector>
@@ -36,15 +36,15 @@ int main()
 			prestr = *beg;
 			++beg;
 		}
-		if (beg == st.end())	// ͳ�������������ĵ���
+		if (beg == st.end())	// 统计最后可能连续的单词
 			if (wordCnt > 1)
 			{
 				cout << prestr << " occurs " << wordCnt << " times" << endl;
 				flag = true;
-				//wordCnt = 1;	// ���ü�����
+				//wordCnt = 1;	// 重置计数器
 			}
 	}
-	/*�ж��Ƿ����ظ��ĵ��� flag Ϊ true�����ظ��ĵ���*/
+	/*判断是否有重复的单词 flag 为 true即有重复的单词*/
 	if (!flag)
 		cout << "No word occurs more than 2 times." << endl;
 

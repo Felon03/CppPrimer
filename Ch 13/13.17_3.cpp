@@ -1,4 +1,4 @@
-/*编写13.16中所描述的numbered和f*/
+/*缂栧啓13.16涓墍鎻忚堪鐨刵umbered鍜宖*/
 #include<iostream>
 
 class numbered {
@@ -18,7 +18,7 @@ public:
 	int mysn;
 };
 
-/*f中的参数是引用传递，不会调用拷贝构造函数，故输出的序号和传入的参数相同*/
+/*f涓殑鍙傛暟鏄紩鐢ㄤ紶閫掞紝涓嶄細璋冪敤鎷疯礉鏋勯�犲嚱鏁帮紝鏁呰緭鍑虹殑搴忓彿鍜屼紶鍏ョ殑鍙傛暟鐩稿悓*/
 void f(const numbered & s)
 {
 	std::cout << s.mysn << std::endl;
@@ -27,9 +27,9 @@ void f(const numbered & s)
 int main()
 {
 	numbered a, b = a, c = b;			// a.mysn = 1, b.mysn = 2, c.mysn = 3
-	f(a);		// 输出1
-	f(b);	// 输出2
-	f(c);		// 输出3
+	f(a);		// 杈撳嚭1
+	f(b);	// 杈撳嚭2
+	f(c);		// 杈撳嚭3
 
 	return 0;
 }

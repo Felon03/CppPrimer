@@ -1,10 +1,10 @@
 #pragma once
 /*
-    16.29 编写你自己版本的shared_ptr和unique_ptr
+    16.29 缂栧啓浣犺嚜宸辩増鏈殑shared_ptr鍜寀nique_ptr
 */
 
 //
-// DebugDelete 函数对象类，对给定的指针执行delete
+// DebugDelete 鍑芥暟瀵硅薄绫伙紝瀵圭粰瀹氱殑鎸囬拡鎵цdelete
 //
 
 #include <iostream>

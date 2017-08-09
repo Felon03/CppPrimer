@@ -7,7 +7,7 @@ Sales_data::Sales_data(std::istream &is)
 
 std::istream & operator >> (std::istream &is, Sales_data &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	double price = 0.0;
 	is >> rhs.bookNo >> rhs.units_sold >> price;
 	if (is)
@@ -19,7 +19,7 @@ std::istream & operator >> (std::istream &is, Sales_data &rhs)
 
 std::ostream & operator<<(std::ostream &os, const Sales_data &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	os << rhs.bookNo << " " << rhs.units_sold << " " << rhs.revenue << " "
 		<< rhs.avg_price();
 	return os;
@@ -34,14 +34,14 @@ Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs)
 
 Sales_data & Sales_data::operator=(const std::string &isbn)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	*this = Sales_data(isbn);
 	return *this;
 }
 
 Sales_data & Sales_data::operator+=(const Sales_data &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	units_sold += rhs.units_sold;
 	revenue += rhs.revenue;
 	return *this;

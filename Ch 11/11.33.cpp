@@ -1,4 +1,4 @@
-/*ÊµÏÖÄã×Ô¼º°æ±¾µÄµ¥´Ê×ª»»³ÌĞò*/
+/*å®ç°ä½ è‡ªå·±ç‰ˆæœ¬çš„å•è¯è½¬æ¢ç¨‹åº*/
 #include<iostream>
 #include<fstream>
 #include<sstream>
@@ -10,15 +10,15 @@ map<string, string> buildMap(ifstream &);
 const string &transform(const string &, const map<string, string> &);
 void word_transform(ifstream &, ifstream &);
 
-// Í¨¹ıÊ¹ÓÃ×ª»»¹æÔò¶ÔÊäÈë½øĞĞ×ª»»²¢Êä³ö×ª»»ºóµÄ½á¹û
+// é€šè¿‡ä½¿ç”¨è½¬æ¢è§„åˆ™å¯¹è¾“å…¥è¿›è¡Œè½¬æ¢å¹¶è¾“å‡ºè½¬æ¢åçš„ç»“æœ
 void word_transform(ifstream &map_file, ifstream &input)
 {
 	ofstream output("data/transform_done.txt");
-	auto trans_map = buildMap(map_file);			// ±£´æ×ª»»¹æÔò
-	string text;																// ±£´æÊäÈëÖĞµÄÃ¿Ò»ĞĞ
-	while (getline(input, text))								// ¶ÁÈ¡Ò»ĞĞÊäÈë
+	auto trans_map = buildMap(map_file);			// ä¿å­˜è½¬æ¢è§„åˆ™
+	string text;																// ä¿å­˜è¾“å…¥ä¸­çš„æ¯ä¸€è¡Œ
+	while (getline(input, text))								// è¯»å–ä¸€è¡Œè¾“å…¥
 	{
-		istringstream stream(text);							// ¶ÁÈ¡Ã¿¸öµ¥´Ê
+		istringstream stream(text);							// è¯»å–æ¯ä¸ªå•è¯
 		string word;
 		bool firtstword = true;
 		while (stream>>word)
@@ -27,12 +27,12 @@ void word_transform(ifstream &map_file, ifstream &input)
 				firtstword = false;
 			else
 			{
-				cout << " ";													// ÔÚµ¥´Ê¼ä´òÓ¡Ò»¸ö¿Õ¸ñ
+				cout << " ";													// åœ¨å•è¯é—´æ‰“å°ä¸€ä¸ªç©ºæ ¼
 				output << " ";
 			}
 
-			// transform·µ»ØËûµÄµÚÒ»¸ö²ÎÊı»òÆäËû×ª»»Ö®ºóµÄĞÎÊ½
-			cout << transform(word, trans_map);	// ´òÓ¡Êä³ö
+			// transformè¿”å›ä»–çš„ç¬¬ä¸€ä¸ªå‚æ•°æˆ–å…¶ä»–è½¬æ¢ä¹‹åçš„å½¢å¼
+			cout << transform(word, trans_map);	// æ‰“å°è¾“å‡º
 			output << transform(word, trans_map);
 		}
 		cout << endl;
@@ -40,16 +40,16 @@ void word_transform(ifstream &map_file, ifstream &input)
 	}
 }
 
-// ½¨Á¢×ª»»¹æÔò
+// å»ºç«‹è½¬æ¢è§„åˆ™
 map<string, string> buildMap(ifstream &map_file)
 {
-	map<string, string> trans_map;				// ±£´æ×ª»»¹æÔò
-	string key, value;											// Òª×ª»»µÄµ¥´ÊºÍ×ª»»ºóµÄÄÚÈİ
-	// ¶ÁÈ¡µÚÒ»¸öµ¥´Ê´æÈëkeyÖĞ£¬ĞĞÖĞÊ£ÓàÄÚÈİ´æÈëvalue
+	map<string, string> trans_map;				// ä¿å­˜è½¬æ¢è§„åˆ™
+	string key, value;											// è¦è½¬æ¢çš„å•è¯å’Œè½¬æ¢åçš„å†…å®¹
+	// è¯»å–ç¬¬ä¸€ä¸ªå•è¯å­˜å…¥keyä¸­ï¼Œè¡Œä¸­å‰©ä½™å†…å®¹å­˜å…¥value
 	while (map_file>>key && getline(map_file, value))
 	{
-		if (value.size() > 1)		// ¼ì²éÊÇ·ñÓĞ×ª»»¹æÔò
-			trans_map[key] = value.substr(1);		// Ìø¹ıÇ°µ¼¿Õ¸ñ
+		if (value.size() > 1)		// æ£€æŸ¥æ˜¯å¦æœ‰è½¬æ¢è§„åˆ™
+			trans_map[key] = value.substr(1);		// è·³è¿‡å‰å¯¼ç©ºæ ¼
 		else
 			throw runtime_error("no rule for " + key);
 	}
@@ -58,13 +58,13 @@ map<string, string> buildMap(ifstream &map_file)
 
 const string &transform(const string &s, const map<string, string> &m)
 {
-	// Êµ¼ÊµÄ×ª»»¹¤×÷
+	// å®é™…çš„è½¬æ¢å·¥ä½œ
 	auto map_it = m.find(s);
-	// Èç¹ûµ¥´ÊÔÚ×ª»»¹æÔòmapÖĞ
+	// å¦‚æœå•è¯åœ¨è½¬æ¢è§„åˆ™mapä¸­
 	if (map_it != m.end())
-		return map_it->second;			// Ê¹ÓÃÌæ»»¶ÌÓï
+		return map_it->second;			// ä½¿ç”¨æ›¿æ¢çŸ­è¯­
 	else
-		return s;										// ·ñÔò·µ»ØÔ­string
+		return s;										// å¦åˆ™è¿”å›åŸstring
 }
 
 int main()

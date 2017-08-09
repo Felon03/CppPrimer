@@ -1,5 +1,5 @@
 #pragma once
-/* ÖØĞÂ¶¨ÒåBulk_quoteÀà£¬ÁîÆä¼Ì³Ğ¹¹Ôìº¯Êı*/
+/* é‡æ–°å®šä¹‰Bulk_quoteç±»ï¼Œä»¤å…¶ç»§æ‰¿æ„é€ å‡½æ•°*/
 #include"15.15_Disc_quote.h"
 #include<string>
 
@@ -7,7 +7,7 @@ using std::string;
 
 class Bulk_quote : public Disc_quote {
 public:
-	using Disc_quote::Disc_quote;    // ¼Ì³ĞDisc_quoteµÄ¹¹Ôìº¯Êı
+	using Disc_quote::Disc_quote;    // ç»§æ‰¿Disc_quoteçš„æ„é€ å‡½æ•°
 
 	virtual double net_price(size_t cnt) const override
 	{

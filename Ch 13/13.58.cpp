@@ -1,4 +1,4 @@
-/* ±àĞ´ĞÂµÄFooÀà£¬Æäsortedº¯ÊıÖĞÓĞ´òÓ¡Óï¾ä*/
+/* ç¼–å†™æ–°çš„Fooç±»ï¼Œå…¶sortedå‡½æ•°ä¸­æœ‰æ‰“å°è¯­å¥*/
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -7,8 +7,8 @@ using namespace std;
 
 class Foo {
 public:
-	Foo sorted() && ;			// ¿ÉÓÃÓÚ¸Ä±äµÄÓÒÖµ
-	Foo sorted() const &;	// ¿ÉÓÃÓÚÈÎºÎÀàĞÍµÄFoo
+	Foo sorted() && ;			// å¯ç”¨äºæ”¹å˜çš„å³å€¼
+	Foo sorted() const &;	// å¯ç”¨äºä»»ä½•ç±»å‹çš„Foo
 private:
 	vector<int> data;
 };

@@ -30,18 +30,18 @@ bool operator!=(const ConstStrBlobPtr &lhs, ConstStrBlobPtr &rhs)
 	return !(lhs == rhs);
 }
 
-// ¿½±´¸³ÖµÔËËã·û
+// æ‹·è´èµ‹å€¼è¿ç®—ç¬¦
 StrBlob & StrBlob::operator=(const StrBlob &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	data = make_shared<vector<string>>(*rhs.data);
 	return *this;
 }
 
-// ÒÆ¶¯¸³ÖµÔËËã·û
+// ç§»åŠ¨èµ‹å€¼è¿ç®—ç¬¦
 StrBlob & StrBlob::operator=(StrBlob &&rhs) noexcept
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	if (this != &rhs)
 	{
 		data = std::move(rhs.data);
@@ -50,7 +50,7 @@ StrBlob & StrBlob::operator=(StrBlob &&rhs) noexcept
 	return *this;
 }
 
-// ³ÉÔ±º¯Êı
+// æˆå‘˜å‡½æ•°
 StrBlobPtr StrBlob::begin()
 {
 	return StrBlobPtr(*this);

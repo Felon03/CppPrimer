@@ -1,4 +1,4 @@
-/*重写本节的电话号码程序，从一个命名文件而非cin读取数据*/
+/*閲嶅啓鏈妭鐨勭數璇濆彿鐮佺▼搴忥紝浠庝竴涓懡鍚嶆枃浠惰�岄潪cin璇诲彇鏁版嵁*/
 #include<iostream>
 #include<sstream>
 #include<fstream>

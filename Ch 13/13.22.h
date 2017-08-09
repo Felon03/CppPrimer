@@ -1,6 +1,6 @@
 #pragma once
-/* ¼Ù¶¨ÎÒÃÇÏ£ÍûHasPtrµÄÐÐÎªÏñÒ»¸öÖµ¡£¼´£¬¶ÔÓÚ¶ÔÏóËùÖ¸ÏòµÄstring³ÉÔ±£¬
-Ã¿¸ö¶ÔÏó¶¼ÓÐÒ»·Ý×Ô¼ºµÄ¿½±´¡£ÎªHasPtr±àÐ´¿½±´¹¹Ôìº¯ÊýºÍ¿½±´¸³ÖµÔËËã·û
+/* å‡å®šæˆ‘ä»¬å¸Œæœ›HasPtrçš„è¡Œä¸ºåƒä¸€ä¸ªå€¼ã€‚å³ï¼Œå¯¹äºŽå¯¹è±¡æ‰€æŒ‡å‘çš„stringæˆå‘˜ï¼Œ
+æ¯ä¸ªå¯¹è±¡éƒ½æœ‰ä¸€ä»½è‡ªå·±çš„æ‹·è´ã€‚ä¸ºHasPtrç¼–å†™æ‹·è´æž„é€ å‡½æ•°å’Œæ‹·è´èµ‹å€¼è¿ç®—ç¬¦
 */
 #include<string>
 
@@ -21,7 +21,7 @@ public:
 		return *this;
 	}
 
-	// ²»ÒªÍüÁËÎö¹¹º¯Êý£¡
+	// ä¸è¦å¿˜äº†æžæž„å‡½æ•°ï¼
 	~HasPtr()
 	{
 		delete ps;

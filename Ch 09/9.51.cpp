@@ -1,6 +1,6 @@
-/*���һ���࣬��������unsigned��Ա���ֱ��ʾ�ꡢ�º��ա�
-Ϊ���д���캯��������һ����ʾ���ڵ�string������
-��Ĺ��캯��Ӧ���ܴ�����ͬ���ݸ�ʽ����January 1, 1900��1/1/1900��Jan 1 1900��*/
+/*设计一个类，他又三个unsigned成员，分别表示年、月和日。
+为其编写构造函数，接受一个表示日期的string参数。
+你的构造函数应该能处理不同数据格式，如January 1, 1900、1/1/1900、Jan 1 1900等*/
 #include<iostream>
 #include<string>
 using namespace std;

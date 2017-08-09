@@ -1,6 +1,6 @@
 #pragma once
-/* Îª6.2.4½ÚµÄprintº¯Êý±àÐ´Ä£°å°æ±¾£¬Ëü½ÓÊÜÒ»¸öÊý×éµÄÒýÓÃ£¬
-	ÄÜ´¦ÀíÈÎÒâ´óÐ¡¡¢ÈÎÒâÔªËØÀàÐÍµÄÊý×é
+/* ä¸º6.2.4èŠ‚çš„printå‡½æ•°ç¼–å†™æ¨¡æ¿ç‰ˆæœ¬ï¼Œå®ƒæŽ¥å—ä¸€ä¸ªæ•°ç»„çš„å¼•ç”¨ï¼Œ
+	èƒ½å¤„ç†ä»»æ„å¤§å°ã€ä»»æ„å…ƒç´ ç±»åž‹çš„æ•°ç»„
 */
 #include<iostream>
 template<typename _Ty, unsigned _Sz>

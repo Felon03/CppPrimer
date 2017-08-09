@@ -1,7 +1,7 @@
-/*Ê¹ÓÃÎ¯ÍĞ¹¹Ôìº¯Êı±àĞ´Sales_dataÀà*/
+/*ä½¿ç”¨å§”æ‰˜æ„é€ å‡½æ•°ç¼–å†™Sales_dataç±»*/
 #include"7.41.h"
 
-// ³ÉÔ±º¯Êı¶¨Òå
+// æˆå‘˜å‡½æ•°å®šä¹‰
 Sales_data &Sales_data::combine(const Sales_data & rhs)
 {
 	units_sold += rhs.units_sold;
@@ -9,7 +9,7 @@ Sales_data &Sales_data::combine(const Sales_data & rhs)
 	return *this;
 }
 
-// ÓÑÔªº¯Êı¶¨Òå
+// å‹å…ƒå‡½æ•°å®šä¹‰
 std::istream &read(std::istream &is, Sales_data &item)
 {
 	double price = 0.0;

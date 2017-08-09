@@ -1,5 +1,5 @@
 #pragma once
-/* ΪQuote��λ�������Ƴ�Ա��������ϳɰ汾һ��*/
+/* 为Quote定位拷贝控制成员，令其与合成版本一致*/
 #include<string>
 #include<iostream>
 

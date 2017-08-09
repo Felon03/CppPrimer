@@ -1,15 +1,15 @@
-/*Ê¹ÓÃÕâĞ©ĞÂº¯ÊıÖØĞ´7.1.2½ÚÁªÏµÖĞµÄ½»Ò×´¦Àí³ÌĞò*/
-#include"7.6.h"
+/*ä½¿ç”¨è¿™äº›æ–°å‡½æ•°é‡å†™7.1.2èŠ‚è”ç³»ä¸­çš„äº¤æ˜“å¤„ç†ç¨‹åº*/
+#include"7.06.h"
 #include<iostream>
 
 using namespace std;
 
 int main()
 {
-	Sales_data total;		//±£´æÏÂÒ»½»Ò×¼ÇÂ¼µÄ±äÁ¿
+	Sales_data total;		//ä¿å­˜ä¸‹ä¸€äº¤æ˜“è®°å½•çš„å˜é‡
 	if (read(cin, total))
 	{
-		Sales_data trans;		// ±£´æºÍµÄ±äÁ¿
+		Sales_data trans;		// ä¿å­˜å’Œçš„å˜é‡
 		while (read(cin, trans))
 		{
 			if (total.isbn() == trans.isbn())

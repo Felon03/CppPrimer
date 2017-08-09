@@ -1,4 +1,4 @@
-/*修改程序，使得第二个数是0时抛出异常。不设定catch字句*/
+/*淇敼绋嬪簭锛屼娇寰楃浜屼釜鏁版槸0鏃舵姏鍑哄紓甯搞�備笉璁惧畾catch瀛楀彞*/
 #include<iostream>
 
 using namespace std;

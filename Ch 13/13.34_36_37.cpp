@@ -9,12 +9,12 @@ Message::Message(const Message &m)
 
 Message & Message::operator=(const Message &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
-	// ÏÈÍ¨¹ıÉ¾³ıÖ¸ÕëÔÙ²åÈëËüÃÇÀ´´¦Àí×Ô¸³ÖµÇé¿ö
-	remove_from_Folders();               // ¸üĞÂÒÑÓĞFolder
-	contents = rhs.contents;              // ´Órhs¿½±´ÏûÏ¢ÄÚÈİ
-	folders = rhs.folders;                     // ´Órhs¿½±´FolderÖ¸Õë
-	add_to_Folders(rhs);                     // ½«±¾MessageÌí¼Óµ½ÄÇĞ©FolderÖĞ
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
+	// å…ˆé€šè¿‡åˆ é™¤æŒ‡é’ˆå†æ’å…¥å®ƒä»¬æ¥å¤„ç†è‡ªèµ‹å€¼æƒ…å†µ
+	remove_from_Folders();               // æ›´æ–°å·²æœ‰Folder
+	contents = rhs.contents;              // ä»rhsæ‹·è´æ¶ˆæ¯å†…å®¹
+	folders = rhs.folders;                     // ä»rhsæ‹·è´FolderæŒ‡é’ˆ
+	add_to_Folders(rhs);                     // å°†æœ¬Messageæ·»åŠ åˆ°é‚£äº›Folderä¸­
 	return *this;
 }
 
@@ -25,14 +25,14 @@ Message::~Message()
 
 void Message::save(Folder &f)
 {
-	folders.insert(&f);       // ½«¸ø¶¨FolderÌí¼Óµ½ÎÒÃÇµÄFolderÁĞ±íÖĞ
-	f.addMsg(this);            // ½«±¾MessageÌí¼Óµ½fµÄMessage¼¯ºÏÖĞ
+	folders.insert(&f);       // å°†ç»™å®šFolderæ·»åŠ åˆ°æˆ‘ä»¬çš„Folderåˆ—è¡¨ä¸­
+	f.addMsg(this);            // å°†æœ¬Messageæ·»åŠ åˆ°fçš„Messageé›†åˆä¸­
 }
 
 void Message::remove(Folder &f)
 {
-	folders.erase(&f);       // ½«¸ø¶¨Folder´ÓÎÒÃÇµÄFolderÁĞ±íÖĞÉ¾³ı
-	f.remMsg(this);            // ½«±¾Message´ÓfµÄMessage¼¯ºÏÖĞÉ¾³ı
+	folders.erase(&f);       // å°†ç»™å®šFolderä»æˆ‘ä»¬çš„Folderåˆ—è¡¨ä¸­åˆ é™¤
+	f.remMsg(this);            // å°†æœ¬Messageä»fçš„Messageé›†åˆä¸­åˆ é™¤
 }
 
 void Message::print()
@@ -42,26 +42,26 @@ void Message::print()
 
 void Message::add_to_Folders(const Message &m)
 {
-	for (auto f : m.folders)         // ¶ÔÃ¿¸ö°üº¬mµÄFolder
-		f->addMsg(this);                // Ïò¸ÃFolderÌí¼ÓÒ»¸öÖ¸Ïò±¾MessageµÄÖ¸Õë
+	for (auto f : m.folders)         // å¯¹æ¯ä¸ªåŒ…å«mçš„Folder
+		f->addMsg(this);                // å‘è¯¥Folderæ·»åŠ ä¸€ä¸ªæŒ‡å‘æœ¬Messageçš„æŒ‡é’ˆ
 }
 
 void Message::remove_from_Folders()
 {
-	for (auto f : folders)          // ¶ÔfoldersÖĞÃ¿¸öÖ¸Õë
-		f->remMsg(this);            // ´Ó¸ÄFolderÖĞÉ¾³ı±¾Message
+	for (auto f : folders)          // å¯¹foldersä¸­æ¯ä¸ªæŒ‡é’ˆ
+		f->remMsg(this);            // ä»æ”¹Folderä¸­åˆ é™¤æœ¬Message
 }
 
 void swap(Message &lhs, Message &rhs)
 {
 	using std::swap;
-	// ½«Ã¿¸öÏûÏ¢µÄÖ¸Õë´ÓËüÔ­À´ËùÔÚFolderÖĞÉ¾³ı
+	// å°†æ¯ä¸ªæ¶ˆæ¯çš„æŒ‡é’ˆä»å®ƒåŸæ¥æ‰€åœ¨Folderä¸­åˆ é™¤
 	lhs.remove_from_Folders();
 	rhs.remove_from_Folders();
-	// ½»»»contentsºÍFolderÖ¸Õëset
-	swap(lhs.folders, rhs.folders);          // Ê¹ÓÃswap(set&, set&)
-	swap(lhs.contents, rhs.contents);   // Ê¹ÓÃswap(string&, string&)
-	// ½«Ã¿¸öMessageµÄÖ¸ÕëÌí¼Óµ½ËüµÄĞÂFolderÖĞ
+	// äº¤æ¢contentså’ŒFolderæŒ‡é’ˆset
+	swap(lhs.folders, rhs.folders);          // ä½¿ç”¨swap(set&, set&)
+	swap(lhs.contents, rhs.contents);   // ä½¿ç”¨swap(string&, string&)
+	// å°†æ¯ä¸ªMessageçš„æŒ‡é’ˆæ·»åŠ åˆ°å®ƒçš„æ–°Folderä¸­
 	lhs.add_to_Folders(lhs);
 	rhs.add_to_Folders(rhs);
 }
@@ -79,7 +79,7 @@ void swap(Folder &lhs, Folder &rhs)
 
 }
 
-// FolderÀà
+// Folderç±»
 
 Folder::Folder(const Folder &f)
 	: msgs(f.msgs)
@@ -89,7 +89,7 @@ Folder::Folder(const Folder &f)
 
 Folder & Folder::operator=(const Folder &rhs)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	remove_from_Messages();
 	msgs = rhs.msgs;
 	add_to_Messages(rhs);

@@ -1,4 +1,4 @@
-/*±àÐ´³ÌÐò£¬Ì½¾¿ÔÚÄãµÄ±ê×¼¿âÊµÏÖÖÐ£¬vectorÊÇÈçºÎÔö³¤µÄ*/
+/*ç¼–å†™ç¨‹åºï¼ŒæŽ¢ç©¶åœ¨ä½ çš„æ ‡å‡†åº“å®žçŽ°ä¸­ï¼Œvectoræ˜¯å¦‚ä½•å¢žé•¿çš„*/
 #include<iostream>
 #include<vector>
 
@@ -9,7 +9,7 @@ int main()
 	vector<int> ivec;
 	cout << " ivec: size: " << ivec.size()
 		<< " capacity: " << ivec.capacity() << endl;
-	// Ìí¼ÓÔªËØ
+	// æ·»åŠ å…ƒç´ 
 	for (auto ix = 0; ix != 24; ++ix)
 		ivec.push_back(ix);
 	cout << " ivec: size: " << ivec.size()
@@ -18,11 +18,11 @@ int main()
 		ivec.push_back(0);
 	cout << " ivec: size: " << ivec.size()
 		<< " capacity: " << ivec.capacity() << endl;
-	// ÔÚ²åÈëÒ»¸öÔªËØ£¬size³¬¹ýcapacity£¬´ËÊ±capacityÓ¦¸ÃÔö´ó
+	// åœ¨æ’å…¥ä¸€ä¸ªå…ƒç´ ï¼Œsizeè¶…è¿‡capacityï¼Œæ­¤æ—¶capacityåº”è¯¥å¢žå¤§
 	ivec.push_back(100);
 	cout << " ivec: size: " << ivec.size()
 		<< " capacity: " << ivec.capacity() << endl;
-	// ½«capacityÖÁÉÙÉè¶¨Îª50
+	// å°†capacityè‡³å°‘è®¾å®šä¸º50
 	ivec.reserve(50);
 	while (ivec.size() != ivec.capacity())
 		ivec.push_back(0);

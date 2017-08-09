@@ -1,6 +1,6 @@
-/* ±àÐ´º¯Êý£¬·µ»ØÒ»¸ö¶¯Ì¬·ÖÅäµÄintµÄvector¡£½«´Ëvector´«µÝ¸øÁíÒ»¸öº¯Êý£¬
-	Õâ¸öº¯Êý¶ÁÈ¡±ê×¼ÊäÈë£¬½«¶ÁÈëµÄÖµ°×´æÔÚvectorÔªËØÖÐ¡£ÔÙ½«vector´«µÝ¸ø
-	ÁíÒ»¸öº¯Êý£¬´òÓ¡¶ÁÈëµÄÖµ¡£¼ÇµÃÔÚÇ¡µ±µÄÊ±¿Ìdelete vector¡£
+/* ç¼–å†™å‡½æ•°ï¼Œè¿”å›žä¸€ä¸ªåŠ¨æ€åˆ†é…çš„intçš„vectorã€‚å°†æ­¤vectorä¼ é€’ç»™å¦ä¸€ä¸ªå‡½æ•°ï¼Œ
+	è¿™ä¸ªå‡½æ•°è¯»å–æ ‡å‡†è¾“å…¥ï¼Œå°†è¯»å…¥çš„å€¼ç™½å­˜åœ¨vectorå…ƒç´ ä¸­ã€‚å†å°†vectorä¼ é€’ç»™
+	å¦ä¸€ä¸ªå‡½æ•°ï¼Œæ‰“å°è¯»å…¥çš„å€¼ã€‚è®°å¾—åœ¨æ°å½“çš„æ—¶åˆ»delete vectorã€‚
 */
 #include<iostream>
 #include<vector>

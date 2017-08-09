@@ -1,5 +1,5 @@
-/*ʹ��algorithm�е�partition�㷨��д����������һ��string������һ��boolֵ
-	ָ��string�Ƿ���5�����߸����ַ���ʹ�ô˺�������words����ӡ�����ȴ��ڵ���5��Ԫ�ء�
+/*使用algorithm中的partition算法编写函数，接受一个string，返回一个bool值
+	指出string是否有5个或者更多字符。使用此函数划分words。打印出长度大于等于5的元素。
 */
 #include<iostream>
 #include<vector>

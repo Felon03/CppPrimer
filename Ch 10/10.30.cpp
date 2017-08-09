@@ -1,5 +1,5 @@
-/*Ê¹ÓÃÁ÷µü´úÆ÷¡¢sortºÍcopy´Ó±ê×¼ÊäÈë¶ÁÈëÒ»¸öÕûÊýÐòÁÐ£¬½«ÆäÅÅÐò£¬
-	²¢½«½á¹ûÐ´µ½±ê×¼Êä³ö¡£
+/*ä½¿ç”¨æµè¿­ä»£å™¨ã€sortå’Œcopyä»Žæ ‡å‡†è¾“å…¥è¯»å…¥ä¸€ä¸ªæ•´æ•°åºåˆ—ï¼Œå°†å…¶æŽ’åºï¼Œ
+	å¹¶å°†ç»“æžœå†™åˆ°æ ‡å‡†è¾“å‡ºã€‚
 */
 #include<iostream>
 #include<vector>
@@ -15,9 +15,9 @@ int main()
 	vector<int> iv;
 	while (in != eof)
 		iv.push_back(*in++);
-	// ¶ÔÈÝÆ÷ÖÐµÄÔªËØ½øÐÐÅÅÐò
+	// å¯¹å®¹å™¨ä¸­çš„å…ƒç´ è¿›è¡ŒæŽ’åº
 	sort(iv.begin(), iv.end());
-	// Í¨¹ýcopy´òÓ¡ÅÅÐòºóµÄÔªËØ
+	// é€šè¿‡copyæ‰“å°æŽ’åºåŽçš„å…ƒç´ 
 	copy(iv.cbegin(), iv.cend(), out);
 	//for (auto e : iv)
 	//	*out++ = e;

@@ -1,6 +1,6 @@
 #pragma once
-/* ¶¨ÒåBulk_quoteÀà*/
-#include"15.3_Quote.h"
+/* å®šä¹‰Bulk_quoteç±»*/
+#include"15.03_Quote.h"
 
 
 class Bulk_quote : public Quote {
@@ -11,13 +11,13 @@ public:
 	{
 	}
 	
-	// ¸²¸Ç»ùÀàµÄº¯Êı°æ±¾ÒÔÊµÏÖ»ùÓÚ´óÁ¿¹ºÂòµÄÕÛ¿ÛÕş²ß
+	// è¦†ç›–åŸºç±»çš„å‡½æ•°ç‰ˆæœ¬ä»¥å®ç°åŸºäºå¤§é‡è´­ä¹°çš„æŠ˜æ‰£æ”¿ç­–
 	virtual double net_price(std::size_t cnt) const override
 	{
 		if (cnt >= min_qty) return cnt*(1 - discount)*price;
 		else return cnt*price;
 	}
 private:
-	std::size_t min_qty = 0;    // ÊÊÓÃÕÛ¿ÛÕş²ßµÄ×îµÍ¹ºÂòÁ¿
-	double discount = 0.0;    // ÒÔĞ¡Êı±íÊ¾µÄÕÛ¿Û¶î
+	std::size_t min_qty = 0;    // é€‚ç”¨æŠ˜æ‰£æ”¿ç­–çš„æœ€ä½è´­ä¹°é‡
+	double discount = 0.0;    // ä»¥å°æ•°è¡¨ç¤ºçš„æŠ˜æ‰£é¢
 };

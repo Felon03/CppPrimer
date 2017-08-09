@@ -1,5 +1,5 @@
 #pragma once
-/* ¶¨ÒåBasketÀà*/
+/* å®šä¹‰Basketç±»*/
 #include"15.30_Quote_Bulk_quote.h"
 #include<memory>
 #include<set>
@@ -19,17 +19,17 @@ public:
 		items.insert(shared_ptr<Quote>(std::move(sale).clone()));
 	}
 
-	// ´òÓ¡Ã¿±¾ÊéµÄ×Ü¼ÛºÍ¹ºÎïÀºÖĞËùÓĞÊéµÄ×Ü¼Û
+	// æ‰“å°æ¯æœ¬ä¹¦çš„æ€»ä»·å’Œè´­ç‰©ç¯®ä¸­æ‰€æœ‰ä¹¦çš„æ€»ä»·
 	double total_receipt(std::ostream&) const;
 
 private:
-	// ±È½Ïshared_ptr, multiset³ÉÔ±Ê¹ÓÃËü
+	// æ¯”è¾ƒshared_ptr, multisetæˆå‘˜ä½¿ç”¨å®ƒ
 	static bool compare(const std::shared_ptr<Quote> &lhs,
 		const std::shared_ptr<Quote> &rhs)
 	{
 		return lhs->isbn() < rhs->isbn();
 	}
-	// multiset´æÔÚ¶à¸ö±¨¼Û£¬°´ÕÕcompare³ÉÔ±ÅÅĞò
+	// multisetå­˜åœ¨å¤šä¸ªæŠ¥ä»·ï¼ŒæŒ‰ç…§compareæˆå‘˜æ’åº
 	std::multiset<std::shared_ptr<Quote>, decltype(compare)*>
 		items{ compare };
 };
@@ -37,12 +37,12 @@ private:
 inline double Basket::total_receipt(std::ostream &os) const
 {
 	double sum = 0.0;
-	// iterÖ¸ÏòISBNÏàÍ¬µÄÒ»ÅúÔªËØÖĞµÄµÚÒ»¸ö
-	// upper_bound·µ»ØÒ»¸öµü´úÆ÷£¬¸Äµü´úÆ÷Ö¸ÏòÕâÅúÔªËØµÄÎ²ºóÎ»ÖÃ
+	// iteræŒ‡å‘ISBNç›¸åŒçš„ä¸€æ‰¹å…ƒç´ ä¸­çš„ç¬¬ä¸€ä¸ª
+	// upper_boundè¿”å›ä¸€ä¸ªè¿­ä»£å™¨ï¼Œæ”¹è¿­ä»£å™¨æŒ‡å‘è¿™æ‰¹å…ƒç´ çš„å°¾åä½ç½®
 	for (auto iter = items.cbegin(); iter != items.cend(); iter = items.upper_bound(*iter))
 	{
 		sum += print_total(os, **iter, items.count(*iter));
 	}
-	os << "Total Sale: " << sum << std::endl;    // ´òÓ¡×îÖÕµÄ×Ü¼Û¸ñ
+	os << "Total Sale: " << sum << std::endl;    // æ‰“å°æœ€ç»ˆçš„æ€»ä»·æ ¼
 	return sum;
 }

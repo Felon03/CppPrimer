@@ -1,6 +1,6 @@
-/*±àĞ´³ÌĞòÊµÏÖÎÄ±¾²éÑ¯£¬²»Òª¶¨ÒåÀàÀ´¹ÜÀíÊı¾İ¡£ÄãµÄ³ÌĞòÓ¦¸Ã½ÓÊÜÒ»¸öÎÄ¼ş£¬
-	²¢ÓëÓÃ»§½»»¥À´²éÑ¯µ¥´Ê¡£Ê¹ÓÃvector¡¢mapºÍsetÈİÆ÷À´±£´æÀ´×ÔÎÄ¼şµÄÊı¾İ
-	²¢Éú³É²éÑ¯½á¹û
+/*ç¼–å†™ç¨‹åºå®ç°æ–‡æœ¬æŸ¥è¯¢ï¼Œä¸è¦å®šä¹‰ç±»æ¥ç®¡ç†æ•°æ®ã€‚ä½ çš„ç¨‹åºåº”è¯¥æ¥å—ä¸€ä¸ªæ–‡ä»¶ï¼Œ
+	å¹¶ä¸ç”¨æˆ·äº¤äº’æ¥æŸ¥è¯¢å•è¯ã€‚ä½¿ç”¨vectorã€mapå’Œsetå®¹å™¨æ¥ä¿å­˜æ¥è‡ªæ–‡ä»¶çš„æ•°æ®
+	å¹¶ç”ŸæˆæŸ¥è¯¢ç»“æœ
 */
 #include<iostream>
 #include<string>
@@ -18,10 +18,10 @@ using namespace std;
 int main()
 {
 	ifstream infile("data/story.txt");
-	vector<string> input;		// ±£´æÃ¿Ò»ĞĞµÄÊäÈë
+	vector<string> input;		// ä¿å­˜æ¯ä¸€è¡Œçš„è¾“å…¥
 	using size = decltype(input.size());
-	map < string, set<size>> dictionary;		// map<string, set<size_t>> stringÎªµ¥´Ê£¬ set±£´æÃ¿¸östring³öÏÖµÄĞĞÊı
-	size line_no{ 0 };			// ³õÊ¼ĞĞÊıÎª0£¬ºóÃæ¸ú×ÅforÑ­»·Ã¿ĞĞµÄ¶ÁÈë¾ä×Óºó»á×ÔÔö
+	map < string, set<size>> dictionary;		// map<string, set<size_t>> stringä¸ºå•è¯ï¼Œ setä¿å­˜æ¯ä¸ªstringå‡ºç°çš„è¡Œæ•°
+	size line_no{ 0 };			// åˆå§‹è¡Œæ•°ä¸º0ï¼Œåé¢è·Ÿç€forå¾ªç¯æ¯è¡Œçš„è¯»å…¥å¥å­åä¼šè‡ªå¢
 	
 	for (string line; getline(infile, line); ++line_no)
 	{

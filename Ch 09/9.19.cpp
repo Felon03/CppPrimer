@@ -1,4 +1,4 @@
-/*重写上题的程序，用list替代deque。列出程序要做出哪些改变*/
+/*閲嶅啓涓婇鐨勭▼搴忥紝鐢╨ist鏇夸唬deque銆傚垪鍑虹▼搴忚鍋氬嚭鍝簺鏀瑰彉*/
 #include<iostream>
 #include<string>
 #include<list>

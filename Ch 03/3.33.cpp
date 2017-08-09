@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-	unsigned scores[11];	// ²»³õÊ¼»¯Êı×é½«µ¼ÖÂ·Ö¶Î¼ÆÊı³ö´í
+	unsigned scores[11];	// ä¸åˆå§‹åŒ–æ•°ç»„å°†å¯¼è‡´åˆ†æ®µè®¡æ•°å‡ºé”™
 	unsigned grade;
-	// »ñÈ¡Ê×Î²Ö¸Õë C++11
+	// è·å–é¦–å°¾æŒ‡é’ˆ C++11
 	unsigned *beg = begin(scores);
-	unsigned *last = end(scores);	// Î²Ö¸ÕëÖ¸ÏòµÄÊÇ×îºóÒ»¸öÔªËØµÄºóÒ»Î»£¬²¢²»ÄÜÖ´ĞĞ½âÒıºÍµİÔö²Ù×÷
+	unsigned *last = end(scores);	// å°¾æŒ‡é’ˆæŒ‡å‘çš„æ˜¯æœ€åä¸€ä¸ªå…ƒç´ çš„åä¸€ä½ï¼Œå¹¶ä¸èƒ½æ‰§è¡Œè§£å¼•å’Œé€’å¢æ“ä½œ
 	while (cin >> grade)
 	{
 		if (grade <= 100)

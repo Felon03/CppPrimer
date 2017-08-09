@@ -1,4 +1,4 @@
-/*编写一段程序，比较两个数组是否相等。再写一段程序，比较两个vector对象是否相等*/
+/*缂栧啓涓�娈电▼搴忥紝姣旇緝涓や釜鏁扮粍鏄惁鐩哥瓑銆傚啀鍐欎竴娈电▼搴忥紝姣旇緝涓や釜vector瀵硅薄鏄惁鐩哥瓑*/
 #include<iostream>
 #include<vector>
 

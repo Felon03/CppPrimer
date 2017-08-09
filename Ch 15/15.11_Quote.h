@@ -1,5 +1,5 @@
 #pragma once
-/* ΪQuote����ϵ����һ����Ϊdebug���麯��������ֱ���ʾÿ��������ݳ�Ա*/
+/* 为Quote类体系添加一个名为debug的虚函数，令其分别显示每个类的数据成员*/
 #include<string>
 #include<iostream>
 
