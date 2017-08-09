@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ch 16\16.65.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DA8530B0-2C73-47C7-848D-81033BDE3E9B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,102 +148,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="12.19.h" />
-    <ClInclude Include="12.2.h" />
-    <ClInclude Include="12.22.h" />
-    <ClInclude Include="12.27.h" />
-    <ClInclude Include="12.30.h" />
-    <ClInclude Include="12.32.h" />
-    <ClInclude Include="12.33.h" />
-    <ClInclude Include="13.11.h" />
-    <ClInclude Include="13.18.h" />
-    <ClInclude Include="13.19.h" />
-    <ClInclude Include="13.22.h" />
-    <ClInclude Include="13.26.h" />
-    <ClInclude Include="13.27.h" />
-    <ClInclude Include="13.28.h" />
-    <ClInclude Include="13.30.h" />
-    <ClInclude Include="13.31.h" />
-    <ClInclude Include="13.34_36_37.h" />
-    <ClInclude Include="13.39.h" />
-    <ClInclude Include="13.40.h" />
-    <ClInclude Include="13.42_Query.h" />
-    <ClInclude Include="13.42_StrVec.h" />
-    <ClInclude Include="13.44.h" />
-    <ClInclude Include="13.47.h" />
-    <ClInclude Include="13.49_Message.h" />
-    <ClInclude Include="13.49_String.h" />
-    <ClInclude Include="13.49_StrVec.h" />
-    <ClInclude Include="13.5.h" />
-    <ClInclude Include="13.50.h" />
-    <ClInclude Include="13.53.h" />
-    <ClInclude Include="13.8.h" />
-    <ClInclude Include="14.15.h" />
-    <ClInclude Include="14.16_StrBlob.h" />
-    <ClInclude Include="14.16_String.h" />
-    <ClInclude Include="14.16_StrVec.h" />
-    <ClInclude Include="14.18_StrBlob.h" />
-    <ClInclude Include="14.18_String.h" />
-    <ClInclude Include="14.18_StrVec.h" />
-    <ClInclude Include="14.2.h" />
-    <ClInclude Include="14.22_Sales_data.h" />
-    <ClInclude Include="14.23_StrVec.h" />
-    <ClInclude Include="14.24_Book.h" />
-    <ClInclude Include="14.26_StrBlob.h" />
-    <ClInclude Include="14.26_String.h" />
-    <ClInclude Include="14.26_StrVec.h" />
-    <ClInclude Include="14.27_28_StrBlob.h" />
-    <ClInclude Include="14.30_StrBlob.h" />
-    <ClInclude Include="14.32_StrBlobPtrPointer.h" />
-    <ClInclude Include="14.46_Sales_data.h" />
-    <ClInclude Include="14.49_Book.h" />
-    <ClInclude Include="14.5.h" />
-    <ClInclude Include="14.7.h" />
-    <ClInclude Include="15.11_Bulk_quote.h" />
-    <ClInclude Include="15.11_Limit_quote.h" />
-    <ClInclude Include="15.11_Quote.h" />
-    <ClInclude Include="15.15_Bulk_quote.h" />
-    <ClInclude Include="15.15_Disc_quote.h" />
-    <ClInclude Include="15.16_Limit_quote.h" />
-    <ClInclude Include="15.20_Base.h" />
-    <ClInclude Include="15.21_GraphicsPrimitives.h" />
-    <ClInclude Include="15.26_Bulk__quote.h" />
-    <ClInclude Include="15.26_Quote.h" />
-    <ClInclude Include="15.27_Bulk_quote.h" />
-    <ClInclude Include="15.30_Basket.h" />
-    <ClInclude Include="15.30_Quote_Bulk_quote.h" />
-    <ClInclude Include="15.3_Quote.h" />
-    <ClInclude Include="15.5_Bulk_quote.h" />
-    <ClInclude Include="15.7_Limit_quote.h" />
-    <ClInclude Include="16.12_Blob.h" />
-    <ClInclude Include="16.14_15_Screen.h" />
-    <ClInclude Include="16.16_Vec.h" />
-    <ClInclude Include="16.24_Blob.h" />
-    <ClInclude Include="16.24_BlobPtr.h" />
-    <ClInclude Include="16.29\Blob.h" />
-    <ClInclude Include="16.29\DebugDelete.h" />
-    <ClInclude Include="16.29\shared_pointer.h" />
-    <ClInclude Include="16.29\unique_pointer.h" />
-    <ClInclude Include="16.2_compare.h" />
-    <ClInclude Include="16.4_find.h" />
-    <ClInclude Include="16.58_59\16.58_StrVec.h" />
-    <ClInclude Include="16.58_59\16.58_Vec.h" />
-    <ClInclude Include="16.5_print.h" />
-    <ClInclude Include="16.62\16.62_Sales_data.h" />
-    <ClInclude Include="16.6_begin_end.h" />
-    <ClInclude Include="16.7_array_size.h" />
-    <ClInclude Include="7.22.h" />
-    <ClInclude Include="7.50.h" />
-    <ClInclude Include="7.53.h" />
-    <ClInclude Include="7.57.h" />
-    <ClInclude Include="F:\迅雷下载\VisualStudio2012\1\Sales_item.h" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="Sales_data.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="16.65.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
